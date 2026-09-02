@@ -16,7 +16,9 @@ import { createContext, useContext, useEffect } from "react";
  *   lang: "pt" | "en" | "es" | "fr",      // <html lang>
  *   canonical?: string,                   // absolute URL
  *   alternates?: [{ lang: string, href: string }], // hreflang links
- *   og?: { title?: string, description?: string, image?: string, type?: string },
+ *   og?: { title?: string, description?: string, type?: string,
+ *          image?: string, imageWidth?: number, imageHeight?: number, imageAlt?: string },
+ *   article?: { author?: string, publishedTime?: string (ISO), modifiedTime?: string, section?: string },
  *   robots?: string,                      // e.g. "noindex"
  * })
  */
@@ -77,7 +79,19 @@ function applyHeadToDocument(head) {
     });
   }
   if (og.image) setMeta('meta[property="og:image"]', { property: "og:image", content: og.image });
+  if (og.imageWidth) setMeta('meta[property="og:image:width"]', { property: "og:image:width", content: String(og.imageWidth) });
+  if (og.imageHeight) setMeta('meta[property="og:image:height"]', { property: "og:image:height", content: String(og.imageHeight) });
+  if (og.imageAlt) setMeta('meta[property="og:image:alt"]', { property: "og:image:alt", content: og.imageAlt });
   setMeta('meta[property="og:type"]', { property: "og:type", content: og.type ?? "website" });
+  const article = head.article ?? {};
+  document.head.querySelectorAll('meta[property^="article:"], meta[name="author"]').forEach((m) => m.remove());
+  if (article.author) {
+    setMeta('meta[name="author"]', { name: "author", content: article.author });
+    setMeta('meta[property="article:author"]', { property: "article:author", content: article.author });
+  }
+  if (article.publishedTime) setMeta('meta[property="article:published_time"]', { property: "article:published_time", content: article.publishedTime });
+  if (article.modifiedTime) setMeta('meta[property="article:modified_time"]', { property: "article:modified_time", content: article.modifiedTime });
+  if (article.section) setMeta('meta[property="article:section"]', { property: "article:section", content: article.section });
   if (head.canonical) {
     setMeta('meta[property="og:url"]', { property: "og:url", content: head.canonical });
     let link = document.head.querySelector('link[rel="canonical"]');
@@ -115,7 +129,18 @@ export function renderHeadToString(head) {
   if (og.description ?? head.description)
     parts.push(`<meta property="og:description" content="${esc(og.description ?? head.description)}">`);
   if (og.image) parts.push(`<meta property="og:image" content="${esc(og.image)}">`);
+  if (og.imageWidth) parts.push(`<meta property="og:image:width" content="${esc(og.imageWidth)}">`);
+  if (og.imageHeight) parts.push(`<meta property="og:image:height" content="${esc(og.imageHeight)}">`);
+  if (og.imageAlt) parts.push(`<meta property="og:image:alt" content="${esc(og.imageAlt)}">`);
   parts.push(`<meta property="og:type" content="${esc(og.type ?? "website")}">`);
+  const article = head.article ?? {};
+  if (article.author) {
+    parts.push(`<meta name="author" content="${esc(article.author)}">`);
+    parts.push(`<meta property="article:author" content="${esc(article.author)}">`);
+  }
+  if (article.publishedTime) parts.push(`<meta property="article:published_time" content="${esc(article.publishedTime)}">`);
+  if (article.modifiedTime) parts.push(`<meta property="article:modified_time" content="${esc(article.modifiedTime)}">`);
+  if (article.section) parts.push(`<meta property="article:section" content="${esc(article.section)}">`);
   if (head.canonical) {
     parts.push(`<meta property="og:url" content="${esc(head.canonical)}">`);
     parts.push(`<link rel="canonical" href="${esc(head.canonical)}">`);

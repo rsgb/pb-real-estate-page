@@ -21,7 +21,7 @@ export default function MethodologyPage() {
       { lang: "pt", href: `${SITE_ORIGIN}/pt/knowledge-centre/methodology/` },
       { lang: "en", href: `${SITE_ORIGIN}/en/knowledge-centre/methodology/` },
     ],
-    og: { title, description, type: "article" },
+    og: { title, description, type: "website" },
     ...(isTranslated ? {} : { robots: "noindex" }),
   });
 

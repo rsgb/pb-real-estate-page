@@ -52,7 +52,14 @@ export default function EditionPage() {
   const canonicalPath = edition
     ? `/${contentLang}/knowledge-centre/${edition.id}/`
     : `/${contentLang}/knowledge-centre/`;
-  const image = edition?.ogImage ?? edition?.signatureImage;
+  // Paulo-supplied card wins; otherwise the landscape card built at build time
+  // by scripts/generate-og-images.mjs (the square LinkedIn signature is not
+  // used here — LinkedIn crops it and the series name and period disappear).
+  const ogImagePath = edition
+    ? edition.ogImage
+      ? `/briefs/${edition.ogImage}`
+      : `/og/thb-${edition.id}-${contentLang}.png`
+    : null;
 
   useHead({
     title,
@@ -69,8 +76,24 @@ export default function EditionPage() {
       title,
       description: takeaway || undefined,
       type: "article",
-      ...(image ? { image: `${SITE_ORIGIN}/briefs/${image}` } : {}),
+      ...(ogImagePath
+        ? {
+            image: `${SITE_ORIGIN}${ogImagePath}`,
+            imageWidth: 1200,
+            imageHeight: 630,
+            imageAlt: title,
+          }
+        : {}),
     },
+    ...(edition
+      ? {
+          article: {
+            author: "Paulo Braga",
+            publishedTime: edition.publishedAt,
+            section: "Tourism & Hospitality Brief",
+          },
+        }
+      : {}),
     ...(edition ? {} : { robots: "noindex" }),
     ...(isTranslated ? {} : { robots: "noindex" }),
   });
