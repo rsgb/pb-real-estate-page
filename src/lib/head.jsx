@@ -21,7 +21,10 @@ import { createContext, useContext, useEffect } from "react";
  * })
  */
 
-export const SITE_ORIGIN = "https://paulobraga-realestate.pt";
+// Injected at build time from vite.config.js (see site-origin.mjs):
+// production -> custom domain, Netlify deploy previews -> preview URL.
+// eslint-disable-next-line no-undef
+export const SITE_ORIGIN = typeof __SITE_ORIGIN__ !== "undefined" ? __SITE_ORIGIN__ : "https://paulobraga-realestate.pt";
 
 const HeadContext = createContext(null);
 

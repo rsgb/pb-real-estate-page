@@ -13,11 +13,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { resolveSiteOrigin } from "../site-origin.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist");
 const DIST_SSR = path.join(ROOT, "dist-ssr");
-const ORIGIN = "https://paulobraga-realestate.pt";
+const ORIGIN = resolveSiteOrigin();
 const LANGS = ["pt", "en", "es", "fr"];
 /** Knowledge Centre content exists in PT and EN only. */
 const CONTENT_LANGS = ["pt", "en"];
