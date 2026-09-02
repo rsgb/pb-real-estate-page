@@ -32,7 +32,7 @@ const data = [
 ];
 
 export default function ThreeCards() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
 
   if (lang === "EN") {
     data[0].title = "Hotels";

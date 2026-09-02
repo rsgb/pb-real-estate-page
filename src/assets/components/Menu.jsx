@@ -1,5 +1,6 @@
 import { useLang } from "./LangContext";
 import * as React from "react";
+import { Link as RouterLink } from "react-router";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -26,7 +27,7 @@ export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElLang, setAnchorElLang] = React.useState(null);
   const [anchorElMobileLang, setAnchorElMobileLang] = React.useState(null);
-  const { lang, setLang } = useLang();
+  const { lang, urlLang, setLang } = useLang();
 
   const pageKeys = ["home", "services", "about", "partners", "contact"];
   const pageLabels = {
@@ -35,10 +36,19 @@ export default function ResponsiveAppBar() {
     ES: ["Inicio", "Servicios", "Sobre Mí", "Parceiros", "Contacto"],
     FR: ["Accueil", "Services", "À Propos", "Partenaires", "Contact"],
   };
-  const pages = pageKeys.map((key, idx) => ({
-    id: key,
-    label: pageLabels[lang][idx] || pageLabels.EN[idx],
-  }));
+  const pages = [
+    ...pageKeys.map((key, idx) => ({
+      id: key,
+      label: (pageLabels[lang] || pageLabels.EN)[idx] || pageLabels.EN[idx],
+      to: `/${urlLang}/#${key}`,
+    })),
+    // Same label in all four languages (Paulo's decision).
+    {
+      id: "knowledge-centre",
+      label: "Knowledge Centre",
+      to: `/${urlLang}/knowledge-centre/`,
+    },
+  ];
 
   const handleOpenNavMenu = (e) => setAnchorElNav(e.currentTarget);
   const handleCloseNavMenu = () => setAnchorElNav(null);
@@ -79,6 +89,9 @@ export default function ResponsiveAppBar() {
         >
           {/* Logo / Title */}
           <Box
+            component={RouterLink}
+            to={`/${urlLang}/`}
+            aria-label="Paulo Braga Real Estate"
             sx={{
               display: "flex",
               alignContent: "flex-start",
@@ -135,8 +148,8 @@ export default function ResponsiveAppBar() {
               {pages.map((page) => (
                 <Button
                   key={page.id}
-                  component="a"
-                  href={`#${page.id}`}
+                  component={RouterLink}
+                  to={page.to}
                   onClick={handleCloseNavMenu}
                   sx={{ color: "inherit", display: "block" }}
                 >
@@ -193,8 +206,8 @@ export default function ResponsiveAppBar() {
           >
             {pages.map((page) => (
               <MenuItem
-                component="a"
-                href={`#${page.id}`}
+                component={RouterLink}
+                to={page.to}
                 key={page.id}
                 onClick={handleCloseNavMenu}
               >

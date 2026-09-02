@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Símbolo editorial Tourism &amp; Hospitality Brief</title>
+  <desc id="desc">Círculo verde-petróleo com um sinal mais em marfim.</desc>
+  <circle cx="128" cy="128" r="112" fill="#163E3D"/>
+  <path d="M80 128h96M128 80v96" fill="none" stroke="#F4F0E7" stroke-width="14" stroke-linecap="round"/>
+</svg>

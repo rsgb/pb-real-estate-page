@@ -1,5 +1,6 @@
 import { useLang } from "./LangContext";
 import { Box, IconButton, Typography, Link } from "@mui/material";
+import { Link as RouterLink } from "react-router";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -8,7 +9,7 @@ import logo from "../images/KWsol white.png";
 import secondLogo from "../images/PBre white.png";
 
 export default function Footer() {
-  const { lang } = useLang();
+  const { urlLang } = useLang();
 
   return (
     <Box
@@ -119,7 +120,12 @@ export default function Footer() {
           </Box>
 
           {/* PB Real Estate Logo */}
-          <Box component={Link} href="#home" sx={{ display: "inline-block" }}>
+          <Box
+            component={RouterLink}
+            to={`/${urlLang}/`}
+            aria-label="Paulo Braga Real Estate"
+            sx={{ display: "inline-block" }}
+          >
             <Box
               component="img"
               src={secondLogo}

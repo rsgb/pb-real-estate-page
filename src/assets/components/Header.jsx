@@ -3,11 +3,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 export default function Header() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
 
   let title = "";
   let subtitle = "";
-  let description = "";
 
   if (lang === "EN") {
     title = "High-Value Real Estate Investments";

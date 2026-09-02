@@ -28,10 +28,10 @@ const contacts = [
   },
 ];
 
-const bgColors = ["#fbfaf7", "#fbfaf7", "#fbfaf7", "#fbfaf7"]; // unified premium surface color
+const _bgColors = ["#fbfaf7", "#fbfaf7", "#fbfaf7", "#fbfaf7"]; // unified premium surface color
 
 export default function Contact() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
 
   if (lang === "EN") {
     contacts[0].label = "Phone";

@@ -24,7 +24,7 @@ const features = [
   },
 ];
 
-const bgColors = [
+const _bgColors = [
   "#f4f1eb",
   "#f4f1eb",
   "#f4f1eb",
@@ -32,7 +32,7 @@ const bgColors = [
 ];
 
 function FeatureHighlights() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
 
   let services = "";
   let description;

@@ -2,7 +2,7 @@ import { useLang } from "./LangContext";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 export default function About({ image, alt }) {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
   let about = [];
 
   if (lang === "EN") {
