@@ -46,10 +46,17 @@ const { render, knowledgeCentrePaths } = await import(pathToFileURL(serverEntry)
 // /pt/market-brief/2026-07/ resolves as a static file on any host.
 const withSlash = (route) => (route.endsWith("/") ? route : `${route}/`);
 
-const routes = LANGS.flatMap((lang) => [
-  `/${lang}/`,
-  ...(knowledgeCentrePaths?.([lang]) ?? []),
-]).map(withSlash);
+/**
+ * Routes outside the language tree. `/publicar/` is Paulo's upload page: it is
+ * pre-rendered so it loads like any other page, but it carries `noindex`, is
+ * kept out of sitemap.xml below and is not in the menu.
+ */
+const PRIVATE_ROUTES = ["/publicar/"];
+
+const routes = [
+  ...LANGS.flatMap((lang) => [`/${lang}/`, ...(knowledgeCentrePaths?.([lang]) ?? [])]),
+  ...PRIVATE_ROUTES,
+].map(withSlash);
 
 function outputFileFor(route) {
   return path.join(DIST, route.replace(/^\/+/, ""), "index.html");
@@ -136,7 +143,9 @@ console.log(`prerender  /${" ".repeat(33)} -> dist/index.html (language splash)`
 
 // ------------------------------------------------------------------ sitemap
 const sitemapRoutes = written.filter(
-  (route) => !route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1])
+  (route) =>
+    !PRIVATE_ROUTES.includes(route) &&
+    (!route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1]))
 );
 const today = new Date().toISOString().slice(0, 10);
 const SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9";

@@ -58,11 +58,13 @@ export default function ResponsiveAppBar() {
   ];
 
   // Which item wears the champagne underline. Derived from the URL only, so it
-  // is identical in the pre-rendered markup and after hydration.
+  // is identical in the pre-rendered markup and after hydration. A page outside
+  // the language tree (/publicar/) is in no menu item, so nothing is marked.
   const inKnowledgeCentre = pathname.includes("/market-brief");
-  const currentId = inKnowledgeCentre
-    ? "market-brief"
-    : (hash ? hash.slice(1) : "home");
+  const inLangTree = /^\/(pt|en|es|fr)(\/|$)/i.test(pathname);
+  let currentId = null;
+  if (inKnowledgeCentre) currentId = "market-brief";
+  else if (inLangTree) currentId = hash ? hash.slice(1) : "home";
 
   const handleOpenNavMenu = (e) => setAnchorElNav(e.currentTarget);
   const handleCloseNavMenu = () => setAnchorElNav(null);

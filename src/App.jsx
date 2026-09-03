@@ -13,6 +13,7 @@ import Analytics from "./assets/components/Analytics";
 import ScrollToHash from "./assets/components/ScrollToHash";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import PublishPage from "./pages/PublishPage";
 import { KnowledgeCentreRoutes, thbTheme } from "./knowledge-centre/index.jsx";
 
 /** "/" -> client-side redirect to the visitor's preferred language. */
@@ -49,6 +50,21 @@ function KnowledgeCentre() {
   );
 }
 
+/**
+ * Paulo's private upload page. It sits outside the `:lang` tree because it
+ * exists in Portuguese only and must never appear as /en/publicar/; it wears
+ * the Market Brief theme for the same reason the Knowledge Centre does.
+ */
+function Publish() {
+  return (
+    <ThemeProvider theme={thbTheme}>
+      <Box sx={{ bgcolor: "background.default" }}>
+        <PublishPage />
+      </Box>
+    </ThemeProvider>
+  );
+}
+
 function App() {
   return (
     <LangProvider>
@@ -57,6 +73,7 @@ function App() {
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<RootRedirect />} />
+        <Route path="/publicar" element={<Publish />} />
         <Route path="/:lang" element={<LangLayout />}>
           <Route index element={<Home />} />
           <Route path="market-brief/*" element={<KnowledgeCentre />} />
