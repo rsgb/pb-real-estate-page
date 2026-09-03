@@ -1,0 +1,612 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2025-01",
+  "series": "thb",
+  "horizon": "monthly",
+  "country": "PT",
+  "period": {
+    "year": 2025,
+    "month": 1
+  },
+  "publishedAt": "2026-09-03",
+  "historical": true,
+  "historicalNote": {
+    "pt": "Edição histórica, publicada a 3 de setembro de 2026 com dados relativos a janeiro de 2025.",
+    "en": "Historical edition, published on 3 September 2026 using data for January 2025."
+  },
+  "dataStatus": "revised",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_Monthly_2025-01_PT_PDF_v1.0.pdf",
+    "en": "THB_Monthly_2025-01_EN_PDF_v1.0.pdf"
+  },
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | Janeiro 2025",
+    "en": "Tourism & Hospitality Brief | Portugal | January 2025"
+  },
+  "takeaway": {
+    "pt": "A procura e os proveitos iniciaram 2025 em forte crescimento, com a procura interna a liderar e a Madeira a destacar-se na criação de valor.",
+    "en": "Demand and revenue started 2025 strongly, led by domestic demand, while Madeira stood out in value creation."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "MONTHLY BRIEF",
+        "en": "MONTHLY BRIEF"
+      },
+      "strapline": {
+        "pt": "Um início de ano forte, liderado pela procura interna e pelo crescimento da receita.",
+        "en": "A strong start to the year, led by domestic demand and revenue growth."
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição histórica v1.0 - dados revistos",
+        "en": "Historical edition v1.0 - revised data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "Janeiro abriu 2025 com crescimento generalizado",
+        "en": "January opened 2025 with broad-based growth"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "O crescimento dos proveitos superou o das dormidas, enquanto a procura interna aumentou mais rapidamente do que a externa.",
+          "en": "Revenue growth outpaced overnight stays, while domestic demand grew faster than international demand."
+        }
+      },
+      "body": {
+        "pt": [
+          "O alojamento turístico registou 1,6 milhões de hóspedes e 3,7 milhões de dormidas, crescimentos homólogos de 8,3% e 6,3%.",
+          "Os proveitos totais aumentaram 13,8%, para 262,0 milhões de euros, e os de aposento cresceram 14,2%, para 188,9 milhões.",
+          "A combinação de procura, preço e crescimento regional aponta para um arranque robusto, embora com diferenças relevantes entre destinos e mercados emissores."
+        ],
+        "en": [
+          "Tourist accommodation recorded 1.6 million guests and 3.7 million overnight stays, up 8.3% and 6.3% year on year.",
+          "Total revenue increased 13.8% to EUR 262.0 million and room revenue rose 14.2% to EUR 188.9 million.",
+          "The combination of demand, pricing and regional growth points to a robust start, albeit with meaningful differences across destinations and source markets."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "Receita a crescer acima do volume",
+        "en": "Revenue grew faster than volume"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 1.6057,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 8.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 3.6707,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 6.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 262.0,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 13.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 188.9,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 14.2,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 33.2,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 10.0,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "netBedOccupancy",
+          "label": {
+            "pt": "OCUPAÇÃO-CAMA",
+            "en": "NET BED OCCUPANCY"
+          },
+          "value": 32.1,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.5,
+            "unit": "pp",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: os proveitos cresceram mais do dobro das dormidas, sugerindo melhoria do rendimento e do mix de procura."
+        ],
+        "en": [
+          "Reading: revenue grew at more than twice the pace of overnight stays, indicating an improved yield and demand mix."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "O mercado interno liderou o crescimento",
+        "en": "Domestic demand led growth"
+      },
+      "indicators": [
+        {
+          "key": "residentStays",
+          "label": {
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
+          },
+          "value": 1.27,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 11.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "nonResidentStays",
+          "label": {
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
+          },
+          "value": 2.4007,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 3.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas por mercado emissor",
+          "en": "Change in overnight stays by source market"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Janeiro de 2025, variação homóloga",
+          "en": "January 2025, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI, Turismo em Números - janeiro de 2025",
+          "en": "Turismo de Portugal / TravelBI, Turismo em Números - January 2025"
+        },
+        "items": [
+          {
+            "key": "uk",
+            "label": {
+              "pt": "Reino Unido",
+              "en": "United Kingdom"
+            },
+            "value": -3.3
+          },
+          {
+            "key": "de",
+            "label": {
+              "pt": "Alemanha",
+              "en": "Germany"
+            },
+            "value": 5.1
+          },
+          {
+            "key": "es",
+            "label": {
+              "pt": "Espanha",
+              "en": "Spain"
+            },
+            "value": 0.8
+          },
+          {
+            "key": "us",
+            "label": {
+              "pt": "Estados Unidos",
+              "en": "United States"
+            },
+            "value": 10.3
+          },
+          {
+            "key": "fr",
+            "label": {
+              "pt": "França",
+              "en": "France"
+            },
+            "value": -9.6
+          }
+        ],
+        "highlightKey": "us",
+        "altText": {
+          "pt": "Gráfico de barras com a variação homóloga das dormidas em janeiro de 2025: Estados Unidos +10,3%, Alemanha +5,1%, Espanha +0,8%, Reino Unido -3,3% e França -9,6%.",
+          "en": "Bar chart of the year-on-year change in overnight stays in January 2025: United States +10.3%, Germany +5.1%, Spain +0.8%, United Kingdom -3.3% and France -9.6%."
+        }
+      },
+      "body": {
+        "pt": [
+          "As dormidas de residentes aumentaram 11,3%, para 1,27 milhões. As de não residentes cresceram 3,8%, para 2,40 milhões.",
+          "Os Estados Unidos (+10,3%) e a Alemanha (+5,1%) destacaram-se entre os principais mercados; França (-9,6%) e Brasil (-8,8%) recuaram."
+        ],
+        "en": [
+          "Resident overnight stays rose 11.3% to 1.27 million. Non-resident stays increased 3.8% to 2.40 million.",
+          "The United States (+10.3%) and Germany (+5.1%) stood out among the main markets; France (-9.6%) and Brazil (-8.8%) declined."
+        ]
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "REGIÕES",
+        "en": "REGIONS"
+      },
+      "headline": {
+        "pt": "Crescimento transversal, mas com intensidade desigual",
+        "en": "Broad growth, but at uneven rates"
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas por região",
+          "en": "Change in overnight stays by region"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Janeiro de 2025, variação homóloga",
+          "en": "January 2025, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI, Turismo em Números - janeiro de 2025",
+          "en": "Turismo de Portugal / TravelBI, Turismo em Números - January 2025"
+        },
+        "items": [
+          {
+            "key": "setubal",
+            "label": {
+              "pt": "Península de Setúbal",
+              "en": "Setúbal Peninsula"
+            },
+            "value": 14.4
+          },
+          {
+            "key": "alentejo",
+            "label": {
+              "pt": "Alentejo",
+              "en": "Alentejo"
+            },
+            "value": 11.4
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "Açores",
+              "en": "Azores"
+            },
+            "value": 10.2
+          },
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "Madeira",
+              "en": "Madeira"
+            },
+            "value": 9.3
+          },
+          {
+            "key": "norte",
+            "label": {
+              "pt": "Norte",
+              "en": "North"
+            },
+            "value": 7.6
+          },
+          {
+            "key": "centro",
+            "label": {
+              "pt": "Centro",
+              "en": "Centre"
+            },
+            "value": 6.1
+          },
+          {
+            "key": "lisboa",
+            "label": {
+              "pt": "Grande Lisboa",
+              "en": "Greater Lisbon"
+            },
+            "value": 5.5
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": 3.9
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": 1.1
+          }
+        ],
+        "highlightKey": "setubal",
+        "altText": {
+          "pt": "Gráfico de barras da variação homóloga das dormidas por região em janeiro de 2025, entre +14,4% na Península de Setúbal e +1,1% no Algarve.",
+          "en": "Bar chart of year-on-year overnight-stay growth by region in January 2025, ranging from +14.4% in Setúbal Peninsula to +1.1% in Algarve."
+        }
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "REGIÃO EM DESTAQUE",
+          "en": "REGION IN FOCUS"
+        },
+        "body": {
+          "pt": "A Madeira combinou crescimento de 9,3% nas dormidas com aumentos de 29,0% nos proveitos e 24,5% no RevPAR.",
+          "en": "Madeira combined 9.3% overnight-stay growth with increases of 29.0% in revenue and 24.5% in RevPAR."
+        }
+      },
+      "body": {
+        "pt": [
+          "A Península de Setúbal (+14,4%) e o Alentejo (+11,4%) lideraram o crescimento das dormidas. O Algarve registou a progressão mais moderada (+1,1%)."
+        ],
+        "en": [
+          "Setúbal Peninsula (+14.4%) and Alentejo (+11.4%) led overnight-stay growth. Algarve recorded the most moderate increase (+1.1%)."
+        ]
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "A valorização da receita reforçou o arranque do ano",
+        "en": "Revenue gains strengthened the start of the year"
+      },
+      "scope": {
+        "pt": "Total do alojamento turístico; ocupação e RevPAR segundo o âmbito da fonte.",
+        "en": "Total tourist accommodation; occupancy and RevPAR according to source scope."
+      },
+      "indicators": [
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 262.0,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 13.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 188.9,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 14.2,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 33.2,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 10.0,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os proveitos totais e de aposento aumentaram acima do crescimento da procura. O RevPAR avançou 10,0%, enquanto a taxa líquida de ocupação-cama atingiu 32,1%, mais 2,5 p.p."
+        ],
+        "en": [
+          "Total and room revenue increased faster than demand. RevPAR advanced 10.0%, while net bed occupancy reached 32.1%, up 2.5 percentage points."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Um início de ano forte, mas regionalmente desigual",
+          "en": "A strong start to the year, but uneven across regions"
+        },
+        "fact": {
+          "pt": "Dormidas +6,3%, proveitos totais +13,8% e RevPAR +10,0%.",
+          "en": "Overnight stays +6.3%, total revenue +13.8% and RevPAR +10.0%."
+        },
+        "interpretation": {
+          "pt": "O setor iniciou o ano com capacidade para converter o crescimento da procura em receita a um ritmo superior.",
+          "en": "The sector began the year able to convert demand growth into revenue at a faster pace."
+        },
+        "implication": {
+          "pt": "Para investidores e proprietários, a leitura favorece ativos com poder de pricing e exposição equilibrada entre procura nacional e internacional, mantendo atenção às diferenças regionais.",
+          "en": "For investors and owners, the reading favours assets with pricing power and balanced exposure to domestic and international demand, while keeping regional differences in focus."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar em fevereiro",
+          "en": "Three signals to watch in February"
+        },
+        "signals": [
+          {
+            "pt": "Persistência do dinamismo da procura interna.",
+            "en": "Persistence of domestic demand momentum."
+          },
+          {
+            "pt": "Evolução dos mercados francês e brasileiro após as quedas de janeiro.",
+            "en": "Performance of the French and Brazilian markets after January declines."
+          },
+          {
+            "pt": "Capacidade de sustentar crescimento do RevPAR fora da época alta.",
+            "en": "Ability to sustain RevPAR growth outside peak season."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "Turismo de Portugal / TravelBI, Turismo em Números - janeiro de 2025, publicado em 3 de março de 2025.",
+          "en": "Turismo de Portugal / TravelBI, Turismo em Números - January 2025, released 3 March 2025."
+        },
+        "complementary": [
+          {
+            "pt": "Instituto Nacional de Estatística, Atividade Turística - dados de janeiro de 2025.",
+            "en": "Statistics Portugal, Tourism Activity - January 2025 data."
+          }
+        ],
+        "releaseDate": "2025-03-03",
+        "status": "revised",
+        "notes": {
+          "pt": "Edição histórica. Todas as variações são homólogas, exceto quando indicado. A ocupação-cama é apresentada em valor líquido e a sua variação em pontos percentuais.",
+          "en": "Historical edition. All changes are year-on-year unless stated otherwise. Bed occupancy is reported on a net basis and its change in percentage points."
+        }
+      }
+    }
+  ]
+}
