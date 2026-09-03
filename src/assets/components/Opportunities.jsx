@@ -1,12 +1,13 @@
 import { Box, Paper, Typography } from "@mui/material";
 import { useLang } from "./LangContext";
-import hotels from "../images/hotels.jpg";
+import hotelsCard from "../images/hotels-card.jpg";
 import leisure from "../images/leisure.jpg";
 import seniorliving from "../images/seniorliving.jpg";
 
 /** Photo, and how it should be framed in the card window. */
 const CARDS = [
-  { img: hotels, objectPosition: "left 55%" },
+  // D-17: hotel lobby chosen by Paulo (the hero keeps the room photo).
+  { img: hotelsCard, objectPosition: "center 40%" },
   // D-17: the leisure card uses the concert photograph.
   { img: leisure, objectPosition: "center 45%" },
   { img: seniorliving, objectPosition: "center 60%" },
