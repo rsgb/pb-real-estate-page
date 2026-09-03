@@ -11,7 +11,6 @@ import { getEditions } from "../content/editions";
 import EditionPage from "./pages/EditionPage";
 import MethodologyPage from "./pages/MethodologyPage";
 import SeriesPage from "./pages/SeriesPage";
-import SeriesPageV2 from "./pages/SeriesPageV2";
 
 export { thbTheme, THB_COLORS, READING_WIDTH } from "./theme";
 
@@ -25,8 +24,6 @@ export function KnowledgeCentreRoutes() {
     <Routes>
       <Route path="" element={<SeriesPage />} />
       <Route path="methodology" element={<MethodologyPage />} />
-      {/* Temporary comparison landing page; must precede the :editionId catch-all. */}
-      <Route path="v2" element={<SeriesPageV2 />} />
       <Route path=":editionId" element={<EditionPage />} />
       <Route path="*" element={<EditionPage />} />
     </Routes>
@@ -46,8 +43,6 @@ export function knowledgeCentrePaths(langs = URL_LANGS) {
     return [
       base,
       `${base}methodology/`,
-      // Temporary comparison page: pre-rendered, but kept out of sitemap.xml.
-      `${base}v2/`,
       ...editions.map((edition) => `${base}${edition.id}/`),
     ];
   });

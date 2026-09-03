@@ -7,6 +7,10 @@ import { useThbLang } from "../lang";
  * Previous / next navigation, restricted to the same editorial horizon, plus a
  * route back to the series page. `prev` is the older edition. `basePath` is
  * expected to end with a slash: trailing-slash URLs are canonical site-wide.
+ *
+ * Plain links under a beige hairline; the 64px of air above it comes from the
+ * edition page's zone grid, so the nav reads as a separate zone, not a footer
+ * hanging off the last section.
  */
 export default function EditionNav({ prev, next, basePath, sx }) {
   const { contentLang, t } = useThbLang();

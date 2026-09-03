@@ -143,7 +143,9 @@ export default function EditionPage() {
           mx: "auto",
           px: { xs: 2, sm: 3, md: 4 },
           display: "grid",
-          gap: { xs: 6, md: 9 },
+          // Zone separation, as on the landing page: 64px between sections on
+          // md+, 48px on xs, against ≤24px inside a section.
+          gap: { xs: 6, md: 8 },
         }}
       >
         <LangNotice />

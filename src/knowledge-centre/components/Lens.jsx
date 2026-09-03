@@ -1,12 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import Rule from "./Rule";
-import monogram from "../assets/thb-monogram.svg";
+import ThbMark from "./ThbMark";
 
 /**
  * Tourism & Hospitality Real Estate Lens (Componentes Visuais v0.9 s.4).
  * Fixed title, distinct panel, and an explicit separation of fact,
  * interpretation and implication. Deliberately plain: it must not read as an
  * advertisement (Sistema Visual v1.0 s.7).
+ *
+ * Secondary panel: white inside a beige hairline, with the short terracotta
+ * rule above its label. The 2px petroleum edge belongs to the page's one focal
+ * panel — the edition header — and is not repeated here.
  */
 export default function Lens({ lens, labels, sx }) {
   if (!lens) return null;
@@ -24,21 +28,15 @@ export default function Lens({ lens, labels, sx }) {
         backgroundColor: "thb.white",
         border: "1px solid",
         borderColor: "thb.beige",
-        borderTop: "2px solid",
-        borderTopColor: "thb.petroleum",
         px: { xs: 2, sm: 4, md: 6 },
         py: { xs: 3, sm: 5, md: 5.5 },
         ...sx,
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2.5 }}>
-        <Box
-          component="img"
-          src={monogram}
-          alt=""
-          aria-hidden="true"
-          sx={{ width: 34, height: 34, flexShrink: 0, display: "block" }}
-        />
+      <Rule />
+
+      <Box sx={{ mt: 2, display: "flex", alignItems: "center", gap: 2 }}>
+        <ThbMark size={28} />
         <Typography
           id="thb-lens-title"
           variant="overline"
@@ -55,7 +53,7 @@ export default function Lens({ lens, labels, sx }) {
         </Typography>
       ) : null}
 
-      <Box sx={{ mt: 4, mb: 4, height: "1px", backgroundColor: "thb.beige" }} />
+      <Box sx={{ mt: 3, mb: 3, height: "1px", backgroundColor: "thb.beige" }} />
 
       <Box
         sx={{

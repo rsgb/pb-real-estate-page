@@ -2,7 +2,7 @@ import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
 import { useThbLang } from "../lang";
-import { LangNotice, RichText } from "../components";
+import { LangNotice, RichText, ThbMark } from "../components";
 import { READING_WIDTH } from "../theme";
 
 export default function MethodologyPage() {
@@ -29,24 +29,39 @@ export default function MethodologyPage() {
     <Box
       component="main"
       lang={isTranslated ? undefined : contentLang}
-      sx={{ backgroundColor: "thb.ivory", py: { xs: 4, md: 7 } }}>
+      sx={{ backgroundColor: "thb.ivory", pt: { xs: 3, md: 4.5 }, pb: { xs: 8, md: 12 } }}>
       <Box
         sx={{
           maxWidth: 1200,
           mx: "auto",
           px: { xs: 2, sm: 3, md: 4 },
           display: "grid",
-          gap: { xs: 4, md: 5 },
+          // Zone separation, as on the series page.
+          gap: { xs: 5, md: 8 },
         }}
       >
+        {/* The series page's head, verbatim: overline, mark and serif title on
+            one line, then the full-width terracotta rule. */}
         <Box component="header">
           <Typography variant="overline" component="p" sx={{ color: "thb.greyGreen" }}>
-            {t.seriesName}
+            {t.knowledgeCentre}
           </Typography>
-          <Typography variant="h1" component="h1" sx={{ mt: 2, color: "thb.petroleum" }}>
-            {t.methodology}
-          </Typography>
-          <Box sx={{ mt: { xs: 3, md: 4.25 }, height: "1px", backgroundColor: "thb.terracotta" }} />
+
+          <Box
+            sx={{
+              mt: { xs: 2, md: 2.5 },
+              display: "flex",
+              alignItems: "center",
+              gap: { xs: 2, md: 2.5 },
+            }}
+          >
+            <ThbMark size={44} />
+            <Typography variant="h1" component="h1">
+              {t.methodology}
+            </Typography>
+          </Box>
+
+          <Box sx={{ mt: { xs: 2.5, md: 3 }, height: "1px", backgroundColor: "thb.terracotta" }} />
         </Box>
 
         <LangNotice />

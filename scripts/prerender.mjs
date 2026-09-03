@@ -144,13 +144,8 @@ fs.writeFileSync(templatePath, splash, "utf8");
 console.log(`prerender  /${" ".repeat(33)} -> dist/index.html (language splash)`);
 
 // ------------------------------------------------------------------ sitemap
-// Temporary /market-brief/v2/ comparison pages are pre-rendered but noindex,
-// so they never enter the sitemap.
-const isTemporary = (route) => route.endsWith("/v2/");
 const sitemapRoutes = written.filter(
-  (route) =>
-    !isTemporary(route) &&
-    (!route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1]))
+  (route) => !route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1])
 );
 const today = new Date().toISOString().slice(0, 10);
 const SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9";

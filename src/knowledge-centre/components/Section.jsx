@@ -9,6 +9,10 @@ import { READING_WIDTH } from "../theme";
  * absent the main column keeps its width rather than stretching, so headlines
  * and running text hold the same measure across the whole edition. On phones
  * the two columns collapse and the aside follows the main content.
+ *
+ * Spacing follows the landing page: sections stand 64px apart on md+ (48px on
+ * xs), and nothing inside a section is more than 24px from its neighbour, so
+ * the grouping reads as grouping without a single border.
  */
 export default function Section({ label, headline, scope, aside, fullWidth = false, children, sx }) {
   return (
@@ -22,7 +26,7 @@ export default function Section({ label, headline, scope, aside, fullWidth = fal
           md: fullWidth ? "minmax(0, 1fr)" : "minmax(0, 760fr) minmax(0, 340fr)",
         },
         columnGap: { md: 10 },
-        rowGap: 4,
+        rowGap: 3,
         ...sx,
       }}
     >
@@ -57,7 +61,7 @@ export default function Section({ label, headline, scope, aside, fullWidth = fal
             {scope}
           </Typography>
         ) : null}
-        <Box sx={{ mt: 3, display: "grid", gap: 4 }}>{children}</Box>
+        <Box sx={{ mt: 3, display: "grid", gap: 3 }}>{children}</Box>
       </Box>
 
       {aside && !fullWidth ? <Box sx={{ minWidth: 0, mt: { md: 4.25 } }}>{aside}</Box> : null}

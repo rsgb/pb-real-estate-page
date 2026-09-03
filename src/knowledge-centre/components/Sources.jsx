@@ -2,11 +2,13 @@ import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router";
 import { formatDate } from "../../lib/format";
 import { pick, useThbLang } from "../lang";
+import Rule from "./Rule";
 
 /**
  * Sources and methodology block (Componentes Visuais v0.9 s.4).
- * Three columns of provenance under a petroleum rule — the closing colophon of
- * the edition rather than another panel.
+ * Three columns of provenance in a secondary panel — white inside a beige
+ * hairline, opened by the short terracotta rule, like every other panel that is
+ * not the edition header.
  */
 export default function Sources({ sources, methodologyHref, sx }) {
   const { contentLang, t } = useThbLang();
@@ -102,9 +104,20 @@ export default function Sources({ sources, methodologyHref, sx }) {
   ];
 
   return (
-    <Box sx={{ borderTop: "2px solid", borderColor: "thb.petroleum", pt: 3.5, ...sx }}>
+    <Box
+      sx={{
+        backgroundColor: "thb.white",
+        border: "1px solid",
+        borderColor: "thb.beige",
+        px: { xs: 2, sm: 3.5, md: 5 },
+        py: { xs: 2.5, sm: 3.5, md: 4 },
+        ...sx,
+      }}
+    >
+      <Rule />
       <Box
         sx={{
+          mt: 3,
           display: "grid",
           gap: { xs: 3, md: 6.5 },
           gridTemplateColumns: {
