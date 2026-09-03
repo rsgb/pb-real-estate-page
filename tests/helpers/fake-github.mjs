@@ -62,8 +62,23 @@ export function fakeGitHub(seed = {}) {
   );
   const pulls = [...(seed.pulls ?? [])];
   const calls = [];
+  /** branch -> the branch it was cut from, so reads inherit like a real fork. */
+  const parents = new Map();
   let nextPull = seed.nextPullNumber ?? 12;
   let commit = 0;
+
+  /** A file as the branch sees it: its own copy, else the one it inherited. */
+  function resolve(branch, path) {
+    let current = branch;
+    const seen = new Set();
+    while (current && !seen.has(current)) {
+      seen.add(current);
+      const file = files.get(`${current}:${path}`);
+      if (file) return file;
+      current = parents.get(current);
+    }
+    return undefined;
+  }
 
   const reply = (status, body) => ({
     status,
@@ -88,6 +103,8 @@ export function fakeGitHub(seed = {}) {
     if (method === "POST" && rest === "git/refs") {
       const branch = String(body.ref).replace(/^refs\/heads\//, "");
       if (refs.has(branch)) return reply(422, { message: "Reference already exists" });
+      const from = [...refs.entries()].find(([, sha]) => sha === body.sha)?.[0];
+      if (from) parents.set(branch, from);
       refs.set(branch, body.sha);
       return reply(201, { ref: body.ref, object: { sha: body.sha } });
     }
@@ -97,7 +114,7 @@ export function fakeGitHub(seed = {}) {
       const path = decodeURIComponent(rest.slice("contents/".length));
       if (method === "GET") {
         const branch = url.searchParams.get("ref");
-        const file = files.get(`${branch}:${path}`);
+        const file = resolve(branch, path);
         if (!file) return reply(404, { message: "Not Found" });
         return reply(200, {
           type: "file",
@@ -109,7 +126,7 @@ export function fakeGitHub(seed = {}) {
       }
       if (method === "PUT") {
         const key = `${body.branch}:${path}`;
-        const existing = files.get(key);
+        const existing = resolve(body.branch, path);
         // GitHub refuses a blind overwrite; the endpoint must send the sha.
         if (existing && body.sha !== existing.sha) {
           return reply(409, { message: "sha does not match" });
@@ -155,8 +172,12 @@ export function fakeGitHub(seed = {}) {
     callsTo(method, fragment) {
       return calls.filter((c) => c.method === method && c.path.includes(fragment));
     },
-    /** Text content of a file on a branch, or undefined. */
+    /** Text content of a file as a branch sees it (own copy or inherited). */
     read(branch, path) {
+      return resolve(branch, path)?.content;
+    },
+    /** Text content of a branch's *own* copy, ignoring what it inherited. */
+    readOwn(branch, path) {
       return files.get(`${branch}:${path}`)?.content;
     },
   };

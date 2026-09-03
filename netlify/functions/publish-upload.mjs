@@ -54,8 +54,10 @@ export async function run(event, deps = {}) {
   const branch = branchFor(id);
   const { created } = await github.ensureBranch(branch, BASE_BRANCH);
 
-  // Replacing a file needs the sha it currently has on this branch.
-  const existing = created ? null : await github.getFile(repoPath, branch);
+  // Replacing a file needs the sha it currently has on this branch — and a
+  // freshly created branch already carries everything `main` had, so a
+  // re-published edition finds its previous JSON and PDFs here too.
+  const existing = await github.getFile(repoPath, branch);
 
   const { commitSha } = await github.putFile({
     path: repoPath,

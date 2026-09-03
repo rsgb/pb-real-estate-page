@@ -220,6 +220,25 @@ test("the first upload branches edition/<id> off main and commits the JSON", asy
   assert.equal(github.read(BRANCH, JSON_PATH), JULY_TEXT);
 });
 
+test("re-publishing a live edition overwrites what the new branch inherited", async () => {
+  // The branch is cut from main, which already holds the published JSON, so
+  // the very first PUT on that branch is an update and needs its sha.
+  const github = fakeGitHub({ files: { [`main:${JSON_PATH}`]: JULY_TEXT } });
+  const updated = JSON.stringify({ ...JULY, version: "1.1" }, null, 2);
+  const result = await call(
+    upload,
+    postEvent({ id: ID, kind: "json", filename: `${ID}.json`, contentBase64: b64(updated) }),
+    { env: ENV, fetch: github.fetchImpl }
+  );
+
+  assert.equal(result.statusCode, 200, JSON.stringify(result.json));
+  assert.equal(result.json.created, true);
+  const [put] = github.callsTo("PUT", "/contents/");
+  assert.ok(put.body.sha, "the inherited file's sha must be sent");
+  assert.equal(github.readOwn(BRANCH, JSON_PATH), updated);
+  assert.equal(github.readOwn("main", JSON_PATH), JULY_TEXT, "main is untouched");
+});
+
 test("re-uploading the same file replaces it using the sha it already has", async () => {
   const github = fakeGitHub({
     refs: { main: "sha-main", [BRANCH]: "sha-branch" },
