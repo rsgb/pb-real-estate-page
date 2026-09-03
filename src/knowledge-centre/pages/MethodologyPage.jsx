@@ -8,7 +8,7 @@ import { READING_WIDTH } from "../theme";
 export default function MethodologyPage() {
   const { lang } = useParams();
   const { siteLang, urlLang, contentLang, t, isTranslated } = useThbLang();
-  const basePath = `/${lang ?? urlLang}/knowledge-centre/`;
+  const basePath = `/${lang ?? urlLang}/market-brief/`;
   const title = `${t.methodology} | ${t.seriesName}`;
   const description = t.methodologyParagraphs[0];
 
@@ -16,10 +16,10 @@ export default function MethodologyPage() {
     title,
     description,
     lang: String(siteLang).toLowerCase(),
-    canonical: `${SITE_ORIGIN}/${contentLang}/knowledge-centre/methodology/`,
+    canonical: `${SITE_ORIGIN}/${contentLang}/market-brief/methodology/`,
     alternates: [
-      { lang: "pt", href: `${SITE_ORIGIN}/pt/knowledge-centre/methodology/` },
-      { lang: "en", href: `${SITE_ORIGIN}/en/knowledge-centre/methodology/` },
+      { lang: "pt", href: `${SITE_ORIGIN}/pt/market-brief/methodology/` },
+      { lang: "en", href: `${SITE_ORIGIN}/en/market-brief/methodology/` },
     ],
     og: { title, description, type: "website" },
     ...(isTranslated ? {} : { robots: "noindex" }),

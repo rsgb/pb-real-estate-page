@@ -45,23 +45,23 @@ export default function ResponsiveAppBar() {
     label: (pageLabels[lang] || pageLabels.EN)[idx] || pageLabels.EN[idx],
     to: `/${urlLang}/#${key}`,
   }));
-  // Knowledge Centre sits between Parceiros and Contacto, as in the mockup.
+  // Market Brief sits between Parceiros and Contacto, as in the mockup.
   // Same label in all four languages (Paulo's decision).
   const pages = [
     ...sections.slice(0, 4),
     {
-      id: "knowledge-centre",
-      label: "Knowledge Centre",
-      to: `/${urlLang}/knowledge-centre/`,
+      id: "market-brief",
+      label: "Market Brief",
+      to: `/${urlLang}/market-brief/`,
     },
     ...sections.slice(4),
   ];
 
   // Which item wears the champagne underline. Derived from the URL only, so it
   // is identical in the pre-rendered markup and after hydration.
-  const inKnowledgeCentre = pathname.includes("/knowledge-centre");
+  const inKnowledgeCentre = pathname.includes("/market-brief");
   const currentId = inKnowledgeCentre
-    ? "knowledge-centre"
+    ? "market-brief"
     : (hash ? hash.slice(1) : "home");
 
   const handleOpenNavMenu = (e) => setAnchorElNav(e.currentTarget);

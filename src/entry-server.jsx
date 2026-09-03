@@ -18,7 +18,7 @@ export { URL_LANGS } from "./assets/components/LangContext";
 
 /**
  * Render one route to static HTML.
- * @param {string} url absolute path, e.g. "/pt/knowledge-centre"
+ * @param {string} url absolute path, e.g. "/pt/market-brief"
  * @returns {{ html: string, css: string, head: string, lang: string }}
  */
 export function render(url) {

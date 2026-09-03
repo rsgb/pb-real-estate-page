@@ -15,7 +15,7 @@ import SeriesPage from "./pages/SeriesPage";
 export { thbTheme, THB_COLORS, READING_WIDTH } from "./theme";
 
 /**
- * Mounted by App at "/:lang/knowledge-centre/*", so every path here is relative.
+ * Mounted by App at "/:lang/market-brief/*", so every path here is relative.
  * The catch-all renders the edition page, which shows its own "edition not
  * found" state for an unknown id.
  */
@@ -31,15 +31,15 @@ export function KnowledgeCentreRoutes() {
 }
 
 /**
- * Every Knowledge Centre URL, for the static pre-render manifest.
+ * Every Market Brief URL, for the static pre-render manifest.
  * @param {string[]} langs lower-case URL language codes
  * @returns {string[]} absolute site paths, trailing slash included,
- *   e.g. "/pt/knowledge-centre/2026-07/"
+ *   e.g. "/pt/market-brief/2026-07/"
  */
 export function knowledgeCentrePaths(langs = URL_LANGS) {
   const editions = getEditions();
   return langs.flatMap((lang) => {
-    const base = `/${String(lang).toLowerCase()}/knowledge-centre/`;
+    const base = `/${String(lang).toLowerCase()}/market-brief/`;
     return [base, `${base}methodology/`, ...editions.map((edition) => `${base}${edition.id}/`)];
   });
 }

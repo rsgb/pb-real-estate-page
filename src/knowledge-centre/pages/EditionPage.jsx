@@ -51,14 +51,14 @@ function SectionTables({ tables, contentLang }) {
 export default function EditionPage() {
   const { lang, editionId } = useParams();
   const { siteLang, urlLang, contentLang, t, isTranslated } = useThbLang();
-  const basePath = `/${lang ?? urlLang}/knowledge-centre/`;
+  const basePath = `/${lang ?? urlLang}/market-brief/`;
   const edition = getEdition(editionId);
 
   const takeaway = pick(edition?.takeaway, contentLang);
   const title = edition ? editionTitle(edition, contentLang) : t.notFoundTitle;
   const canonicalPath = edition
-    ? `/${contentLang}/knowledge-centre/${edition.id}/`
-    : `/${contentLang}/knowledge-centre/`;
+    ? `/${contentLang}/market-brief/${edition.id}/`
+    : `/${contentLang}/market-brief/`;
   // Paulo-supplied card wins; otherwise the landscape card built at build time
   // by scripts/generate-og-images.mjs (the square LinkedIn signature is not
   // used here — LinkedIn crops it and the series name and period disappear).
@@ -75,8 +75,8 @@ export default function EditionPage() {
     canonical: `${SITE_ORIGIN}${canonicalPath}`,
     alternates: edition
       ? [
-          { lang: "pt", href: `${SITE_ORIGIN}/pt/knowledge-centre/${edition.id}/` },
-          { lang: "en", href: `${SITE_ORIGIN}/en/knowledge-centre/${edition.id}/` },
+          { lang: "pt", href: `${SITE_ORIGIN}/pt/market-brief/${edition.id}/` },
+          { lang: "en", href: `${SITE_ORIGIN}/en/market-brief/${edition.id}/` },
         ]
       : [],
     og: {

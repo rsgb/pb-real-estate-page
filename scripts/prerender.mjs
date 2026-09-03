@@ -20,7 +20,7 @@ const DIST = path.join(ROOT, "dist");
 const DIST_SSR = path.join(ROOT, "dist-ssr");
 const ORIGIN = resolveSiteOrigin();
 const LANGS = ["pt", "en", "es", "fr"];
-/** Knowledge Centre content exists in PT and EN only. */
+/** Market Brief content exists in PT and EN only. */
 const CONTENT_LANGS = ["pt", "en"];
 
 const templatePath = path.join(DIST, "index.html");
@@ -43,7 +43,7 @@ const { render, knowledgeCentrePaths } = await import(pathToFileURL(serverEntry)
 
 // ---------------------------------------------------------------- route list
 // Trailing-slash URLs are canonical: every page lives at <path>/index.html, so
-// /pt/knowledge-centre/2026-07/ resolves as a static file on any host.
+// /pt/market-brief/2026-07/ resolves as a static file on any host.
 const withSlash = (route) => (route.endsWith("/") ? route : `${route}/`);
 
 const routes = LANGS.flatMap((lang) => [
@@ -104,7 +104,7 @@ ${LANGS.map((l) => `    <link rel="alternate" hreflang="${l}" href="${ORIGIN}/${
         try {
           // Served for a real path that is missing its trailing slash (hosts
           // without directory redirects): canonicalise instead of guessing a
-          // language, so /pt/knowledge-centre/2026-07 keeps its language.
+          // language, so /pt/market-brief/2026-07 keeps its language.
           var p = location.pathname || "/";
           // (Split rather than a regex: this whole page is built from a JS
           // template literal, where backslash escapes would be eaten.)
@@ -146,7 +146,7 @@ console.log(`prerender  /${" ".repeat(33)} -> dist/index.html (language splash)`
 // ------------------------------------------------------------------ sitemap
 const sitemapRoutes = written.filter(
   (route) =>
-    !route.includes("/knowledge-centre") ||
+    !route.includes("/market-brief") ||
     CONTENT_LANGS.includes(route.split("/")[1])
 );
 const today = new Date().toISOString().slice(0, 10);

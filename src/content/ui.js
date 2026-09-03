@@ -17,7 +17,7 @@ const pt = {
   seriesName: "Tourism & Hospitality Brief",
   seriesTagline:
     "O Tourism & Hospitality Brief é uma publicação de inteligência de mercado sobre o desempenho do turismo e da hotelaria em Portugal. Transforma dados oficiais em leituras claras sobre procura, receita, desempenho regional e implicações para investidores, proprietários e operadores de ativos hoteleiros.",
-  knowledgeCentre: "Knowledge Centre",
+  knowledgeCentre: "Market Brief",
   latestEdition: "Edição mais recente",
   latestBadge: "Mais recente",
   archive: "Arquivo",
@@ -85,7 +85,7 @@ const en = {
   seriesName: "Tourism & Hospitality Brief",
   seriesTagline:
     "Tourism & Hospitality Brief is a market intelligence publication on the performance of tourism and hospitality in Portugal. It turns official data into clear insights on demand, revenue, regional performance and the implications for hotel investors, owners and operators.",
-  knowledgeCentre: "Knowledge Centre",
+  knowledgeCentre: "Market Brief",
   latestEdition: "Latest edition",
   latestBadge: "Latest",
   archive: "Archive",

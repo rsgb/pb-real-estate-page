@@ -59,7 +59,7 @@ function App() {
         <Route path="/" element={<RootRedirect />} />
         <Route path="/:lang" element={<LangLayout />}>
           <Route index element={<Home />} />
-          <Route path="knowledge-centre/*" element={<KnowledgeCentre />} />
+          <Route path="market-brief/*" element={<KnowledgeCentre />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="*" element={<NotFound />} />

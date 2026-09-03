@@ -11,7 +11,7 @@ import { READING_WIDTH } from "../theme";
 export default function SeriesPage() {
   const { lang } = useParams();
   const { siteLang, urlLang, contentLang, t, isTranslated } = useThbLang();
-  const basePath = `/${lang ?? urlLang}/knowledge-centre/`;
+  const basePath = `/${lang ?? urlLang}/market-brief/`;
 
   const latest = getLatest();
   const editions = getEditions();
@@ -23,10 +23,10 @@ export default function SeriesPage() {
     title: `${t.seriesName} | ${t.country}`,
     description: t.seriesTagline,
     lang: String(siteLang).toLowerCase(),
-    canonical: `${SITE_ORIGIN}/${contentLang}/knowledge-centre/`,
+    canonical: `${SITE_ORIGIN}/${contentLang}/market-brief/`,
     alternates: [
-      { lang: "pt", href: `${SITE_ORIGIN}/pt/knowledge-centre/` },
-      { lang: "en", href: `${SITE_ORIGIN}/en/knowledge-centre/` },
+      { lang: "pt", href: `${SITE_ORIGIN}/pt/market-brief/` },
+      { lang: "en", href: `${SITE_ORIGIN}/en/market-brief/` },
     ],
     og: { title: `${t.seriesName} | ${t.country}`, description: t.seriesTagline, type: "website" },
     ...(isTranslated ? {} : { robots: "noindex" }),

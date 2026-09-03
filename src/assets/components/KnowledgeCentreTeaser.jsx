@@ -184,7 +184,7 @@ export default function KnowledgeCentreTeaser() {
             >
               <Box
                 component={RouterLink}
-                to={`/${urlLang}/knowledge-centre/${latest.id}/`}
+                to={`/${urlLang}/market-brief/${latest.id}/`}
                 sx={[
                   linkBase,
                   {
@@ -207,7 +207,7 @@ export default function KnowledgeCentreTeaser() {
 
               <Box
                 component={RouterLink}
-                to={`/${urlLang}/knowledge-centre/`}
+                to={`/${urlLang}/market-brief/`}
                 sx={[
                   linkBase,
                   {
