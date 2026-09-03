@@ -36,19 +36,14 @@ export function langFromPath(pathname) {
   return URL_LANGS.includes(segment) ? segment : null;
 }
 
-/** Preferred language from the browser, falling back to Portuguese. */
+/**
+ * Language the site opens in: Portuguese for everyone, D-21.
+ *
+ * The browser language is deliberately ignored — Paulo's audience is addressed
+ * in Portuguese first and switches language explicitly through the menu
+ * (`setLang`), which is unaffected by this.
+ */
 export function preferredLang() {
-  if (typeof navigator === "undefined") return DEFAULT_LANG;
-  const tags = navigator.languages?.length
-    ? navigator.languages
-    : [navigator.language || ""];
-  for (const tag of tags) {
-    const code = String(tag).toLowerCase();
-    for (const candidate of ["es", "fr", "en"]) {
-      if (code.startsWith(candidate)) return candidate;
-    }
-    if (code.startsWith("pt")) return DEFAULT_LANG;
-  }
   return DEFAULT_LANG;
 }
 

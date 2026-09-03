@@ -4,9 +4,6 @@
 # There is no SPA fallback on purpose: every real route is pre-rendered, so an
 # unknown path 404s and Netlify serves dist/404.html.
 
-# Language detection for the site root.
-/    /pt    302    Language=pt
-/    /es    302    Language=es
-/    /fr    302    Language=fr
-/    /en    302    Language=en
-/    /pt    302
+# Site root: Portuguese for everyone (D-21), no browser-language detection.
+# Forced (302!) so it wins over dist/index.html, which exists as a static file.
+/    /pt/    302!
