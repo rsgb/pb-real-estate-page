@@ -23,6 +23,8 @@ const LINKS = {
 
 export default function KnowledgeCentreTeaser() {
   const { lang, urlLang } = useLang();
+  // Most recent edition *by period*: historical editions backfilled later carry
+  // an older period, so they never take the home page from the current one.
   const latest = getLatest();
   if (!latest) return null;
 

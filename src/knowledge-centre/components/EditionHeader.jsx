@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { formatDate, formatPeriod } from "../../lib/format";
-import { pick, useThbLang } from "../lang";
+import { fillTemplate, pick, useThbLang } from "../lang";
+import Rule from "./Rule";
 import ThbMark from "./ThbMark";
 import { READING_WIDTH } from "../theme";
 
@@ -15,6 +16,10 @@ import { READING_WIDTH } from "../theme";
  * so the reader knows where they are before reading a single sentence. The
  * metadata stays one plain line under the terracotta rule, and the panel holds
  * no button: the executive takeaway lives in the executive summary.
+ *
+ * A backfilled edition (`historical`) adds "Edição histórica" to that metadata
+ * line and one grey-green sentence underneath, plus the optional
+ * `historicalNote`.
  */
 export default function EditionHeader({ edition, section, sx }) {
   const { contentLang, t } = useThbLang();
@@ -29,8 +34,46 @@ export default function EditionHeader({ edition, section, sx }) {
 
   const overline = [t.knowledgeCentre, kicker].filter(Boolean).join(" · ");
 
+  // Backfilled edition: say so in the metadata line and, below it, in a full
+  // sentence, so the period is never mistaken for current reporting.
+  const isHistorical = edition.historical === true;
+  const historicalNotice = isHistorical
+    ? fillTemplate(t.historicalNotice, {
+        date: formatDate(edition.publishedAt, contentLang),
+        period: formatPeriod(edition, contentLang),
+      })
+    : "";
+  const historicalNote = isHistorical ? pick(edition.historicalNote, contentLang) : "";
+
   const meta = [
     { key: "horizon", value: horizon },
+    ...(isHistorical
+      ? [
+          {
+            key: "historical",
+            value: (
+              <Box
+                component="span"
+                sx={{ display: "inline-flex", alignItems: "center", gap: 0.75 }}
+              >
+                <Rule component="span" width={16} sx={{ display: "inline-block" }} />
+                <Box
+                  component="span"
+                  sx={{
+                    fontSize: "0.75rem",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "thb.petroleum",
+                  }}
+                >
+                  {t.historicalEdition}
+                </Box>
+              </Box>
+            ),
+          },
+        ]
+      : []),
     {
       key: "published",
       value: (
@@ -137,6 +180,36 @@ export default function EditionHeader({ edition, section, sx }) {
           </Box>
         </Typography>
       </Box>
+
+      {isHistorical ? (
+        <Box sx={{ mt: 2 }}>
+          <Typography
+            component="p"
+            sx={{
+              fontSize: "0.9375rem",
+              lineHeight: 1.6,
+              color: "thb.greyGreen",
+              maxWidth: READING_WIDTH,
+            }}
+          >
+            {historicalNotice}
+          </Typography>
+          {historicalNote ? (
+            <Typography
+              component="p"
+              sx={{
+                mt: 1,
+                fontSize: "0.9375rem",
+                lineHeight: 1.6,
+                color: "thb.greyGreen",
+                maxWidth: READING_WIDTH,
+              }}
+            >
+              {historicalNote}
+            </Typography>
+          ) : null}
+        </Box>
+      ) : null}
     </Box>
   );
 }

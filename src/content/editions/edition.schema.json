@@ -64,6 +64,15 @@
       "enum": ["provisional", "revised", "estimated", "final"],
       "description": "Status of the underlying data for the whole edition. Must be surfaced in the edition header (Componentes Visuais v0.9 s.4)."
     },
+    "historical": {
+      "type": "boolean",
+      "default": false,
+      "description": "True for an edition published after its period, as part of the backfill; rendered as 'Edição histórica'."
+    },
+    "historicalNote": {
+      "$ref": "#/$defs/localizedText",
+      "description": "Optional free sentence shown under the historical-edition notice, e.g. why the edition was published later or which data vintage it uses. Only meaningful together with historical: true."
+    },
     "version": {
       "type": "string",
       "pattern": "^[0-9]+\\.[0-9]+$",

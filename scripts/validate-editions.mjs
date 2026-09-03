@@ -11,6 +11,9 @@
  *      edition, never a partial translation);
  *   4. point at PDF files that actually exist in public/briefs.
  *
+ * It also warns (without failing the build) when an edition looks like a
+ * backfilled one but is not flagged `historical` — see HISTORICAL_LAG_DAYS.
+ *
  * Run: node scripts/validate-editions.mjs  (also wired as npm "prebuild").
  */
 import fs from "node:fs";
@@ -24,6 +27,14 @@ const SCHEMA_PATH = path.join(EDITIONS_DIR, "edition.schema.json");
 const BRIEFS_DIR = path.join(ROOT, "public", "briefs");
 const TAKEAWAY_MAX_WORDS = 45;
 const LANGS = ["pt", "en"];
+/**
+ * An edition published more than this many days after its period closed is
+ * almost certainly part of Paulo's backfill (January 2025 → June 2026) and
+ * should carry `historical: true`. Four months is comfortably longer than the
+ * normal lag between the INE release and publication.
+ */
+const HISTORICAL_LAG_DAYS = 120;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 const errors = [];
 const warnings = [];
@@ -68,6 +79,45 @@ function checkLocalized(value, file, trail = "$") {
   for (const [key, child] of Object.entries(value)) {
     checkLocalized(child, file, `${trail}.${key}`);
   }
+}
+
+/**
+ * Last calendar day of the edition's reference period, as a UTC timestamp.
+ * @returns {number|null} null when the period is incomplete for its horizon.
+ */
+function periodEnd(edition) {
+  const { year, month, quarter, half } = edition.period ?? {};
+  if (!year) return null;
+  // Last month of the period, 1-12.
+  let lastMonth;
+  switch (edition.horizon) {
+    case "monthly":
+      lastMonth = month;
+      break;
+    case "quarterly":
+      lastMonth = quarter ? quarter * 3 : undefined;
+      break;
+    case "half-year":
+      lastMonth = half ? half * 6 : undefined;
+      break;
+    case "annual":
+      lastMonth = 12;
+      break;
+    default:
+      return null;
+  }
+  if (!lastMonth) return null;
+  // Day 0 of the following month is the last day of `lastMonth`.
+  return Date.UTC(year, lastMonth, 0);
+}
+
+/** Days between the close of the period and the publication date. */
+function publicationLagDays(edition) {
+  const end = periodEnd(edition);
+  if (end === null) return null;
+  const [y, m, d] = String(edition.publishedAt ?? "").split("-").map(Number);
+  if (!y || !m || !d) return null;
+  return Math.round((Date.UTC(y, m - 1, d) - end) / DAY_MS);
 }
 
 function main() {
@@ -127,6 +177,23 @@ function main() {
 
     // 3. Bilingual completeness.
     checkLocalized(edition, file);
+
+    // Non-fatal: backfilled editions must be marked so readers are not misled
+    // into taking an old period for current reporting.
+    if (edition.historical !== true) {
+      const lag = publicationLagDays(edition);
+      if (lag !== null && lag > HISTORICAL_LAG_DAYS) {
+        warnings.push(
+          `${file}: publishedAt is ${lag} days after the end of the period ` +
+            `(more than ${HISTORICAL_LAG_DAYS}) — consider "historical": true`
+        );
+      }
+      if (edition.historicalNote) {
+        warnings.push(
+          `${file}: historicalNote is set without "historical": true — the note will not be shown`
+        );
+      }
+    }
 
     // Non-fatal: the signature / og image is referenced by <meta og:image>.
     for (const key of ["signatureImage", "ogImage"]) {

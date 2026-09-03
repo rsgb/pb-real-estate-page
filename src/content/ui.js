@@ -45,6 +45,9 @@ const pt = {
   releaseDate: "Data de divulgação",
   notes: "Notas",
   publishedOn: "Publicado a",
+  historicalEdition: "Edição histórica",
+  historicalNotice:
+    "Edição histórica, publicada a {date} com dados relativos a {period}.",
   dataStatusLabel: "Estado dos dados",
   language: "Idioma",
   country: "Portugal",
@@ -113,6 +116,9 @@ const en = {
   releaseDate: "Release date",
   notes: "Notes",
   publishedOn: "Published on",
+  historicalEdition: "Historical edition",
+  historicalNotice:
+    "Historical edition, published on {date} with data for {period}.",
   dataStatusLabel: "Data status",
   language: "Language",
   country: "Portugal",
