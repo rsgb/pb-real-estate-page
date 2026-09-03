@@ -46,7 +46,10 @@ const STATE_LABELS = {
   published: "Edição já publicada no site. Só é aceite com um número de versão superior.",
 };
 
-const megabytes = (bytes) => `${(bytes / (1024 * 1024)).toFixed(1).replace(".", ",")} MB`;
+const megabytes = (bytes) =>
+  bytes < 1024 * 1024
+    ? `${Math.max(1, Math.round(bytes / 1024))} KB`
+    : `${(bytes / (1024 * 1024)).toFixed(1).replace(".", ",")} MB`;
 
 /** POST to a publish function; a non-2xx becomes an Error with the server text. */
 async function callFunction(name, body) {
