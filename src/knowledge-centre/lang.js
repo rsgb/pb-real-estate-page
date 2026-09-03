@@ -27,6 +27,20 @@ export function pickList(localized, contentLang = "en") {
 }
 
 /**
+ * Fill `{name}` placeholders in a UI string, e.g.
+ * `fillTemplate(t.historicalNotice, { date, period })`. Unknown placeholders
+ * are left untouched so a missing value is visible rather than silently blank.
+ * @param {string} template
+ * @param {Record<string, string>} values
+ */
+export function fillTemplate(template, values = {}) {
+  if (!template) return "";
+  return String(template).replace(/\{(\w+)\}/g, (match, key) =>
+    key in values && values[key] != null ? String(values[key]) : match
+  );
+}
+
+/**
  * @returns {{siteLang: string, urlLang: string, contentLang: "pt"|"en", t: object, notice: string|null, isTranslated: boolean}}
  *   `t`      every Knowledge Centre string, in the content language
  *   `notice` the ES/FR banner text, in the site language; null for PT/EN

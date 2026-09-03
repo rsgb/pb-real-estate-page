@@ -49,6 +49,9 @@ const PADDING = 84;
 const FRAME_INSET = 36;
 const MONOGRAM = 92;
 
+/** Backfilled editions say so on the card, in the card's own language. */
+const HISTORICAL_LABEL = { pt: "EDIÇÃO HISTÓRICA", en: "HISTORICAL EDITION" };
+
 const rel = (p) => path.relative(ROOT, p);
 
 /* -------------------------------------------------------------------------- */
@@ -76,8 +79,14 @@ const text = (style, value) => ({
   props: { style: { display: "flex", ...style }, children: value },
 });
 
-/** The landscape adaptation of THB_LinkedIn_Signature_*.jpg. */
-function card({ period }) {
+/**
+ * The landscape adaptation of THB_LinkedIn_Signature_*.jpg.
+ *
+ * `historicalLabel`, when present, is drawn in the slack above the
+ * "Portugal | <period>" row and is absolutely positioned on purpose: the
+ * approved layout must stay pixel-identical for ordinary editions.
+ */
+function card({ period, historicalLabel }) {
   return div(
     {
       width: WIDTH,
@@ -153,8 +162,26 @@ function card({ period }) {
           alignItems: "center",
           justifyContent: "space-between",
           height: MONOGRAM,
+          position: "relative",
         },
         [
+          ...(historicalLabel
+            ? [
+                text(
+                  {
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    fontSize: 18,
+                    fontWeight: 600,
+                    letterSpacing: 1.6,
+                    color: GREY_GREEN,
+                    lineHeight: 1.2,
+                  },
+                  historicalLabel
+                ),
+              ]
+            : []),
           div({ display: "flex", flexDirection: "row", alignItems: "center" }, [
             text({ fontSize: 34, fontWeight: 700, color: PETROLEUM, lineHeight: 1.2 }, "Portugal"),
             div({
@@ -189,11 +216,13 @@ function card({ period }) {
 /* -------------------------------------------------------------------------- */
 
 async function renderPng(edition, contentLang, fonts) {
-  const svg = await satori(card({ period: formatPeriod(edition, contentLang) }), {
-    width: WIDTH,
-    height: HEIGHT,
-    fonts,
-  });
+  const svg = await satori(
+    card({
+      period: formatPeriod(edition, contentLang),
+      historicalLabel: edition.historical ? HISTORICAL_LABEL[contentLang] : null,
+    }),
+    { width: WIDTH, height: HEIGHT, fonts }
+  );
   const resvg = new Resvg(svg, { fitTo: { mode: "width", value: WIDTH } });
   return resvg.render().asPng();
 }

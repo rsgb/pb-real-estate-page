@@ -14,7 +14,7 @@ const META = {
   pt: {
     title: "Paulo Braga Real Estate | Investimento imobiliário em Portugal",
     description:
-      "Oportunidades de investimento imobiliário seleccionadas em Portugal - hotelaria, senior living, lazer e entretenimento - para clientes nacionais e internacionais.",
+      "Oportunidades de investimento imobiliário selecionadas em Portugal - hotelaria, senior living, lazer e entretenimento - para clientes nacionais e internacionais.",
   },
   en: {
     title: "Paulo Braga Real Estate | Property investment in Portugal",

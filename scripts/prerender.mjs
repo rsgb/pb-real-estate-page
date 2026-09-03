@@ -46,10 +46,17 @@ const { render, knowledgeCentrePaths } = await import(pathToFileURL(serverEntry)
 // /pt/market-brief/2026-07/ resolves as a static file on any host.
 const withSlash = (route) => (route.endsWith("/") ? route : `${route}/`);
 
-const routes = LANGS.flatMap((lang) => [
-  `/${lang}/`,
-  ...(knowledgeCentrePaths?.([lang]) ?? []),
-]).map(withSlash);
+/**
+ * Routes outside the language tree. `/publicar/` is Paulo's upload page: it is
+ * pre-rendered so it loads like any other page, but it carries `noindex`, is
+ * kept out of sitemap.xml below and is not in the menu.
+ */
+const PRIVATE_ROUTES = ["/publicar/"];
+
+const routes = [
+  ...LANGS.flatMap((lang) => [`/${lang}/`, ...(knowledgeCentrePaths?.([lang]) ?? [])]),
+  ...PRIVATE_ROUTES,
+].map(withSlash);
 
 function outputFileFor(route) {
   return path.join(DIST, route.replace(/^\/+/, ""), "index.html");
@@ -87,7 +94,10 @@ const notFound = buildPage("/pt/__not_found__");
 fs.writeFileSync(path.join(DIST, "404.html"), notFound, "utf8");
 console.log(`prerender  404${" ".repeat(31)} -> dist/404.html`);
 
-// ------------------------------------------- "/" language-detection splash
+// ---------------------------------------------------- "/" redirect splash
+// D-21: the site opens in Portuguese for everyone, so "/" goes straight to
+// /pt/ — no browser-language detection. The <noscript> meta refresh keeps the
+// same destination for readers without JavaScript.
 const splash = `<!DOCTYPE html>
 <html lang="pt">
   <head>
@@ -103,8 +113,8 @@ ${LANGS.map((l) => `    <link rel="alternate" hreflang="${l}" href="${ORIGIN}/${
       (function () {
         try {
           // Served for a real path that is missing its trailing slash (hosts
-          // without directory redirects): canonicalise instead of guessing a
-          // language, so /pt/market-brief/2026-07 keeps its language.
+          // without directory redirects): canonicalise instead of sending the
+          // reader home, so /pt/market-brief/2026-07 keeps its page.
           var p = location.pathname || "/";
           // (Split rather than a regex: this whole page is built from a JS
           // template literal, where backslash escapes would be eaten.)
@@ -115,20 +125,8 @@ ${LANGS.map((l) => `    <link rel="alternate" hreflang="${l}" href="${ORIGIN}/${
             }
             return;
           }
-          // Bare "/": detect the browser language.
-          var tags = navigator.languages && navigator.languages.length
-            ? navigator.languages
-            : [navigator.language || ""];
-          var pick = "pt";
-          outer: for (var i = 0; i < tags.length; i++) {
-            var t = String(tags[i]).toLowerCase();
-            var codes = ["es", "fr", "en"];
-            for (var j = 0; j < codes.length; j++) {
-              if (t.indexOf(codes[j]) === 0) { pick = codes[j]; break outer; }
-            }
-            if (t.indexOf("pt") === 0) { pick = "pt"; break outer; }
-          }
-          location.replace("/" + pick + "/");
+          // Bare "/": Portuguese for everyone (D-21).
+          location.replace("/pt/");
         } catch (e) {
           location.replace("/pt/");
         }
@@ -145,7 +143,9 @@ console.log(`prerender  /${" ".repeat(33)} -> dist/index.html (language splash)`
 
 // ------------------------------------------------------------------ sitemap
 const sitemapRoutes = written.filter(
-  (route) => !route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1])
+  (route) =>
+    !PRIVATE_ROUTES.includes(route) &&
+    (!route.includes("/market-brief") || CONTENT_LANGS.includes(route.split("/")[1]))
 );
 const today = new Date().toISOString().slice(0, 10);
 const SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9";

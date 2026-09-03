@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Box, Button, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
@@ -6,6 +7,9 @@ import { getEditions, getLatest, groupByYear } from "../../content/editions";
 import { pick, useThbLang } from "../lang";
 import { LangNotice, Rule, ThbMark } from "../components";
 import { READING_WIDTH } from "../theme";
+
+/** Filter value standing for "no horizon filter". */
+const ALL_HORIZONS = "all";
 
 /**
  * Market Brief landing page.
@@ -19,18 +23,38 @@ import { READING_WIDTH } from "../theme";
  *    is more than 24px from its neighbour, so the grouping reads as grouping.
  *  - The lettered THB mark rather than the "+" monogram: a circled plus next to
  *    a heading reads as an "add" button.
+ *
+ * The archive can be filtered by editorial horizon (D-09). The filter is
+ * client-side state only: the pre-rendered HTML always carries every edition,
+ * so search engines and readers without JavaScript see the full archive.
  */
 export default function SeriesPage() {
   const { lang } = useParams();
   const { siteLang, urlLang, contentLang, t, isTranslated } = useThbLang();
   const basePath = `/${lang ?? urlLang}/market-brief/`;
 
+  // The hero is the most recent edition *by period*, so a historical edition
+  // backfilled later never displaces the current one (July 2026).
   const latest = getLatest();
   const editions = getEditions();
+  const latestHorizon = latest ? (t.horizons?.[latest.horizon] ?? latest.horizon) : "";
+
+  const [horizonFilter, setHorizonFilter] = useState(ALL_HORIZONS);
+  // Only offer horizons that actually occur, in the canonical order.
+  const horizons = useMemo(
+    () => Object.keys(t.horizons ?? {}).filter((key) => editions.some((e) => e.horizon === key)),
+    [t.horizons, editions]
+  );
+  const showFilter = horizons.length > 1;
+  const activeFilter = showFilter ? horizonFilter : ALL_HORIZONS;
+
   // The archive lists every edition, the latest included: with a single edition
   // a filtered archive would render an empty section.
-  const archive = groupByYear(editions);
-  const latestHorizon = latest ? (t.horizons?.[latest.horizon] ?? latest.horizon) : "";
+  const archive = groupByYear(
+    activeFilter === ALL_HORIZONS
+      ? editions
+      : editions.filter((edition) => edition.horizon === activeFilter)
+  );
 
   useHead({
     title: `${t.seriesName} | ${t.country}`,
@@ -214,6 +238,48 @@ export default function SeriesPage() {
             {t.archive}
           </Typography>
 
+          {showFilter ? (
+            <Box
+              sx={{
+                mt: 1.5,
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                columnGap: { xs: 2.5, md: 4 },
+                rowGap: 0.5,
+              }}
+            >
+              {[ALL_HORIZONS, ...horizons].map((key) => {
+                const active = key === activeFilter;
+                return (
+                  <Button
+                    key={key}
+                    type="button"
+                    disableRipple
+                    aria-pressed={active}
+                    onClick={() => setHorizonFilter(key)}
+                    sx={{
+                      p: 0,
+                      minWidth: 0,
+                      minHeight: 44,
+                      borderRadius: 0,
+                      textTransform: "none",
+                      fontSize: "0.9375rem",
+                      fontWeight: active ? 600 : 400,
+                      color: active ? "thb.petroleum" : "thb.greyGreen",
+                      borderBottom: "2px solid",
+                      borderBottomColor: active ? "thb.petroleum" : "transparent",
+                      backgroundColor: "transparent",
+                      "&:hover": { backgroundColor: "transparent", color: "thb.petroleum" },
+                    }}
+                  >
+                    {key === ALL_HORIZONS ? t.allEditions : (t.horizons?.[key] ?? key)}
+                  </Button>
+                );
+              })}
+            </Box>
+          ) : null}
+
           {archive.length ? (
             <Box sx={{ mt: 2.5, display: "grid", gap: 3 }}>
               {archive.map(({ year, editions: yearEditions }) => (
@@ -278,6 +344,16 @@ export default function SeriesPage() {
                                 {t.latestBadge}
                               </Typography>
                             </>
+                          ) : null}
+
+                          {edition.historical ? (
+                            <Typography
+                              variant="caption"
+                              component="p"
+                              sx={{ color: "thb.greyGreen" }}
+                            >
+                              {t.historicalEdition}
+                            </Typography>
                           ) : null}
                         </Box>
 
