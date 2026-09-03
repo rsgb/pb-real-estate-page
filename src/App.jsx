@@ -37,27 +37,12 @@ function LangLayout() {
   return <Outlet />;
 }
 
-/**
- * Body's padding-top that clears the fixed AppBar (src/index.css) — the same
- * 120px as the Footer's `mt: 15`.
- */
-const APPBAR_OFFSET = "120px";
-
 function KnowledgeCentre() {
   return (
     <ThemeProvider theme={thbTheme}>
-      <Box
-        sx={{
-          bgcolor: "background.default",
-          // Bleed the ivory up behind the AppBar and down through the Footer's
-          // top margin so no strip of the site background shows at either end.
-          // The negative margins cancel the padding, so page height is unchanged.
-          mt: `-${APPBAR_OFFSET}`,
-          pt: APPBAR_OFFSET,
-          mb: -15,
-          pb: 15,
-        }}
-      >
+      {/* The header is sticky and the footer follows the content, so the ivory
+          band simply runs from one to the other — no offset hack needed. */}
+      <Box sx={{ bgcolor: "background.default", pb: { xs: 8, md: 12 } }}>
         <KnowledgeCentreRoutes />
       </Box>
     </ThemeProvider>

@@ -1,6 +1,7 @@
-import { useLang } from "./LangContext";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { useLang } from "./LangContext";
+import hero from "../images/hotels.jpg";
 
 export default function Header() {
   const { lang } = useLang();
@@ -28,41 +29,87 @@ export default function Header() {
 
   return (
     <Box
+      component="section"
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-        px: 2,
-        mb: { xs: 4, md: 10 }, // 6 units on mobile, 12 on desktop
-        mt: { xs: 12, md: 20 }, // 6 units on mobile, 12 on desktop
+        position: "relative",
+        width: "100%",
+        height: { xs: 420, md: 520 },
+        overflow: "hidden",
+        bgcolor: "custom.navy",
       }}
     >
-      {" "}
-      <Typography
-        variant="h1"
-        component="h1"
+      {/* Background photograph */}
+      <Box
+        component="img"
+        src={hero}
+        alt=""
+        aria-hidden="true"
         sx={{
-          fontFamily: "'Libre Baskerville', serif",
-          fontWeight: 700,
-          fontSize: { xs: "2rem", md: "2.5rem" },
-          mb: 2,
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center 58%",
+          display: "block",
+        }}
+      />
+      {/* Flat navy veil — no gradient */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "rgba(18, 26, 38, 0.55)",
+        }}
+      />
+      <Box
+        sx={{
+          position: "relative",
+          height: "100%",
+          px: 3,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
         }}
       >
-        {title}
-      </Typography>
-      <Typography
-        variant="h2"
-        component="h2"
-        sx={{
-          fontFamily: "'Montserrat', sans-serif",
-          fontWeight: 400,
-          fontSize: { xs: "1rem", md: "1rem" },
-          mb: 2,
-        }}
-      >
-        {subtitle}
-      </Typography>
+        <Typography
+          variant="h1"
+          component="h1"
+          sx={{
+            fontSize: { xs: "30px", md: "48px" },
+            lineHeight: { xs: 1.3, md: 1.15 },
+            color: "custom.warmWhite",
+            maxWidth: 760,
+            letterSpacing: "0.005em",
+          }}
+        >
+          {title}
+        </Typography>
+        <Box
+          sx={{
+            width: 48,
+            height: 2,
+            bgcolor: "custom.champagne",
+            my: { xs: "22px", md: "28px" },
+          }}
+        />
+        <Typography
+          component="p"
+          sx={{
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: 400,
+            fontSize: { xs: "16px", md: "17px" },
+            lineHeight: 1.75,
+            color: "custom.warmWhite",
+            opacity: 0.9,
+            maxWidth: 620,
+          }}
+        >
+          {subtitle}
+        </Typography>
+      </Box>
     </Box>
   );
 }

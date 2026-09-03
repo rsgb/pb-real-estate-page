@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { UI } from "../../content/ui";
+import Rule from "./Rule";
 import { useThbLang } from "../lang";
 
 /**
@@ -15,21 +16,20 @@ export default function LangNotice({ sx }) {
     <Box
       role="note"
       sx={{
-        backgroundColor: "thb.ivory",
+        backgroundColor: "thb.white",
         border: "1px solid",
         borderColor: "thb.beige",
-        borderLeft: "4px solid",
-        borderLeftColor: "thb.terracotta",
-        px: 2,
-        py: 1.5,
+        px: { xs: 2, sm: 3 },
+        py: { xs: 2, sm: 2.5 },
         ...sx,
       }}
     >
+      <Rule />
       <Typography
         variant="body2"
         component="p"
         lang={String(siteLang).toLowerCase()}
-        sx={{ color: "thb.petroleum", fontWeight: 600 }}
+        sx={{ mt: 1.75, color: "thb.petroleum", fontWeight: 600 }}
       >
         {notice}
       </Typography>

@@ -1,35 +1,12 @@
 import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
-import { formatDate, formatPeriod } from "../../lib/format";
+import { editionTitle, formatDate, formatPeriod } from "../../lib/format";
 import { getEditions, getLatest, groupByYear } from "../../content/editions";
 import { pick, useThbLang } from "../lang";
-import { LangNotice, Takeaway } from "../components";
+import { LangNotice, Rule } from "../components";
 import monogram from "../assets/thb-monogram.svg";
 import { READING_WIDTH } from "../theme";
-
-/** Small uppercase horizon badge used across the archive. */
-function HorizonBadge({ children, highlight = false }) {
-  return (
-    <Box
-      component="span"
-      sx={{
-        border: "1px solid",
-        borderColor: highlight ? "thb.petroleum" : "thb.beige",
-        color: highlight ? "thb.petroleum" : "thb.greyGreen",
-        px: 1,
-        py: 0.25,
-        fontSize: "0.6875rem",
-        fontWeight: 600,
-        letterSpacing: "0.08em",
-        textTransform: "uppercase",
-        whiteSpace: "nowrap",
-      }}
-    >
-      {children}
-    </Box>
-  );
-}
 
 export default function SeriesPage() {
   const { lang } = useParams();
@@ -59,37 +36,55 @@ export default function SeriesPage() {
     <Box
       component="main"
       lang={isTranslated ? undefined : contentLang}
-      sx={{ backgroundColor: "thb.ivory", py: { xs: 4, md: 7 } }}>
+      sx={{ backgroundColor: "thb.ivory", pb: { xs: 8, md: 12 } }}>
       <Box
         sx={{
           maxWidth: 1200,
           mx: "auto",
           px: { xs: 2, sm: 3, md: 4 },
           display: "grid",
-          gap: { xs: 5, md: 7 },
+          gap: { xs: 5, md: 8 },
         }}
       >
         <Box component="header">
-          <Typography variant="overline" component="p" sx={{ color: "thb.greyGreen" }}>
-            {t.knowledgeCentre}
-          </Typography>
-          <Box sx={{ mt: 1, display: "flex", alignItems: "center", gap: 1.5 }}>
+          {/* Running head: the section this page belongs to, above the rule. */}
+          <Box sx={{ py: { xs: 2.5, md: 3.25 }, borderBottom: "1px solid", borderColor: "thb.beige" }}>
+            <Typography variant="overline" component="p" sx={{ color: "thb.greyGreen" }}>
+              {t.knowledgeCentre}
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              mt: { xs: 5, md: 8 },
+              display: "flex",
+              alignItems: "center",
+              gap: { xs: 2, md: 3.25 },
+            }}
+          >
             <Box
               component="img"
               src={monogram}
               alt=""
               aria-hidden="true"
-              sx={{ width: 40, height: 40, flexShrink: 0, display: "block" }}
+              sx={{ width: 44, height: 44, flexShrink: 0, display: "block" }}
             />
-            <Typography variant="h1" component="h1" sx={{ color: "thb.petroleum" }}>
+            <Typography variant="h1" component="h1">
               {t.seriesName}
             </Typography>
           </Box>
-          <Box sx={{ height: "3px", width: 64, backgroundColor: "thb.terracotta", mt: 2 }} />
+
+          <Box sx={{ mt: { xs: 3, md: 4.25 }, height: "1px", backgroundColor: "thb.terracotta" }} />
+
           <Typography
-            variant="subtitle1"
             component="p"
-            sx={{ mt: 2.5, color: "thb.greyGreen", maxWidth: READING_WIDTH }}
+            sx={{
+              mt: { xs: 3, md: 4.25 },
+              fontSize: { xs: "1rem", sm: "1.03125rem" },
+              lineHeight: 1.68,
+              color: "thb.petroleum",
+              maxWidth: READING_WIDTH,
+            }}
           >
             {t.seriesTagline}
           </Typography>
@@ -102,59 +97,121 @@ export default function SeriesPage() {
             component="section"
             aria-labelledby="thb-latest"
             sx={{
-              backgroundColor: "thb.white",
-              border: "1px solid",
-              borderColor: "thb.beige",
-              p: { xs: 2, sm: 3, md: 4 },
               display: "grid",
-              gap: 2.5,
+              alignItems: "start",
+              gridTemplateColumns: {
+                xs: "minmax(0, 1fr)",
+                md: "minmax(0, 520fr) minmax(0, 584fr)",
+              },
+              columnGap: { md: 9.5 },
+              rowGap: { xs: 5, md: 0 },
             }}
           >
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 1.5 }}>
-              <Typography id="thb-latest" variant="overline" component="h2" sx={{ color: "thb.greyGreen", m: 0 }}>
-                {t.latestEdition}
-              </Typography>
-              <HorizonBadge>{t.horizons?.[latest.horizon] ?? latest.horizon}</HorizonBadge>
+            {/* The edition's LinkedIn card, framed by an offset beige hairline. */}
+            <Box sx={{ position: "relative", pr: "14px", pb: "14px" }}>
+              <Box
+                aria-hidden="true"
+                sx={{
+                  position: "absolute",
+                  left: "14px",
+                  top: "14px",
+                  right: 0,
+                  bottom: 0,
+                  border: "1px solid",
+                  borderColor: "thb.beige",
+                }}
+              />
+              <Box
+                component="img"
+                src={`/og/thb-${latest.id}-${contentLang}.png`}
+                alt={editionTitle(latest, contentLang)}
+                width={1200}
+                height={630}
+                sx={{
+                  position: "relative",
+                  zIndex: 1,
+                  display: "block",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </Box>
 
-            <Typography variant="h2" component="p" sx={{ color: "thb.petroleum" }}>
-              {t.country} | {formatPeriod(latest, contentLang)}
-            </Typography>
-
-            <Takeaway text={pick(latest.takeaway, contentLang)} label={t.executiveTakeaway} />
-
-            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: 2 }}>
-              <MuiLink
-                component={RouterLink}
-                to={`${basePath}${latest.id}/`}
-                sx={{ color: "thb.petroleum", fontWeight: 600 }}
+            <Box sx={{ minWidth: 0 }}>
+              <Typography
+                id="thb-latest"
+                variant="overline"
+                component="h2"
+                sx={{ color: "thb.greyGreen", m: 0 }}
               >
-                {t.readEdition}
-              </MuiLink>
-              <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen" }}>
-                {t.publishedOn}{" "}
-                <time dateTime={latest.publishedAt}>{formatDate(latest.publishedAt, contentLang)}</time>
+                {t.latestEdition}
               </Typography>
+
+              <Typography variant="caption" component="p" sx={{ mt: 1.75, color: "thb.greyGreen" }}>
+                {t.horizons?.[latest.horizon] ?? latest.horizon}
+              </Typography>
+
+              <Typography variant="h2" component="p" sx={{ mt: 1, fontSize: "1.875rem" }}>
+                {t.country} | {formatPeriod(latest, contentLang)}
+              </Typography>
+
+              <Box sx={{ my: 3, height: "1px", backgroundColor: "thb.beige" }} />
+
+              <Typography
+                component="p"
+                sx={{ fontSize: "1rem", lineHeight: 1.68, color: "thb.petroleum" }}
+              >
+                {pick(latest.takeaway, contentLang)}
+              </Typography>
+
+              <Box
+                sx={{
+                  mt: 3.75,
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "baseline",
+                  gap: 3.5,
+                }}
+              >
+                <MuiLink
+                  component={RouterLink}
+                  to={`${basePath}${latest.id}/`}
+                  sx={{ color: "thb.petroleum", fontWeight: 600 }}
+                >
+                  {t.readEdition}
+                </MuiLink>
+                <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen" }}>
+                  {t.publishedOn}{" "}
+                  <time dateTime={latest.publishedAt}>
+                    {formatDate(latest.publishedAt, contentLang)}
+                  </time>
+                </Typography>
+              </Box>
             </Box>
           </Box>
         ) : null}
 
         <Box component="section" aria-labelledby="thb-archive">
-          <Typography id="thb-archive" variant="overline" component="h2" sx={{ color: "thb.greyGreen", m: 0 }}>
+          <Typography id="thb-archive" variant="h2" component="h2">
             {t.archive}
           </Typography>
+          <Box sx={{ mt: 2.75, height: "2px", backgroundColor: "thb.petroleum" }} />
 
           {archive.length ? (
-            <Box sx={{ mt: 2, display: "grid", gap: 4 }}>
+            <Box sx={{ mt: 3.25, display: "grid", gap: 4 }}>
               {archive.map(({ year, editions: yearEditions }) => (
                 <Box key={year}>
-                  <Typography variant="h3" component="h3" sx={{ color: "thb.petroleum" }}>
+                  <Typography
+                    variant="overline"
+                    component="h3"
+                    sx={{ color: "thb.greyGreen", m: 0 }}
+                  >
                     {year}
                   </Typography>
                   <Box
                     component="ul"
                     role="list"
-                    sx={{ listStyle: "none", m: 0, mt: 1.5, p: 0, display: "grid", gap: 0 }}
+                    sx={{ listStyle: "none", m: 0, mt: 2, p: 0, display: "grid", gap: 0 }}
                   >
                     {yearEditions.map((edition) => (
                       <Box
@@ -163,31 +220,54 @@ export default function SeriesPage() {
                         key={edition.id}
                         sx={{
                           display: "grid",
-                          gridTemplateColumns: { xs: "1fr", sm: "auto 1fr auto" },
+                          gridTemplateColumns: {
+                            xs: "1fr",
+                            md: "7rem minmax(0, 15rem) 11rem minmax(0, 1fr)",
+                          },
                           alignItems: "center",
-                          gap: { xs: 0.75, sm: 2 },
+                          gap: { xs: 0.75, md: 3 },
                           borderTop: "1px solid",
                           borderColor: "thb.beige",
-                          py: 1.5,
+                          py: 2.75,
+                          "&:last-of-type": { borderBottom: "1px solid", borderColor: "thb.beige" },
                         }}
                       >
-                        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75 }}>
-                          <HorizonBadge>{t.horizons?.[edition.horizon] ?? edition.horizon}</HorizonBadge>
-                          {edition.id === latest?.id ? (
-                            <HorizonBadge highlight>{t.latestBadge}</HorizonBadge>
-                          ) : null}
-                        </Box>
+                        <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen" }}>
+                          {t.horizons?.[edition.horizon] ?? edition.horizon}
+                        </Typography>
+
                         <MuiLink
                           component={RouterLink}
                           to={`${basePath}${edition.id}/`}
-                          sx={{ color: "thb.petroleum", fontWeight: 600 }}
+                          sx={{ color: "thb.petroleum", fontWeight: 600, fontSize: "1.0625rem" }}
                         >
                           {t.country} | {formatPeriod(edition, contentLang)}
                         </MuiLink>
+
+                        <Box sx={{ display: "flex", alignItems: "center", gap: 1.25 }}>
+                          {edition.id === latest?.id ? (
+                            <>
+                              <Rule width={16} />
+                              <Typography
+                                component="p"
+                                sx={{
+                                  fontSize: "0.75rem",
+                                  fontWeight: 600,
+                                  letterSpacing: "0.08em",
+                                  textTransform: "uppercase",
+                                  color: "thb.petroleum",
+                                }}
+                              >
+                                {t.latestBadge}
+                              </Typography>
+                            </>
+                          ) : null}
+                        </Box>
+
                         <Typography
                           variant="caption"
                           component="p"
-                          sx={{ color: "thb.greyGreen", textAlign: { xs: "left", sm: "right" } }}
+                          sx={{ color: "thb.greyGreen" }}
                         >
                           {t.publishedOn}{" "}
                           <time dateTime={edition.publishedAt}>
@@ -215,19 +295,40 @@ export default function SeriesPage() {
           component="section"
           aria-label={t.author.name}
           sx={{
-            borderTop: "1px solid",
+            backgroundColor: "thb.white",
+            border: "1px solid",
             borderColor: "thb.beige",
-            pt: 3,
-            maxWidth: READING_WIDTH,
+            px: { xs: 2.5, sm: 4, md: 5.75 },
+            py: { xs: 3.5, md: 5 },
+            display: "grid",
+            alignItems: "start",
+            gridTemplateColumns: { xs: "minmax(0, 1fr)", md: "18.75rem minmax(0, 1fr)" },
+            columnGap: { md: 7.5 },
+            rowGap: 3,
           }}
         >
-          <Typography variant="h3" component="h2" sx={{ color: "thb.petroleum" }}>
-            {t.author.name}
-          </Typography>
-          <Typography variant="body2" component="p" sx={{ mt: 0.5, color: "thb.greyGreen" }}>
-            {t.author.role}
-          </Typography>
-          <Typography variant="body1" component="p" sx={{ mt: 2, color: "thb.petroleum" }}>
+          <Box>
+            <Rule width={44} />
+            <Typography variant="h3" component="h2" sx={{ mt: 2.5 }}>
+              {t.author.name}
+            </Typography>
+            <Typography
+              variant="body2"
+              component="p"
+              sx={{ mt: 1, color: "thb.greyGreen", fontWeight: 500 }}
+            >
+              {t.author.role}
+            </Typography>
+          </Box>
+          <Typography
+            component="p"
+            sx={{
+              fontSize: "1rem",
+              lineHeight: 1.68,
+              color: "thb.petroleum",
+              maxWidth: READING_WIDTH,
+            }}
+          >
             {t.author.bio}
           </Typography>
         </Box>

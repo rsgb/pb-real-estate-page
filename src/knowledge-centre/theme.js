@@ -23,8 +23,16 @@ export const THB_COLORS = {
 
 export const THB_FONT_FAMILY = "Inter, Helvetica Neue, Arial, sans-serif";
 
+/**
+ * Headings are set in the site's editorial serif (Direção A «Clássico
+ * renovado»); everything else stays Inter, which carries the numbers.
+ */
+export const THB_SERIF_FAMILY = "'Libre Baskerville', 'Times New Roman', Georgia, serif";
+
 /** Comfortable measure for running text (Componentes Visuais v0.9 s.5). */
 export const READING_WIDTH = "72ch";
+
+const { breakpoints } = createTheme();
 
 export const thbTheme = createTheme({
   palette: {
@@ -38,12 +46,31 @@ export const thbTheme = createTheme({
     text: { primary: THB_COLORS.petroleum, secondary: THB_COLORS.greyGreen },
     divider: THB_COLORS.beige,
   },
-  shape: { borderRadius: 4 },
+  shape: { borderRadius: 0 },
   typography: {
     fontFamily: THB_FONT_FAMILY,
-    h1: { fontFamily: THB_FONT_FAMILY, fontSize: "2.25rem", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.01em" },
-    h2: { fontFamily: THB_FONT_FAMILY, fontSize: "1.5rem", fontWeight: 600, lineHeight: 1.25 },
-    h3: { fontFamily: THB_FONT_FAMILY, fontSize: "1.125rem", fontWeight: 600, lineHeight: 1.35 },
+    h1: {
+      fontFamily: THB_SERIF_FAMILY,
+      fontSize: "2.5rem",
+      fontWeight: 700,
+      lineHeight: 1.15,
+      color: THB_COLORS.petroleum,
+      [breakpoints.down("sm")]: { fontSize: "1.875rem" },
+    },
+    h2: {
+      fontFamily: THB_SERIF_FAMILY,
+      fontSize: "1.625rem",
+      fontWeight: 700,
+      lineHeight: 1.25,
+      color: THB_COLORS.petroleum,
+    },
+    h3: {
+      fontFamily: THB_SERIF_FAMILY,
+      fontSize: "1.25rem",
+      fontWeight: 700,
+      lineHeight: 1.3,
+      color: THB_COLORS.petroleum,
+    },
     h4: { fontFamily: THB_FONT_FAMILY, fontSize: "1rem", fontWeight: 600, lineHeight: 1.4 },
     subtitle1: { fontSize: "1.125rem", fontWeight: 500, lineHeight: 1.5 },
     subtitle2: { fontSize: "0.9375rem", fontWeight: 600, lineHeight: 1.5 },

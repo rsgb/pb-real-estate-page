@@ -7,11 +7,11 @@ export default function Outlook({ intro, signals = [], sx }) {
   return (
     <Box sx={{ maxWidth: READING_WIDTH, ...sx }}>
       {intro ? (
-        <Typography variant="h3" component="p" sx={{ color: "thb.petroleum", mb: 2.5 }}>
+        <Typography variant="h2" component="p" sx={{ color: "thb.petroleum", mb: 3 }}>
           {intro}
         </Typography>
       ) : null}
-      <Box component="ol" role="list" sx={{ listStyle: "none", m: 0, p: 0, display: "grid", gap: 2 }}>
+      <Box component="ol" role="list" sx={{ listStyle: "none", m: 0, p: 0, display: "grid", gap: 0 }}>
         {signals.map((signal, index) => (
           <Box
             key={index}
@@ -19,26 +19,27 @@ export default function Outlook({ intro, signals = [], sx }) {
             role="listitem"
             sx={{
               display: "grid",
-              gridTemplateColumns: "auto 1fr",
-              columnGap: 2,
+              gridTemplateColumns: "1.5rem 1fr",
+              columnGap: 2.75,
               alignItems: "baseline",
-              borderTop: "1px solid",
+              borderBottom: "1px solid",
               borderColor: "thb.beige",
-              pt: 2,
+              py: 2.5,
+              "&:first-of-type": { borderTop: "1px solid", borderColor: "thb.beige" },
             }}
           >
             <Typography
               component="span"
               aria-hidden="true"
               sx={{
-                fontSize: "1.5rem",
+                fontSize: "0.9375rem",
                 fontWeight: 700,
-                lineHeight: 1.2,
-                color: "thb.terracotta",
+                lineHeight: 1.6,
+                color: "thb.greyGreen",
                 fontVariantNumeric: "tabular-nums",
               }}
             >
-              {String(index + 1).padStart(2, "0")}
+              {index + 1}.
             </Typography>
             <Typography variant="body1" component="span" sx={{ color: "thb.petroleum" }}>
               {signal}

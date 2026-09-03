@@ -3,6 +3,7 @@ import Opportunities from "../assets/components/Opportunities";
 import Header from "../assets/components/Header";
 import About from "../assets/components/About";
 import Services from "../assets/components/Services";
+import KnowledgeCentreTeaser from "../assets/components/KnowledgeCentreTeaser";
 import Partners from "../assets/components/Partners";
 import Contact from "../assets/components/Contact";
 import aboutphoto from "../assets/images/fotonb.png";
@@ -48,42 +49,30 @@ export default function Home() {
     og: { title: meta.title, description: meta.description, type: "website" },
   });
 
+  // Header height (90 / 104) + 16; mirrors the CSS in src/index.css.
+  const scrollMarginTop = { xs: 106, md: 120 };
+
   return (
-    <>
-      <Box id="home" sx={{ scrollMarginTop: { xs: 120, md: 160 } }}>
+    <Box component="main" sx={{ bgcolor: "background.default" }}>
+      <Box id="home" sx={{ scrollMarginTop }}>
         <Header />
       </Box>
-      <div>
+      <Box>
         <Opportunities />
-      </div>
-      <Box id="services">
+      </Box>
+      <Box id="services" sx={{ scrollMarginTop }}>
         <Services />
       </Box>
-      <Box id="about" sx={{ scrollMarginTop: { xs: 120, md: 160 } }}>
-        <About image={aboutphoto} buttonText="Contact Me" />
+      <Box id="about" sx={{ scrollMarginTop }}>
+        <About image={aboutphoto} alt="Paulo Braga" />
       </Box>
-      <Box
-        sx={{
-          background: () => `linear-gradient(180deg, #f7f5f0 0%, transparent 60%)`,
-        }}
-      >
-        <Box id="partners" sx={{ scrollMarginTop: { xs: 120, md: 160 } }}>
-          <Partners />
-        </Box>
-        <Box
-          sx={{
-            height: "1px",
-            maxWidth: 920,
-            mx: "auto",
-            my: { xs: 6, md: 8 },
-            bgcolor: (theme) => theme.palette.custom.champagneHairline,
-            borderRadius: 1,
-          }}
-        />
-        <Box id="contact" sx={{ scrollMarginTop: { xs: 120, md: 160 } }}>
-          <Contact />
-        </Box>
+      <KnowledgeCentreTeaser />
+      <Box id="partners" sx={{ scrollMarginTop }}>
+        <Partners />
       </Box>
-    </>
+      <Box id="contact" sx={{ scrollMarginTop }}>
+        <Contact />
+      </Box>
+    </Box>
   );
 }

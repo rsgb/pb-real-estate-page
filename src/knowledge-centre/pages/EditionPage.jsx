@@ -22,6 +22,13 @@ import {
 } from "../components";
 import { READING_WIDTH } from "../theme";
 
+/** Sidebar wrapper: a hairline above, the same optical top as the main column. */
+function Aside({ children }) {
+  return (
+    <Box sx={{ borderTop: "1px solid", borderColor: "thb.beige", pt: 2.75 }}>{children}</Box>
+  );
+}
+
 /** Optional `tables` arrays attached to several section types. */
 function SectionTables({ tables, contentLang }) {
   if (!tables?.length) return null;
@@ -136,7 +143,7 @@ export default function EditionPage() {
           mx: "auto",
           px: { xs: 2, sm: 3, md: 4 },
           display: "grid",
-          gap: { xs: 5, md: 7 },
+          gap: { xs: 6, md: 9 },
         }}
       >
         <LangNotice />
@@ -151,28 +158,50 @@ export default function EditionPage() {
 
             case "executiveSummary":
               return (
-                <Section key="executiveSummary" label={label} headline={headline}>
-                  {section.callout?.kind === "conclusion" ? (
-                    <Takeaway
-                      label={t.executiveTakeaway}
-                      text={pick(section.callout.body, contentLang)}
-                    />
-                  ) : (
-                    <Callout
-                      kind={section.callout?.kind}
-                      title={pick(section.callout?.title, contentLang)}
-                      body={pick(section.callout?.body, contentLang)}
-                    />
-                  )}
+                <Section
+                  key="executiveSummary"
+                  label={label}
+                  headline={headline}
+                  aside={
+                    section.callout?.kind === "conclusion" ? (
+                      <Takeaway
+                        label={t.executiveTakeaway}
+                        text={pick(section.callout.body, contentLang)}
+                        sx={{ maxWidth: "none" }}
+                      />
+                    ) : section.callout ? (
+                      <Callout
+                        kind={section.callout.kind}
+                        title={pick(section.callout.title, contentLang)}
+                        body={pick(section.callout.body, contentLang)}
+                        sx={{ maxWidth: "none" }}
+                      />
+                    ) : null
+                  }
+                >
                   <RichText paragraphs={pickList(section.body, contentLang)} />
                 </Section>
               );
 
             case "keyIndicators":
               return (
-                <Section key="keyIndicators" label={label} headline={headline}>
+                <Section
+                  key="keyIndicators"
+                  label={label}
+                  headline={headline}
+                  aside={
+                    pickList(section.reading, contentLang).length ? (
+                      <Aside>
+                        <RichText
+                          variant="body2"
+                          paragraphs={pickList(section.reading, contentLang)}
+                          sx={{ maxWidth: "none" }}
+                        />
+                      </Aside>
+                    ) : null
+                  }
+                >
                   <IndicatorGrid indicators={section.indicators} />
-                  <RichText paragraphs={pickList(section.reading, contentLang)} />
                   <SectionTables tables={section.tables} contentLang={contentLang} />
                 </Section>
               );
@@ -189,16 +218,23 @@ export default function EditionPage() {
 
             case "regional":
               return (
-                <Section key="regional" label={label} headline={headline}>
+                <Section
+                  key="regional"
+                  label={label}
+                  headline={headline}
+                  aside={
+                    section.callout ? (
+                      <Callout
+                        kind={section.callout.kind}
+                        title={pick(section.callout.title, contentLang)}
+                        body={pick(section.callout.body, contentLang)}
+                        sx={{ maxWidth: "none" }}
+                      />
+                    ) : null
+                  }
+                >
                   <BarList barList={section.barList} />
                   <RichText paragraphs={pickList(section.body, contentLang)} />
-                  {section.callout ? (
-                    <Callout
-                      kind={section.callout.kind}
-                      title={pick(section.callout.title, contentLang)}
-                      body={pick(section.callout.body, contentLang)}
-                    />
-                  ) : null}
                   <SectionTables tables={section.tables} contentLang={contentLang} />
                 </Section>
               );
@@ -219,7 +255,7 @@ export default function EditionPage() {
 
             case "lens":
               return (
-                <Section key="lens" label={label}>
+                <Section key="lens" label={label} fullWidth>
                   <Lens
                     lens={{
                       headline: pick(section.lens.headline, contentLang),
@@ -234,7 +270,7 @@ export default function EditionPage() {
 
             case "outlook":
               return (
-                <Section key="outlook" label={label}>
+                <Section key="outlook" label={label} fullWidth>
                   <Outlook
                     intro={pick(section.outlook.intro, contentLang)}
                     signals={section.outlook.signals.map((signal) => pick(signal, contentLang))}
@@ -244,7 +280,7 @@ export default function EditionPage() {
 
             case "sources":
               return (
-                <Section key="sources" label={label}>
+                <Section key="sources" label={label} fullWidth>
                   <Sources
                     sources={section.sources}
                     methodologyHref={`${basePath}methodology/`}

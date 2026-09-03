@@ -11,5 +11,6 @@ export { default as Lens } from "./Lens";
 export { default as Outlook } from "./Outlook";
 export { default as PdfDownload } from "./PdfDownload";
 export { default as RichText } from "./RichText";
+export { default as Rule } from "./Rule";
 export { default as Sources } from "./Sources";
 export { default as Takeaway } from "./Takeaway";

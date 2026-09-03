@@ -59,9 +59,9 @@ export default function IndicatorCard({ indicator }) {
       <Typography
         component="p"
         sx={{
-          fontSize: { xs: "1.75rem", sm: "2rem" },
+          fontSize: "1.75rem",
           fontWeight: 700,
-          lineHeight: 1.1,
+          lineHeight: 1.15,
           color: "thb.petroleum",
           fontVariantNumeric: "tabular-nums",
           ...(indicator.valueBasis && indicator.valueBasis !== "level" && direction !== 0
@@ -111,10 +111,6 @@ export default function IndicatorCard({ indicator }) {
               letterSpacing: "0.08em",
               textTransform: "uppercase",
               color: "thb.greyGreen",
-              border: "1px solid",
-              borderColor: "thb.beige",
-              px: 0.75,
-              py: 0.25,
             }}
           >
             {status}

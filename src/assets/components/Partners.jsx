@@ -1,5 +1,5 @@
-import { useLang } from "./LangContext";
 import { Box, Typography } from "@mui/material";
+import { useLang } from "./LangContext";
 import kwLogo from "../images/KWsol black.png";
 import chambersLogo from "../images/chambers black.png";
 import interiorLogo from "../images/host.png";
@@ -52,132 +52,123 @@ export default function Partners() {
 
   return (
     <Box
-      sx={{
-        maxWidth: { xs: "350px", md: "748px", lg: "1146px" },
-        mt: { xs: 0, md: -4.5 },
-        pt: { xs: 1.5, md: 0 },
-      }}
-      mx="auto"
-      px={0}
+      component="section"
+      sx={{ bgcolor: "background.default", pt: { xs: 6, md: 9.5 } }}
     >
-      {/* Heading: divider with centered text */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
-        <Box
-          sx={{
-            flex: 1,
-            height: 1,
-            bgcolor: (t) => t.palette.custom.champagneHairline,
-            borderRadius: 1,
-          }}
-        />
-        <Typography
-          component="p"
-          variant="body2"
-          sx={{
-            fontFamily: "'Montserrat', sans-serif",
-            fontWeight: 500,
-            color: "#8b8680",
-            textAlign: "center",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {partnershipLabel}
-        </Typography>
-        <Box
-          sx={{
-            flex: 1,
-            height: 1,
-            bgcolor: (t) => t.palette.custom.champagneHairline,
-            borderRadius: 1,
-          }}
-        />
-      </Box>
-
-      {/* Logos grid */}
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "1fr", // 1 per row on small screens
-            md: "repeat(3, 1fr)", // 3 per row on medium and large screens
-          },
-          gap: 4,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {/* Partner logos */}
-        {partnerLogos.map((partner, index) => (
+      <Box sx={{ width: "100%", maxWidth: 1146, mx: "auto", px: 3 }}>
+        {/* Caption between two hairlines */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
           <Box
-            key={index}
-            component="a"
-            href={partner.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={(theme) => ({
-              width: "100%",
-              // Minimal look: no background, no radius, no shadow
-              background: "transparent",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-              textDecoration: "none",
-              boxShadow: "none",
-              borderRadius: 0,
-              // Vertical divider between columns on md+ (not on last column)
-              borderRight:
-                index < partnerLogos.length - 1
-                  ? {
-                      xs: "none",
-                      md: `1px solid ${theme.palette.custom.champagneHairline}`,
-                    }
-                  : "none",
-              // Balanced spacing
-              p: { xs: 2, md: 2.25 },
-              gap: 1.25,
-              minHeight: "120px",
-            })}
+            sx={{
+              flex: 1,
+              height: "1px",
+              bgcolor: (t) => t.palette.custom.champagneHairline,
+            }}
+          />
+          <Typography
+            component="p"
+            sx={{
+              fontFamily: "'Montserrat', sans-serif",
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "custom.textMuted",
+              textAlign: "center",
+              whiteSpace: "nowrap",
+            }}
           >
+            {partnershipLabel}
+          </Typography>
+          <Box
+            sx={{
+              flex: 1,
+              height: "1px",
+              bgcolor: (t) => t.palette.custom.champagneHairline,
+            }}
+          />
+        </Box>
+
+        {/* Logos */}
+        <Box
+          sx={(theme) => ({
+            mt: { xs: "26px", md: "38px" },
+            borderTop: `1px solid ${theme.palette.custom.hairline}`,
+            borderBottom: `1px solid ${theme.palette.custom.hairline}`,
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "repeat(3, minmax(0, 1fr))" },
+          })}
+        >
+          {partnerLogos.map((partner, index) => (
             <Box
-              sx={{
-                width: "100%",
-                height: "80px",
+              key={partner.url}
+              component="a"
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={(theme) => ({
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                "& img": {
-                  transition: "transform 0.2s ease",
+                textDecoration: "none",
+                p: { xs: "30px 24px", md: "40px 30px 34px" },
+                borderBottom:
+                  index < partnerLogos.length - 1
+                    ? {
+                        xs: `1px solid ${theme.palette.custom.hairline}`,
+                        md: "none",
+                      }
+                    : "none",
+                borderRight:
+                  index < partnerLogos.length - 1
+                    ? {
+                        xs: "none",
+                        md: `1px solid ${theme.palette.custom.hairline}`,
+                      }
+                    : "none",
+                "&:focus-visible": {
+                  outline: `2px solid ${theme.palette.custom.champagne}`,
+                  outlineOffset: -2,
                 },
-                "&:hover img": {
-                  transform: "translateY(-2px)",
-                },
-              }}
+              })}
             >
-              <img
-                src={partner.logo}
-                alt={partner.subtitle}
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  objectFit: "contain",
+              <Box
+                sx={{
+                  width: "100%",
+                  height: 80,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
-              />
+              >
+                <Box
+                  component="img"
+                  src={partner.logo}
+                  alt={partner.subtitle}
+                  sx={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+              </Box>
+              <Typography
+                component="p"
+                sx={{
+                  mt: { xs: "18px", md: "22px" },
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontSize: { xs: "13.5px", md: "13px" },
+                  lineHeight: 1.6,
+                  color: "custom.textMuted",
+                  textAlign: "center",
+                }}
+              >
+                {partner.subtitle}
+              </Typography>
             </Box>
-            <Typography
-              variant="body2"
-              sx={{
-                color: "#000000",
-                fontFamily: "'Montserrat', sans-serif",
-                fontWeight: 500,
-                textAlign: "center",
-              }}
-            >
-              {partner.subtitle}
-            </Typography>
-          </Box>
-        ))}
+          ))}
+        </Box>
       </Box>
     </Box>
   );

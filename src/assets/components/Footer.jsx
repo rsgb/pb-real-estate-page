@@ -1,257 +1,202 @@
-import { useLang } from "./LangContext";
-import { Box, IconButton, Typography, Link } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router";
-import CallIcon from "@mui/icons-material/Call";
-import EmailIcon from "@mui/icons-material/Email";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import logo from "../images/KWsol white.png";
-import secondLogo from "../images/PBre white.png";
+import { useLang } from "./LangContext";
+import { PhoneIcon, MailIcon, WhatsAppIcon, LinkedInIcon } from "./icons.jsx";
+import kwLogo from "../images/KWsol white.png";
+import wordmark from "../images/PBre white.png";
+
+const LEGAL = [
+  "Talentos de Andrómeda - Mediação Imobiliária, LDA",
+  "AMI 12223 | ICV registado no Banco de Portugal n° 919",
+  "NIPC 513689206",
+  "Rua José Régio 1 B,",
+  "2780-129 Oeiras - Portugal",
+];
+
+const SOCIALS = [
+  { Icon: PhoneIcon, label: "Telefone", href: "tel:+351915312417", external: false },
+  {
+    Icon: MailIcon,
+    label: "Email",
+    href: "mailto:paulo.braga@kwportugal.pt",
+    external: false,
+  },
+  {
+    Icon: WhatsAppIcon,
+    label: "WhatsApp",
+    href: "https://wa.me/351915312417",
+    external: true,
+  },
+  {
+    Icon: LinkedInIcon,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/paulobragarealestateagentkwportugal/",
+    external: true,
+  },
+];
 
 export default function Footer() {
   const { urlLang } = useLang();
 
+  const focusRing = (theme) => ({
+    "&:focus-visible": {
+      outline: `2px solid ${theme.palette.custom.champagne}`,
+      outlineOffset: 3,
+    },
+  });
+
   return (
     <Box
       component="footer"
-      sx={{
+      sx={(theme) => ({
         width: "100%",
-        bgcolor: (theme) => theme.palette.custom.footerBg,
-        position: "relative",
-        color: "#FFFFFF",
-        minHeight: "500px",
-        pt: { xs: "30px", md: 4 }, // 10px top padding on mobile
-        pb: { xs: 2, md: 4 }, // keep original bottom padding
-        px: { xs: 1, md: 6 },
-        fontFamily: "'Montserrat', sans-serif",
-        mt: 15,
-        borderTop: (theme) =>
-          `1px solid ${theme.palette.custom.champagneHairline}`,
-      }}
+        backgroundColor: theme.palette.custom.footerBg,
+        borderTop: `1px solid ${theme.palette.custom.champagne}`,
+        color: theme.palette.custom.onNavyMuted,
+        pt: { xs: 5.5, md: 8 },
+      })}
     >
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: { xs: "1fr", md: "300px 1fr 1fr 1fr" },
-          gridTemplateRows: "auto",
-          alignItems: "start",
-          gap: 4,
-          transform: { md: "translateY(50px)" },
-          paddingBottom: "30px",
-          maxWidth: { xs: "320px", md: "100%" },
-          mx: { xs: "auto", md: 0 },
-        }}
-      >
-        {/* Row 1, Col 4: Contact Icons */}
+      <Box sx={{ width: "100%", maxWidth: 1146, mx: "auto", px: 3 }}>
         <Box
           sx={{
-            gridColumn: { xs: 1, md: 4 },
-            gridRow: { xs: 2, md: 1 },
-            alignSelf: "start",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "center", md: "flex-end" },
-            gap: 2,
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "minmax(0, 1fr) auto" },
+            gap: { xs: 5, md: 10 },
+            alignItems: "start",
+            justifyItems: { xs: "center", md: "stretch" },
           }}
         >
-          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
-            <IconButton
-              component={Link}
-              href="tel:+351915312417"
-              sx={{
-                color: "#FFFFFF",
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
-            >
-              <CallIcon />
-            </IconButton>
-            <IconButton
-              component={Link}
-              href="mailto:paulo.braga@kwportugal.pt"
-              sx={{
-                color: "#FFFFFF",
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
-            >
-              <EmailIcon />
-            </IconButton>
-            <IconButton
-              component={Link}
-              href="https://wa.me/351915312417"
-              sx={{
-                color: "#FFFFFF",
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
-            >
-              <WhatsAppIcon />
-            </IconButton>
-            <IconButton
-              component={Link}
-              href="https://www.linkedin.com/in/paulobragarealestateagentkwportugal/"
+          {/* Agency */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-start" },
+            }}
+          >
+            <Box
+              component="a"
+              href="https://www.kwportugal.pt/pt/agencia/KW-Sol-Oeiras/8336"
               target="_blank"
-              rel="noopener"
-              sx={{
-                color: "#FFFFFF",
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
+              rel="noopener noreferrer"
+              sx={[{ display: "inline-flex" }, focusRing]}
             >
-              <LinkedInIcon />
-            </IconButton>
+              <Box
+                component="img"
+                src={kwLogo}
+                alt="KW Sol Oeiras"
+                sx={{ display: "block", width: { xs: 160, md: 168 }, height: "auto" }}
+              />
+            </Box>
+            <Box
+              sx={(theme) => ({
+                width: 44,
+                height: "1px",
+                backgroundColor: theme.palette.custom.champagne,
+                mt: { xs: "22px", md: "26px" },
+                mb: { xs: "20px", md: "22px" },
+              })}
+            />
+            <Box>
+              {LEGAL.map((line) => (
+                <Typography
+                  key={line}
+                  component="p"
+                  sx={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: "13px",
+                    lineHeight: 1.6,
+                    color: "custom.onNavyMuted",
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  {line}
+                </Typography>
+              ))}
+            </Box>
           </Box>
 
-          {/* PB Real Estate Logo */}
+          {/* Contact icons + wordmark */}
           <Box
-            component={RouterLink}
-            to={`/${urlLang}/`}
-            aria-label="Paulo Braga Real Estate"
-            sx={{ display: "inline-block" }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-end" },
+            }}
           >
+            <Box sx={{ display: "flex", alignItems: "center", gap: { xs: 1, md: 1.5 } }}>
+              {SOCIALS.map((social) => {
+                const Icon = social.Icon;
+                const { label, href, external } = social;
+                return (
+                <Box
+                  key={label}
+                  component="a"
+                  href={href}
+                  aria-label={label}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noopener noreferrer" : undefined}
+                  sx={[
+                    (theme) => ({
+                      width: 44,
+                      height: 44,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: theme.palette.custom.champagne,
+                      "&:hover": { color: theme.palette.custom.warmWhite },
+                    }),
+                    focusRing,
+                  ]}
+                >
+                  <Icon size={20} />
+                </Box>
+                );
+              })}
+            </Box>
             <Box
-              component="img"
-              src={secondLogo}
-              alt="Paulo Braga Real Estate Logo"
-              sx={{
-                height: { xs: 40, md: 50 },
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
-            />
+              component={RouterLink}
+              to={`/${urlLang}/`}
+              aria-label="Paulo Braga Real Estate"
+              sx={[{ display: "inline-flex", mt: { xs: "26px", md: "32px" } }, focusRing]}
+            >
+              <Box
+                component="img"
+                src={wordmark}
+                alt="Paulo Braga Real Estate"
+                sx={{ display: "block", width: 150, height: "auto" }}
+              />
+            </Box>
           </Box>
         </Box>
 
-        {/* Row 1, Col 1: KW Section */}
+        {/* Bottom rule + copyright */}
         <Box
           sx={{
-            gridColumn: 1,
-            gridRow: 1,
-            alignSelf: "start",
+            height: "1px",
+            backgroundColor: "rgba(248, 246, 242, 0.10)",
+            mt: { xs: "32px", md: "52px" },
+          }}
+        />
+        <Box
+          sx={{
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "center", md: "flex-start" },
-            gap: 1,
+            justifyContent: { xs: "center", md: "flex-end" },
+            py: { xs: "20px", md: "24px" },
           }}
         >
-          <Box
-            component={Link}
-            href="https://www.kwportugal.pt/pt/agencia/KW-Sol-Oeiras/8336"
-            target="_blank"
-            rel="noopener"
-            sx={{
-              display: "inline-block",
-              borderRadius: "4px",
-              p: 0.5,
-              width: "fit-content",
-            }}
-          >
-            <Box
-              component="img"
-              src={logo}
-              alt="KW Sol Oeiras Logo"
-              sx={{
-                height: { xs: 36, md: 48 },
-                transition: "transform 0.3s ease, opacity 0.3s ease",
-                opacity: 0.8,
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  opacity: 1,
-                },
-              }}
-            />
-          </Box>
           <Typography
-            variant="body2"
+            component="p"
             sx={{
               fontFamily: "'Montserrat', sans-serif",
-              lineHeight: 1,
-              textAlign: { xs: "center", md: "left" },
+              fontSize: "12px",
+              color: "custom.onNavyMuted",
+              opacity: 0.8,
             }}
           >
-            Talentos de Andrómeda - Mediação Imobiliária, LDA
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              fontFamily: "'Montserrat', sans-serif",
-              lineHeight: 1,
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            AMI 12223 | ICV registado no Banco de Portugal n° 919
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              fontFamily: "'Montserrat', sans-serif",
-              lineHeight: 1,
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            NIPC 513689206
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              fontFamily: "'Montserrat', sans-serif",
-              lineHeight: 1,
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            Rua José Régio 1 B,
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              fontFamily: "'Montserrat', sans-serif",
-              lineHeight: 1,
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            2780-129 Oeiras - Portugal
+            © {new Date().getFullYear()} Paulo Braga Real Estate
           </Typography>
         </Box>
-      </Box>
-      {/* Absolute copyright in bottom-right */}
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: { xs: 16, md: 45 },
-          left: 0,
-          width: "100%",
-          display: "flex",
-          justifyContent: { xs: "center", md: "flex-end" },
-          px: { xs: 0, md: 6 },
-        }}
-      >
-        <Typography
-          variant="body2"
-          sx={{ fontFamily: "'Montserrat', sans-serif", opacity: 0.8 }}
-        >
-          © {new Date().getFullYear()} Paulo Braga Real Estate
-        </Typography>
       </Box>
     </Box>
   );

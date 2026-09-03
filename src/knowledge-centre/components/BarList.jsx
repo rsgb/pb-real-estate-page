@@ -43,7 +43,9 @@ export default function BarList({ barList, sx }) {
 
   return (
     <Box component="figure" sx={{ m: 0, ...sx }}>
-      <Typography variant="h3" component="h3" sx={{ color: "thb.petroleum" }}>
+      {/* Chart titles stay in Inter: the serif is reserved for the editorial
+          hierarchy (h1-h3), not for figure captions. */}
+      <Typography variant="body1" component="h3" sx={{ color: "thb.petroleum", fontWeight: 600 }}>
         {title}
       </Typography>
       <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen", mt: 0.5 }}>

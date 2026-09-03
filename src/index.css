@@ -1,38 +1,27 @@
-/* Prevent content from being hidden under the fixed AppBar */
+/* The AppBar is sticky, so the document needs no top padding. */
 body {
   margin: 0;
-  padding-top: 120px; /* adjusts for AppBar height; change to 56px if needed on mobile */
-}
-.parallax-background {
-  background: linear-gradient(135deg, #d5d5d5 0%, #fefefe 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax-gradient {
-  background-image: url("../src/assets/components/images/gradient.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scroll offset for each section */
-#home {
-  scroll-margin-top: 160px;
-}
-#services {
-  scroll-margin-top: 145px;
-}
-#about {
-  scroll-margin-top: 140px;
-}
+/* Scroll offset for the in-page sections: header height (90 / 104) + 16. */
+#home,
+#services,
+#about,
+#partners,
 #contact {
-  scroll-margin-top: 160px;
+  scroll-margin-top: 106px;
+}
+
+@media (min-width: 900px) {
+  #home,
+  #services,
+  #about,
+  #partners,
+  #contact {
+    scroll-margin-top: 120px;
+  }
 }

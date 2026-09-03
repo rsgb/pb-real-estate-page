@@ -43,10 +43,10 @@ export default function MethodologyPage() {
           <Typography variant="overline" component="p" sx={{ color: "thb.greyGreen" }}>
             {t.seriesName}
           </Typography>
-          <Typography variant="h1" component="h1" sx={{ mt: 1, color: "thb.petroleum" }}>
+          <Typography variant="h1" component="h1" sx={{ mt: 2, color: "thb.petroleum" }}>
             {t.methodology}
           </Typography>
-          <Box sx={{ height: "3px", width: 64, backgroundColor: "thb.terracotta", mt: 2 }} />
+          <Box sx={{ mt: { xs: 3, md: 4.25 }, height: "1px", backgroundColor: "thb.terracotta" }} />
         </Box>
 
         <LangNotice />
