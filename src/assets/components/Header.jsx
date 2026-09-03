@@ -16,7 +16,7 @@ export default function Header() {
   } else if (lang === "PT") {
     title = "Investimentos Imobiliários de Alto Valor";
     subtitle =
-      "Oportunidades seleccionadas nos sectores mais procurados de Portugal, adaptadas a clientes nacionais e internacionais.";
+      "Oportunidades selecionadas nos setores mais procurados de Portugal, adaptadas a clientes nacionais e internacionais.";
   } else if (lang === "ES") {
     title = "Inversiones Inmobiliarias de Alto Valor";
     subtitle =

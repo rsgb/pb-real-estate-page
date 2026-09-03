@@ -19,7 +19,7 @@ const COPY = {
   PT: {
     heading: "Serviços",
     description:
-      "Quer pretenda adquirir activos de excelência ou colocar os seus no mercado, ofereço um serviço personalizado e discreto, apoiado em três décadas de experiência consolidada e numa rede de parceiros de confiança — garantindo transacções seguras e rentáveis.",
+      "Quer pretenda adquirir ativos de excelência ou colocar os seus no mercado, ofereço um serviço personalizado e discreto, apoiado em três décadas de experiência consolidada e numa rede de parceiros de confiança — garantindo transações seguras e rentáveis.",
     features: [
       "Especialização em investimento hoteleiro, lazer e residências sénior",
       "Rede de contactos nacional e internacional",
