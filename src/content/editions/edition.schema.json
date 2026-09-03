@@ -15,7 +15,6 @@
     "dataStatus",
     "version",
     "pdf",
-    "signatureImage",
     "title",
     "takeaway",
     "sections"
@@ -91,7 +90,7 @@
     "signatureImage": {
       "type": "string",
       "pattern": "^THB_LinkedIn_Signature_[0-9]{4}-[0-9]{2}_[A-Za-z]+\\.(jpg|jpeg|png)$",
-      "description": "Signature image filename, following THB_LinkedIn_Signature_[AAAA-MM]_[Mes-EN].jpg. PT and EN share the same file when it carries no translatable editorial text."
+      "description": "Optional. Signature image filename, following THB_LinkedIn_Signature_[AAAA-MM]_[Mes-EN].jpg. Not rendered by the site (the LinkedIn card is generated at build time); kept for the record. Historical editions omit it."
     },
     "ogImage": {
       "type": "string",
