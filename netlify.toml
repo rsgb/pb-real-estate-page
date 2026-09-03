@@ -1,0 +1,16 @@
+# Netlify configuration.
+#
+# The build is exactly what it already was in the Netlify UI — this file only
+# writes it down and adds the publish functions (see docs/publishing.md).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  # esbuild inlines `import schema from "...edition.schema.json"`, so the file
+  # is already in the bundle. It is listed anyway so the functions keep working
+  # if the bundler ever changes.
+  included_files = ["src/content/editions/edition.schema.json"]

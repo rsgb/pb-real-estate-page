@@ -7,6 +7,24 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist', 'dist-ssr']),
   {
+    // Platform-neutral ESM in src/ (the shared edition validator): it runs in
+    // the browser, in Node and in the functions, so it gets no globals at all.
+    files: ['src/**/*.mjs'],
+    extends: [js.configs.recommended],
+    languageOptions: { parserOptions: { ecmaVersion: 'latest', sourceType: 'module' } },
+  },
+  {
+    // Node-side code: build scripts, the Netlify publish functions and the
+    // node:test suite. Browser globals do not exist there; `process`,
+    // `Buffer`, `console` and the timers do.
+    files: ['scripts/**/*.mjs', 'netlify/**/*.mjs', 'tests/**/*.mjs', 'site-origin.mjs'],
+    extends: [js.configs.recommended],
+    languageOptions: {
+      globals: globals.node,
+      parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+    },
+  },
+  {
     files: ['**/*.{js,jsx}'],
     extends: [
       js.configs.recommended,
