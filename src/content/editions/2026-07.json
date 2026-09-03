@@ -1,0 +1,629 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2026-07",
+  "series": "thb",
+  "horizon": "monthly",
+  "country": "PT",
+  "period": {
+    "year": 2026,
+    "month": 7
+  },
+  "publishedAt": "2026-09-01",
+  "dataStatus": "provisional",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_Monthly_2026-07_PT_PDF_v1.0.pdf",
+    "en": "THB_Monthly_2026-07_EN_PDF_v1.0.pdf"
+  },
+  "signatureImage": "THB_LinkedIn_Signature_2026-07_July.jpg",
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | Julho 2026",
+    "en": "Tourism & Hospitality Brief | Portugal | July 2026"
+  },
+  "takeaway": {
+    "pt": "Os proveitos cresceram acima das dormidas, apoiados pelo preço. A descida da ocupação e o desempenho mais fraco da Grande Lisboa mostram, contudo, que a evolução é cada vez mais seletiva por região e ativo.",
+    "en": "Revenue grew faster than overnight stays, supported by pricing. However, lower occupancy and weaker performance in Greater Lisbon show that market development is becoming increasingly selective by region and asset."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "MONTHLY BRIEF",
+        "en": "MONTHLY BRIEF"
+      },
+      "strapline": {
+        "pt": "Procura resiliente, crescimento da receita e um mercado cada vez mais desigual entre regiões.",
+        "en": "Resilient demand, revenue growth and an increasingly uneven market across regions."
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição v1.0 - dados provisórios",
+        "en": "Edition v1.0 - provisional data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "Julho confirmou a resiliência da procura",
+        "en": "July confirmed resilient tourism demand"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "Os proveitos cresceram acima das dormidas, apoiados pelo preço. A descida da ocupação e o desempenho mais fraco da Grande Lisboa mostram, contudo, que a evolução é cada vez mais seletiva por região e ativo.",
+          "en": "Revenue grew faster than overnight stays, supported by pricing. However, lower occupancy and weaker performance in Greater Lisbon show that market development is becoming increasingly selective by region and asset."
+        }
+      },
+      "body": {
+        "pt": [
+          "O alojamento turístico registou 3,4 milhões de hóspedes e 9,6 milhões de dormidas. Os proveitos totais atingiram 923,7 milhões de euros e os proveitos de aposento 734,4 milhões de euros.",
+          "A procura interna voltou a ser o principal motor. As dormidas de residentes aumentaram 5,1%, enquanto as dormidas de não residentes cresceram 0,7%, regressando a terreno positivo após a redução de junho.",
+          "A leitura nacional permanece favorável, mas a dispersão regional e operacional exige uma análise ao nível do ativo, do mercado emissor e da microlocalização."
+        ],
+        "en": [
+          "Tourist accommodation recorded 3.4 million guests and 9.6 million overnight stays. Total revenue reached EUR 923.7 million and room revenue EUR 734.4 million.",
+          "Domestic demand remained the main growth driver. Resident overnight stays increased 5.1%, while non-resident overnight stays rose 0.7%, returning to growth after the June decline.",
+          "The national reading remains positive, but regional and operating dispersion requires analysis at asset, source-market and micro-location level."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "O preço sustentou o crescimento dos proveitos",
+        "en": "Pricing supported revenue growth"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 3.4,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.0,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 9.607,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 923.7,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.9,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 154.9,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 3.2,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 104.3,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "netBedOccupancy",
+          "label": {
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
+            "en": "NET BED OCCUPANCY"
+          },
+          "value": 67.3,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -0.9,
+            "unit": "pp",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: o crescimento dos proveitos continuou a superar o crescimento das dormidas. A taxa de ocupação recuou, indicando maior dependência do preço do que de uma utilização mais intensa da capacidade."
+        ],
+        "en": [
+          "Reading: revenue growth continued to exceed overnight-stay growth. Occupancy declined, indicating greater reliance on pricing rather than fuller use of capacity."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "A procura interna liderou; a internacional recuperou modestamente",
+        "en": "Domestic demand led; international demand recovered modestly"
+      },
+      "indicators": [
+        {
+          "key": "residentStays",
+          "label": {
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
+          },
+          "value": 3.1,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "nonResidentStays",
+          "label": {
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
+          },
+          "value": 6.6,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.7,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "topTenMarketsShare",
+          "label": {
+            "pt": "DEZ PRINCIPAIS MERCADOS",
+            "en": "TEN LARGEST MARKETS"
+          },
+          "value": 74.0,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "note": {
+            "pt": "quota das dormidas externas",
+            "en": "share of foreign stays"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "O Reino Unido manteve a liderança, com 18,4% das dormidas de não residentes e um crescimento de 3,0%. A Polónia registou o maior aumento entre os dez principais mercados (+10,8%), enquanto França apresentou a maior quebra (-5,9%).",
+          "As dormidas do mercado emissor norte-americano diminuíram 3,1%, com impacto mais visível na Grande Lisboa e no Algarve."
+        ],
+        "en": [
+          "The United Kingdom remained the leading source market, accounting for 18.4% of non-resident overnight stays and growing 3.0%. Poland recorded the strongest increase among the ten largest markets (+10.8%), while France posted the largest decline (-5.9%).",
+          "Overnight stays by US residents fell 3.1%, with the clearest impact in Greater Lisbon and the Algarve."
+        ]
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas por mercado emissor",
+          "en": "Change in overnight stays by source market"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Julho de 2026, variação homóloga",
+          "en": "July 2026, year-on-year change"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, julho de 2026",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, July 2026"
+        },
+        "items": [
+          {
+            "key": "pl",
+            "label": {
+              "pt": "Polónia",
+              "en": "Poland"
+            },
+            "value": 10.8
+          },
+          {
+            "key": "de",
+            "label": {
+              "pt": "Alemanha",
+              "en": "Germany"
+            },
+            "value": 5.3
+          },
+          {
+            "key": "uk",
+            "label": {
+              "pt": "Reino Unido",
+              "en": "United Kingdom"
+            },
+            "value": 3.0
+          },
+          {
+            "key": "es",
+            "label": {
+              "pt": "Espanha",
+              "en": "Spain"
+            },
+            "value": 1.6
+          },
+          {
+            "key": "us",
+            "label": {
+              "pt": "EUA",
+              "en": "United States"
+            },
+            "value": -3.1
+          },
+          {
+            "key": "fr",
+            "label": {
+              "pt": "França",
+              "en": "France"
+            },
+            "value": -5.9
+          }
+        ],
+        "highlightKey": "pl",
+        "altText": {
+          "pt": "Gráfico de barras com a variação homóloga das dormidas em julho de 2026 nos principais mercados emissores: Polónia +10,8%, Alemanha +5,3%, Reino Unido +3,0%, Espanha +1,6%, EUA -3,1% e França -5,9%. A Polónia apresenta o maior aumento e França a maior quebra.",
+          "en": "Bar chart of the year-on-year change in overnight stays in July 2026 for the main source markets: Poland +10.8%, Germany +5.3%, United Kingdom +3.0%, Spain +1.6%, United States -3.1% and France -5.9%. Poland shows the largest increase and France the largest decline."
+        }
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "REGIÕES",
+        "en": "REGIONS"
+      },
+      "headline": {
+        "pt": "Alentejo e Norte lideraram o crescimento",
+        "en": "Alentejo and the North led growth"
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas por região",
+          "en": "Change in overnight stays by region"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Julho de 2026, variação homóloga",
+          "en": "July 2026, year-on-year change"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, julho de 2026",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, July 2026"
+        },
+        "items": [
+          {
+            "key": "alentejo",
+            "label": {
+              "pt": "Alentejo",
+              "en": "Alentejo"
+            },
+            "value": 7.7
+          },
+          {
+            "key": "norte",
+            "label": {
+              "pt": "Norte",
+              "en": "North"
+            },
+            "value": 6.3
+          },
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "Madeira",
+              "en": "Madeira"
+            },
+            "value": -0.9
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "Açores",
+              "en": "Azores"
+            },
+            "value": -1.2
+          }
+        ],
+        "highlightKey": "alentejo",
+        "altText": {
+          "pt": "Gráfico de barras com a variação homóloga das dormidas em julho de 2026 por região: Alentejo +7,7%, Norte +6,3%, Madeira -0,9% e Açores -1,2%. O Alentejo lidera o crescimento e os Açores registam a maior quebra.",
+          "en": "Bar chart of the year-on-year change in overnight stays in July 2026 by region: Alentejo +7.7%, North +6.3%, Madeira -0.9% and the Azores -1.2%. Alentejo leads growth and the Azores record the largest decline."
+        }
+      },
+      "body": {
+        "pt": [
+          "Algarve, Grande Lisboa e Norte concentraram 68,4% das dormidas nacionais. O Algarve liderou os proveitos totais e de aposento, com quotas próximas de 35%."
+        ],
+        "en": [
+          "The Algarve, Greater Lisbon and the North accounted for 68.4% of national overnight stays. The Algarve led total and room revenue, with shares close to 35%."
+        ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
+        },
+        "body": {
+          "pt": "A Grande Lisboa foi a única região com redução dos proveitos: -2,0% nos proveitos totais e -2,2% nos proveitos de aposento.",
+          "en": "Greater Lisbon was the only region to record lower revenue: -2.0% in total revenue and -2.2% in room revenue."
+        }
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "A Grande Lisboa divergiu da média nacional",
+        "en": "Greater Lisbon diverged from the national average"
+      },
+      "scope": {
+        "pt": "Grande Lisboa",
+        "en": "Greater Lisbon"
+      },
+      "indicators": [
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 0.4,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "yoy",
+          "note": {
+            "pt": "Grande Lisboa",
+            "en": "Greater Lisbon"
+          }
+        },
+        {
+          "key": "netBedOccupancy",
+          "label": {
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
+            "en": "NET BED OCCUPANCY"
+          },
+          "value": 74.1,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -4.3,
+            "unit": "pp",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 154.6,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -2.0,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 114.5,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -7.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 196.3,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -2.0,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Apesar do ligeiro crescimento das dormidas, a redução simultânea da ocupação, ADR, RevPAR e proveitos aponta para pressão operacional específica na região. A média nacional não representa de forma adequada esta realidade."
+        ],
+        "en": [
+          "Despite slight growth in overnight stays, the simultaneous decline in occupancy, ADR, RevPAR and revenue points to specific operating pressure in the region. The national average does not adequately represent this reality."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Uma leitura positiva, mas seletiva",
+          "en": "A positive but selective view"
+        },
+        "fact": {
+          "pt": "A procura e os proveitos nacionais permanecem resilientes, mas o crescimento não beneficia todos os mercados e ativos da mesma forma.",
+          "en": "National demand and revenue remain resilient, but growth is not benefiting every market and asset equally."
+        },
+        "interpretation": {
+          "pt": "A análise regional e de microlocalização está a tornar-se mais relevante do que a média nacional. A divergência da Grande Lisboa demonstra que crescimento turístico e desempenho do ativo não são equivalentes.",
+          "en": "Regional and micro-location analysis is becoming more relevant than the national average. Greater Lisbon's divergence shows that tourism growth and asset performance are not equivalent."
+        },
+        "implication": {
+          "pt": "Para investidores e proprietários, a prioridade deve ser a qualidade da receita ao nível do ativo: composição dos mercados, poder de fixação de preços, eficiência operacional e capacidade de preservar a ocupação sem recorrer a descontos. A decisão de investimento deve, por isso, testar a origem da procura, a elasticidade do preço, a estrutura de custos e a capacidade de cada ativo capturar receita sustentável.",
+          "en": "For investors and owners, the priority should be asset-level revenue quality: source-market mix, pricing power, operating efficiency and the ability to preserve occupancy without discounting. Investment decisions should therefore test demand origin, price elasticity, cost structure and each asset's ability to capture sustainable revenue."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar em agosto",
+          "en": "Three signals to watch in August"
+        },
+        "signals": [
+          {
+            "pt": "Continuidade da recuperação da procura internacional.",
+            "en": "Whether international demand continues to recover."
+          },
+          {
+            "pt": "Evolução da ocupação face ao ADR.",
+            "en": "The balance between occupancy and ADR."
+          },
+          {
+            "pt": "Estabilização - ou não - da Grande Lisboa.",
+            "en": "Whether Greater Lisbon stabilises."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, julho de 2026, divulgadas em 31 de agosto de 2026.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, July 2026, released 31 August 2026."
+        },
+        "complementary": [
+          {
+            "pt": "Turismo de Portugal / TravelBI, Turismo em Números - julho de 2026.",
+            "en": "Turismo de Portugal / TravelBI, Turismo em Números - July 2026."
+          },
+          {
+            "pt": "Estimativas do Banco de Portugal reproduzidas pelo TravelBI.",
+            "en": "Banco de Portugal estimates reproduced by TravelBI."
+          }
+        ],
+        "releaseDate": "2026-08-31",
+        "status": "provisional",
+        "notes": {
+          "pt": "Estimativas rápidas do INE, sujeitas a revisão. Todas as variações são homólogas, exceto quando indicado. A ocupação-cama é apresentada em valor líquido e a sua variação em pontos percentuais.",
+          "en": "Statistics Portugal flash estimates, subject to revision. All changes are year-on-year unless stated otherwise. Bed occupancy is reported on a net basis and its change in percentage points."
+        }
+      }
+    }
+  ]
+}

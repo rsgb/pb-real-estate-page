@@ -1,153 +1,177 @@
+import { Box, Paper, Typography } from "@mui/material";
 import { useLang } from "./LangContext";
-import React from "react";
-import hotels from "../images/hotels.jpg";
+import hotelsCard from "../images/hotels-card.jpg";
+import leisure from "../images/leisure.jpg";
 import seniorliving from "../images/seniorliving.jpg";
-import entertainment from "../images/entertainment.jpg";
 
-import {
-  Box,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-} from "@mui/material";
-
-const data = [
-  {
-    img: hotels,
-    title: "",
-    description: "",
-  },
-  {
-    img: entertainment,
-    title: "",
-    description: "",
-  },
-  {
-    img: seniorliving,
-    title: "",
-    description: "",
-  },
+/** Photo, and how it should be framed in the card window. */
+const CARDS = [
+  // D-17: hotel lobby chosen by Paulo (the hero keeps the room photo).
+  { img: hotelsCard, objectPosition: "center 40%" },
+  // D-17: the leisure card uses the concert photograph.
+  { img: leisure, objectPosition: "center 45%" },
+  { img: seniorliving, objectPosition: "center 60%" },
 ];
 
-export default function ThreeCards() {
-  const { lang, setLang } = useLang();
+const COPY = {
+  EN: [
+    [
+      "Hotels",
+      "3 to 5-star units, operating or with approved projects, in major cities and tourist destinations in Portugal. Available with or without operator. Ideal for hotel investors or property funds.",
+    ],
+    [
+      "Leisure & Entertainment",
+      "Properties with high income potential and appreciation. Ideal for restaurants, nightlife, events, or culture. Available with licenses, leased operations, or land with conversion potential.",
+    ],
+    [
+      "Senior Living / Health",
+      "Land with approved projects or operational assets for assisted living, senior tourism, or health care. Strong international demand from insurers, funds, and specialized operators.",
+    ],
+  ],
+  PT: [
+    [
+      "Unidades Hoteleiras",
+      "Ativos de 3 a 5 estrelas, em operação ou com projeto aprovado, localizados nas principais cidades e destinos turísticos de Portugal. Possibilidade de aquisição com ou sem operador. Ideal para investidores hoteleiros ou fundos imobiliários.",
+    ],
+    [
+      "Espaços de Lazer e Entretenimento",
+      "Imóveis com elevado potencial de rendimento e valorização. Ideais para atividades de restauração, nightlife, eventos ou cultura. Soluções com licenciamento, operação arrendada ou terrenos com viabilidade de reconversão.",
+    ],
+    [
+      "Residências Séniores / Saúde",
+      "Terrenos com projeto aprovado ou ativos operacionais para residência assistida, cuidados continuados ou turismo sénior. Crescente procura internacional por parte de seguradoras, fundos e operadores especializados.",
+    ],
+  ],
+  ES: [
+    [
+      "Unidades Hoteleras",
+      "Activos de 3 a 5 estrellas, en funcionamiento o con proyecto aprobado, ubicados en las principales ciudades y destinos turísticos de Portugal. Posibilidad de compra con o sin operador. Ideal para inversores hoteleros o fondos inmobiliarios.",
+    ],
+    [
+      "Espacios de Ocio y Entretenimiento",
+      "Inmuebles con alto potencial de rentabilidad y valorización. Ideales para restauración, vida nocturna, eventos o cultura. Soluciones con licencia, operación arrendada o terrenos con viabilidad de reconversión.",
+    ],
+    [
+      "Residencias Para Mayores / Salud",
+      "Terrenos con proyecto aprobado o activos operativos para residencia asistida, cuidados continuados o turismo sénior. Creciente demanda internacional por parte de aseguradoras, fondos y operadores especializados.",
+    ],
+  ],
+  FR: [
+    [
+      "Unités Hôtelières",
+      "Actifs 3 à 5 étoiles, en activité ou avec projet approuvé, situés dans les principales villes et destinations touristiques du Portugal. Acquisition possible avec ou sans opérateur. Idéal pour investisseurs hôteliers ou fonds immobiliers.",
+    ],
+    [
+      "Espaces de Loisirs et Divertissement",
+      "Biens immobiliers à fort potentiel de rentabilité et de valorisation. Idéal pour des activités de restauration, nightlife, événements ou culture. Solutions avec licence, exploitation en location ou terrains à reconvertir.",
+    ],
+    [
+      "Résidences Seniors / Santé",
+      "Terrains avec projet approuvé ou actifs en exploitation pour résidence assistée, soins prolongés ou tourisme senior. Demande croissante d’assureurs, fonds et opérateurs spécialisés.",
+    ],
+  ],
+};
 
-  if (lang === "EN") {
-    data[0].title = "Hotels";
-    data[0].description =
-      "3 to 5-star units, operating or with approved projects, in major cities and tourist destinations in Portugal. Available with or without operator. Ideal for hotel investors or property funds.";
-    data[1].title = "Leisure & Entertainment";
-    data[1].description =
-      "Properties with high income potential and appreciation. Ideal for restaurants, nightlife, events, or culture. Available with licenses, leased operations, or land with conversion potential.";
-    data[2].title = "Senior Living / Health";
-    data[2].description =
-      "Land with approved projects or operational assets for assisted living, senior tourism, or health care. Strong international demand from insurers, funds, and specialized operators.";
-  } else if (lang === "PT") {
-    data[0].title = "Unidades Hoteleiras";
-    data[0].description =
-      "Ativos de 3 a 5 estrelas, em operação ou com projeto aprovado, localizados nas principais cidades e destinos turísticos de Portugal. Possibilidade de aquisição com ou sem operador. Ideal para investidores hoteleiros ou fundos imobiliários.";
-    data[1].title = "Espaços de Lazer e Entretenimento";
-    data[1].description =
-      "Imóveis com elevado potencial de rendimento e valorização. Ideais para atividades de restauração, nightlife, eventos ou cultura. Soluções com licenciamento, operação arrendada ou terrenos com viabilidade de reconversão.";
-    data[2].title = "Residências Séniores / Saúde";
-    data[2].description =
-      "Terrenos com projeto aprovado ou ativos operacionais para residência assistida, cuidados continuados ou turismo sénior. Crescente procura internacional por parte de seguradoras, fundos e operadores especializados.";
-  } else if (lang === "ES") {
-    data[0].title = "Unidades Hoteleras";
-    data[0].description =
-      "Activos de 3 a 5 estrellas, en funcionamiento o con proyecto aprobado, ubicados en las principales ciudades y destinos turísticos de Portugal. Posibilidad de compra con o sin operador. Ideal para inversores hoteleros o fondos inmobiliarios.";
-    data[1].title = "Espacios de Ocio y Entretenimiento";
-    data[1].description =
-      "Inmuebles con alto potencial de rentabilidad y valorización. Ideales para restauración, vida nocturna, eventos o cultura. Soluciones con licencia, operación arrendada o terrenos con viabilidad de reconversión.";
-    data[2].title = "Residencias Para Mayores / Salud";
-    data[2].description =
-      "Terrenos con proyecto aprobado o activos operativos para residencia asistida, cuidados continuados o turismo sénior. Creciente demanda internacional por parte de aseguradoras, fondos y operadores especializados.";
-  } else if (lang === "FR") {
-    data[0].title = "Unités Hôtelières";
-    data[0].description =
-      "Actifs 3 à 5 étoiles, en activité ou avec projet approuvé, situés dans les principales villes et destinations touristiques du Portugal. Acquisition possible avec ou sans opérateur. Idéal pour investisseurs hôteliers ou fonds immobiliers.";
-    data[1].title = "Espaces de Loisirs et Divertissement";
-    data[1].description =
-      "Biens immobiliers à fort potentiel de rentabilité et de valorisation. Idéal pour des activités de restauration, nightlife, événements ou culture. Solutions avec licence, exploitation en location ou terrains à reconvertir.";
-    data[2].title = "Résidences Seniors / Santé";
-    data[2].description =
-      "Terrains avec projet approuvé ou actifs en exploitation pour résidence assistée, soins prolongés ou tourisme senior. Demande croissante d’assureurs, fonds et opérateurs spécialisés.";
-  }
+export default function ThreeCards() {
+  const { lang } = useLang();
+  const copy = COPY[lang] ?? COPY.PT;
 
   return (
-    <Box sx={{ minHeight: "100%" }}>
+    <Box
+      component="section"
+      sx={{ bgcolor: "background.default", py: { xs: 6, md: 11 } }}
+    >
       <Box
         sx={{
           width: "100%",
+          maxWidth: 1146,
           mx: "auto",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          px: "10px",
-          mb: { xs: 4, md: 10 },
+          px: 3,
+          display: "grid",
+          gridTemplateColumns: { xs: "1fr", md: "repeat(3, minmax(0, 1fr))" },
+          gap: { xs: 4.5, md: 4 },
+          alignItems: "start",
         }}
       >
-        <Box
-          sx={{
-            display: "grid",
-            gap: 6,
-            gridTemplateColumns: {
-              xs: "repeat(1, 1fr)",
-              md: "repeat(2, 1fr)",
-              lg: "repeat(3, 1fr)",
-            },
-            justifyContent: "center",
-            alignItems: "flex-start",
-          }}
-        >
-          {data.map(({ img, title, description }) => (
-            <Card
+        {CARDS.map(({ img, objectPosition }, index) => {
+          const [title, description] = copy[index];
+          return (
+            <Paper
               key={title}
-              elevation={3}
-              sx={{
-                width: "350px",
-                transition: "transform 0.3s",
-                "&:hover": { transform: "scale(1.05)" },
-              }}
+              component="article"
+              elevation={0}
+              sx={(theme) => ({
+                bgcolor: "background.paper",
+                border: `1px solid ${theme.palette.custom.champagneHairline}`,
+                p: { xs: "18px 18px 28px", md: "20px 20px 32px" },
+              })}
             >
-              <CardActionArea
-                disableRipple
-                disableTouchRipple
-                sx={{ cursor: "default", "&:hover": { cursor: "default" } }}
+              {/* Photo, with the champagne frame offset behind it */}
+              <Box
+                sx={(theme) => ({
+                  position: "relative",
+                  mb: { xs: "28px", md: "30px" },
+                  "&::after": {
+                    content: '""',
+                    position: "absolute",
+                    left: { xs: 9, md: 10 },
+                    top: { xs: 9, md: 10 },
+                    right: { xs: -9, md: -10 },
+                    bottom: { xs: -9, md: -10 },
+                    border: `1px solid ${theme.palette.custom.champagneFrame}`,
+                  },
+                })}
               >
-                <CardMedia
+                <Box
                   component="img"
-                  image={img}
+                  src={img}
                   alt={title}
-                  height={400}
+                  sx={{
+                    position: "relative",
+                    zIndex: 1,
+                    display: "block",
+                    width: "100%",
+                    height: { xs: 206, md: 232 },
+                    objectFit: "cover",
+                    objectPosition,
+                  }}
                 />
-                <CardContent>
-                  <Typography
-                    variant="h5"
-                    sx={{ fontFamily: "'Libre Baskerville', serif" }}
-                    gutterBottom
-                  >
-                    {title}
-                  </Typography>
-                  <Typography
-                    variant="h2"
-                    sx={{
-                      fontFamily: "'Montserrat', sans-serif",
-                      fontWeight: 400,
-                      fontSize: { xs: "1rem", md: "1rem" },
-                      mb: 2,
-                    }}
-                    color="text.secondary"
-                  >
-                    {description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          ))}
-        </Box>
+              </Box>
+
+              <Box sx={{ px: { xs: "10px", md: "8px" } }}>
+                <Typography
+                  variant="h2"
+                  component="h2"
+                  sx={{
+                    fontSize: { xs: "20px", md: "22px" },
+                    lineHeight: 1.35,
+                    color: "custom.navy",
+                  }}
+                >
+                  {title}
+                </Typography>
+                <Box
+                  sx={(theme) => ({
+                    height: "1px",
+                    my: 2,
+                    bgcolor: theme.palette.custom.champagneHairline,
+                  })}
+                />
+                <Typography
+                  component="p"
+                  sx={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: { xs: "16px", md: "15px" },
+                    lineHeight: 1.72,
+                    color: "custom.textMuted",
+                  }}
+                >
+                  {description}
+                </Typography>
+              </Box>
+            </Paper>
+          );
+        })}
       </Box>
     </Box>
   );

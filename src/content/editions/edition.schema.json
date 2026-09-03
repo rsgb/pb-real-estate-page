@@ -1,0 +1,494 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paulobraga.pt/schemas/thb/edition.schema.json",
+  "title": "Tourism & Hospitality Brief - Edition",
+  "description": "One JSON file per edition. Numbers are stored ONCE as raw numeric values with unit, scale and comparison metadata - never as pre-formatted strings. PT and EN render the same numbers through locale formatting ('923,7 M EUR' vs 'EUR 923.7 M' is a rendering concern). All language-dependent text lives in pt/en sub-objects. The direction of any change is derivable from the sign of the number, never from a colour.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "series",
+    "horizon",
+    "country",
+    "period",
+    "publishedAt",
+    "dataStatus",
+    "version",
+    "pdf",
+    "signatureImage",
+    "title",
+    "takeaway",
+    "sections"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional pointer to this schema, for editor autocomplete."
+    },
+    "id": {
+      "type": "string",
+      "description": "Edition identifier. Monthly: 'YYYY-MM' (e.g. '2026-07'). Quarterly: 'YYYY-Qn'. Half-year: 'YYYY-Hn'. Annual: 'YYYY'.",
+      "pattern": "^[0-9]{4}(-(0[1-9]|1[0-2])|-Q[1-4]|-H[1-2])?$"
+    },
+    "series": {
+      "const": "thb",
+      "description": "Series key. Fixed for Tourism & Hospitality Brief."
+    },
+    "horizon": {
+      "enum": ["monthly", "quarterly", "half-year", "annual"],
+      "description": "Editorial horizon. Drives the title convention in Templates Editoriais v1.0 s.6 and the [Horizonte] token in the PDF filename."
+    },
+    "country": {
+      "const": "PT",
+      "description": "ISO 3166-1 alpha-2 country of the data. Fixed to Portugal for the current series."
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["year"],
+      "properties": {
+        "year": { "type": "integer", "minimum": 2000, "maximum": 2100 },
+        "month": { "type": "integer", "minimum": 1, "maximum": 12, "description": "Required for horizon 'monthly'." },
+        "quarter": { "type": "integer", "minimum": 1, "maximum": 4, "description": "Required for horizon 'quarterly'." },
+        "half": { "type": "integer", "minimum": 1, "maximum": 2, "description": "Required for horizon 'half-year'." }
+      },
+      "description": "Reference period as numbers only. Month and quarter names are produced by the renderer per locale."
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "ISO date (YYYY-MM-DD) on which the edition was published on the website."
+    },
+    "dataStatus": {
+      "enum": ["provisional", "revised", "estimated", "final"],
+      "description": "Status of the underlying data for the whole edition. Must be surfaced in the edition header (Componentes Visuais v0.9 s.4)."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "description": "Version of this content file, e.g. '1.0'. Independent from the PDF version."
+    },
+    "pdf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": { "$ref": "#/$defs/pdfFilename" },
+        "en": { "$ref": "#/$defs/pdfFilename" }
+      },
+      "description": "PDF filenames per language, following THB_[Horizonte]_[Periodo]_[Idioma]_PDF_vX.Y.pdf."
+    },
+    "signatureImage": {
+      "type": "string",
+      "pattern": "^THB_LinkedIn_Signature_[0-9]{4}-[0-9]{2}_[A-Za-z]+\\.(jpg|jpeg|png)$",
+      "description": "Signature image filename, following THB_LinkedIn_Signature_[AAAA-MM]_[Mes-EN].jpg. PT and EN share the same file when it carries no translatable editorial text."
+    },
+    "ogImage": {
+      "type": "string",
+      "description": "Optional Open Graph image filename (1200x630 px). Falls back to the signature image when absent."
+    },
+    "title": {
+      "$ref": "#/$defs/localizedText",
+      "description": "Normalised title per Templates Editoriais v1.0 s.6, e.g. 'Tourism & Hospitality Brief | Portugal | July 2026'."
+    },
+    "takeaway": {
+      "$ref": "#/$defs/localizedText",
+      "description": "Executive takeaway shown on the series page and at the top of the edition. Recommended maximum length: 45 words per language (Componentes Visuais v0.9 s.4). This limit is a soft, maxLength-style constraint: it is NOT enforced by this schema, it is checked by the build script."
+    },
+    "sections": {
+      "type": "array",
+      "description": "Ordered content blocks, following the edition-page order of Componentes Visuais v0.9 s.3. Blocks 10 (PDF download) and 11 (previous/next navigation) are chrome, not content, and are therefore excluded.",
+      "minItems": 9,
+      "maxItems": 9,
+      "prefixItems": [
+        { "$ref": "#/$defs/sectionHeader" },
+        { "$ref": "#/$defs/sectionExecutiveSummary" },
+        { "$ref": "#/$defs/sectionKeyIndicators" },
+        { "$ref": "#/$defs/sectionDemand" },
+        { "$ref": "#/$defs/sectionRegional" },
+        { "$ref": "#/$defs/sectionOperating" },
+        { "$ref": "#/$defs/sectionLens" },
+        { "$ref": "#/$defs/sectionOutlook" },
+        { "$ref": "#/$defs/sectionSources" }
+      ],
+      "items": false
+    }
+  },
+
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": { "type": "string", "minLength": 1, "description": "European Portuguese (pt-PT)." },
+        "en": { "type": "string", "minLength": 1, "description": "English." }
+      },
+      "description": "A single string in both languages. Never store numbers formatted inside these strings when the number also exists as an indicator value."
+    },
+
+    "pdfFilename": {
+      "type": "string",
+      "pattern": "^THB_(Monthly|Quarterly|HalfYear|Annual)_[0-9A-Za-z-]+_(PT|EN)_PDF_v[0-9]+\\.[0-9]+\\.pdf$",
+      "description": "THB_[Horizonte]_[Periodo]_[Idioma]_PDF_vX.Y.pdf (Sistema Visual v1.0 s.14)."
+    },
+
+    "unit": {
+      "enum": ["count", "eur", "percent", "pp", "index", "ratio"],
+      "description": "Unit of a raw value. 'count' = number of people/nights/etc.; 'eur' = euro amount; 'percent' = a level expressed in %; 'pp' = percentage points; 'index' = index number; 'ratio' = dimensionless ratio."
+    },
+
+    "scale": {
+      "enum": ["none", "thousand", "million"],
+      "description": "Multiplier that the stored value is expressed in. value 923.7 with scale 'million' means 923 700 000. The renderer appends the locale suffix (PT 'M', EN 'M')."
+    },
+
+    "decimals": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Number of decimal places to render. Decimal separator and thousands separator are chosen by the locale, not stored here."
+    },
+
+    "change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "basis"],
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "Signed magnitude of the change. The sign alone determines the direction shown; colour must never be the only direction cue."
+        },
+        "unit": {
+          "enum": ["percent", "pp", "abs"],
+          "description": "'percent' = percentage change; 'pp' = percentage points (use for changes in a rate such as occupancy); 'abs' = absolute change in the indicator's own unit."
+        },
+        "basis": {
+          "enum": ["yoy", "mom", "ytd"],
+          "description": "Comparison basis: year-on-year (homologo), month-on-month or year-to-date (acumulado). Rendered as 'homologo' / 'YoY' etc. by the locale layer."
+        },
+        "label": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Optional override for the comparison caption when the default basis wording is not appropriate."
+        }
+      },
+      "description": "Comparison metadata for an indicator."
+    },
+
+    "indicator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "label", "value", "unit", "scale", "decimals"],
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_]+$",
+          "description": "Stable machine key, unique within its section (e.g. 'guests', 'adr', 'netBedOccupancy')."
+        },
+        "label": { "$ref": "#/$defs/localizedText" },
+        "value": { "type": "number", "description": "Raw numeric value. Never a formatted string." },
+        "unit": { "$ref": "#/$defs/unit" },
+        "scale": { "$ref": "#/$defs/scale" },
+        "decimals": { "$ref": "#/$defs/decimals" },
+        "valueBasis": {
+          "enum": ["level", "yoy", "mom", "ytd"],
+          "default": "level",
+          "description": "Whether the headline value is a level (default) or is itself a comparison, as in the Greater Lisbon 'overnight stays +0.4%' card. When it is a comparison, 'change' is normally omitted and the sign of 'value' carries the direction."
+        },
+        "change": { "$ref": "#/$defs/change" },
+        "note": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Optional supporting line on the card (Componentes Visuais v0.9: 'informacao adicional opcional')."
+        },
+        "status": {
+          "enum": ["provisional", "revised", "estimated"],
+          "description": "Optional per-indicator override of the edition-level dataStatus."
+        }
+      },
+      "description": "One indicator card: label, raw value + unit, and comparison metadata."
+    },
+
+    "barList": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "unit", "period", "source", "items", "altText"],
+      "properties": {
+        "title": { "$ref": "#/$defs/localizedText", "description": "Interpretative title, not a generic chart label." },
+        "unit": { "$ref": "#/$defs/unit" },
+        "scale": { "$ref": "#/$defs/scale", "default": "none" },
+        "decimals": { "$ref": "#/$defs/decimals", "default": 1 },
+        "period": { "$ref": "#/$defs/localizedText", "description": "Period and comparison basis of the plotted values." },
+        "source": { "$ref": "#/$defs/localizedText", "description": "Visible source line." },
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "value"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^[a-zA-Z0-9_]+$", "description": "Stable key for the bar; referenced by highlightKey." },
+              "label": { "$ref": "#/$defs/localizedText" },
+              "value": { "type": "number", "description": "Signed raw value. Bars below zero are read from the sign, not from colour." }
+            }
+          }
+        },
+        "highlightKey": {
+          "type": "string",
+          "description": "Optional key of the item to emphasise. Must match the 'key' of one of the items."
+        },
+        "altText": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Alternative text / long description for screen readers. The accessible data table is generated from 'items'."
+        }
+      },
+      "description": "Horizontal bar list (source markets, regions). Always accompanied by an accessible data table generated from items."
+    },
+
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["caption", "columns", "rows", "source"],
+      "properties": {
+        "caption": { "$ref": "#/$defs/localizedText" },
+        "columns": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "label", "align"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^[a-zA-Z0-9_]+$" },
+              "label": { "$ref": "#/$defs/localizedText" },
+              "unit": { "$ref": "#/$defs/unit" },
+              "scale": { "$ref": "#/$defs/scale" },
+              "decimals": { "$ref": "#/$defs/decimals" },
+              "align": { "enum": ["left", "right", "center"] }
+            }
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "description": "One row keyed by column key. Numeric cells are raw numbers; text cells are localizedText objects.",
+            "additionalProperties": {
+              "anyOf": [
+                { "type": "number" },
+                { "type": "null" },
+                { "$ref": "#/$defs/localizedText" }
+              ]
+            }
+          }
+        },
+        "source": { "$ref": "#/$defs/localizedText" }
+      },
+      "description": "Tabular block. On mobile it may collapse into cards or scroll horizontally."
+    },
+
+    "richText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "en": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      },
+      "description": "Body copy as an array of paragraphs per language. No markup, no pre-formatted numbers that duplicate indicator values."
+    },
+
+    "lens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headline", "fact", "interpretation", "implication"],
+      "properties": {
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "fact": { "$ref": "#/$defs/localizedText", "description": "What the data shows. No opinion." },
+        "interpretation": { "$ref": "#/$defs/localizedText", "description": "What it means. Explicitly separate from the fact." },
+        "implication": { "$ref": "#/$defs/localizedText", "description": "What it implies for investors, owners and operators." }
+      },
+      "description": "Tourism & Hospitality Real Estate Lens. The three parts are mandatory and must stay separate (Componentes Visuais v0.9 s.4)."
+    },
+
+    "callout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "title", "body"],
+      "properties": {
+        "kind": { "enum": ["attention", "conclusion"], "description": "'conclusion' = main conclusion box; 'attention' = attention signal." },
+        "title": { "$ref": "#/$defs/localizedText" },
+        "body": { "$ref": "#/$defs/localizedText" }
+      }
+    },
+
+    "outlook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intro", "signals"],
+      "properties": {
+        "intro": { "$ref": "#/$defs/localizedText" },
+        "signals": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/localizedText" },
+          "description": "Numbered signals to watch. Numbering is generated by the renderer, never stored in the text."
+        }
+      }
+    },
+
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "complementary", "releaseDate", "status"],
+      "properties": {
+        "primary": { "$ref": "#/$defs/localizedText" },
+        "complementary": { "type": "array", "items": { "$ref": "#/$defs/localizedText" } },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "ISO date on which the primary source released the data."
+        },
+        "status": { "enum": ["provisional", "revised", "estimated", "final"] },
+        "notes": { "$ref": "#/$defs/localizedText", "description": "Notes on definitions and comparability." }
+      }
+    },
+
+    "sectionHeader": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "kicker", "strapline", "author"],
+      "properties": {
+        "block": { "const": "header" },
+        "kicker": { "$ref": "#/$defs/localizedText", "description": "Editorial horizon label, e.g. 'MONTHLY BRIEF'." },
+        "strapline": { "$ref": "#/$defs/localizedText", "description": "Cover line of the edition." },
+        "author": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "role"],
+          "properties": {
+            "name": { "type": "string" },
+            "role": { "$ref": "#/$defs/localizedText" }
+          }
+        },
+        "note": { "$ref": "#/$defs/localizedText", "description": "Optional production note shown on the cover." }
+      },
+      "description": "Block 1. Series, country + period, horizon, language, publication date and data status are rendered from the top-level fields; only cover-specific copy lives here."
+    },
+
+    "sectionExecutiveSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "headline", "callout", "body"],
+      "properties": {
+        "block": { "const": "executiveSummary" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "callout": { "$ref": "#/$defs/callout" },
+        "body": { "$ref": "#/$defs/richText" }
+      },
+      "description": "Block 2."
+    },
+
+    "sectionKeyIndicators": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "headline", "indicators", "reading"],
+      "properties": {
+        "block": { "const": "keyIndicators" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "indicators": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/indicator" } },
+        "reading": { "$ref": "#/$defs/richText", "description": "Interpretation of the indicator set, kept separate from the numbers." },
+        "tables": { "type": "array", "items": { "$ref": "#/$defs/table" } }
+      },
+      "description": "Block 3."
+    },
+
+    "sectionDemand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "headline", "indicators", "body", "barList"],
+      "properties": {
+        "block": { "const": "demand" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "indicators": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/indicator" } },
+        "body": { "$ref": "#/$defs/richText" },
+        "barList": { "$ref": "#/$defs/barList" },
+        "tables": { "type": "array", "items": { "$ref": "#/$defs/table" } }
+      },
+      "description": "Block 4. Demand and source markets."
+    },
+
+    "sectionRegional": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "headline", "barList", "body"],
+      "properties": {
+        "block": { "const": "regional" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "barList": { "$ref": "#/$defs/barList" },
+        "body": { "$ref": "#/$defs/richText" },
+        "callout": { "$ref": "#/$defs/callout" },
+        "tables": { "type": "array", "items": { "$ref": "#/$defs/table" } }
+      },
+      "description": "Block 5. Regional reading."
+    },
+
+    "sectionOperating": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "headline", "scope", "indicators", "body"],
+      "properties": {
+        "block": { "const": "operating" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "headline": { "$ref": "#/$defs/localizedText" },
+        "scope": { "$ref": "#/$defs/localizedText", "description": "Geography or asset scope the indicators refer to, e.g. 'Grande Lisboa'." },
+        "indicators": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/indicator" } },
+        "body": { "$ref": "#/$defs/richText" },
+        "tables": { "type": "array", "items": { "$ref": "#/$defs/table" } }
+      },
+      "description": "Block 6. Operating performance."
+    },
+
+    "sectionLens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "lens"],
+      "properties": {
+        "block": { "const": "lens" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "lens": { "$ref": "#/$defs/lens" }
+      },
+      "description": "Block 7. Perspetiva Imobiliaria / Real Estate Lens. Fixed title, distinct visual treatment."
+    },
+
+    "sectionOutlook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "outlook"],
+      "properties": {
+        "block": { "const": "outlook" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "outlook": { "$ref": "#/$defs/outlook" }
+      },
+      "description": "Block 8. The section headline is 'outlook.intro' - it is not duplicated as a separate field."
+    },
+
+    "sectionSources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["block", "sectionLabel", "sources"],
+      "properties": {
+        "block": { "const": "sources" },
+        "sectionLabel": { "$ref": "#/$defs/localizedText" },
+        "sources": { "$ref": "#/$defs/sources" }
+      },
+      "description": "Block 9. Sources and methodology."
+    }
+  }
+}

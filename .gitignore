@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local env files (see .env.example)
+.env
+.env.*
+!.env.example
+
+# Generated Open Graph cards (scripts/generate-og-images.mjs)
+public/og/
