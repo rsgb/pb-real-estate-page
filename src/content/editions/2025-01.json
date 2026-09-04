@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-03",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 3 de setembro de 2026 com dados relativos a janeiro de 2025.",
-    "en": "Historical edition, published on 3 September 2026 using data for January 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
