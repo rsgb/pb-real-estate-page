@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a novembro de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for November 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -25,8 +21,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | November 2025"
   },
   "takeaway": {
-    "pt": "Novembro travou. As dormidas subiram 0,7% e os proveitos totais 1,6%, mas o RevPAR desceu 2,2% e a taxa líquida de ocupação-cama perdeu 1,0 p.p. O rendimento por quarto registou o segundo decréscimo de 2025.",
-    "en": "November stalled. Overnight stays rose 0.7% and total revenue 1.6%, but net bed occupancy lost 1.0 pp and RevPAR was 2.2% lower, its second decrease of 2025."
+    "pt": "Novembro travou. As dormidas subiram 0,7% e os proveitos totais 1,6%, mas o RevPAR desceu 2,2% e a taxa líquida de ocupação-cama perdeu 0,9 p.p. O rendimento por quarto registou o segundo decréscimo de 2025.",
+    "en": "November stalled. Overnight stays rose 0.7% and total revenue 1.6%, but net bed occupancy lost 0.9 pp and RevPAR was 2.2% lower, its second decrease of 2025."
   },
   "sections": [
     {
@@ -68,8 +64,8 @@
           "en": "ATTENTION SIGNAL"
         },
         "body": {
-          "pt": "Os proveitos totais aumentaram 1,6%, mas o RevPAR desceu 2,2% e a ocupação-cama ficou 1,0 p.p. abaixo do ano anterior: o crescimento não chegou ao quarto.",
-          "en": "Total revenue increased 1.6%, but RevPAR was 2.2% lower and net bed occupancy stood 1.0 pp below a year earlier: the growth did not reach the room."
+          "pt": "Os proveitos totais aumentaram 1,6%, mas o RevPAR desceu 2,2% e a ocupação-cama ficou 0,9 p.p. abaixo do ano anterior: o crescimento não chegou ao quarto.",
+          "en": "Total revenue increased 1.6%, but RevPAR was 2.2% lower and net bed occupancy stood 0.9 pp below a year earlier: the growth did not reach the room."
         }
       },
       "body": {
@@ -209,9 +205,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.0,
+            "value": -0.9,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
@@ -538,9 +538,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.0,
+            "value": -0.9,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -555,9 +559,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.0,
+            "value": -0.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -605,10 +613,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR fixou-se em 97,8 euros (-0,1%) e o RevPAR em 47,1 euros (-2,2%). A taxa líquida de ocupação-cama foi de 36,9% e a de ocupação-quarto de 48,2%, ambas 1,0 p.p. abaixo de um ano antes. Com o preço estável e a ocupação a ceder, o aumento de 1,6% nos proveitos totais e de 1,1% nos proveitos de aposento não passou para o rendimento por quarto: o RevPAR desceu 2,2%."
+          "O ADR fixou-se em 97,8 euros (-0,1%) e o RevPAR em 47,1 euros (-2,2%). A taxa líquida de ocupação-cama foi de 36,9%, menos 0,9 p.p., e a de ocupação-quarto de 48,2%, menos 0,7 p.p. do que um ano antes. Com o preço estável e a ocupação a ceder, o aumento de 1,6% nos proveitos totais e de 1,1% nos proveitos de aposento não passou para o rendimento por quarto: o RevPAR desceu 2,2%."
         ],
         "en": [
-          "ADR stood at EUR 97.8 (-0.1%) and RevPAR at EUR 47.1 (-2.2%). Net bed occupancy was 36.9% and net room occupancy 48.2%, both 1.0 pp below a year earlier. With price flat and occupancy giving way, the 1.6% rise in total revenue and the 1.1% rise in room revenue did not reach yield per room: RevPAR was 2.2% lower."
+          "ADR stood at EUR 97.8 (-0.1%) and RevPAR at EUR 47.1 (-2.2%). Net bed occupancy was 36.9%, down 0.9 pp, and net room occupancy 48.2%, down 0.7 pp on a year earlier. With price flat and occupancy giving way, the 1.6% rise in total revenue and the 1.1% rise in room revenue did not reach yield per room: RevPAR was 2.2% lower."
         ]
       }
     },
@@ -624,8 +632,8 @@
           "en": "Revenue up, the asset earning less"
         },
         "fact": {
-          "pt": "Proveitos totais +1,6%, RevPAR -2,2%, ADR -0,1% e ocupação-cama 36,9%, menos 1,0 p.p.",
-          "en": "Total revenue +1.6%, RevPAR -2.2%, ADR -0.1% and net bed occupancy 36.9%, down 1.0 pp."
+          "pt": "Proveitos totais +1,6%, RevPAR -2,2%, ADR -0,1% e ocupação-cama 36,9%, menos 0,9 p.p.",
+          "en": "Total revenue +1.6%, RevPAR -2.2%, ADR -0.1% and net bed occupancy 36.9%, down 0.9 pp."
         },
         "interpretation": {
           "pt": "Importa separar o que cresce no agregado nacional do que cresce no quarto. Em novembro o valor por quarto disponível desceu pela segunda vez em 2025 e a ocupação acompanhou.",

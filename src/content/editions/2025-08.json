@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a agosto de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for August 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -25,8 +21,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | August 2025"
   },
   "takeaway": {
-    "pt": "Os residentes sustentaram o crescimento em agosto: dormidas +1,3%, com residentes +4,5% e não residentes -0,4%. Os proveitos totais subiram 6,7%, sobretudo por via do preço, com o ADR a avançar 4,3% e a ocupação-cama a perder 1,1 p.p.",
-    "en": "Residents carried August: overnight stays rose 1.3%, with residents up 4.5% and non-residents down 0.4%. Total revenue increased 6.7%, mostly through price, as ADR gained 4.3% and net bed occupancy lost 1.1 pp."
+    "pt": "Os residentes sustentaram o crescimento em agosto: dormidas +1,3%, com residentes +4,5% e não residentes -0,4%. Os proveitos totais subiram 6,7%, sobretudo por via do preço, com o ADR a avançar 4,3% e a ocupação-cama a perder 0,7 p.p.",
+    "en": "Residents carried August: overnight stays rose 1.3%, with residents up 4.5% and non-residents down 0.4%. Total revenue increased 6.7%, mostly through price, as ADR gained 4.3% and net bed occupancy lost 0.7 pp."
   },
   "sections": [
     {
@@ -75,12 +71,12 @@
       "body": {
         "pt": [
           "Agosto somou 10,7 milhões de dormidas (+1,3%) e 3,8 milhões de hóspedes (+1,2%), uma continuidade que o INE atribuiu aos residentes.",
-          "A receita subiu mais do que o volume: 1011,3 milhões de euros de proveitos totais (+6,7%) e 809,6 milhões de proveitos de aposento (+5,8%), com o ADR em 159,2 euros (+4,3%) e o RevPAR em 116,8 euros (+2,6%), enquanto a taxa líquida de ocupação-cama desceu para 66,8%, menos 1,1 p.p.",
+          "A receita subiu mais do que o volume: 1011,3 milhões de euros de proveitos totais (+6,7%) e 809,6 milhões de proveitos de aposento (+5,8%), com o ADR em 159,2 euros (+4,3%) e o RevPAR em 116,8 euros (+2,6%), enquanto a taxa líquida de ocupação-cama desceu para 66,8%, menos 0,7 p.p.",
           "Agosto entregou assim mais receita com menos utilização da capacidade: quem enche o mês com procura externa teve de substituir volume por preço."
         ],
         "en": [
           "August brought 10.7 million overnight stays (+1.3%) and 3.8 million guests (+1.2%), continuity that Statistics Portugal credited to residents.",
-          "Revenue rose faster than volume: EUR 1,011.3 million in total revenue (+6.7%) and EUR 809.6 million in room revenue (+5.8%), with ADR at EUR 159.2 (+4.3%) and RevPAR at EUR 116.8 (+2.6%), while net bed occupancy slipped to 66.8%, down 1.1 pp.",
+          "Revenue rose faster than volume: EUR 1,011.3 million in total revenue (+6.7%) and EUR 809.6 million in room revenue (+5.8%), with ADR at EUR 159.2 (+4.3%) and RevPAR at EUR 116.8 (+2.6%), while net bed occupancy slipped to 66.8%, down 0.7 pp.",
           "August therefore delivered more revenue from less use of the capacity: owners who fill the month with non-resident guests had to replace volume with price."
         ]
       }
@@ -209,18 +205,22 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.1,
+            "value": -0.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais cresceram 6,7% com as dormidas a avançarem apenas 1,3%. A diferença veio do ADR (+4,3%) e não da ocupação-cama, que perdeu 1,1 p.p."
+          "Leitura: os proveitos totais cresceram 6,7% com as dormidas a avançarem apenas 1,3%. A diferença veio do ADR (+4,3%) e não da ocupação-cama, que perdeu 0,7 p.p."
         ],
         "en": [
-          "Reading: total revenue grew 6.7% while overnight stays advanced just 1.3%. The gap came from ADR (+4.3%), not from net bed occupancy, which lost 1.1 pp."
+          "Reading: total revenue grew 6.7% while overnight stays advanced just 1.3%. The gap came from ADR (+4.3%), not from net bed occupancy, which lost 0.7 pp."
         ]
       }
     },
@@ -570,9 +570,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.1,
+            "value": -0.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -587,9 +591,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.2,
+            "value": -0.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -637,10 +645,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR de agosto foi de 159,2 euros, mais 4,3% do que um ano antes, e o RevPAR chegou a 116,8 euros (+2,6%). A taxa líquida de ocupação-cama ficou em 66,8%, menos 1,1 p.p., e a de ocupação-quarto em 73,4%, menos 1,2 p.p. Com proveitos totais de 1011,3 milhões de euros (+6,7%) e proveitos de aposento de 809,6 milhões (+5,8%), o aumento da receita é explicado pelo preço: a capacidade instalada foi utilizada de forma menos intensa do que em agosto de 2024."
+          "O ADR de agosto foi de 159,2 euros, mais 4,3% do que um ano antes, e o RevPAR chegou a 116,8 euros (+2,6%). A taxa líquida de ocupação-cama ficou em 66,8%, menos 0,7 p.p., e a de ocupação-quarto em 73,4%, menos 0,7 p.p. Com proveitos totais de 1011,3 milhões de euros (+6,7%) e proveitos de aposento de 809,6 milhões (+5,8%), o aumento da receita é explicado pelo preço: a capacidade instalada foi utilizada de forma menos intensa do que em agosto de 2024."
         ],
         "en": [
-          "August ADR was EUR 159.2, 4.3% higher than a year earlier, and RevPAR reached EUR 116.8 (+2.6%). Net bed occupancy stood at 66.8%, down 1.1 pp, and net room occupancy at 73.4%, down 1.2 pp. With total revenue of EUR 1,011.3 million (+6.7%) and room revenue of EUR 809.6 million (+5.8%), the revenue gain is explained by price: capacity was used less intensively than in August 2024."
+          "August ADR was EUR 159.2, 4.3% higher than a year earlier, and RevPAR reached EUR 116.8 (+2.6%). Net bed occupancy stood at 66.8%, down 0.7 pp, and net room occupancy at 73.4%, down 0.7 pp. With total revenue of EUR 1,011.3 million (+6.7%) and room revenue of EUR 809.6 million (+5.8%), the revenue gain is explained by price: capacity was used less intensively than in August 2024."
         ]
       }
     },
@@ -656,8 +664,8 @@
           "en": "More value per room, on a narrower base"
         },
         "fact": {
-          "pt": "Proveitos totais +6,7% e ADR +4,3%, contra dormidas +1,3% e ocupação-cama -1,1 p.p.",
-          "en": "Total revenue +6.7% and ADR +4.3%, against overnight stays +1.3% and net bed occupancy -1.1 pp."
+          "pt": "Proveitos totais +6,7% e ADR +4,3%, contra dormidas +1,3% e ocupação-cama -0,7 p.p.",
+          "en": "Total revenue +6.7% and ADR +4.3%, against overnight stays +1.3% and net bed occupancy -0.7 pp."
         },
         "interpretation": {
           "pt": "O rendimento por quarto subiu porque o preço subiu, não porque entraram mais hóspedes. O RevPAR avançou 2,6% e o ADR 4,3%: a ocupação travou a conversão do preço em receita por quarto disponível.",

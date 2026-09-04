@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a abril de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for April 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -25,8 +21,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | April 2025"
   },
   "takeaway": {
-    "pt": "A Páscoa impulsionou abril: dormidas +8,9%, proveitos totais +12,6% e RevPAR +10,8%, com a ocupação-cama a ganhar 3,1 p.p. O calendário explica parte do salto, já que em 2024 a Páscoa se concentrou em março.",
-    "en": "Easter lifted April: overnight stays +8.9%, total revenue +12.6% and RevPAR +10.8%, with net bed occupancy up 3.1 pp. The calendar explains part of the jump, since Easter sat in March in 2024."
+    "pt": "A Páscoa impulsionou abril: dormidas +8,9%, proveitos totais +12,6% e RevPAR +10,8%, com a ocupação-cama a ganhar 2,9 p.p. O calendário explica parte do salto, já que em 2024 a Páscoa se concentrou em março.",
+    "en": "Easter lifted April: overnight stays +8.9%, total revenue +12.6% and RevPAR +10.8%, with net bed occupancy up 2.9 pp. The calendar explains part of the jump, since Easter sat in March in 2024."
   },
   "sections": [
     {
@@ -75,12 +71,12 @@
       "body": {
         "pt": [
           "Abril somou 7,1 milhões de dormidas (+8,9%) e 2,9 milhões de hóspedes (+8,4%). O INE atribui o impulso à Páscoa, que este ano ocorreu em abril e no ano anterior se concentrou em março.",
-          "A receita acompanhou: 571,1 milhões de euros de proveitos totais (+12,6%) e 436,0 milhões de proveitos de aposento (+13,8%). O RevPAR subiu para 69,5 euros (+10,8%), o ADR para 115,9 euros (+6,3%) e a taxa líquida de ocupação-cama para 50,4%, mais 3,1 p.p.",
+          "A receita acompanhou: 571,1 milhões de euros de proveitos totais (+12,6%) e 436,0 milhões de proveitos de aposento (+13,8%). O RevPAR subiu para 69,5 euros (+10,8%), o ADR para 115,9 euros (+6,3%) e a taxa líquida de ocupação-cama para 50,4%, mais 2,9 p.p.",
           "O mês junta as duas alavancas: mais camas ocupadas e preço mais alto. A leitura útil é a de março e abril em conjunto, porque a base de comparação de cada mês está deslocada."
         ],
         "en": [
           "April added 7.1 million overnight stays (+8.9%) and 2.9 million guests (+8.4%). Statistics Portugal attributes the boost to Easter, which came in April this year after sitting in March a year earlier.",
-          "Revenue followed: EUR 571.1 million in total revenue (+12.6%) and EUR 436.0 million in room revenue (+13.8%). RevPAR rose to EUR 69.5 (+10.8%), ADR to EUR 115.9 (+6.3%) and net bed occupancy to 50.4%, up 3.1 pp.",
+          "Revenue followed: EUR 571.1 million in total revenue (+12.6%) and EUR 436.0 million in room revenue (+13.8%). RevPAR rose to EUR 69.5 (+10.8%), ADR to EUR 115.9 (+6.3%) and net bed occupancy to 50.4%, up 2.9 pp.",
           "The month brings both levers together: more beds filled and a higher price. The useful reading is March and April combined, because each month's comparison base has moved."
         ]
       }
@@ -205,18 +201,22 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 3.1,
+            "value": 2.9,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais (+12,6%) subiram acima do volume (+8,9%) e a ocupação-cama ganhou 3,1 p.p., pelo que o mês combinou mais utilização da capacidade com preço mais alto. Os residentes (+12,2%) avançaram mais do que os não residentes (+7,7%)."
+          "Leitura: os proveitos totais (+12,6%) subiram acima do volume (+8,9%) e a ocupação-cama ganhou 2,9 p.p., pelo que o mês combinou mais utilização da capacidade com preço mais alto. Os residentes (+12,2%) avançaram mais do que os não residentes (+7,7%)."
         ],
         "en": [
-          "Reading: total revenue (+12.6%) outpaced volume (+8.9%) and net bed occupancy added 3.1 pp, so the month combined fuller use of capacity with a higher price. Residents (+12.2%) moved ahead of non-residents (+7.7%)."
+          "Reading: total revenue (+12.6%) outpaced volume (+8.9%) and net bed occupancy added 2.9 pp, so the month combined fuller use of capacity with a higher price. Residents (+12.2%) moved ahead of non-residents (+7.7%)."
         ]
       }
     },
@@ -540,9 +540,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 3.1,
+            "value": 2.9,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -557,9 +561,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.4,
+            "value": 2.5,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -603,10 +611,10 @@
       ],
       "body": {
         "pt": [
-          "A taxa líquida de ocupação-cama subiu para 50,4% (+3,1 p.p.) e a de ocupação-quarto para 60,0% (+2,4 p.p.). O ADR chegou a 115,9 euros (+6,3%) e o RevPAR a 69,5 euros (+10,8%), pelo que o avanço do RevPAR veio de ocupação e de preço e não de um só deles. Os proveitos totais somaram 571,1 milhões de euros (+12,6%) e os de aposento 436,0 milhões (+13,8%)."
+          "A taxa líquida de ocupação-cama subiu para 50,4% (+2,9 p.p.) e a de ocupação-quarto para 60,0% (+2,5 p.p.). O ADR chegou a 115,9 euros (+6,3%) e o RevPAR a 69,5 euros (+10,8%), pelo que o avanço do RevPAR veio de ocupação e de preço e não de um só deles. Os proveitos totais somaram 571,1 milhões de euros (+12,6%) e os de aposento 436,0 milhões (+13,8%)."
         ],
         "en": [
-          "Net bed occupancy rose to 50.4% (+3.1 pp) and net room occupancy to 60.0% (+2.4 pp). ADR reached EUR 115.9 (+6.3%) and RevPAR EUR 69.5 (+10.8%), so the RevPAR gain came from occupancy and price together rather than from one of them. Total revenue came to EUR 571.1 million (+12.6%) and room revenue to EUR 436.0 million (+13.8%)."
+          "Net bed occupancy rose to 50.4% (+2.9 pp) and net room occupancy to 60.0% (+2.5 pp). ADR reached EUR 115.9 (+6.3%) and RevPAR EUR 69.5 (+10.8%), so the RevPAR gain came from occupancy and price together rather than from one of them. Total revenue came to EUR 571.1 million (+12.6%) and room revenue to EUR 436.0 million (+13.8%)."
         ]
       }
     },
@@ -622,12 +630,12 @@
           "en": "A good month, partly borrowed from the calendar"
         },
         "fact": {
-          "pt": "Dormidas +8,9%, proveitos totais +12,6%, RevPAR +10,8%, ADR +6,3% e ocupação-cama 50,4%, mais 3,1 p.p.",
-          "en": "Overnight stays +8.9%, total revenue +12.6%, RevPAR +10.8%, ADR +6.3% and net bed occupancy 50.4%, up 3.1 pp."
+          "pt": "Dormidas +8,9%, proveitos totais +12,6%, RevPAR +10,8%, ADR +6,3% e ocupação-cama 50,4%, mais 2,9 p.p.",
+          "en": "Overnight stays +8.9%, total revenue +12.6%, RevPAR +10.8%, ADR +6.3% and net bed occupancy 50.4%, up 2.9 pp."
         },
         "interpretation": {
-          "pt": "O RevPAR avançou 10,8% com o ADR a valorizar 6,3% e a ocupação a ganhar 3,1 p.p. As duas alavancas funcionaram em simultâneo, o sinal mais forte que um ativo pode dar, mas parte do ganho é a Páscoa que faltou em março.",
-          "en": "RevPAR advanced 10.8% with ADR up 6.3% and occupancy adding 3.1 pp. Both levers worked at once, which is the strongest signal an asset can give, but part of the gain is the Easter that March did not have."
+          "pt": "O RevPAR avançou 10,8% com o ADR a valorizar 6,3% e a ocupação a ganhar 2,9 p.p. As duas alavancas funcionaram em simultâneo, o sinal mais forte que um ativo pode dar, mas parte do ganho é a Páscoa que faltou em março.",
+          "en": "RevPAR advanced 10.8% with ADR up 6.3% and occupancy adding 2.9 pp. Both levers worked at once, which is the strongest signal an asset can give, but part of the gain is the Easter that March did not have."
         },
         "implication": {
           "pt": "Abril não deve entrar sozinho numa avaliação. Somando março e abril, o efeito de calendário anula-se e sobra a pergunta que interessa: quanto de um ADR de 115,9 euros sobrevive num mês sem feriado móvel.",

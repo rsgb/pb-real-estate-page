@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos ao 4.º trimestre de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for Q4 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {

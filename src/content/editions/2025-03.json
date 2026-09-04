@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a março de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for March 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -75,12 +71,12 @@
       "body": {
         "pt": [
           "As dormidas diminuíram 2,9% em março de 2025, para 5,6 milhões, com 2,3 milhões de hóspedes (+0,1%). O INE assinala a influência da estrutura móvel do calendário: o Carnaval passou de fevereiro para março e a Páscoa passou de março para abril.",
-          "Os proveitos totais ficaram em 406,9 milhões de euros (+0,1%) e os de aposento em 302,1 milhões (-0,6%). O RevPAR desceu para 48,7 euros (-2,1%), o ADR para 96,5 euros (-0,1%) e a taxa líquida de ocupação-cama para 39,8%, menos 2,0 p.p.",
+          "Os proveitos totais ficaram em 406,9 milhões de euros (+0,1%) e os de aposento em 302,1 milhões (-0,6%). O RevPAR desceu para 48,7 euros (-2,1%), o ADR para 96,5 euros (-0,1%) e a taxa líquida de ocupação-cama para 39,8%, menos 1,7 p.p.",
           "Para quem lê ativos, março tem a base de comparação distorcida. A questão não é a descida em si, mas quanto dela regressa em abril com a Páscoa."
         ],
         "en": [
           "Overnight stays fell 2.9% in March 2025, to 5.6 million, with 2.3 million guests (+0.1%). Statistics Portugal flags the influence of the moving calendar: Carnival shifted from February to March and Easter from March to April.",
-          "Total revenue stood at EUR 406.9 million (+0.1%) and room revenue at EUR 302.1 million (-0.6%). RevPAR eased to EUR 48.7 (-2.1%), ADR to EUR 96.5 (-0.1%) and net bed occupancy to 39.8%, down 2.0 pp.",
+          "Total revenue stood at EUR 406.9 million (+0.1%) and room revenue at EUR 302.1 million (-0.6%). RevPAR eased to EUR 48.7 (-2.1%), ADR to EUR 96.5 (-0.1%) and net bed occupancy to 39.8%, down 1.7 pp.",
           "For anyone reading assets, March has a distorted comparison base. The question is not the decrease itself, but how much of it returns in April with Easter."
         ]
       }
@@ -209,18 +205,22 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -2.0,
+            "value": -1.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: ao contrário de fevereiro, o recuo do volume não foi compensado pelo preço. Os proveitos totais ficaram em +0,1%, o RevPAR em -2,1% e a ocupação-cama perdeu 2,0 p.p., com apenas os residentes (+2,1%) a sustentar a procura."
+          "Leitura: ao contrário de fevereiro, o recuo do volume não foi compensado pelo preço. Os proveitos totais ficaram em +0,1%, o RevPAR em -2,1% e a ocupação-cama perdeu 1,7 p.p., com apenas os residentes (+2,1%) a sustentar a procura."
         ],
         "en": [
-          "Reading: unlike February, the loss of volume was not offset by price. Total revenue came in at +0.1%, RevPAR at -2.1% and net bed occupancy lost 2.0 pp, with only residents (+2.1%) supporting demand."
+          "Reading: unlike February, the loss of volume was not offset by price. Total revenue came in at +0.1%, RevPAR at -2.1% and net bed occupancy lost 1.7 pp, with only residents (+2.1%) supporting demand."
         ]
       }
     },
@@ -548,9 +548,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -2.0,
+            "value": -1.7,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -565,9 +569,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -1.1,
+            "value": -0.6,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -615,10 +623,10 @@
       ],
       "body": {
         "pt": [
-          "A taxa líquida de ocupação-cama fixou-se em 39,8% (-2,0 p.p.) e a de ocupação-quarto em 50,5% (-1,1 p.p.). Com o ADR quase parado em 96,5 euros (-0,1%), o RevPAR desceu 2,1% e os proveitos de aposento 0,6%. Sem ganho de preço, a perda de ocupação passou direta à receita."
+          "A taxa líquida de ocupação-cama fixou-se em 39,8% (-1,7 p.p.) e a de ocupação-quarto em 50,5% (-0,6 p.p.). Com o ADR quase parado em 96,5 euros (-0,1%), o RevPAR desceu 2,1% e os proveitos de aposento 0,6%. Sem ganho de preço, a perda de ocupação passou direta à receita."
         ],
         "en": [
-          "Net bed occupancy settled at 39.8% (-2.0 pp) and net room occupancy at 50.5% (-1.1 pp). With ADR almost flat at EUR 96.5 (-0.1%), RevPAR gave up 2.1% and room revenue 0.6%. With no price gain, the loss of occupancy passed straight through to revenue."
+          "Net bed occupancy settled at 39.8% (-1.7 pp) and net room occupancy at 50.5% (-0.6 pp). With ADR almost flat at EUR 96.5 (-0.1%), RevPAR gave up 2.1% and room revenue 0.6%. With no price gain, the loss of occupancy passed straight through to revenue."
         ]
       }
     },
@@ -634,12 +642,12 @@
           "en": "A month with no price effect"
         },
         "fact": {
-          "pt": "Dormidas -2,9%, proveitos totais +0,1%, proveitos de aposento -0,6%, RevPAR -2,1% e ocupação-cama 39,8%, menos 2,0 p.p.",
-          "en": "Overnight stays -2.9%, total revenue +0.1%, room revenue -0.6%, RevPAR -2.1% and net bed occupancy 39.8%, down 2.0 pp."
+          "pt": "Dormidas -2,9%, proveitos totais +0,1%, proveitos de aposento -0,6%, RevPAR -2,1% e ocupação-cama 39,8%, menos 1,7 p.p.",
+          "en": "Overnight stays -2.9%, total revenue +0.1%, room revenue -0.6%, RevPAR -2.1% and net bed occupancy 39.8%, down 1.7 pp."
         },
         "interpretation": {
-          "pt": "Quando o ADR fica em -0,1% e a ocupação perde 2,0 p.p., não há efeito preço a segurar o ativo. O avanço de 2,1% dos residentes financiou o mês, mas a receita por quarto disponível continuou a ceder.",
-          "en": "When ADR sits at -0.1% and occupancy loses 2.0 pp, there is no price effect holding the asset up. The 2.1% advance in residents funded the month, but revenue per available room kept sliding."
+          "pt": "Quando o ADR fica em -0,1% e a ocupação perde 1,7 p.p., não há efeito preço a segurar o ativo. O avanço de 2,1% dos residentes financiou o mês, mas a receita por quarto disponível continuou a ceder.",
+          "en": "When ADR sits at -0.1% and occupancy loses 1.7 pp, there is no price effect holding the asset up. The 2.1% advance in residents funded the month, but revenue per available room kept sliding."
         },
         "implication": {
           "pt": "O mês pede leitura trimestral e não mensal. Com o Carnaval e a Páscoa a trocar de mês, só fevereiro, março e abril em conjunto mostram a tendência real da procura e a capacidade de preço de cada ativo.",

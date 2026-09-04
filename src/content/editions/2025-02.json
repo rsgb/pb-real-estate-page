@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a fevereiro de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for February 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -75,12 +71,12 @@
       "body": {
         "pt": [
           "Em fevereiro de 2025 os proveitos subiram e as dormidas caíram: 1,8 milhões de hóspedes (+0,5%) e 4,2 milhões de dormidas (-2,5%). O INE assinala dois efeitos de calendário: o período de férias do Carnaval passou para março e o mês teve menos um dia do que em 2024, ano bissexto.",
-          "Os proveitos totais atingiram 287,7 milhões de euros e os de aposento 208,8 milhões, mais 3,7% e 3,3% do que um ano antes. O RevPAR subiu para 39,6 euros (+4,5%) e o ADR para 87,9 euros (+4,9%), enquanto a taxa líquida de ocupação-cama desceu para 35,4%, menos 0,6 p.p.",
+          "Os proveitos totais atingiram 287,7 milhões de euros e os de aposento 208,8 milhões, mais 3,7% e 3,3% do que um ano antes. O RevPAR subiu para 39,6 euros (+4,5%) e o ADR para 87,9 euros (+4,9%), enquanto a taxa líquida de ocupação-cama desceu para 35,4%, menos 0,5 p.p.",
           "Para quem detém ativos, fevereiro mostra que o preço compensou a perda de volume, embora não em todas as regiões. A leitura do mês exige separar o efeito de calendário do que é tendência de mercado."
         ],
         "en": [
           "February 2025 gained revenue and lost volume: 1.8 million guests (+0.5%) and 4.2 million overnight stays (-2.5%). Statistics Portugal flags two calendar effects: the Carnival holiday period moved to March, and the month had one day fewer than in 2024, a leap year.",
-          "Total revenue reached EUR 287.7 million and room revenue EUR 208.8 million, up 3.7% and 3.3% year on year. RevPAR rose to EUR 39.6 (+4.5%) and ADR to EUR 87.9 (+4.9%), while net bed occupancy slipped to 35.4%, down 0.6 pp.",
+          "Total revenue reached EUR 287.7 million and room revenue EUR 208.8 million, up 3.7% and 3.3% year on year. RevPAR rose to EUR 39.6 (+4.5%) and ADR to EUR 87.9 (+4.9%), while net bed occupancy slipped to 35.4%, down 0.5 pp.",
           "For owners, February shows that price offset the loss of volume, though not in every region. Reading the month means separating the calendar effect from the underlying market trend."
         ]
       }
@@ -205,18 +201,22 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.6,
+            "value": -0.5,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais aumentaram 3,7% e o RevPAR 4,5%, enquanto o volume recuou. A ocupação-cama perdeu 0,6 p.p., o que confirma um mês sustentado pelo preço e não por mais camas ocupadas."
+          "Leitura: os proveitos totais aumentaram 3,7% e o RevPAR 4,5%, enquanto o volume recuou. A ocupação-cama perdeu 0,5 p.p., o que confirma um mês sustentado pelo preço e não por mais camas ocupadas."
         ],
         "en": [
-          "Reading: total revenue rose 3.7% and RevPAR 4.5%, while volume contracted. Net bed occupancy lost 0.6 pp, confirming a month carried by price rather than by fuller use of capacity."
+          "Reading: total revenue rose 3.7% and RevPAR 4.5%, while volume contracted. Net bed occupancy lost 0.5 pp, confirming a month carried by price rather than by fuller use of capacity."
         ]
       }
     },
@@ -536,9 +536,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.6,
+            "value": -0.5,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -553,9 +557,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.2,
+            "value": 0.1,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -603,10 +611,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR chegou a 87,9 euros (+4,9%) e o RevPAR a 39,6 euros (+4,5%), mas a taxa líquida de ocupação-cama desceu para 35,4% (-0,6 p.p.) e a de ocupação-quarto para 45,1% (-0,2 p.p.). Os proveitos totais somaram 287,7 milhões de euros (+3,7%) e os de aposento 208,8 milhões (+3,3%). O ganho de receita foi de preço, não de utilização da capacidade."
+          "O ADR chegou a 87,9 euros (+4,9%) e o RevPAR a 39,6 euros (+4,5%), mas a taxa líquida de ocupação-cama desceu para 35,4% (-0,5 p.p.), com a de ocupação-quarto em 45,1% (+0,1 p.p.). Os proveitos totais somaram 287,7 milhões de euros (+3,7%) e os de aposento 208,8 milhões (+3,3%). O ganho de receita foi de preço, não de utilização da capacidade."
         ],
         "en": [
-          "ADR reached EUR 87.9 (+4.9%) and RevPAR EUR 39.6 (+4.5%), but net bed occupancy eased to 35.4% (-0.6 pp) and net room occupancy to 45.1% (-0.2 pp). Total revenue came to EUR 287.7 million (+3.7%) and room revenue to EUR 208.8 million (+3.3%). The revenue gain came from price, not from fuller use of capacity."
+          "ADR reached EUR 87.9 (+4.9%) and RevPAR EUR 39.6 (+4.5%), but net bed occupancy eased to 35.4% (-0.5 pp), with net room occupancy at 45.1% (+0.1 pp). Total revenue came to EUR 287.7 million (+3.7%) and room revenue to EUR 208.8 million (+3.3%). The revenue gain came from price, not from fuller use of capacity."
         ]
       }
     },
@@ -622,8 +630,8 @@
           "en": "Price offsetting volume in a short month"
         },
         "fact": {
-          "pt": "Dormidas -2,5%, proveitos totais +3,7%, RevPAR +4,5%, ADR +4,9% e ocupação-cama 35,4%, menos 0,6 p.p.",
-          "en": "Overnight stays -2.5%, total revenue +3.7%, RevPAR +4.5%, ADR +4.9% and net bed occupancy 35.4%, down 0.6 pp."
+          "pt": "Dormidas -2,5%, proveitos totais +3,7%, RevPAR +4,5%, ADR +4,9% e ocupação-cama 35,4%, menos 0,5 p.p.",
+          "en": "Overnight stays -2.5%, total revenue +3.7%, RevPAR +4.5%, ADR +4.9% and net bed occupancy 35.4%, down 0.5 pp."
         },
         "interpretation": {
           "pt": "Com o ADR a valorizar 4,9% e a ocupação a ceder, a receita do mês veio do preço. O poder de fixação de preços aguentou um mês mais fraco, mas a base de utilização da capacidade estreitou-se.",

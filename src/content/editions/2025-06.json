@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a junho de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for June 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -551,9 +547,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 0.3,
+            "value": 0.4,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -593,10 +593,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR chegou a 137,4 euros (+4,9%) e o RevPAR a 89,5 euros (+5,4%), a crescer mais do que o preço porque a ocupação também ajudou. A taxa líquida de ocupação-cama ficou em 54,8% (+0,4 p.p.) e a de ocupação-quarto em 65,1% (+0,3 p.p.). Com proveitos totais de 751,8 milhões de euros (+7,6%) e de aposento de 583,4 milhões (+7,9%), junho foi um mês em que preço e volume contribuíram ambos."
+          "O ADR chegou a 137,4 euros (+4,9%) e o RevPAR a 89,5 euros (+5,4%), a crescer mais do que o preço porque a ocupação também ajudou. A taxa líquida de ocupação-cama ficou em 54,8% (+0,4 p.p.) e a de ocupação-quarto em 65,1% (+0,4 p.p.). Com proveitos totais de 751,8 milhões de euros (+7,6%) e de aposento de 583,4 milhões (+7,9%), junho foi um mês em que preço e volume contribuíram ambos."
         ],
         "en": [
-          "ADR reached EUR 137.4 (+4.9%) and RevPAR EUR 89.5 (+5.4%), growing faster than price because occupancy helped as well. Net bed occupancy stood at 54.8% (+0.4 pp) and net room occupancy at 65.1% (+0.3 pp). With total revenue of EUR 751.8 million (+7.6%) and room revenue of EUR 583.4 million (+7.9%), June was a month in which price and volume both contributed."
+          "ADR reached EUR 137.4 (+4.9%) and RevPAR EUR 89.5 (+5.4%), growing faster than price because occupancy helped as well. Net bed occupancy stood at 54.8% (+0.4 pp) and net room occupancy at 65.1% (+0.4 pp). With total revenue of EUR 751.8 million (+7.6%) and room revenue of EUR 583.4 million (+7.9%), June was a month in which price and volume both contributed."
         ]
       }
     },

@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a maio de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for May 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -25,8 +21,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | May 2025"
   },
   "takeaway": {
-    "pt": "O crescimento de maio veio apenas dos residentes. Os proveitos totais subiram 8,7% e o RevPAR 6,7%, acima do ADR (+5,8%): a ocupação-quarto ganhou 0,5 p.p. enquanto a ocupação-cama perdeu 0,5 p.p.",
-    "en": "May's growth came from residents alone. Total revenue rose 8.7% and RevPAR 6.7%, ahead of ADR at +5.8%: net room occupancy gained 0.5 pp while net bed occupancy lost 0.5 pp."
+    "pt": "O crescimento de maio veio apenas dos residentes. Os proveitos totais subiram 8,7% e o RevPAR 6,7%, acima do ADR (+5,8%): a ocupação-quarto ganhou 0,8 p.p. enquanto a ocupação-cama perdeu 0,4 p.p.",
+    "en": "May's growth came from residents alone. Total revenue rose 8.7% and RevPAR 6.7%, ahead of ADR at +5.8%: net room occupancy gained 0.8 pp while net bed occupancy lost 0.4 pp."
   },
   "sections": [
     {
@@ -68,20 +64,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "As dormidas subiram 1,3%, mas todo o acréscimo veio dos residentes (+5,6%), com os não residentes em -0,1% e a ocupação-cama a perder 0,5 p.p.",
-          "en": "Overnight stays rose 1.3%, but the entire gain came from residents (+5.6%), with non-residents at -0.1% and net bed occupancy 0.5 pp lower."
+          "pt": "As dormidas subiram 1,3%, mas todo o acréscimo veio dos residentes (+5,6%), com os não residentes em -0,1% e a ocupação-cama a perder 0,4 p.p.",
+          "en": "Overnight stays rose 1.3%, but the entire gain came from residents (+5.6%), with non-residents at -0.1% and net bed occupancy 0.4 pp lower."
         }
       },
       "body": {
         "pt": [
           "Só os residentes acrescentaram dormidas em maio: 2,0 milhões (+5,6%), contra 5,8 milhões de não residentes (-0,1%), depois de +7,7% em abril. No total foram 7,8 milhões de dormidas (+1,3%) e 3,2 milhões de hóspedes (+2,8%).",
-          "Os proveitos totais chegaram a 717,0 milhões de euros (+8,7%) e os proveitos de aposento a 550,6 milhões (+8,8%), com o RevPAR em 83,4 euros (+6,7%) e o ADR em 128,9 euros (+5,8%), enquanto a taxa líquida de ocupação-cama ficou em 52,3%, menos 0,5 p.p.",
-          "Para quem opera ou financia um ativo, maio de 2025 é um mês a ler pelo quarto vendido: a receita subiu com a ocupação-quarto a ganhar 0,5 p.p. e a ocupação-cama a perder 0,5 p.p., e a base externa deixou de acompanhar a interna."
+          "Os proveitos totais chegaram a 717,0 milhões de euros (+8,7%) e os proveitos de aposento a 550,6 milhões (+8,8%), com o RevPAR em 83,4 euros (+6,7%) e o ADR em 128,9 euros (+5,8%), enquanto a taxa líquida de ocupação-cama ficou em 52,3%, menos 0,4 p.p.",
+          "Para quem opera ou financia um ativo, maio de 2025 é um mês a ler pelo quarto vendido: a receita subiu com a ocupação-quarto a ganhar 0,8 p.p. e a ocupação-cama a perder 0,4 p.p., e a base externa deixou de acompanhar a interna."
         ],
         "en": [
           "Only residents added overnight stays in May: 2.0 million (+5.6%), against 5.8 million non-resident stays (-0.1%) after +7.7% in April. The totals were 7.8 million overnight stays (+1.3%) and 3.2 million guests (+2.8%).",
-          "Total revenue reached EUR 717.0 million (+8.7%) and room revenue EUR 550.6 million (+8.8%), with RevPAR at EUR 83.4 (+6.7%) and ADR at EUR 128.9 (+5.8%), while net bed occupancy came in at 52.3%, 0.5 pp lower.",
-          "For anyone operating or financing an asset, May 2025 is a month to read through the room sold: revenue rose with net room occupancy up 0.5 pp and net bed occupancy down 0.5 pp, and the international base stopped keeping up with the domestic one."
+          "Total revenue reached EUR 717.0 million (+8.7%) and room revenue EUR 550.6 million (+8.8%), with RevPAR at EUR 83.4 (+6.7%) and ADR at EUR 128.9 (+5.8%), while net bed occupancy came in at 52.3%, 0.4 pp lower.",
+          "For anyone operating or financing an asset, May 2025 is a month to read through the room sold: revenue rose with net room occupancy up 0.8 pp and net bed occupancy down 0.4 pp, and the international base stopped keeping up with the domestic one."
         ]
       }
     },
@@ -201,18 +197,22 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.5,
+            "value": -0.4,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais avançaram 8,7% contra 1,3% nas dormidas, com o RevPAR (+6,7%) acima do ADR (+5,8%). A ocupação-quarto ganhou 0,5 p.p. e a ocupação-cama perdeu outro tanto: a receita adicional veio do preço e do quarto vendido."
+          "Leitura: os proveitos totais avançaram 8,7% contra 1,3% nas dormidas, com o RevPAR (+6,7%) acima do ADR (+5,8%). A ocupação-quarto ganhou 0,8 p.p. e a ocupação-cama perdeu 0,4 p.p.: a receita adicional veio do preço e do quarto vendido."
         ],
         "en": [
-          "Reading: total revenue advanced 8.7% against 1.3% for overnight stays, with RevPAR (+6.7%) ahead of ADR (+5.8%). Net room occupancy added 0.5 pp and net bed occupancy lost the same: the additional revenue came from price and from the room sold."
+          "Reading: total revenue advanced 8.7% against 1.3% for overnight stays, with RevPAR (+6.7%) ahead of ADR (+5.8%). Net room occupancy added 0.8 pp and net bed occupancy lost 0.4 pp: the additional revenue came from price and from the room sold."
         ]
       }
     },
@@ -538,9 +538,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.5,
+            "value": -0.4,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -555,9 +559,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 0.5,
+            "value": 0.8,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -601,10 +609,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR situou-se em 128,9 euros (+5,8%) e o RevPAR em 83,4 euros (+6,7%). A taxa líquida de ocupação-cama desceu 0,5 p.p., para 52,3%, enquanto a taxa líquida de ocupação-quarto ganhou 0,5 p.p., para 64,7%. Os proveitos totais (717,0 milhões de euros, +8,7%) e os de aposento (550,6 milhões, +8,8%) assentam, portanto, no preço e na ocupação-quarto: o RevPAR subiu 6,7%, acima dos 5,8% do ADR."
+          "O ADR situou-se em 128,9 euros (+5,8%) e o RevPAR em 83,4 euros (+6,7%). A taxa líquida de ocupação-cama desceu 0,4 p.p., para 52,3%, enquanto a taxa líquida de ocupação-quarto ganhou 0,8 p.p., para 64,7%. Os proveitos totais (717,0 milhões de euros, +8,7%) e os de aposento (550,6 milhões, +8,8%) assentam, portanto, no preço e na ocupação-quarto: o RevPAR subiu 6,7%, acima dos 5,8% do ADR."
         ],
         "en": [
-          "ADR came in at EUR 128.9 (+5.8%) and RevPAR at EUR 83.4 (+6.7%). Net bed occupancy shed 0.5 pp to 52.3%, while net room occupancy added 0.5 pp to 64.7%. Total revenue of EUR 717.0 million (+8.7%) and room revenue of EUR 550.6 million (+8.8%) therefore rest on price and on room occupancy: RevPAR rose 6.7%, ahead of ADR at 5.8%."
+          "ADR came in at EUR 128.9 (+5.8%) and RevPAR at EUR 83.4 (+6.7%). Net bed occupancy shed 0.4 pp to 52.3%, while net room occupancy added 0.8 pp to 64.7%. Total revenue of EUR 717.0 million (+8.7%) and room revenue of EUR 550.6 million (+8.8%) therefore rest on price and on room occupancy: RevPAR rose 6.7%, ahead of ADR at 5.8%."
         ]
       }
     },
@@ -620,12 +628,12 @@
           "en": "More revenue on a narrower demand base"
         },
         "fact": {
-          "pt": "Dormidas +1,3%, com residentes em +5,6% e não residentes em -0,1%; proveitos totais +8,7%, RevPAR +6,7%, ADR +5,8% e ocupação-cama -0,5 p.p.",
-          "en": "Overnight stays +1.3%, with residents +5.6% and non-residents -0.1%; total revenue +8.7%, RevPAR +6.7%, ADR +5.8% and net bed occupancy -0.5 pp."
+          "pt": "Dormidas +1,3%, com residentes em +5,6% e não residentes em -0,1%; proveitos totais +8,7%, RevPAR +6,7%, ADR +5,8% e ocupação-cama -0,4 p.p.",
+          "en": "Overnight stays +1.3%, with residents +5.6% and non-residents -0.1%; total revenue +8.7%, RevPAR +6.7%, ADR +5.8% and net bed occupancy -0.4 pp."
         },
         "interpretation": {
-          "pt": "O RevPAR subiu mais do que o ADR, com a ocupação-quarto a somar 0,5 p.p. e a ocupação-cama a perder outros tantos. O desempenho do ativo em maio dependeu do preço e do quarto vendido, não da cama; ao mesmo tempo, o mercado externo deixou de compensar o interno.",
-          "en": "RevPAR rose faster than ADR, with net room occupancy adding 0.5 pp and net bed occupancy shedding the same. Asset performance in May rested on price and on the room sold rather than the bed, and at the same time the international market stopped offsetting the domestic one."
+          "pt": "O RevPAR subiu mais do que o ADR, com a ocupação-quarto a somar 0,8 p.p. e a ocupação-cama a perder 0,4 p.p. O desempenho do ativo em maio dependeu do preço e do quarto vendido, não da cama; ao mesmo tempo, o mercado externo deixou de compensar o interno.",
+          "en": "RevPAR rose faster than ADR, with net room occupancy adding 0.8 pp and net bed occupancy shedding 0.4 pp. Asset performance in May rested on price and on the room sold rather than the bed, and at the same time the international market stopped offsetting the domestic one."
         },
         "implication": {
           "pt": "Importa separar efeito preço e efeito volume antes de extrapolar o crescimento dos proveitos. Em ativos expostos ao Algarve, que ficou em -3,1%, ou ao mercado brasileiro, com -11,6%, a base estreitou-se e um preço mais alto pode não se repetir se a ocupação continuar a ceder.",

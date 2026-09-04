@@ -10,10 +10,6 @@
   },
   "publishedAt": "2026-09-08",
   "historical": true,
-  "historicalNote": {
-    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a outubro de 2025.",
-    "en": "Historical edition, published on 8 September 2026 using data for October 2025."
-  },
   "dataStatus": "revised",
   "version": "1.0",
   "pdf": {
@@ -571,9 +567,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": -0.4,
+            "value": -0.2,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -621,10 +621,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR de outubro foi de 122,6 euros (+3,5%) e o RevPAR de 77,5 euros (+2,9%). A taxa líquida de ocupação-cama ficou em 50,9%, menos 0,3 p.p., e a de ocupação-quarto em 63,2%, menos 0,4 p.p. Os proveitos totais subiram 7,2%, para 691,2 milhões de euros, e os de aposento 5,9%, para 521,5 milhões: com as dormidas em +2,2%, parte do acréscimo de receita foi volume e o preço fez o resto."
+          "O ADR de outubro foi de 122,6 euros (+3,5%) e o RevPAR de 77,5 euros (+2,9%). A taxa líquida de ocupação-cama ficou em 50,9%, menos 0,3 p.p., e a de ocupação-quarto em 63,2%, menos 0,2 p.p. Os proveitos totais subiram 7,2%, para 691,2 milhões de euros, e os de aposento 5,9%, para 521,5 milhões: com as dormidas em +2,2%, parte do acréscimo de receita foi volume e o preço fez o resto."
         ],
         "en": [
-          "October ADR was EUR 122.6 (+3.5%) and RevPAR EUR 77.5 (+2.9%). Net bed occupancy stood at 50.9%, down 0.3 pp, and net room occupancy at 63.2%, down 0.4 pp. Total revenue rose 7.2% to EUR 691.2 million and room revenue 5.9% to EUR 521.5 million: with overnight stays at +2.2%, part of the revenue gain was volume and price supplied the rest."
+          "October ADR was EUR 122.6 (+3.5%) and RevPAR EUR 77.5 (+2.9%). Net bed occupancy stood at 50.9%, down 0.3 pp, and net room occupancy at 63.2%, down 0.2 pp. Total revenue rose 7.2% to EUR 691.2 million and room revenue 5.9% to EUR 521.5 million: with overnight stays at +2.2%, part of the revenue gain was volume and price supplied the rest."
         ]
       }
     },
