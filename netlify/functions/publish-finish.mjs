@@ -10,6 +10,7 @@
  * instead of opening a second one.
  */
 import { validateEdition } from "../../src/lib/edition-validation.mjs";
+import { editionSlug } from "../../src/lib/format.js";
 import { requireSession } from "./_lib/auth.mjs";
 import {
   BASE_BRANCH,
@@ -126,7 +127,7 @@ function pullRequestBody({ id, derived }) {
     "**Pré-visualização**",
     "",
     "A deploy preview desta PR serve a edição em",
-    `\`/pt/market-brief/${id}/\` e \`/en/market-brief/${id}/\`.`,
+    `\`/pt/market-brief/${editionSlug(id)}/\` e \`/en/market-brief/${editionSlug(id)}/\`.`,
     "",
     "A edição só fica pública quando esta PR for aprovada e integrada em `main`.",
   ].join("\n");

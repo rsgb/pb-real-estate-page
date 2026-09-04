@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { formatDate, formatPeriod } from "../../lib/format";
+import { formatDate, formatPeriod, formatPeriodInSentence } from "../../lib/format";
 import { fillTemplate, pick, useThbLang } from "../lang";
 import Rule from "./Rule";
 import ThbMark from "./ThbMark";
@@ -35,12 +35,14 @@ export default function EditionHeader({ edition, section, sx }) {
   const overline = [t.knowledgeCentre, kicker].filter(Boolean).join(" · ");
 
   // Backfilled edition: say so in the metadata line and, below it, in a full
-  // sentence, so the period is never mistaken for current reporting.
+  // sentence, so the period is never mistaken for current reporting. The
+  // sentence takes the in-sentence period form, not the title form used by the
+  // H1 above ("novembro de 2025", not "Novembro 2025").
   const isHistorical = edition.historical === true;
   const historicalNotice = isHistorical
     ? fillTemplate(t.historicalNotice, {
         date: formatDate(edition.publishedAt, contentLang),
-        period: formatPeriod(edition, contentLang),
+        period: formatPeriodInSentence(edition, contentLang),
       })
     : "";
   const historicalNote = isHistorical ? pick(edition.historicalNote, contentLang) : "";

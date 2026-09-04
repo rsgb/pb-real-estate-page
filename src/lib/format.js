@@ -48,6 +48,25 @@ const MONTHS = {
   ],
 };
 
+/**
+ * URL segment for an edition, i.e. its id lower-cased.
+ *
+ * Edition ids keep the uppercase period token ("2025-Q4", "2026-H1") because it
+ * is the same token the PDF file names and the schema pattern use. URLs cannot:
+ * Netlify answers any path containing an uppercase letter with a 301 to the
+ * lower-cased path, so `/en/market-brief/2025-Q4/` becomes
+ * `/en/market-brief/2025-q4/` before the app ever runs. Every path, sitemap
+ * entry, pre-render folder and Open Graph file name is therefore built from the
+ * slug, and `getEdition` looks editions up case-insensitively so the old
+ * uppercase links still resolve.
+ *
+ * @param {string} id edition id, e.g. "2025-Q4"
+ * @returns {string} e.g. "2025-q4"
+ */
+export function editionSlug(id) {
+  return String(id ?? "").toLowerCase();
+}
+
 /** Comparison-basis caption, e.g. "homólogo" / "YoY". */
 export function basisLabel(basis, contentLang) {
   return BASIS_LABELS[basis]?.[contentLang] ?? BASIS_LABELS[basis]?.en ?? "";
@@ -157,6 +176,37 @@ export function formatPeriod(edition, contentLang = "en") {
   }
 }
 
+/**
+ * The period as it reads *inside* a sentence rather than as a title:
+ * "novembro de 2025" / "November 2025", "1.º trimestre de 2025" / "Q1 2025",
+ * "1.º semestre de 2025" / "H1 2025", "2025" / "2025".
+ *
+ * `formatPeriod` is the display label (page heading, archive rows, cards), so
+ * it is title-cased and spells the annual edition out as "Balanço Anual 2026".
+ * Dropped mid-sentence that reads wrong in Portuguese, which is why the
+ * historical notice uses this form instead.
+ */
+export function formatPeriodInSentence(edition, contentLang = "en") {
+  if (!edition?.period) return "";
+  const lang = contentLang === "pt" ? "pt" : "en";
+  const { year, month, quarter, half } = edition.period;
+  switch (edition.horizon) {
+    case "monthly": {
+      const name = MONTHS[lang][(month ?? 1) - 1];
+      return lang === "pt" ? `${name.toLowerCase()} de ${year}` : `${name} ${year}`;
+    }
+    case "quarterly":
+      return lang === "pt"
+        ? `${quarter ?? 1}.º trimestre de ${year}`
+        : `Q${quarter ?? 1} ${year}`;
+    case "half-year":
+      return lang === "pt" ? `${half ?? 1}.º semestre de ${year}` : `H${half ?? 1} ${year}`;
+    default:
+      // annual, and anything without a narrower period: the year alone
+      return String(year);
+  }
+}
+
 /** "Tourism & Hospitality Brief | Portugal | Julho 2026". */
 export function editionTitle(edition, contentLang = "en") {
   if (!edition) return "Tourism & Hospitality Brief";
@@ -229,9 +279,43 @@ if (argv1 && argv1.replace(/\\/g, "/").endsWith("src/lib/format.js")) {
     [formatPeriod({ horizon: "annual", period: { year: 2026 } }, "pt"), "Balanço Anual 2026"],
     [formatPeriod({ horizon: "annual", period: { year: 2026 } }, "en"), "Annual Review 2026"],
     [
+      formatPeriodInSentence({ horizon: "monthly", period: { year: 2025, month: 11 } }, "pt"),
+      "novembro de 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "monthly", period: { year: 2025, month: 11 } }, "en"),
+      "November 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "monthly", period: { year: 2025, month: 3 } }, "pt"),
+      "março de 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "quarterly", period: { year: 2025, quarter: 1 } }, "pt"),
+      "1.º trimestre de 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "quarterly", period: { year: 2025, quarter: 1 } }, "en"),
+      "Q1 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "half-year", period: { year: 2025, half: 2 } }, "pt"),
+      "2.º semestre de 2025",
+    ],
+    [
+      formatPeriodInSentence({ horizon: "half-year", period: { year: 2025, half: 2 } }, "en"),
+      "H2 2025",
+    ],
+    [formatPeriodInSentence({ horizon: "annual", period: { year: 2025 } }, "pt"), "2025"],
+    [formatPeriodInSentence({ horizon: "annual", period: { year: 2025 } }, "en"), "2025"],
+    [
       editionTitle({ horizon: "monthly", period: { year: 2026, month: 7 } }, "en"),
       "Tourism & Hospitality Brief | Portugal | July 2026",
     ],
+    [editionSlug("2025-Q4"), "2025-q4"],
+    [editionSlug("2026-H1"), "2026-h1"],
+    [editionSlug("2026-07"), "2026-07"],
+    [editionSlug("2025"), "2025"],
   ];
   let failed = 0;
   for (const [got, want] of cases) {

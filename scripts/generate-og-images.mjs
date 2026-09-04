@@ -7,7 +7,10 @@
  * the period. This renders a purpose-made 1200x630 card per edition and per
  * language, reproducing the approved signature layout in landscape.
  *
- *   src/content/editions/20*.json  ->  public/og/thb-<id>-<lang>.png
+ *   src/content/editions/20*.json  ->  public/og/thb-<slug>-<lang>.png
+ *
+ * `<slug>` is the edition id lower-cased (`editionSlug`), matching the URL the
+ * card is referenced from.
  *
  * satori (JSX-free object syntax) -> SVG -> @resvg/resvg-js -> PNG, with
  * Inter 400/600/700 from @fontsource/inter. Period wording comes from
@@ -26,7 +29,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
-import { formatPeriod } from "../src/lib/format.js";
+import { editionSlug, formatPeriod } from "../src/lib/format.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
@@ -234,6 +237,24 @@ function isFresh(out, sources) {
   return sources.every((src) => fs.statSync(src).mtimeMs <= outMtime);
 }
 
+/**
+ * Drop cards left over from before the file name carried the slug
+ * ("thb-2025-Q4-pt.png"). On a case-insensitive filesystem — macOS by default —
+ * writing "thb-2025-q4-pt.png" over an existing "thb-2025-Q4-pt.png" keeps the
+ * old, upper-cased name, which then ships to Netlify's case-sensitive host and
+ * 404s. Removing them first makes the next write create the lower-case name.
+ */
+function removeMixedCaseCards() {
+  if (!fs.existsSync(OUT_DIR)) return 0;
+  let removed = 0;
+  for (const name of fs.readdirSync(OUT_DIR)) {
+    if (name === name.toLowerCase()) continue;
+    fs.rmSync(path.join(OUT_DIR, name), { force: true });
+    removed += 1;
+  }
+  return removed;
+}
+
 async function main() {
   const editionFiles = fs
     .readdirSync(EDITIONS_DIR)
@@ -247,6 +268,8 @@ async function main() {
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  const stale = removeMixedCaseCards();
+  if (stale) console.log(`  removed ${stale} card(s) named before the slug fix`);
   const fonts = loadFonts();
   let written = 0;
   let skipped = 0;
@@ -254,7 +277,9 @@ async function main() {
   for (const file of editionFiles) {
     const edition = JSON.parse(fs.readFileSync(file, "utf8"));
     for (const contentLang of LANGS) {
-      const out = path.join(OUT_DIR, `thb-${edition.id}-${contentLang}.png`);
+      // Named by the slug, so the page's <meta og:image> and the file agree on
+      // a case-sensitive host.
+      const out = path.join(OUT_DIR, `thb-${editionSlug(edition.id)}-${contentLang}.png`);
       if (isFresh(out, [file, SCRIPT_PATH])) {
         skipped += 1;
         continue;

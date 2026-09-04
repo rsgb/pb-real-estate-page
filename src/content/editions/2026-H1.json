@@ -1,0 +1,563 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2026-H1",
+  "series": "thb",
+  "horizon": "half-year",
+  "country": "PT",
+  "period": {
+    "year": 2026,
+    "half": 1
+  },
+  "publishedAt": "2026-09-04",
+  "historical": true,
+  "dataStatus": "provisional",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_HalfYear_2026-H1_PT_PDF_v1.0.pdf",
+    "en": "THB_HalfYear_2026-H1_EN_PDF_v1.0.pdf"
+  },
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | 1.º semestre de 2026",
+    "en": "Tourism & Hospitality Brief | Portugal | H1 2026"
+  },
+  "takeaway": {
+    "pt": "Em seis meses, as dormidas cresceram 1,3% e os proveitos totais 5,4%. O mercado interno subiu 2,4% e o externo apenas 0,8%. A ocupação desceu em todos os meses: o semestre valeu mais por preço do que por procura.",
+    "en": "Over six months overnight stays grew 1.3% and total revenue 5.4%. The domestic market rose 2.4%, the external market only 0.8%. Occupancy was lower in every month: the half-year was worth more on rate than on demand."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "HALF-YEAR BRIEF",
+        "en": "HALF-YEAR BRIEF"
+      },
+      "strapline": {
+        "pt": "Portugal, 1.º semestre de 2026: dormidas +1,3% e proveitos totais +5,4% em termos homólogos.",
+        "en": "Portugal, H1 2026: overnight stays +1.3% and total revenue +5.4% year on year."
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição histórica v1.0 - dados provisórios",
+        "en": "Historical edition v1.0 - provisional data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "Seis meses de crescimento cada vez mais fino",
+        "en": "Six months of steadily thinner growth"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "O semestre não tem manchete própria do INE: tem seis mensais, de um janeiro de crescimento em abrandamento a um junho de dormidas de não residentes em queda. No conjunto, 36,8 milhões de dormidas (+1,3%) e 3148,3 milhões de euros de proveitos totais (+5,4%).",
+          "en": "The half-year has no headline of its own from Statistics Portugal: it has six monthly ones, from a January of slowing growth to a June of falling non-resident overnight stays. Over the six months, 36.8 million overnight stays (+1.3%) and EUR 3,148.3 million of total revenue (+5.4%)."
+        }
+      },
+      "body": {
+        "pt": [
+          "O primeiro semestre de 2026 fechou com 15,1 milhões de hóspedes (+2,1%) e 36,8 milhões de dormidas (+1,3%). As dormidas de não residentes caíram 0,6% em junho, invertendo a trajetória dos oito meses anteriores.",
+          "Vários meses foram assinalados com efeitos de calendário, do Carnaval à Páscoa, e janeiro e fevereiro com o impacto de fenómenos meteorológicos intensos e anómalos. Os proveitos totais somaram 3148,3 milhões de euros (+5,4%) e os de aposento 2371,1 milhões (+4,8%), muito acima do que se moveu em volume.",
+          "O semestre divide-se em dois trimestres quase iguais: janeiro +2,0%, fevereiro +0,7% e março +1,1% nas dormidas; abril +0,4%, maio +2,5% e junho +0,7%. O 2.º trimestre não corrigiu o 1.º. A receita subiu, a procura externa perdeu força e a ocupação esteve abaixo do ano anterior em todos os meses."
+        ],
+        "en": [
+          "The first half of 2026 closed with 15.1 million guests (+2.1%) and 36.8 million overnight stays (+1.3%). Non-resident overnight stays were 0.6% lower in June, reversing the path of the previous eight months.",
+          "Several months carried calendar effects, from Carnival to Easter, and January and February the impact of intense and unusual weather events. Total revenue came to EUR 3,148.3 million (+5.4%) and room revenue to EUR 2,371.1 million (+4.8%), far ahead of what moved in volume.",
+          "The half-year splits into two near-identical quarters: January +2.0%, February +0.7% and March +1.1% in overnight stays; April +0.4%, May +2.5% and June +0.7%. The second quarter did not correct the first. Revenue rose, external demand lost strength and occupancy sat below the year before in every month."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "Seis meses de receita sem volume",
+        "en": "Six months of revenue without volume"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 15.1,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 36.8496,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 3148.3,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.4,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 2371.1,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: 36,8 milhões de dormidas (+1,3%) sustentaram 3148,3 milhões de euros de proveitos totais (+5,4%). Os proveitos de aposento subiram 4,8%, menos do que o total, ou seja, a receita adicional não veio apenas do quarto."
+        ],
+        "en": [
+          "Reading: 36.8 million overnight stays (+1.3%) supported EUR 3,148.3 million of total revenue (+5.4%). Room revenue rose 4.8%, less than the total, which means the additional revenue did not come from the room alone."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "Seis meses sem um único mês forte",
+        "en": "Six months without a single strong month"
+      },
+      "indicators": [
+        {
+          "key": "residentStays",
+          "label": {
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
+          },
+          "value": 10.9,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.4,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "nonResidentStays",
+          "label": {
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
+          },
+          "value": 26.0,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "As dormidas de residentes atingiram 10,9 milhões (+2,4%) e as de não residentes 26,0 milhões (+0,8%). Nenhum mês do semestre passou de 2,5% e três ficaram abaixo de 1,0%. Em junho, as dormidas de não residentes diminuíram 0,6%, o primeiro decréscimo desde setembro de 2025, enquanto as de residentes ainda aumentaram 3,8%."
+        ],
+        "en": [
+          "Resident overnight stays reached 10.9 million (+2.4%) and non-resident stays 26.0 million (+0.8%). No month of the half-year cleared 2.5% and three came in below 1.0%. In June non-resident overnight stays were 0.6% lower, the first drop since September 2025, while resident stays still increased 3.8%."
+        ]
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas, mês a mês",
+          "en": "Change in overnight stays, month by month"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "1.º semestre de 2026, variação homóloga",
+          "en": "H1 2026, year-on-year change"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, divulgações mensais do período.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, the period's monthly releases."
+        },
+        "items": [
+          {
+            "key": "m202601",
+            "label": {
+              "pt": "janeiro",
+              "en": "January"
+            },
+            "value": 2.0
+          },
+          {
+            "key": "m202602",
+            "label": {
+              "pt": "fevereiro",
+              "en": "February"
+            },
+            "value": 0.7
+          },
+          {
+            "key": "m202603",
+            "label": {
+              "pt": "março",
+              "en": "March"
+            },
+            "value": 1.1
+          },
+          {
+            "key": "m202604",
+            "label": {
+              "pt": "abril",
+              "en": "April"
+            },
+            "value": 0.4
+          },
+          {
+            "key": "m202605",
+            "label": {
+              "pt": "maio",
+              "en": "May"
+            },
+            "value": 2.5
+          },
+          {
+            "key": "m202606",
+            "label": {
+              "pt": "junho",
+              "en": "June"
+            },
+            "value": 0.7
+          }
+        ],
+        "highlightKey": "m202605",
+        "altText": {
+          "pt": "Variação homóloga das dormidas, mês a mês, 1.º semestre de 2026: janeiro +2,0%, fevereiro +0,7%, março +1,1%, abril +0,4%, maio +2,5%, junho +0,7%.",
+          "en": "Year-on-year change in overnight stays, month by month, H1 2026: January +2.0%, February +0.7%, March +1.1%, April +0.4%, May +2.5%, June +0.7%."
+        }
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "REGIÕES",
+        "en": "REGIONS"
+      },
+      "headline": {
+        "pt": "Norte e Alentejo carregaram o semestre",
+        "en": "The North and the Alentejo carried the half-year"
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas por região",
+          "en": "Change in overnight stays by region"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "1.º semestre de 2026, variação homóloga derivada dos valores mensais do INE",
+          "en": "H1 2026, year-on-year change derived from INE's monthly figures"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, divulgações mensais do período (Quadro 1).",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, the period's monthly releases (Quadro 1)."
+        },
+        "items": [
+          {
+            "key": "norte",
+            "label": {
+              "pt": "Norte",
+              "en": "North"
+            },
+            "value": 5.8
+          },
+          {
+            "key": "alentejo",
+            "label": {
+              "pt": "Alentejo",
+              "en": "Alentejo"
+            },
+            "value": 5.8
+          },
+          {
+            "key": "lisboa",
+            "label": {
+              "pt": "Grande Lisboa",
+              "en": "Greater Lisbon"
+            },
+            "value": 2.0
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": 1.4
+          },
+          {
+            "key": "setubal",
+            "label": {
+              "pt": "Península de Setúbal",
+              "en": "Setúbal Peninsula"
+            },
+            "value": -1.5
+          },
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "RA Madeira",
+              "en": "Madeira"
+            },
+            "value": -1.6
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "RA Açores",
+              "en": "Azores"
+            },
+            "value": -2.3
+          },
+          {
+            "key": "centro",
+            "label": {
+              "pt": "Centro",
+              "en": "Centre"
+            },
+            "value": -2.6
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": -4.9
+          }
+        ],
+        "highlightKey": "norte",
+        "altText": {
+          "pt": "Variação homóloga das dormidas por região, 1.º semestre de 2026: Norte +5,8%, Alentejo +5,8%, Grande Lisboa +2,0%, Algarve +1,4%, Península de Setúbal -1,5%, RA Madeira -1,6%, RA Açores -2,3%, Centro -2,6%, Oeste e Vale do Tejo -4,9%.",
+          "en": "Year-on-year change in overnight stays by region, H1 2026: North +5.8%, Alentejo +5.8%, Greater Lisbon +2.0%, Algarve +1.4%, Setúbal Peninsula -1.5%, Madeira -1.6%, Azores -2.3%, Centre -2.6%, West and Tagus Valley -4.9%."
+        }
+      },
+      "body": {
+        "pt": [
+          "O Norte e o Alentejo cresceram 5,8% cada um, os maiores aumentos do semestre. Seguiram-se a Grande Lisboa (+2,0%) e o Algarve (+1,4%). Cinco das nove regiões terminaram o semestre com menos dormidas: Península de Setúbal (-1,5%), RA Madeira (-1,6%), RA Açores (-2,3%), Centro (-2,6%) e Oeste e Vale do Tejo (-4,9%). O crescimento nacional de 1,3% resulta de um país dividido, não de uma subida generalizada."
+        ],
+        "en": [
+          "The North and the Alentejo each grew 5.8%, the largest increases of the half-year. Greater Lisbon (+2.0%) and the Algarve (+1.4%) followed. Five of the nine regions ended the half-year with fewer overnight stays: the Setúbal Peninsula (-1.5%), Madeira (-1.6%), the Azores (-2.3%), the Centre (-2.6%) and the West and Tagus Valley (-4.9%). National growth of 1.3% is the result of a divided country, not of a broad advance."
+        ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
+        },
+        "body": {
+          "pt": "O Oeste e Vale do Tejo fechou o semestre com menos 4,9% de dormidas, o maior decréscimo do país, e foi a região mais fraca nos dois trimestres.",
+          "en": "The West and Tagus Valley ended the half-year 4.9% down in overnight stays, the country's largest regional drop, and was the weakest region in both quarters."
+        }
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "A receita cresceu fora do aposento",
+        "en": "Revenue grew outside the room"
+      },
+      "scope": {
+        "pt": "Portugal, estabelecimentos de alojamento turístico.",
+        "en": "Portugal, tourist accommodation establishments."
+      },
+      "indicators": [
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 3148.3,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.4,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 2371.1,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os proveitos totais atingiram 3148,3 milhões de euros (+5,4%) e os de aposento 2371,1 milhões (+4,8%). O INE não publica RevPAR, ADR nem taxas de ocupação semestrais; nas divulgações mensais, a taxa líquida de ocupação-cama ficou abaixo do ano anterior em todos os meses de janeiro a junho de 2026. Com as dormidas a subirem 1,3%, o aumento dos proveitos veio do preço e da receita gerada fora do aposento, não de mais camas ocupadas."
+        ],
+        "en": [
+          "Total revenue reached EUR 3,148.3 million (+5.4%) and room revenue EUR 2,371.1 million (+4.8%). Statistics Portugal publishes no half-year RevPAR, ADR or occupancy rates; in the monthly releases, net bed occupancy stayed below the year before in every month from January to June 2026. With overnight stays up 1.3%, the revenue gain came from rate and from revenue earned outside the room, not from more beds filled."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Um semestre que valeu mais e encheu menos",
+          "en": "A half-year worth more and filled less"
+        },
+        "fact": {
+          "pt": "Dormidas +1,3%, proveitos totais +5,4%, proveitos de aposento +4,8%, residentes +2,4% e não residentes +0,8%.",
+          "en": "Overnight stays +1.3%, total revenue +5.4%, room revenue +4.8%, residents +2.4% and non-residents +0.8%."
+        },
+        "interpretation": {
+          "pt": "Seis meses seguidos de ocupação abaixo do ano anterior com proveitos a subir descrevem um mercado que defende a receita pelo preço. A base de procura estreitou-se: cinco regiões ficaram com menos dormidas e o mercado externo, que é o maior, praticamente parou. O risco deixou de estar no volume nacional e passou a estar no mix, por região e por segmento.",
+          "en": "Six straight months of occupancy below the year before, with revenue moving up, describe a market defending revenue through rate. The demand base narrowed: five regions ended with fewer overnight stays and the external market, the larger of the two, all but stopped. The risk is no longer national volume; it is mix, by region and by segment."
+        },
+        "implication": {
+          "pt": "O segundo semestre deve ser lido ao nível do ativo. Importa perguntar quanto do aumento de preço a procura ainda aceita, que parte da receita já não vem do aposento, e se a exposição está do lado do Norte e do Alentejo ou do lado das cinco regiões que encolheram. A média nacional de +1,3% não descreve nenhum destes casos.",
+          "en": "The second half should be read at asset level. The questions are how much more rate demand will still take, how much of the revenue no longer comes from the room, and whether exposure sits with the North and the Alentejo or with the five regions that shrank. The national average of +1.3% describes none of these cases."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar no segundo semestre de 2026",
+          "en": "Three signals to watch in the second half of 2026"
+        },
+        "signals": [
+          {
+            "pt": "Se as dormidas de não residentes voltam a subir depois do decréscimo de junho.",
+            "en": "Whether non-resident overnight stays move up again after the June drop."
+          },
+          {
+            "pt": "Se a ocupação estabiliza ou se a série de descidas se prolonga para lá do primeiro semestre.",
+            "en": "Whether occupancy stabilises or the run of declines extends beyond the first half."
+          },
+          {
+            "pt": "Se o Oeste e Vale do Tejo, o Centro e as Regiões Autónomas travam a descida, ou se o país continua a somar com cinco regiões a encolher.",
+            "en": "Whether the West and Tagus Valley, the Centre and the island regions arrest their falls, or the country keeps adding with five regions shrinking."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, junho de 2026, divulgadas em 31 de julho de 2026. Acumulado janeiro-junho.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, June 2026, released 31 July 2026. January-June cumulative."
+        },
+        "complementary": [
+          {
+            "pt": "INE, Atividade Turística, 2.º trimestre de 2026, divulgada em 14 de agosto de 2026. Parágrafo do 1.º semestre de 2026.",
+            "en": "Statistics Portugal, Tourism Activity, Q2 2026, released 14 August 2026. First-half 2026 paragraph."
+          }
+        ],
+        "releaseDate": "2026-08-14",
+        "status": "provisional",
+        "notes": {
+          "pt": "Níveis e variações homólogas do acumulado janeiro-junho publicado pelo INE em 31 de julho de 2026; hóspedes e dormidas de residentes e não residentes do parágrafo do 1.º semestre da divulgação trimestral de 14 de agosto de 2026. Variação regional agregada a partir dos valores mensais publicados pelo INE, uma vez que o INE não publica quadro regional semestral. O INE não publica RevPAR, ADR nem taxas de ocupação semestrais.",
+          "en": "Levels and year-on-year changes from the January-June cumulative INE published on 31 July 2026; guests and resident / non-resident stays from the first-half paragraph of the quarterly release of 14 August 2026. Regional change aggregated from INE's published monthly figures, since INE publishes no half-year regional table. INE publishes no half-year RevPAR, ADR or occupancy."
+        }
+      }
+    }
+  ]
+}

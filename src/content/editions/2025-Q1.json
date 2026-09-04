@@ -1,0 +1,599 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2025-Q1",
+  "series": "thb",
+  "horizon": "quarterly",
+  "country": "PT",
+  "period": {
+    "year": 2025,
+    "quarter": 1
+  },
+  "publishedAt": "2026-09-04",
+  "historical": true,
+  "dataStatus": "revised",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_Quarterly_2025-Q1_PT_PDF_v1.0.pdf",
+    "en": "THB_Quarterly_2025-Q1_EN_PDF_v1.0.pdf"
+  },
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | 1.º trimestre de 2025",
+    "en": "Tourism & Hospitality Brief | Portugal | Q1 2025"
+  },
+  "takeaway": {
+    "pt": "O 1.º trimestre trocou volume por calendário: as dormidas recuaram 0,4% com a Páscoa a passar para abril, os mercados externos caíram 2,3% e os proveitos totais subiram 4,6%. O preço compensou o que o volume não deu.",
+    "en": "Q1 traded volume for calendar. Overnight stays were 0.4% lower as Easter moved to April, external markets fell 2.3% and total revenue rose 4.6%. Value moved up where volume did not."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "QUARTERLY BRIEF",
+        "en": "QUARTERLY BRIEF"
+      },
+      "strapline": {
+        "pt": "Portugal, 1.º trimestre de 2025: dormidas -0,4% e proveitos totais +4,6% em termos homólogos.",
+        "en": "Portugal, Q1 2025: overnight stays -0.4% and total revenue +4.6% year on year."
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição histórica v1.0 - dados revistos",
+        "en": "Historical edition v1.0 - revised data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "O calendário desenhou o trimestre e travou os mercados externos",
+        "en": "The calendar shaped the quarter and stalled external markets"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "Com a Páscoa em abril, o trimestre perdeu volume e ganhou receita: -0,4% nas dormidas contra +4,6% nos proveitos totais.",
+          "en": "With Easter in April, the quarter lost volume and gained revenue: -0.4% in overnight stays against +4.6% in total revenue."
+        }
+      },
+      "body": {
+        "pt": [
+          "Entre janeiro e março, o alojamento turístico contou 5,7 milhões de hóspedes (+2,4%) e 13,4 milhões de dormidas (-0,4%), num trimestre em que a Páscoa passou para abril depois de, no ano anterior, se ter concentrado essencialmente em março.",
+          "Os proveitos totais atingiram 956,0 milhões de euros (+4,6%) e os de aposento 699,5 milhões (+4,1%); o RevPAR ficou em 40,8 euros e o ADR em 91,6 euros, ambos com +2,8%.",
+          "A leitura para quem detém ativos é de preço e de mix, não de tráfego: as regiões que o INE destacou pela dependência dos mercados externos, RA Madeira (85,2% das dormidas regionais) e Algarve (81,2%), foram também as mais expostas ao desvio do calendário."
+        ],
+        "en": [
+          "Between January and March, tourist accommodation counted 5.7 million guests (+2.4%) and 13.4 million overnight stays (-0.4%), in a quarter where Easter moved to April after falling mainly in March a year earlier.",
+          "Total revenue reached EUR 956.0 million (+4.6%) and room revenue EUR 699.5 million (+4.1%); RevPAR stood at EUR 40.8 and ADR at EUR 91.6, both up 2.8%.",
+          "The reading for owners is about price and mix rather than traffic: the regions Statistics Portugal singled out for their dependence on external markets, Madeira (85.2% of regional overnight stays) and the Algarve (81.2%), were also the most exposed to the calendar shift."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "O valor subiu enquanto o volume cedeu",
+        "en": "Value moved up while volume gave way"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 5.7,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.4,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 13.4006,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -0.4,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 956.0,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.6,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 699.5,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 40.8,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.8,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 91.6,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.8,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: os proveitos totais avançaram 4,6% com menos 0,4% de dormidas. O RevPAR (+2,8%) igualou o ADR (+2,8%): o ganho está todo na tarifa, sem contributo da ocupação."
+        ],
+        "en": [
+          "Reading: total revenue advanced 4.6% while overnight stays were 0.4% lower. RevPAR (+2.8%) matched ADR (+2.8%): the gain is all rate, with nothing from occupancy."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "Os residentes seguraram o trimestre; os externos recuaram",
+        "en": "Residents held the quarter up; external markets pulled back"
+      },
+      "indicators": [
+        {
+          "key": "residentStays",
+          "label": {
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
+          },
+          "value": 4.3,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 3.6,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "nonResidentStays",
+          "label": {
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
+          },
+          "value": 9.1,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -2.3,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os residentes geraram 4,3 milhões de dormidas, mais 3,6% do que um ano antes, enquanto os mercados externos ficaram em 9,1 milhões, menos 2,3%. O peso dos não residentes desceu para 67,9% do total, o valor mais baixo desde o 3.º trimestre de 2022 (65,7%). A dependência dos mercados externos separa o país: a RA Madeira (85,2%) e o Algarve (81,2%) no topo, o Centro (24,3%) e o Alentejo (31,2%) no extremo oposto."
+        ],
+        "en": [
+          "Residents generated 4.3 million overnight stays, 3.6% more than a year earlier, while external markets came in at 9.1 million, 2.3% lower. The non-resident share slipped to 67.9% of the total, the lowest since the third quarter of 2022 (65.7%). Dependence on external markets splits the country: Madeira (85.2%) and the Algarve (81.2%) at the top, the Centre (24.3%) and the Alentejo (31.2%) at the other end."
+        ]
+      },
+      "barList": {
+        "title": {
+          "pt": "Dependência dos mercados externos por região",
+          "en": "Dependence on external markets by region"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "1.º trimestre de 2025, peso das dormidas de não residentes no total da região",
+          "en": "Q1 2025, share of non-resident overnight stays in the regional total"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística, 1.º trimestre de 2025.",
+          "en": "Statistics Portugal, Tourism Activity, Q1 2025."
+        },
+        "items": [
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "RA Madeira",
+              "en": "Madeira"
+            },
+            "value": 85.2
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": 81.2
+          },
+          {
+            "key": "alentejo",
+            "label": {
+              "pt": "Alentejo",
+              "en": "Alentejo"
+            },
+            "value": 31.2
+          },
+          {
+            "key": "centro",
+            "label": {
+              "pt": "Centro",
+              "en": "Centre"
+            },
+            "value": 24.3
+          }
+        ],
+        "highlightKey": "madeira",
+        "altText": {
+          "pt": "Peso das dormidas de não residentes no total, por região, 1.º trimestre de 2025: RA Madeira 85,2%, Algarve 81,2%, Alentejo 31,2%, Centro 24,3%.",
+          "en": "Share of non-resident overnight stays in the regional total, Q1 2025: Madeira 85.2%, Algarve 81.2%, Alentejo 31.2%, Centre 24.3%."
+        }
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "REGIÕES",
+        "en": "REGIONS"
+      },
+      "headline": {
+        "pt": "Cinco regiões perderam dormidas no trimestre",
+        "en": "Five regions lost overnight stays in the quarter"
+      },
+      "barList": {
+        "title": {
+          "pt": "Variação das dormidas nas regiões destacadas pelo INE",
+          "en": "Change in overnight stays in the regions INE singles out"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "1.º trimestre de 2025, variação homóloga",
+          "en": "Q1 2025, year-on-year change"
+        },
+        "source": {
+          "pt": "INE, Atividade Turística, 1.º trimestre de 2025.",
+          "en": "Statistics Portugal, Tourism Activity, Q1 2025."
+        },
+        "items": [
+          {
+            "key": "setubal",
+            "label": {
+              "pt": "Península de Setúbal",
+              "en": "Setúbal Peninsula"
+            },
+            "value": 7.3
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "RA Açores",
+              "en": "Azores"
+            },
+            "value": 7.2
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": -4.0
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": -5.5
+          }
+        ],
+        "highlightKey": "setubal",
+        "altText": {
+          "pt": "Variação homóloga das dormidas, regiões destacadas pelo INE, 1.º trimestre de 2025: Península de Setúbal +7,3%, RA Açores +7,2%, Oeste e Vale do Tejo -4,0%, Algarve -5,5%.",
+          "en": "Year-on-year change in overnight stays, the regions INE singles out, Q1 2025: Setúbal Peninsula +7.3%, Azores +7.2%, West and Tagus Valley -4.0%, Algarve -5.5%."
+        }
+      },
+      "body": {
+        "pt": [
+          "A Península de Setúbal (+7,3%) e a RA Açores (+7,2%) lideraram as dormidas; o Algarve ficou no extremo oposto (-5,5%), seguido do Oeste e Vale do Tejo (-4,0%). Só as regiões nomeadas pelo INE têm variação associada. A Grande Lisboa apresentou o ADR mais elevado do trimestre, 115,6 euros."
+        ],
+        "en": [
+          "Setúbal Peninsula (+7.3%) and the Azores (+7.2%) led on overnight stays; the Algarve sat at the other end (-5.5%), followed by the West and Tagus Valley (-4.0%). Only the regions Statistics Portugal names carry a rate. Greater Lisbon posted the quarter's highest ADR, EUR 115.6."
+        ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
+        },
+        "body": {
+          "pt": "O Algarve juntou a maior queda das dormidas (-5,5%) à segunda maior dependência dos mercados externos (81,2%), a combinação que o desvio da Páscoa mais penalizou.",
+          "en": "The Algarve combined the steepest drop in overnight stays (-5.5%) with the second-highest dependence on external markets (81.2%), the combination the Easter shift punished most."
+        }
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "O preço travou o abrandamento dos proveitos",
+        "en": "Pricing cushioned a slower revenue quarter"
+      },
+      "scope": {
+        "pt": "Portugal, estabelecimentos de alojamento turístico.",
+        "en": "Portugal, tourist accommodation establishments."
+      },
+      "indicators": [
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 91.6,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.8,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 40.8,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.8,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 956.0,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.6,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 699.5,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os proveitos totais somaram 956,0 milhões de euros (+4,6%) e os de aposento 699,5 milhões (+4,1%), abaixo dos +11,7% e +12,1% que o INE regista para o trimestre anterior. O RevPAR (40,8 euros) e o ADR (91,6 euros) subiram ambos 2,8%: com o rendimento por quarto disponível a acompanhar exatamente o preço, o trimestre não ganhou ocupação. O INE não publica taxas de ocupação trimestrais, pelo que a utilização da capacidade tem de ser lida na relação entre os dois indicadores. O trimestre também não foi de uma peça só: janeiro cresceu 6,3% em dormidas e 13,9% em proveitos totais, fevereiro caiu para -2,5% e +3,7%, e março fechou em -2,9% e +0,1%. O desvio da Páscoa está inteiro nesses dois últimos meses."
+        ],
+        "en": [
+          "Total revenue came to EUR 956.0 million (+4.6%) and room revenue to EUR 699.5 million (+4.1%), below the +11.7% and +12.1% Statistics Portugal records for the previous quarter. RevPAR (EUR 40.8) and ADR (EUR 91.6) both rose 2.8%: with revenue per available room tracking rate exactly, the quarter added no occupancy. Statistics Portugal publishes no quarterly occupancy rate, so use of capacity has to be read from the relation between the two indicators. The quarter was not of a piece either: January grew 6.3% in overnight stays and 13.9% in total revenue, February fell to -2.5% and +3.7%, and March closed at -2.9% and +0.1%. The Easter shift sits entirely in those last two months."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Um trimestre decidido pelo calendário",
+          "en": "A quarter decided by the calendar"
+        },
+        "fact": {
+          "pt": "Dormidas -0,4%, proveitos totais +4,6%, RevPAR +2,8% e ADR +2,8%.",
+          "en": "Overnight stays -0.4%, total revenue +4.6%, RevPAR +2.8% and ADR +2.8%."
+        },
+        "interpretation": {
+          "pt": "Um trimestre em que o RevPAR igualou o ADR não cria valor pela utilização: o rendimento por quarto disponível ficou refém do preço, sobre uma base de dormidas em ligeiro recuo.",
+          "en": "When RevPAR moves exactly with ADR, none of the gain comes from utilisation: the quarter's yield rested on price, over a base of overnight stays slightly smaller than a year earlier."
+        },
+        "implication": {
+          "pt": "A exposição sazonal é o que este trimestre põe à prova: ativos cuja procura de não residentes se aproxima dos níveis da RA Madeira (85,2%) ou do Algarve (81,2%) dependem de um calendário que muda de ano para ano. Preço, calendário e mix de mercados têm de ser separados antes de extrapolar o trimestre para o resto do ano.",
+          "en": "Seasonal exposure is what this quarter tests: assets whose non-resident share approaches Madeira's (85.2%) or the Algarve's (81.2%) depend on a calendar that moves from year to year. Price, calendar and market mix have to be separated before the quarter is extrapolated to the rest of the year."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar no 2.º trimestre",
+          "en": "Three signals to watch in the second quarter"
+        },
+        "signals": [
+          {
+            "pt": "Se a Páscoa em abril devolve os mercados externos a terreno positivo.",
+            "en": "Whether Easter in April returns external markets to positive territory."
+          },
+          {
+            "pt": "A recuperação do Algarve e do Oeste e Vale do Tejo depois dos decréscimos do trimestre.",
+            "en": "Whether the Algarve and the West and Tagus Valley recover from the quarter's declines."
+          },
+          {
+            "pt": "Se o RevPAR passa a subir acima do ADR, sinal de ocupação e não apenas de preço.",
+            "en": "Whether RevPAR starts to outpace ADR, a sign of occupancy rather than price alone."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "INE, Atividade Turística, 1.º trimestre de 2025, divulgada em 15 de maio de 2025.",
+          "en": "Statistics Portugal, Tourism Activity, Q1 2025, released 15 May 2025."
+        },
+        "complementary": [
+          {
+            "pt": "INE, Atividade Turística, 2.º trimestre de 2025, divulgada em 14 de agosto de 2025. Variações homólogas revistas para o trimestre anterior.",
+            "en": "Statistics Portugal, Tourism Activity, Q2 2025, released 14 August 2025. Year-on-year changes revised for the preceding quarter."
+          }
+        ],
+        "releaseDate": "2025-08-14",
+        "status": "revised",
+        "notes": {
+          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 15 de maio de 2025; variações homólogas revistas na divulgação de 14 de agosto de 2025. Os proveitos totais do trimestre são o valor exato em milhões de euros publicado pelo INE na divulgação trimestral de 15 de maio de 2025. Os proveitos de aposento do trimestre são o valor exato em milhões de euros publicado pelo INE na divulgação trimestral de 15 de maio de 2025. O INE não publica taxas de ocupação trimestrais.",
+          "en": "Levels and year-on-year changes from the INE quarterly release of 15 May 2025; year-on-year changes revised in the release of 14 August 2025. Total revenue for the quarter is the exact figure in millions of euros INE printed in the quarterly release of 15 May 2025. Room revenue for the quarter is the exact figure in millions of euros INE printed in the quarterly release of 15 May 2025. INE publishes no quarterly occupancy rates."
+        }
+      }
+    }
+  ]
+}
