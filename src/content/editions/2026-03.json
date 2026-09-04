@@ -1,0 +1,467 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2026-03",
+  "series": "thb",
+  "horizon": "monthly",
+  "country": "PT",
+  "period": {
+    "year": 2026,
+    "month": 3
+  },
+  "publishedAt": "2026-09-04",
+  "historical": true,
+  "historicalNote": {
+    "pt": "Edição histórica, publicada a 4 de setembro de 2026 com dados relativos a Março 2026.",
+    "en": "Historical edition, published on 4 September 2026 using data for March 2026."
+  },
+  "dataStatus": "revised",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_Monthly_2026-03_PT_PDF_v1.0.pdf",
+    "en": "THB_Monthly_2026-03_EN_PDF_v1.0.pdf"
+  },
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | Março 2026",
+    "en": "Tourism & Hospitality Brief | Portugal | March 2026"
+  },
+  "takeaway": {
+    "pt": "Em Março 2026, a atividade manteve crescimento e os proveitos evoluíram acima do volume.",
+    "en": "In March 2026, activity continued to grow and revenue performed ahead of volume."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "MONTHLY BRIEF",
+        "en": "MONTHLY BRIEF"
+      },
+      "strapline": {
+        "pt": "Portugal | Março 2026",
+        "en": "Portugal | March 2026"
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição histórica v1.0 — dados revistos",
+        "en": "Historical edition v1.0 — revised data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "Crescimento com valorização da receita",
+        "en": "Growth with stronger revenue performance"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "Os proveitos totais cresceram 6.2%, face a 0.7% nas dormidas.",
+          "en": "Total revenue grew 6.2%, compared with 0.7% in overnight stays."
+        }
+      },
+      "body": {
+        "pt": [
+          "O alojamento turístico registou 2.3 milhões de hóspedes e 5.7 milhões de dormidas.",
+          "Os proveitos totais atingiram 430.6 milhões de euros e os de aposento 322.8 milhões."
+        ],
+        "en": [
+          "Tourist accommodation recorded 2.3 million guests and 5.7 million overnight stays.",
+          "Total revenue reached EUR 430.6 million and room revenue EUR 322.8 million."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "Volume e valor em perspetiva",
+        "en": "Volume and value in perspective"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 2.3,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.7,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 5.7,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.7,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 430.6,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 6.2,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 322.8,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: hóspedes +1.7%, dormidas +0.7% e proveitos totais +6.2% em termos homólogos."
+        ],
+        "en": [
+          "Reading: guests +1.7%, overnight stays +0.7% and total revenue +6.2% year on year."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "A procura manteve-se resiliente",
+        "en": "Demand remained resilient"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 2.3,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.7,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 5.7,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.7,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "A comparação entre hóspedes e dormidas permite avaliar simultaneamente a entrada de procura e a intensidade média das estadas."
+        ],
+        "en": [
+          "Comparing guests and overnight stays captures both demand inflow and average stay intensity."
+        ]
+      },
+      "barList": {
+        "title": {
+          "pt": "Evolução da procura",
+          "en": "Demand growth"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Março 2026, variação homóloga",
+          "en": "March 2026, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Março 2026",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — March 2026"
+        },
+        "items": [
+          {
+            "key": "guests",
+            "label": {
+              "pt": "Hóspedes",
+              "en": "Guests"
+            },
+            "value": 1.7
+          },
+          {
+            "key": "overnightStays",
+            "label": {
+              "pt": "Dormidas",
+              "en": "Overnight stays"
+            },
+            "value": 0.7
+          }
+        ],
+        "highlightKey": "overnightStays",
+        "altText": {
+          "pt": "Variação homóloga: hóspedes +1.7% e dormidas +0.7%.",
+          "en": "Year-on-year change: guests +1.7% and overnight stays +0.7%."
+        }
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "LEITURA TERRITORIAL",
+        "en": "TERRITORIAL READING"
+      },
+      "headline": {
+        "pt": "O valor cresceu mais do que o volume",
+        "en": "Value grew faster than volume"
+      },
+      "barList": {
+        "title": {
+          "pt": "Referência nacional para leitura regional",
+          "en": "National benchmark for regional analysis"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "Março 2026, variação homóloga",
+          "en": "March 2026, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Março 2026",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — March 2026"
+        },
+        "items": [
+          {
+            "key": "volume",
+            "label": {
+              "pt": "Volume de dormidas",
+              "en": "Overnight-stay volume"
+            },
+            "value": 0.7
+          },
+          {
+            "key": "value",
+            "label": {
+              "pt": "Proveitos totais",
+              "en": "Total revenue"
+            },
+            "value": 6.2
+          }
+        ],
+        "highlightKey": "value",
+        "altText": {
+          "pt": "Referência nacional: dormidas +0.7% e proveitos totais +6.2%.",
+          "en": "National benchmark: overnight stays +0.7% and total revenue +6.2%."
+        }
+      },
+      "body": {
+        "pt": [
+          "A referência nacional deve ser lida em conjunto com as diferenças de procura, sazonalidade e posicionamento entre regiões."
+        ],
+        "en": [
+          "The national benchmark should be read alongside regional differences in demand, seasonality and positioning."
+        ]
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "Receita acima da evolução das dormidas",
+        "en": "Revenue ahead of overnight-stay growth"
+      },
+      "scope": {
+        "pt": "Total do alojamento turístico, segundo o âmbito das fontes.",
+        "en": "Total tourist accommodation, according to source scope."
+      },
+      "indicators": [
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 430.6,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 6.2,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 322.8,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os proveitos totais cresceram 6.2% e os proveitos de aposento 5.8% em termos homólogos."
+        ],
+        "en": [
+          "Total revenue grew 6.2% and room revenue 5.8% year on year."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Crescimento de procura com reforço do rendimento",
+          "en": "Demand growth with stronger income"
+        },
+        "fact": {
+          "pt": "Dormidas +0.7% e proveitos totais +6.2%.",
+          "en": "Overnight stays +0.7% and total revenue +6.2%."
+        },
+        "interpretation": {
+          "pt": "O diferencial entre valor e volume sinaliza capacidade de monetização, embora com diferenças por localização e segmento.",
+          "en": "The gap between value and volume signals monetisation capacity, albeit with differences by location and segment."
+        },
+        "implication": {
+          "pt": "Na análise de ativos, importa separar crescimento de procura, efeito preço e mix de mercado antes de projetar rendimentos.",
+          "en": "Asset analysis should separate demand growth, pricing effects and market mix before projecting income."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar",
+          "en": "Three signals to watch"
+        },
+        "signals": [
+          {
+            "pt": "Evolução da procura internacional e nacional.",
+            "en": "Performance of international and domestic demand."
+          },
+          {
+            "pt": "Capacidade de sustentar preço e RevPAR.",
+            "en": "Ability to sustain pricing and RevPAR."
+          },
+          {
+            "pt": "Dispersão do desempenho entre regiões e segmentos.",
+            "en": "Performance dispersion across regions and segments."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Março 2026",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — March 2026"
+        },
+        "complementary": [
+          {
+            "pt": "Instituto Nacional de Estatística, séries mensais e agregados revistos.",
+            "en": "Statistics Portugal, revised monthly series and aggregates."
+          }
+        ],
+        "releaseDate": "2026-09-04",
+        "status": "revised",
+        "notes": {
+          "pt": "Edição histórica. Valores arredondados segundo as publicações de origem; todas as variações são homólogas.",
+          "en": "Historical edition. Values are rounded as in the source releases; all changes are year-on-year."
+        }
+      }
+    }
+  ],
+  "signatureImage": "THB_LinkedIn_Signature_2026-03_March.jpg"
+}

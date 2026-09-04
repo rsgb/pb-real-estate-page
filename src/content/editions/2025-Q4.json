@@ -1,0 +1,466 @@
+{
+  "$schema": "./edition.schema.json",
+  "id": "2025-Q4",
+  "series": "thb",
+  "horizon": "quarterly",
+  "country": "PT",
+  "period": {
+    "year": 2025,
+    "quarter": 4
+  },
+  "publishedAt": "2026-09-04",
+  "historical": true,
+  "historicalNote": {
+    "pt": "Edição histórica, publicada a 4 de setembro de 2026 com dados relativos a 4.º trimestre de 2025.",
+    "en": "Historical edition, published on 4 September 2026 using data for Q4 2025."
+  },
+  "dataStatus": "revised",
+  "version": "1.0",
+  "pdf": {
+    "pt": "THB_Quarterly_2025-Q4_PT_PDF_v1.0.pdf",
+    "en": "THB_Quarterly_2025-Q4_EN_PDF_v1.0.pdf"
+  },
+  "title": {
+    "pt": "Tourism & Hospitality Brief | Portugal | 4.º trimestre de 2025",
+    "en": "Tourism & Hospitality Brief | Portugal | Q4 2025"
+  },
+  "takeaway": {
+    "pt": "Em 4.º trimestre de 2025, a atividade manteve crescimento e os proveitos evoluíram acima do volume.",
+    "en": "In Q4 2025, activity continued to grow and revenue performed ahead of volume."
+  },
+  "sections": [
+    {
+      "block": "header",
+      "kicker": {
+        "pt": "QUARTERLY BRIEF",
+        "en": "QUARTERLY BRIEF"
+      },
+      "strapline": {
+        "pt": "Portugal | 4.º trimestre de 2025",
+        "en": "Portugal | Q4 2025"
+      },
+      "author": {
+        "name": "Paulo Braga",
+        "role": {
+          "pt": "Hospitality Real Estate Advisor",
+          "en": "Hospitality Real Estate Advisor"
+        }
+      },
+      "note": {
+        "pt": "Edição histórica v1.0 — dados revistos",
+        "en": "Historical edition v1.0 — revised data"
+      }
+    },
+    {
+      "block": "executiveSummary",
+      "sectionLabel": {
+        "pt": "RESUMO EXECUTIVO",
+        "en": "EXECUTIVE SUMMARY"
+      },
+      "headline": {
+        "pt": "Crescimento com valorização da receita",
+        "en": "Growth with stronger revenue performance"
+      },
+      "callout": {
+        "kind": "conclusion",
+        "title": {
+          "pt": "CONCLUSÃO PRINCIPAL",
+          "en": "MAIN CONCLUSION"
+        },
+        "body": {
+          "pt": "Os proveitos totais cresceram 5.5%, face a 2.1% nas dormidas.",
+          "en": "Total revenue grew 5.5%, compared with 2.1% in overnight stays."
+        }
+      },
+      "body": {
+        "pt": [
+          "O alojamento turístico registou 7.1 milhões de hóspedes e 17.0 milhões de dormidas.",
+          "Os proveitos totais atingiram 1437.1 milhões de euros e os de aposento 1003.8 milhões."
+        ],
+        "en": [
+          "Tourist accommodation recorded 7.1 million guests and 17.0 million overnight stays.",
+          "Total revenue reached EUR 1437.1 million and room revenue EUR 1003.8 million."
+        ]
+      }
+    },
+    {
+      "block": "keyIndicators",
+      "sectionLabel": {
+        "pt": "INDICADORES-CHAVE",
+        "en": "KEY INDICATORS"
+      },
+      "headline": {
+        "pt": "Volume e valor em perspetiva",
+        "en": "Volume and value in perspective"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 7.1,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 3.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 17.0,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 1437.1,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.5,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 1003.8,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "reading": {
+        "pt": [
+          "Leitura: hóspedes +3.1%, dormidas +2.1% e proveitos totais +5.5% em termos homólogos."
+        ],
+        "en": [
+          "Reading: guests +3.1%, overnight stays +2.1% and total revenue +5.5% year on year."
+        ]
+      }
+    },
+    {
+      "block": "demand",
+      "sectionLabel": {
+        "pt": "PROCURA",
+        "en": "DEMAND"
+      },
+      "headline": {
+        "pt": "A procura manteve-se resiliente",
+        "en": "Demand remained resilient"
+      },
+      "indicators": [
+        {
+          "key": "guests",
+          "label": {
+            "pt": "HÓSPEDES",
+            "en": "GUESTS"
+          },
+          "value": 7.1,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 3.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "overnightStays",
+          "label": {
+            "pt": "DORMIDAS",
+            "en": "OVERNIGHT STAYS"
+          },
+          "value": 17.0,
+          "unit": "count",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.1,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "A comparação entre hóspedes e dormidas permite avaliar simultaneamente a entrada de procura e a intensidade média das estadas."
+        ],
+        "en": [
+          "Comparing guests and overnight stays captures both demand inflow and average stay intensity."
+        ]
+      },
+      "barList": {
+        "title": {
+          "pt": "Evolução da procura",
+          "en": "Demand growth"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "4.º trimestre de 2025, variação homóloga",
+          "en": "Q4 2025, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 4.º trimestre de 2025",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q4 2025"
+        },
+        "items": [
+          {
+            "key": "guests",
+            "label": {
+              "pt": "Hóspedes",
+              "en": "Guests"
+            },
+            "value": 3.1
+          },
+          {
+            "key": "overnightStays",
+            "label": {
+              "pt": "Dormidas",
+              "en": "Overnight stays"
+            },
+            "value": 2.1
+          }
+        ],
+        "highlightKey": "overnightStays",
+        "altText": {
+          "pt": "Variação homóloga: hóspedes +3.1% e dormidas +2.1%.",
+          "en": "Year-on-year change: guests +3.1% and overnight stays +2.1%."
+        }
+      }
+    },
+    {
+      "block": "regional",
+      "sectionLabel": {
+        "pt": "LEITURA TERRITORIAL",
+        "en": "TERRITORIAL READING"
+      },
+      "headline": {
+        "pt": "O valor cresceu mais do que o volume",
+        "en": "Value grew faster than volume"
+      },
+      "barList": {
+        "title": {
+          "pt": "Referência nacional para leitura regional",
+          "en": "National benchmark for regional analysis"
+        },
+        "unit": "percent",
+        "scale": "none",
+        "decimals": 1,
+        "period": {
+          "pt": "4.º trimestre de 2025, variação homóloga",
+          "en": "Q4 2025, year-on-year change"
+        },
+        "source": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 4.º trimestre de 2025",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q4 2025"
+        },
+        "items": [
+          {
+            "key": "volume",
+            "label": {
+              "pt": "Volume de dormidas",
+              "en": "Overnight-stay volume"
+            },
+            "value": 2.1
+          },
+          {
+            "key": "value",
+            "label": {
+              "pt": "Proveitos totais",
+              "en": "Total revenue"
+            },
+            "value": 5.5
+          }
+        ],
+        "highlightKey": "value",
+        "altText": {
+          "pt": "Referência nacional: dormidas +2.1% e proveitos totais +5.5%.",
+          "en": "National benchmark: overnight stays +2.1% and total revenue +5.5%."
+        }
+      },
+      "body": {
+        "pt": [
+          "A referência nacional deve ser lida em conjunto com as diferenças de procura, sazonalidade e posicionamento entre regiões."
+        ],
+        "en": [
+          "The national benchmark should be read alongside regional differences in demand, seasonality and positioning."
+        ]
+      }
+    },
+    {
+      "block": "operating",
+      "sectionLabel": {
+        "pt": "DESEMPENHO OPERACIONAL",
+        "en": "OPERATING PERFORMANCE"
+      },
+      "headline": {
+        "pt": "Receita acima da evolução das dormidas",
+        "en": "Revenue ahead of overnight-stay growth"
+      },
+      "scope": {
+        "pt": "Total do alojamento turístico, segundo o âmbito das fontes.",
+        "en": "Total tourist accommodation, according to source scope."
+      },
+      "indicators": [
+        {
+          "key": "totalRevenue",
+          "label": {
+            "pt": "PROVEITOS TOTAIS",
+            "en": "TOTAL REVENUE"
+          },
+          "value": 1437.1,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 5.5,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "roomRevenue",
+          "label": {
+            "pt": "PROVEITOS DE APOSENTO",
+            "en": "ROOM REVENUE"
+          },
+          "value": 1003.8,
+          "unit": "eur",
+          "scale": "million",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 4.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        }
+      ],
+      "body": {
+        "pt": [
+          "Os proveitos totais cresceram 5.5% e os proveitos de aposento 4.8% em termos homólogos."
+        ],
+        "en": [
+          "Total revenue grew 5.5% and room revenue 4.8% year on year."
+        ]
+      }
+    },
+    {
+      "block": "lens",
+      "sectionLabel": {
+        "pt": "PERSPETIVA IMOBILIÁRIA",
+        "en": "REAL ESTATE LENS"
+      },
+      "lens": {
+        "headline": {
+          "pt": "Crescimento de procura com reforço do rendimento",
+          "en": "Demand growth with stronger income"
+        },
+        "fact": {
+          "pt": "Dormidas +2.1% e proveitos totais +5.5%.",
+          "en": "Overnight stays +2.1% and total revenue +5.5%."
+        },
+        "interpretation": {
+          "pt": "O diferencial entre valor e volume sinaliza capacidade de monetização, embora com diferenças por localização e segmento.",
+          "en": "The gap between value and volume signals monetisation capacity, albeit with differences by location and segment."
+        },
+        "implication": {
+          "pt": "Na análise de ativos, importa separar crescimento de procura, efeito preço e mix de mercado antes de projetar rendimentos.",
+          "en": "Asset analysis should separate demand growth, pricing effects and market mix before projecting income."
+        }
+      }
+    },
+    {
+      "block": "outlook",
+      "sectionLabel": {
+        "pt": "PERSPETIVA FUTURA",
+        "en": "OUTLOOK"
+      },
+      "outlook": {
+        "intro": {
+          "pt": "Três sinais a acompanhar",
+          "en": "Three signals to watch"
+        },
+        "signals": [
+          {
+            "pt": "Evolução da procura internacional e nacional.",
+            "en": "Performance of international and domestic demand."
+          },
+          {
+            "pt": "Capacidade de sustentar preço e RevPAR.",
+            "en": "Ability to sustain pricing and RevPAR."
+          },
+          {
+            "pt": "Dispersão do desempenho entre regiões e segmentos.",
+            "en": "Performance dispersion across regions and segments."
+          }
+        ]
+      }
+    },
+    {
+      "block": "sources",
+      "sectionLabel": {
+        "pt": "FONTES",
+        "en": "SOURCES"
+      },
+      "sources": {
+        "primary": {
+          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 4.º trimestre de 2025",
+          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q4 2025"
+        },
+        "complementary": [
+          {
+            "pt": "Instituto Nacional de Estatística, séries mensais e agregados revistos.",
+            "en": "Statistics Portugal, revised monthly series and aggregates."
+          }
+        ],
+        "releaseDate": "2026-09-04",
+        "status": "revised",
+        "notes": {
+          "pt": "Edição histórica. Valores arredondados segundo as publicações de origem; todas as variações são homólogas.",
+          "en": "Historical edition. Values are rounded as in the source releases; all changes are year-on-year."
+        }
+      }
+    }
+  ]
+}
