@@ -8,13 +8,13 @@
     "year": 2026,
     "quarter": 2
   },
-  "publishedAt": "2026-09-04",
+  "publishedAt": "2026-09-08",
   "historical": true,
   "historicalNote": {
-    "pt": "Edição histórica, publicada a 4 de setembro de 2026 com dados relativos a 2.º trimestre de 2026.",
-    "en": "Historical edition, published on 4 September 2026 using data for Q2 2026."
+    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos ao 2.º trimestre de 2026.",
+    "en": "Historical edition, published on 8 September 2026 using data for Q2 2026."
   },
-  "dataStatus": "revised",
+  "dataStatus": "provisional",
   "version": "1.0",
   "pdf": {
     "pt": "THB_Quarterly_2026-Q2_PT_PDF_v1.0.pdf",
@@ -25,8 +25,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | Q2 2026"
   },
   "takeaway": {
-    "pt": "Em 2.º trimestre de 2026, a atividade manteve crescimento e os proveitos evoluíram acima do volume.",
-    "en": "In Q2 2026, activity continued to grow and revenue performed ahead of volume."
+    "pt": "O crescimento continuou, mas mais lento: dormidas +1,2% e proveitos totais +5,2%, ambos abaixo do trimestre anterior. Os residentes aceleraram para +3,2% enquanto os mercados externos quase pararam, com +0,5%.",
+    "en": "Growth continued, but more slowly: overnight stays +1.2% and total revenue +5.2%, both below the previous quarter. Residents accelerated to +3.2% while external markets almost stopped, at +0.5%."
   },
   "sections": [
     {
@@ -36,8 +36,8 @@
         "en": "QUARTERLY BRIEF"
       },
       "strapline": {
-        "pt": "Portugal | 2.º trimestre de 2026",
-        "en": "Portugal | Q2 2026"
+        "pt": "Portugal, 2.º trimestre de 2026: dormidas +1,2% e proveitos totais +5,2% em termos homólogos.",
+        "en": "Portugal, Q2 2026: overnight stays +1.2% and total revenue +5.2% year on year."
       },
       "author": {
         "name": "Paulo Braga",
@@ -47,8 +47,8 @@
         }
       },
       "note": {
-        "pt": "Edição histórica v1.0 — dados revistos",
-        "en": "Historical edition v1.0 — revised data"
+        "pt": "Edição histórica v1.0 - dados provisórios",
+        "en": "Historical edition v1.0 - provisional data"
       }
     },
     {
@@ -58,8 +58,8 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Crescimento com valorização da receita",
-        "en": "Growth with stronger revenue performance"
+        "pt": "O segundo trimestre travou em volume e em valor",
+        "en": "The second quarter slowed in volume and in value"
       },
       "callout": {
         "kind": "conclusion",
@@ -68,18 +68,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "Os proveitos totais cresceram 5.2%, face a 1.2% nas dormidas.",
-          "en": "Total revenue grew 5.2%, compared with 1.2% in overnight stays."
+          "pt": "As dormidas cresceram 1,2% e os proveitos totais 5,2%, com o mercado interno a gerar a maior parte do acréscimo do trimestre.",
+          "en": "Overnight stays grew 1.2% and total revenue 5.2%, with the domestic market generating most of the quarter's increase."
         }
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 9.4 milhões de hóspedes e 23.3 milhões de dormidas.",
-          "Os proveitos totais atingiram 2100.0 milhões de euros e os de aposento 1600.0 milhões."
+          "O alojamento turístico registou 9,4 milhões de hóspedes (+2,3%) e 23,3 milhões de dormidas (+1,2%) no trimestre. O INE assinala que os resultados podem ter sido influenciados pela estrutura móvel do calendário, nomeadamente pelo efeito associado ao período da Páscoa.",
+          "Os proveitos totais atingiram 2140,0 milhões de euros (+5,2%) e os de aposento 1636,6 milhões (+4,5%), com o ADR em 130,2 euros (+2,4%) e o RevPAR em 81,6 euros (+0,8%). Dentro do trimestre, as dormidas subiram 0,4% em abril, 2,5% em maio e 0,7% em junho: só maio teve algum fôlego.",
+          "Tudo continuou a crescer, mas cada linha perdeu ritmo face ao início do ano."
         ],
         "en": [
-          "Tourist accommodation recorded 9.4 million guests and 23.3 million overnight stays.",
-          "Total revenue reached EUR 2100.0 million and room revenue EUR 1600.0 million."
+          "Tourist accommodation recorded 9.4 million guests (+2.3%) and 23.3 million overnight stays (+1.2%) in the quarter. INE notes that the results may have been influenced by the moving calendar, in particular the Easter period.",
+          "Total revenue reached EUR 2,140.0 million (+5.2%) and room revenue EUR 1,636.6 million (+4.5%), with ADR at EUR 130.2 (+2.4%) and RevPAR at EUR 81.6 (+0.8%). Within the quarter, overnight stays rose 0.4% in April, 2.5% in May and 0.7% in June: only May had any lift.",
+          "Everything kept moving up, but every line lost pace against the start of the year."
         ]
       }
     },
@@ -90,8 +92,8 @@
         "en": "KEY INDICATORS"
       },
       "headline": {
-        "pt": "Volume e valor em perspetiva",
-        "en": "Volume and value in perspective"
+        "pt": "Mais receita, com menos impulso",
+        "en": "More revenue, with less momentum"
       },
       "indicators": [
         {
@@ -117,7 +119,7 @@
             "pt": "DORMIDAS",
             "en": "OVERNIGHT STAYS"
           },
-          "value": 23.3,
+          "value": 23.2786,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
@@ -134,7 +136,7 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2100.0,
+          "value": 2140.0,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -143,6 +145,10 @@
             "value": 5.2,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "valor derivado dos acumulados do INE",
+            "en": "value derived from INE's cumulative figures"
           }
         },
         {
@@ -151,7 +157,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1600.0,
+          "value": 1636.6,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -160,15 +166,53 @@
             "value": 4.5,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "valor derivado dos acumulados do INE",
+            "en": "value derived from INE's cumulative figures"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 81.6,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 130.2,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.4,
+            "unit": "percent",
+            "basis": "yoy"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: hóspedes +2.3%, dormidas +1.2% e proveitos totais +5.2% em termos homólogos."
+          "Leitura: os proveitos totais subiram 5,2% e as dormidas 1,2%. O ADR ganhou 2,4% e o RevPAR apenas 0,8%. O preço continua a carregar a receita, enquanto a ocupação continua a retirar-lhe."
         ],
         "en": [
-          "Reading: guests +2.3%, overnight stays +1.2% and total revenue +5.2% year on year."
+          "Reading: total revenue rose 5.2% and overnight stays 1.2%. ADR gained 2.4% against RevPAR at 0.8%. Rate keeps carrying revenue while occupancy keeps taking away from it."
         ]
       }
     },
@@ -179,40 +223,40 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "A procura manteve-se resiliente",
-        "en": "Demand remained resilient"
+        "pt": "Os residentes aceleraram, o mercado externo estagnou",
+        "en": "Residents accelerated, the external market stalled"
       },
       "indicators": [
         {
-          "key": "guests",
+          "key": "residentStays",
           "label": {
-            "pt": "HÓSPEDES",
-            "en": "GUESTS"
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
           },
-          "value": 9.4,
+          "value": 6.5,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.3,
+            "value": 3.2,
             "unit": "percent",
             "basis": "yoy"
           }
         },
         {
-          "key": "overnightStays",
+          "key": "nonResidentStays",
           "label": {
-            "pt": "DORMIDAS",
-            "en": "OVERNIGHT STAYS"
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
           },
-          "value": 23.3,
+          "value": 16.7,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 1.2,
+            "value": 0.5,
             "unit": "percent",
             "basis": "yoy"
           }
@@ -220,16 +264,16 @@
       ],
       "body": {
         "pt": [
-          "A comparação entre hóspedes e dormidas permite avaliar simultaneamente a entrada de procura e a intensidade média das estadas."
+          "As dormidas de residentes aumentaram 3,2%, para 6,5 milhões, acelerando pela primeira vez desde o 2.º trimestre do ano anterior. As de não residentes cresceram 0,5%, para 16,7 milhões, ainda 71,9% do total. Entre os dez principais mercados emissores, o Canadá voltou a registar o maior aumento (+7,2%) e a França o maior decréscimo (-7,2%), mantendo a trajetória de queda que dura desde o 3.º trimestre de 2024. Estados Unidos (+4,9%) e Alemanha (+2,5%) ficaram acima do conjunto dos mercados externos; o Reino Unido ficou-se por +0,3%."
         ],
         "en": [
-          "Comparing guests and overnight stays captures both demand inflow and average stay intensity."
+          "Resident overnight stays increased 3.2% to 6.5 million, accelerating for the first time since the second quarter of the previous year. Non-resident stays grew 0.5% to 16.7 million, still 71.9% of the total. Among the ten largest source markets Canada again recorded the biggest gain (+7.2%) and France the biggest drop (-7.2%), holding the downward path it has followed since the third quarter of 2024. The United States (+4.9%) and Germany (+2.5%) ran ahead of the external markets as a whole; the United Kingdom managed +0.3%."
         ]
       },
       "barList": {
         "title": {
-          "pt": "Evolução da procura",
-          "en": "Demand growth"
+          "pt": "Variação das dormidas por mercado emissor",
+          "en": "Change in overnight stays by source market"
         },
         "unit": "percent",
         "scale": "none",
@@ -239,48 +283,72 @@
           "en": "Q2 2026, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 2.º trimestre de 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q2 2026"
+          "pt": "INE, Atividade Turística, 2.º trimestre de 2026.",
+          "en": "Statistics Portugal, Tourism Activity, Q2 2026."
         },
         "items": [
           {
-            "key": "guests",
+            "key": "ca",
             "label": {
-              "pt": "Hóspedes",
-              "en": "Guests"
+              "pt": "Canadá",
+              "en": "Canada"
             },
-            "value": 2.3
+            "value": 7.2
           },
           {
-            "key": "overnightStays",
+            "key": "us",
             "label": {
-              "pt": "Dormidas",
-              "en": "Overnight stays"
+              "pt": "Estados Unidos",
+              "en": "United States"
             },
-            "value": 1.2
+            "value": 4.9
+          },
+          {
+            "key": "de",
+            "label": {
+              "pt": "Alemanha",
+              "en": "Germany"
+            },
+            "value": 2.5
+          },
+          {
+            "key": "uk",
+            "label": {
+              "pt": "Reino Unido",
+              "en": "United Kingdom"
+            },
+            "value": 0.3
+          },
+          {
+            "key": "fr",
+            "label": {
+              "pt": "França",
+              "en": "France"
+            },
+            "value": -7.2
           }
         ],
-        "highlightKey": "overnightStays",
+        "highlightKey": "ca",
         "altText": {
-          "pt": "Variação homóloga: hóspedes +2.3% e dormidas +1.2%.",
-          "en": "Year-on-year change: guests +2.3% and overnight stays +1.2%."
+          "pt": "Variação homóloga das dormidas por mercado emissor, 2.º trimestre de 2026: Canadá +7,2%, Estados Unidos +4,9%, Alemanha +2,5%, Reino Unido +0,3%, França -7,2%.",
+          "en": "Year-on-year change in overnight stays by source market, Q2 2026: Canada +7.2%, United States +4.9%, Germany +2.5%, United Kingdom +0.3%, France -7.2%."
         }
       }
     },
     {
       "block": "regional",
       "sectionLabel": {
-        "pt": "LEITURA TERRITORIAL",
-        "en": "TERRITORIAL READING"
+        "pt": "REGIÕES",
+        "en": "REGIONS"
       },
       "headline": {
-        "pt": "O valor cresceu mais do que o volume",
-        "en": "Value grew faster than volume"
+        "pt": "Alentejo e Norte à frente pelo segundo trimestre",
+        "en": "Alentejo and the North ahead for a second quarter"
       },
       "barList": {
         "title": {
-          "pt": "Referência nacional para leitura regional",
-          "en": "National benchmark for regional analysis"
+          "pt": "Variação das dormidas nas regiões destacadas pelo INE",
+          "en": "Change in overnight stays in the regions INE singles out"
         },
         "unit": "percent",
         "scale": "none",
@@ -290,40 +358,67 @@
           "en": "Q2 2026, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 2.º trimestre de 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q2 2026"
+          "pt": "INE, Atividade Turística, 2.º trimestre de 2026.",
+          "en": "Statistics Portugal, Tourism Activity, Q2 2026."
         },
         "items": [
           {
-            "key": "volume",
+            "key": "alentejo",
             "label": {
-              "pt": "Volume de dormidas",
-              "en": "Overnight-stay volume"
+              "pt": "Alentejo",
+              "en": "Alentejo"
             },
-            "value": 1.2
+            "value": 5.4
           },
           {
-            "key": "value",
+            "key": "norte",
             "label": {
-              "pt": "Proveitos totais",
-              "en": "Total revenue"
+              "pt": "Norte",
+              "en": "North"
             },
-            "value": 5.2
+            "value": 5.0
+          },
+          {
+            "key": "centro",
+            "label": {
+              "pt": "Centro",
+              "en": "Centre"
+            },
+            "value": -3.9
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": -4.0
           }
         ],
-        "highlightKey": "value",
+        "highlightKey": "alentejo",
         "altText": {
-          "pt": "Referência nacional: dormidas +1.2% e proveitos totais +5.2%.",
-          "en": "National benchmark: overnight stays +1.2% and total revenue +5.2%."
+          "pt": "Variação homóloga das dormidas, regiões destacadas pelo INE, 2.º trimestre de 2026: Alentejo +5,4%, Norte +5,0%, Centro -3,9%, Oeste e Vale do Tejo -4,0%.",
+          "en": "Year-on-year change in overnight stays, the regions INE singles out, Q2 2026: Alentejo +5.4%, North +5.0%, Centre -3.9%, West and Tagus Valley -4.0%."
         }
       },
       "body": {
         "pt": [
-          "A referência nacional deve ser lida em conjunto com as diferenças de procura, sazonalidade e posicionamento entre regiões."
+          "Os maiores aumentos das dormidas ocorreram no Alentejo (+5,4%) e no Norte (+5,0%). Em sentido contrário, o Oeste e Vale do Tejo (-4,0%) e o Centro (-3,9%) registaram os maiores decréscimos. No Algarve, os três principais mercados concentraram 50,5% do total de dormidas da região, uma concentração que amplifica qualquer travagem de um só mercado emissor."
         ],
         "en": [
-          "The national benchmark should be read alongside regional differences in demand, seasonality and positioning."
+          "The largest increases in overnight stays were in Alentejo (+5.4%) and the North (+5.0%). At the other end, the West and Tagus Valley (-4.0%) and the Centre (-3.9%) posted the largest decreases. In the Algarve the three main markets accounted for 50.5% of the region's overnight stays, a concentration that amplifies any slowdown in a single source market."
         ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "REGIÃO EM DESTAQUE",
+          "en": "REGION IN FOCUS"
+        },
+        "body": {
+          "pt": "O Oeste e Vale do Tejo perdeu 4,0% das dormidas, o segundo trimestre seguido de contração numa região que já tinha sido a mais fraca do trimestre anterior.",
+          "en": "The West and Tagus Valley lost 4.0% of its overnight stays, a second consecutive quarter of contraction in the region that was already the weakest in the previous quarter."
+        }
       }
     },
     {
@@ -333,21 +428,55 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "Receita acima da evolução das dormidas",
-        "en": "Revenue ahead of overnight-stay growth"
+        "pt": "Preço a subir, ocupação a ceder",
+        "en": "Rate up, occupancy giving way"
       },
       "scope": {
-        "pt": "Total do alojamento turístico, segundo o âmbito das fontes.",
-        "en": "Total tourist accommodation, according to source scope."
+        "pt": "Portugal, estabelecimentos de alojamento turístico.",
+        "en": "Portugal, tourist accommodation establishments."
       },
       "indicators": [
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 130.2,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.4,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 81.6,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 0.8,
+            "unit": "percent",
+            "basis": "yoy"
+          }
+        },
         {
           "key": "totalRevenue",
           "label": {
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2100.0,
+          "value": 2140.0,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -356,6 +485,10 @@
             "value": 5.2,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "valor derivado dos acumulados do INE",
+            "en": "value derived from INE's cumulative figures"
           }
         },
         {
@@ -364,7 +497,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1600.0,
+          "value": 1636.6,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -373,15 +506,19 @@
             "value": 4.5,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "valor derivado dos acumulados do INE",
+            "en": "value derived from INE's cumulative figures"
           }
         }
       ],
       "body": {
         "pt": [
-          "Os proveitos totais cresceram 5.2% e os proveitos de aposento 4.5% em termos homólogos."
+          "O ADR atingiu 130,2 euros (+2,4%) e o RevPAR 81,6 euros (+0,8%). Os proveitos totais somaram 2140,0 milhões de euros (+5,2%) e os de aposento 1636,6 milhões (+4,5%), abaixo do ritmo do início do ano. O INE não publica taxas de ocupação trimestrais; nos três meses do trimestre, a taxa líquida de ocupação-cama esteve sempre abaixo do ano anterior. A receita cresceu por preço, não por volume nem por mais camas ocupadas."
         ],
         "en": [
-          "Total revenue grew 5.2% and room revenue 4.5% year on year."
+          "ADR reached EUR 130.2 (+2.4%) and RevPAR EUR 81.6 (+0.8%). Total revenue came to EUR 2,140.0 million (+5.2%) and room revenue to EUR 1,636.6 million (+4.5%), slower than at the start of the year. INE publishes no quarterly occupancy rates; in each of the quarter's three months net bed occupancy stayed below the year before. Revenue grew on rate, not on volume and not on more beds filled."
         ]
       }
     },
@@ -393,20 +530,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Crescimento de procura com reforço do rendimento",
-          "en": "Demand growth with stronger income"
+          "pt": "Um trimestre de preço, não de ocupação",
+          "en": "A quarter of rate, not of occupancy"
         },
         "fact": {
-          "pt": "Dormidas +1.2% e proveitos totais +5.2%.",
-          "en": "Overnight stays +1.2% and total revenue +5.2%."
+          "pt": "Proveitos totais +5,2%, dormidas +1,2%, ADR +2,4% e RevPAR +0,8%.",
+          "en": "Total revenue +5.2%, overnight stays +1.2%, ADR +2.4% and RevPAR +0.8%."
         },
         "interpretation": {
-          "pt": "O diferencial entre valor e volume sinaliza capacidade de monetização, embora com diferenças por localização e segmento.",
-          "en": "The gap between value and volume signals monetisation capacity, albeit with differences by location and segment."
+          "pt": "O RevPAR é o indicador que junta preço e ocupação, e foi o que menos subiu. A subida das tarifas está a ser paga com noites vendidas, e o aumento dos proveitos não corresponde a uma utilização maior dos ativos. O alojamento local voltou a perder dormidas, enquanto a hotelaria e o turismo no espaço rural somaram.",
+          "en": "RevPAR is the indicator that combines rate and occupancy, and it moved least. The rate increase is being paid for with nights sold, and the revenue gain does not correspond to heavier use of the assets. Local accommodation again lost overnight stays, while hotels and rural tourism added them."
         },
         "implication": {
-          "pt": "Na análise de ativos, importa separar crescimento de procura, efeito preço e mix de mercado antes de projetar rendimentos.",
-          "en": "Asset analysis should separate demand growth, pricing effects and market mix before projecting income."
+          "pt": "Para quem detém ou financia ativos, o sinal é para testar o ponto de rutura do preço. Um segundo trimestre com o RevPAR a subir menos do que o ADR indica que a procura já não absorve aumentos sem custo em ocupação. Os ativos dependentes do mercado francês, do Centro e do Oeste e Vale do Tejo merecem leitura própria, e a exposição ao alojamento local deve ser avaliada à parte da hotelaria.",
+          "en": "For those who own or finance assets, the signal is to test where rate breaks. A second quarter with RevPAR rising less than ADR says demand no longer absorbs increases without a cost in occupancy. Assets tied to the French market, to the Centre and to the West and Tagus Valley deserve their own reading, and exposure to local accommodation should be assessed separately from hotels."
         }
       }
     },
@@ -418,21 +555,21 @@
       },
       "outlook": {
         "intro": {
-          "pt": "Três sinais a acompanhar",
-          "en": "Three signals to watch"
+          "pt": "Três sinais a acompanhar no 3.º trimestre de 2026",
+          "en": "Three signals to watch in the third quarter of 2026"
         },
         "signals": [
           {
-            "pt": "Evolução da procura internacional e nacional.",
-            "en": "Performance of international and domestic demand."
+            "pt": "O trimestre seguinte não tem efeito de Páscoa e será a primeira leitura limpa do ano.",
+            "en": "The next quarter carries no Easter effect and will be the year's first clean reading."
           },
           {
-            "pt": "Capacidade de sustentar preço e RevPAR.",
-            "en": "Ability to sustain pricing and RevPAR."
+            "pt": "Se a aceleração das dormidas de residentes resiste à época alta, quando o peso do mercado externo é maior.",
+            "en": "Whether the acceleration in resident overnight stays survives the high season, when the external market weighs most."
           },
           {
-            "pt": "Dispersão do desempenho entre regiões e segmentos.",
-            "en": "Performance dispersion across regions and segments."
+            "pt": "Se as dormidas de não residentes voltam a ganhar velocidade ou passam a terreno negativo, depois de um trimestre praticamente parado.",
+            "en": "Whether non-resident overnight stays pick up speed again or turn negative, after a quarter of near standstill."
           }
         ]
       }
@@ -445,20 +582,24 @@
       },
       "sources": {
         "primary": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — 2.º trimestre de 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Q2 2026"
+          "pt": "INE, Atividade Turística, 2.º trimestre de 2026, divulgada em 14 de agosto de 2026.",
+          "en": "Statistics Portugal, Tourism Activity, Q2 2026, released 14 August 2026."
         },
         "complementary": [
           {
-            "pt": "Instituto Nacional de Estatística, séries mensais e agregados revistos.",
-            "en": "Statistics Portugal, revised monthly series and aggregates."
+            "pt": "INE, Atividade Turística - Estatísticas Rápidas, junho de 2026, divulgadas em 31 de julho de 2026. Utilizada para os proveitos do trimestre.",
+            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, June 2026, released 31 July 2026. Used for the quarter's revenue."
+          },
+          {
+            "pt": "INE, Atividade Turística - Estatísticas Rápidas, março de 2026, divulgadas em 30 de abril de 2026. Utilizada para os proveitos do trimestre.",
+            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, March 2026, released 30 April 2026. Used for the quarter's revenue."
           }
         ],
-        "releaseDate": "2026-09-04",
-        "status": "revised",
+        "releaseDate": "2026-08-14",
+        "status": "provisional",
         "notes": {
-          "pt": "Edição histórica. Valores arredondados segundo as publicações de origem; todas as variações são homólogas.",
-          "en": "Historical edition. Values are rounded as in the source releases; all changes are year-on-year."
+          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 14 de agosto de 2026. Os proveitos totais do trimestre foram obtidos por diferença entre os acumulados publicados pelo INE em 31 de julho de 2026 e em 30 de abril de 2026, uma vez que a divulgação trimestral de 14 de agosto de 2026 imprime apenas um valor arredondado em mil milhões de euros. Os proveitos de aposento do trimestre foram obtidos por diferença entre os acumulados publicados pelo INE em 31 de julho de 2026 e em 30 de abril de 2026, uma vez que a divulgação trimestral de 14 de agosto de 2026 imprime apenas um valor arredondado em mil milhões de euros. O INE não publica taxas de ocupação trimestrais.",
+          "en": "Levels and year-on-year changes from the INE quarterly release of 14 August 2026. Total revenue for the quarter was obtained as the difference between the cumulative figures INE published on 31 July 2026 and 30 April 2026, since the quarterly release of 14 August 2026 prints only a figure rounded to thousand millions of euros. Room revenue for the quarter was obtained as the difference between the cumulative figures INE published on 31 July 2026 and 30 April 2026, since the quarterly release of 14 August 2026 prints only a figure rounded to thousand millions of euros. INE publishes no quarterly occupancy rates."
         }
       }
     }

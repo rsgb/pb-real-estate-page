@@ -7,11 +7,11 @@
   "period": {
     "year": 2025
   },
-  "publishedAt": "2026-09-04",
+  "publishedAt": "2026-09-08",
   "historical": true,
   "historicalNote": {
-    "pt": "Edição histórica, publicada a 4 de setembro de 2026 com dados relativos a Ano de 2025.",
-    "en": "Historical edition, published on 4 September 2026 using data for Full year 2025."
+    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos ao ano de 2025.",
+    "en": "Historical edition, published on 8 September 2026 using data for 2025."
   },
   "dataStatus": "revised",
   "version": "1.0",
@@ -21,11 +21,11 @@
   },
   "title": {
     "pt": "Tourism & Hospitality Brief | Portugal | Ano de 2025",
-    "en": "Tourism & Hospitality Brief | Portugal | Full year 2025"
+    "en": "Tourism & Hospitality Brief | Portugal | Annual Review 2025"
   },
   "takeaway": {
-    "pt": "Em Ano de 2025, a atividade manteve crescimento e os proveitos evoluíram acima do volume.",
-    "en": "In Full year 2025, activity continued to grow and revenue performed ahead of volume."
+    "pt": "2025 foi um ano de valor e não de volume: as dormidas subiram 2,1% e os proveitos totais 7,2%. O mercado interno cresceu 5,4% e sustentou a procura; os grandes mercados europeus e o Algarve ficaram parados.",
+    "en": "2025 was a year of value rather than volume: overnight stays rose 2.1% and total revenue 7.2%. The domestic market grew 5.4% and carried demand, while the large European markets and the Algarve stood still."
   },
   "sections": [
     {
@@ -35,8 +35,8 @@
         "en": "ANNUAL BRIEF"
       },
       "strapline": {
-        "pt": "Portugal | Ano de 2025",
-        "en": "Portugal | Full year 2025"
+        "pt": "Portugal, ano de 2025: dormidas +2,1% e proveitos totais +7,2% em termos homólogos.",
+        "en": "Portugal, 2025: overnight stays +2.1% and total revenue +7.2% year on year."
       },
       "author": {
         "name": "Paulo Braga",
@@ -46,8 +46,8 @@
         }
       },
       "note": {
-        "pt": "Edição histórica v1.0 — dados revistos",
-        "en": "Historical edition v1.0 — revised data"
+        "pt": "Edição histórica v1.0 - dados revistos",
+        "en": "Historical edition v1.0 - revised data"
       }
     },
     {
@@ -57,8 +57,8 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Crescimento com valorização da receita",
-        "en": "Growth with stronger revenue performance"
+        "pt": "Um ano de abrandamento com a receita ainda a crescer",
+        "en": "A slower year, with revenue still growing"
       },
       "callout": {
         "kind": "conclusion",
@@ -67,18 +67,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "Os proveitos totais cresceram 6.9%, face a 2.1% nas dormidas.",
-          "en": "Total revenue grew 6.9%, compared with 2.1% in overnight stays."
+          "pt": "O valor cresceu bem acima do volume: as dormidas aumentaram 2,1% e os proveitos totais 7,2%, num ano em que o mercado interno subiu 5,4% e o externo apenas 0,8%.",
+          "en": "Value grew well ahead of volume: overnight stays increased 2.1% and total revenue 7.2%, in a year when the domestic market rose 5.4% and foreign markets only 0.8%."
         }
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 32.5 milhões de hóspedes e 82.0 milhões de dormidas.",
-          "Os proveitos totais atingiram 7133.2 milhões de euros e os de aposento 5472.1 milhões."
+          "O INE fechou o ano com a manchete de que a atividade turística continuou a abrandar: as chegadas de turistas não residentes atingiram 29,9 milhões, um acréscimo de 3,3% depois de 9,3% no ano anterior. Nos estabelecimentos de alojamento turístico, os resultados definitivos apontam para 32,5 milhões de hóspedes (+2,8%) e 82,0 milhões de dormidas (+2,1%), abaixo da primeira leitura de 82,1 milhões e +2,2%.",
+          "O calendário marcou o percurso: o Carnaval passou de fevereiro para março e a Páscoa de março para abril, o que tirou dormidas a fevereiro (-2,5%) e a março (-2,9%) e as devolveu em abril (+8,9%). Do lado do valor, os proveitos totais somaram 7154,4 milhões de euros (+7,2%) e os de aposento 5483,9 milhões (+6,8%), com o crescimento da receita a perder força ao longo do ano.",
+          "O INE não publica RevPAR, ADR nem taxa líquida de ocupação-cama anuais para esta série, pelo que o rendimento por quarto só é observável mês a mês. Para quem detém ou financia ativos, a leitura do ano é simples: o crescimento veio do valor de cada noite vendida e não de mais noites, e a distância entre regiões e mercados emissores foi maior do que a média nacional sugere."
         ],
         "en": [
-          "Tourist accommodation recorded 32.5 million guests and 82.0 million overnight stays.",
-          "Total revenue reached EUR 7133.2 million and room revenue EUR 5472.1 million."
+          "Statistics Portugal closed the year with the headline that tourism activity continued to slow: arrivals of non-resident tourists reached 29.9 million, up 3.3% after 9.3% the year before. In tourist accommodation establishments, the definitive results give 32.5 million guests (+2.8%) and 82.0 million overnight stays (+2.1%), below the first reading of 82.1 million and +2.2%.",
+          "The calendar shaped the path: Carnival moved from February to March and Easter from March to April, taking overnight stays out of February (-2.5%) and March (-2.9%) and giving them back in April (+8.9%). On the value side, total revenue came to EUR 7,154.4 million (+7.2%) and room revenue to EUR 5,483.9 million (+6.8%), with revenue growth losing pace as the year went on.",
+          "Statistics Portugal publishes no annual RevPAR, ADR or net bed occupancy for this series, so room yield can only be read month by month. For owners and lenders the year reads simply: growth came from the value of each night sold rather than from more nights, and the distance between regions and source markets was wider than the national average suggests."
         ]
       }
     },
@@ -89,8 +91,8 @@
         "en": "KEY INDICATORS"
       },
       "headline": {
-        "pt": "Volume e valor em perspetiva",
-        "en": "Volume and value in perspective"
+        "pt": "Os proveitos cresceram, o volume quase não se moveu",
+        "en": "Revenue grew; volume barely moved"
       },
       "indicators": [
         {
@@ -108,6 +110,10 @@
             "value": 2.8,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "resultados definitivos",
+            "en": "definitive results"
           }
         },
         {
@@ -116,7 +122,7 @@
             "pt": "DORMIDAS",
             "en": "OVERNIGHT STAYS"
           },
-          "value": 82.0117,
+          "value": 82.0,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
@@ -125,6 +131,10 @@
             "value": 2.1,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "resultados definitivos",
+            "en": "definitive results"
           }
         },
         {
@@ -133,15 +143,19 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 7133.2,
+          "value": 7154.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 6.9,
+            "value": 7.2,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "divulgação de dezembro de 2025",
+            "en": "December 2025 release"
           }
         },
         {
@@ -150,24 +164,28 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 5472.1,
+          "value": 5483.9,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 6.6,
+            "value": 6.8,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "divulgação de dezembro de 2025",
+            "en": "December 2025 release"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: hóspedes +2.8%, dormidas +2.1% e proveitos totais +6.9% em termos homólogos."
+          "Leitura: os proveitos totais subiram 7,2% e os de aposento 6,8%, contra 2,1% nas dormidas e 2,8% nos hóspedes. O ano acrescentou receita sem acrescentar volume equivalente, e fê-lo com o mercado interno (+5,4%) muito à frente do externo (+0,8%)."
         ],
         "en": [
-          "Reading: guests +2.8%, overnight stays +2.1% and total revenue +6.9% year on year."
+          "Reading: total revenue rose 7.2% and room revenue 6.8%, against 2.1% for overnight stays and 2.8% for guests. The year added revenue without adding matching volume, and it did so with the domestic market (+5.4%) far ahead of foreign markets (+0.8%)."
         ]
       }
     },
@@ -178,40 +196,40 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "A procura manteve-se resiliente",
-        "en": "Demand remained resilient"
+        "pt": "O mercado interno fez o crescimento do ano",
+        "en": "Domestic demand delivered the year's growth"
       },
       "indicators": [
         {
-          "key": "guests",
+          "key": "residentStays",
           "label": {
-            "pt": "HÓSPEDES",
-            "en": "GUESTS"
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
           },
-          "value": 32.5,
+          "value": 25.1267,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.8,
+            "value": 5.4,
             "unit": "percent",
             "basis": "yoy"
           }
         },
         {
-          "key": "overnightStays",
+          "key": "nonResidentStays",
           "label": {
-            "pt": "DORMIDAS",
-            "en": "OVERNIGHT STAYS"
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
           },
-          "value": 82.0117,
+          "value": 56.9587,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.1,
+            "value": 0.8,
             "unit": "percent",
             "basis": "yoy"
           }
@@ -219,110 +237,201 @@
       ],
       "body": {
         "pt": [
-          "A comparação entre hóspedes e dormidas permite avaliar simultaneamente a entrada de procura e a intensidade média das estadas."
+          "As dormidas de residentes chegaram a 25,1 milhões, mais 5,4%, enquanto as de não residentes ficaram em 57,0 milhões, mais 0,8%. O mercado externo continua a dominar o total, mas foi a procura interna que gerou o crescimento. O Reino Unido manteve-se como principal mercado emissor, com 17,7% das dormidas de não residentes, apesar de uma diminuição de 1,5%. Seguiram-se a Alemanha (11,3% do total), os Estados Unidos (9,6%), a Espanha (9,1%) e a França (7,4%). Os maiores aumentos vieram do Canadá (+5,8%) e dos Estados Unidos (+4,9%); as maiores quedas, de França (-7,0%) e Espanha (-5,2%). A publicação anual assinala ainda que a sazonalidade desceu para o valor mais baixo desde 2013."
         ],
         "en": [
-          "Comparing guests and overnight stays captures both demand inflow and average stay intensity."
+          "Resident overnight stays reached 25.1 million, up 5.4%, while non-resident stays came to 57.0 million, up 0.8%. Foreign markets still dominate the total, but domestic demand produced the growth. The United Kingdom remained the leading source market, with 17.7% of non-resident overnight stays, despite a decrease of 1.5%. Germany followed with 11.3% of the total, ahead of the United States (9.6%), Spain (9.1%) and France (7.4%). The largest gains came from Canada (+5.8%) and the United States (+4.9%); the largest losses from France (-7.0%) and Spain (-5.2%). The annual publication also notes that seasonality eased to its lowest level since 2013."
         ]
       },
       "barList": {
         "title": {
-          "pt": "Evolução da procura",
-          "en": "Demand growth"
+          "pt": "Variação das dormidas por mercado emissor",
+          "en": "Change in overnight stays by source market"
         },
         "unit": "percent",
         "scale": "none",
         "decimals": 1,
         "period": {
           "pt": "Ano de 2025, variação homóloga",
-          "en": "Full year 2025, year-on-year change"
+          "en": "2025, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Ano de 2025",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Full year 2025"
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, dezembro de 2025.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, December 2025."
         },
         "items": [
           {
-            "key": "guests",
+            "key": "ca",
             "label": {
-              "pt": "Hóspedes",
-              "en": "Guests"
+              "pt": "Canadá",
+              "en": "Canada"
             },
-            "value": 2.8
+            "value": 5.8
           },
           {
-            "key": "overnightStays",
+            "key": "us",
             "label": {
-              "pt": "Dormidas",
-              "en": "Overnight stays"
+              "pt": "Estados Unidos",
+              "en": "United States"
             },
-            "value": 2.1
+            "value": 4.9
+          },
+          {
+            "key": "uk",
+            "label": {
+              "pt": "Reino Unido",
+              "en": "United Kingdom"
+            },
+            "value": -1.5
+          },
+          {
+            "key": "es",
+            "label": {
+              "pt": "Espanha",
+              "en": "Spain"
+            },
+            "value": -5.2
+          },
+          {
+            "key": "fr",
+            "label": {
+              "pt": "França",
+              "en": "France"
+            },
+            "value": -7.0
           }
         ],
-        "highlightKey": "overnightStays",
+        "highlightKey": "fr",
         "altText": {
-          "pt": "Variação homóloga: hóspedes +2.8% e dormidas +2.1%.",
-          "en": "Year-on-year change: guests +2.8% and overnight stays +2.1%."
+          "pt": "Variação homóloga das dormidas por mercado emissor, ano de 2025: Canadá +5,8%, Estados Unidos +4,9%, Reino Unido -1,5%, Espanha -5,2%, França -7,0%.",
+          "en": "Year-on-year change in overnight stays by source market, 2025: Canada +5.8%, United States +4.9%, United Kingdom -1.5%, Spain -5.2%, France -7.0%."
         }
       }
     },
     {
       "block": "regional",
       "sectionLabel": {
-        "pt": "LEITURA TERRITORIAL",
-        "en": "TERRITORIAL READING"
+        "pt": "REGIÕES",
+        "en": "REGIONS"
       },
       "headline": {
-        "pt": "O valor cresceu mais do que o volume",
-        "en": "Value grew faster than volume"
+        "pt": "Todas as regiões cresceram; as maiores cresceram menos",
+        "en": "Every region grew, and the biggest grew least"
       },
       "barList": {
         "title": {
-          "pt": "Referência nacional para leitura regional",
-          "en": "National benchmark for regional analysis"
+          "pt": "Variação das dormidas por região",
+          "en": "Change in overnight stays by region"
         },
         "unit": "percent",
         "scale": "none",
         "decimals": 1,
         "period": {
           "pt": "Ano de 2025, variação homóloga",
-          "en": "Full year 2025, year-on-year change"
+          "en": "2025, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Ano de 2025",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Full year 2025"
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, dezembro de 2025.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, December 2025."
         },
         "items": [
           {
-            "key": "volume",
+            "key": "alentejo",
             "label": {
-              "pt": "Volume de dormidas",
-              "en": "Overnight-stay volume"
+              "pt": "Alentejo",
+              "en": "Alentejo"
             },
-            "value": 2.1
+            "value": 6.3
           },
           {
-            "key": "value",
+            "key": "setubal",
             "label": {
-              "pt": "Proveitos totais",
-              "en": "Total revenue"
+              "pt": "Península de Setúbal",
+              "en": "Setúbal Peninsula"
             },
-            "value": 6.9
+            "value": 4.7
+          },
+          {
+            "key": "norte",
+            "label": {
+              "pt": "Norte",
+              "en": "North"
+            },
+            "value": 4.5
+          },
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "RA Madeira",
+              "en": "Madeira"
+            },
+            "value": 4.0
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "RA Açores",
+              "en": "Azores"
+            },
+            "value": 2.4
+          },
+          {
+            "key": "centro",
+            "label": {
+              "pt": "Centro",
+              "en": "Centre"
+            },
+            "value": 1.7
+          },
+          {
+            "key": "lisboa",
+            "label": {
+              "pt": "Grande Lisboa",
+              "en": "Greater Lisbon"
+            },
+            "value": 0.9
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": 0.8
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": 0.4
           }
         ],
-        "highlightKey": "value",
+        "highlightKey": "alentejo",
         "altText": {
-          "pt": "Referência nacional: dormidas +2.1% e proveitos totais +6.9%.",
-          "en": "National benchmark: overnight stays +2.1% and total revenue +6.9%."
+          "pt": "Variação homóloga das dormidas por região, ano de 2025: Alentejo +6,3%, Península de Setúbal +4,7%, Norte +4,5%, RA Madeira +4,0%, RA Açores +2,4%, Centro +1,7%, Grande Lisboa +0,9%, Oeste e Vale do Tejo +0,8%, Algarve +0,4%.",
+          "en": "Year-on-year change in overnight stays by region, 2025: Alentejo +6.3%, Setúbal Peninsula +4.7%, North +4.5%, Madeira +4.0%, Azores +2.4%, Centre +1.7%, Greater Lisbon +0.9%, West and Tagus Valley +0.8%, Algarve +0.4%."
         }
       },
       "body": {
         "pt": [
-          "A referência nacional deve ser lida em conjunto com as diferenças de procura, sazonalidade e posicionamento entre regiões."
+          "Todas as regiões registaram crescimento nas dormidas em 2025. Os maiores aumentos ocorreram no Alentejo (+6,3%), na Península de Setúbal (+4,7%) e no Norte (+4,5%), seguidos da RA Madeira (+4,0%) e da RA Açores (+2,4%). No extremo oposto ficaram o Algarve (+0,4%), o Oeste e Vale do Tejo (+0,8%), a Grande Lisboa (+0,9%) e o Centro (+1,7%). Os dois destinos de maior volume, o Algarve e a Grande Lisboa, ficaram entre os que menos avançaram."
         ],
         "en": [
-          "The national benchmark should be read alongside regional differences in demand, seasonality and positioning."
+          "Every region recorded growth in overnight stays in 2025. The largest increases were in the Alentejo (+6.3%), the Setúbal Peninsula (+4.7%) and the North (+4.5%), followed by Madeira (+4.0%) and the Azores (+2.4%). At the other end came the Algarve (+0.4%), the West and Tagus Valley (+0.8%), Greater Lisbon (+0.9%) and the Centre (+1.7%). The two largest destinations by volume, the Algarve and Greater Lisbon, were among the slowest growing."
         ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "REGIÃO EM DESTAQUE",
+          "en": "REGION IN FOCUS"
+        },
+        "body": {
+          "pt": "O Algarve, a maior região em dormidas, cresceu apenas 0,4%. Um destino desta escala praticamente parado trava a média nacional e transfere para a tarifa todo o peso do crescimento da receita.",
+          "en": "The Algarve, the largest region by overnight stays, grew just 0.4%. A destination of that size standing almost still holds back the national average and puts the whole burden of revenue growth on rate."
+        }
       }
     },
     {
@@ -332,12 +441,12 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "Receita acima da evolução das dormidas",
-        "en": "Revenue ahead of overnight-stay growth"
+        "pt": "A receita cresceu mais no início do ano",
+        "en": "Revenue growth was concentrated in the early months"
       },
       "scope": {
-        "pt": "Total do alojamento turístico, segundo o âmbito das fontes.",
-        "en": "Total tourist accommodation, according to source scope."
+        "pt": "Portugal, estabelecimentos de alojamento turístico.",
+        "en": "Portugal, tourist accommodation establishments."
       },
       "indicators": [
         {
@@ -346,13 +455,13 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 7133.2,
+          "value": 7154.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 6.9,
+            "value": 7.2,
             "unit": "percent",
             "basis": "yoy"
           }
@@ -363,13 +472,13 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 5472.1,
+          "value": 5483.9,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 6.6,
+            "value": 6.8,
             "unit": "percent",
             "basis": "yoy"
           }
@@ -377,10 +486,10 @@
       ],
       "body": {
         "pt": [
-          "Os proveitos totais cresceram 6.9% e os proveitos de aposento 6.6% em termos homólogos."
+          "Os proveitos totais atingiram 7154,4 milhões de euros (+7,2%) e os proveitos de aposento 5483,9 milhões (+6,8%). O ritmo não foi uniforme: os proveitos totais subiram 13,9% em janeiro, 12,6% em abril e 10,0% em julho, mas apenas 5,7% em setembro, 1,6% em novembro e 6,8% em dezembro. Com as dormidas a crescer 2,1%, a receita adicional veio sobretudo do valor de cada dormida. O INE não publica RevPAR, ADR nem taxa líquida de ocupação-cama anuais para os estabelecimentos de alojamento turístico, pelo que a leitura de rendimento tem de ser feita mês a mês."
         ],
         "en": [
-          "Total revenue grew 6.9% and room revenue 6.6% year on year."
+          "Total revenue reached EUR 7,154.4 million (+7.2%) and room revenue EUR 5,483.9 million (+6.8%). The pace was uneven: total revenue rose 13.9% in January, 12.6% in April and 10.0% in July, but only 5.7% in September, 1.6% in November and 6.8% in December. With overnight stays growing 2.1%, the extra revenue came mainly from the value of each stay. Statistics Portugal publishes no annual RevPAR, ADR or net bed occupancy for tourist accommodation establishments, so yield has to be read month by month."
         ]
       }
     },
@@ -392,20 +501,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Crescimento de procura com reforço do rendimento",
-          "en": "Demand growth with stronger income"
+          "pt": "Um ano ganho no preço, não no volume",
+          "en": "A year won on price, not on volume"
         },
         "fact": {
-          "pt": "Dormidas +2.1% e proveitos totais +6.9%.",
-          "en": "Overnight stays +2.1% and total revenue +6.9%."
+          "pt": "Dormidas +2,1% e hóspedes +2,8%, contra proveitos totais +7,2% e proveitos de aposento +6,8%; residentes +5,4% e não residentes +0,8%.",
+          "en": "Overnight stays +2.1% and guests +2.8%, against total revenue +7.2% and room revenue +6.8%; residents +5.4% and non-residents +0.8%."
         },
         "interpretation": {
-          "pt": "O diferencial entre valor e volume sinaliza capacidade de monetização, embora com diferenças por localização e segmento.",
-          "en": "The gap between value and volume signals monetisation capacity, albeit with differences by location and segment."
+          "pt": "A receita cresceu sem que o volume acompanhasse, o que coloca o desempenho do ativo no valor de cada noite e no mix de procura. Sem RevPAR, ADR e ocupação anuais publicados para esta série, o rendimento não pode ser afirmado ao nível do ano; o que se observa é receita a subir sobre uma base de noites quase estável, com dispersão regional de +6,3% no Alentejo a +0,4% no Algarve.",
+          "en": "Revenue grew without volume keeping pace, which places asset performance in the value of each night and in the demand mix. With no annual RevPAR, ADR or occupancy published for this series, yield cannot be asserted at year level; what can be seen is revenue rising on an almost flat base of nights, with regional dispersion from +6.3% in the Alentejo to +0.4% in the Algarve."
         },
         "implication": {
-          "pt": "Na análise de ativos, importa separar crescimento de procura, efeito preço e mix de mercado antes de projetar rendimentos.",
-          "en": "Asset analysis should separate demand growth, pricing effects and market mix before projecting income."
+          "pt": "Importa separar efeito preço de efeito mix antes de projetar receita para o ano seguinte. A exposição ao mercado interno, que cresceu 5,4%, protegeu resultados; a exposição aos mercados britânico, espanhol e francês custou volume. Ativos no Algarve e na Grande Lisboa precisam de procura nova e não apenas de tarifa, e qualquer avaliação deve testar até onde o preço se sustenta com ocupação estável.",
+          "en": "Separate the price effect from the mix effect before projecting revenue into the next year. Exposure to the domestic market, up 5.4%, protected results; exposure to the British, Spanish and French markets cost volume. Assets in the Algarve and Greater Lisbon need new demand rather than only higher rates, and any valuation should test how far price holds with occupancy flat."
         }
       }
     },
@@ -417,21 +526,21 @@
       },
       "outlook": {
         "intro": {
-          "pt": "Três sinais a acompanhar",
-          "en": "Three signals to watch"
+          "pt": "Três sinais a acompanhar em 2026",
+          "en": "Three signals to watch in 2026"
         },
         "signals": [
           {
-            "pt": "Evolução da procura internacional e nacional.",
-            "en": "Performance of international and domestic demand."
+            "pt": "Se o Reino Unido, a Espanha e a França invertem as quebras de 1,5%, 5,2% e 7,0%, ou se o Canadá e os Estados Unidos continuam a compensá-las.",
+            "en": "Whether the United Kingdom, Spain and France reverse their decreases of 1.5%, 5.2% and 7.0%, or whether Canada and the United States keep offsetting them."
           },
           {
-            "pt": "Capacidade de sustentar preço e RevPAR.",
-            "en": "Ability to sustain pricing and RevPAR."
+            "pt": "Se o Algarve sai do crescimento de 0,4% e se a Grande Lisboa acelera acima de 0,9%, ou se o crescimento continua a vir das regiões mais pequenas.",
+            "en": "Whether the Algarve moves off 0.4% growth and Greater Lisbon accelerates beyond 0.9%, or whether growth keeps coming from the smaller regions."
           },
           {
-            "pt": "Dispersão do desempenho entre regiões e segmentos.",
-            "en": "Performance dispersion across regions and segments."
+            "pt": "Se os proveitos voltam a crescer acima das dormidas quando o mercado interno abrandar, ou se o preço já esgotou a margem que teve em 2025.",
+            "en": "Whether revenue keeps growing faster than overnight stays once the domestic market slows, or whether pricing has already used up the room it had in 2025."
           }
         ]
       }
@@ -444,20 +553,24 @@
       },
       "sources": {
         "primary": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Ano de 2025",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — Full year 2025"
+          "pt": "INE, Estatísticas do Turismo 2025, divulgadas em 9 de julho de 2026.",
+          "en": "Statistics Portugal, Tourism Statistics 2025, released 9 July 2026."
         },
         "complementary": [
           {
-            "pt": "Instituto Nacional de Estatística, séries mensais e agregados revistos.",
-            "en": "Statistics Portugal, revised monthly series and aggregates."
+            "pt": "INE, Atividade Turística - Estatísticas Rápidas, dezembro de 2025, divulgadas em 30 de janeiro de 2026. Acumulado do ano: proveitos, dormidas de residentes e não residentes, mercados e regiões.",
+            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, December 2025, released 30 January 2026. Full-year cumulative: revenue, resident and non-resident stays, markets and regions."
+          },
+          {
+            "pt": "INE, Atividade Turística, 4.º trimestre de 2025, divulgada em 13 de fevereiro de 2026. Acumulado do ano de 2025.",
+            "en": "Statistics Portugal, Tourism Activity, Q4 2025, released 13 February 2026. Full-year 2025 cumulative."
           }
         ],
-        "releaseDate": "2026-09-04",
+        "releaseDate": "2026-07-09",
         "status": "revised",
         "notes": {
-          "pt": "Edição histórica. Valores arredondados segundo as publicações de origem; todas as variações são homólogas.",
-          "en": "Historical edition. Values are rounded as in the source releases; all changes are year-on-year."
+          "pt": "Hóspedes e dormidas dos estabelecimentos de alojamento turístico segundo os resultados definitivos das Estatísticas do Turismo 2025, divulgadas em 9 de julho de 2026 (32,5 milhões de hóspedes, +2,8%; 82,0 milhões de dormidas, +2,1%). Proveitos da divulgação mensal de 30 de janeiro de 2026, que publica o acumulado do ano para a mesma série; a publicação anual não separa proveitos para esta série. Todos os valores respeitam aos estabelecimentos de alojamento turístico e não à generalidade dos meios de alojamento. O INE não publica RevPAR, ADR nem taxas de ocupação anuais para esta série.",
+          "en": "Guests and overnight stays for tourist accommodation establishments follow the definitive results of Tourism Statistics 2025, released 9 July 2026 (32.5 million guests, +2.8%; 82.0 million overnight stays, +2.1%). Revenue comes from the monthly release of 30 January 2026, which publishes the full-year cumulative for the same series; the annual publication reports no separate revenue for it. Every figure refers to tourist accommodation establishments, not to all accommodation types. INE publishes no annual RevPAR, ADR or occupancy for this series."
         }
       }
     }

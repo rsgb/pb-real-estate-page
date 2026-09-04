@@ -8,11 +8,11 @@
     "year": 2026,
     "month": 1
   },
-  "publishedAt": "2026-09-04",
+  "publishedAt": "2026-09-08",
   "historical": true,
   "historicalNote": {
-    "pt": "Edição histórica, publicada a 4 de setembro de 2026 com dados relativos a Janeiro 2026.",
-    "en": "Historical edition, published on 4 September 2026 using data for January 2026."
+    "pt": "Edição histórica, publicada a 8 de setembro de 2026 com dados relativos a janeiro de 2026.",
+    "en": "Historical edition, published on 8 September 2026 using data for January 2026."
   },
   "dataStatus": "revised",
   "version": "1.0",
@@ -21,12 +21,12 @@
     "en": "THB_Monthly_2026-01_EN_PDF_v1.0.pdf"
   },
   "title": {
-    "pt": "Tourism & Hospitality Brief | Portugal | Janeiro 2026",
+    "pt": "Tourism & Hospitality Brief | Portugal | janeiro de 2026",
     "en": "Tourism & Hospitality Brief | Portugal | January 2026"
   },
   "takeaway": {
-    "pt": "Em Janeiro 2026, a atividade manteve crescimento e os proveitos evoluíram acima do volume.",
-    "en": "In January 2026, activity continued to grow and revenue performed ahead of volume."
+    "pt": "Janeiro manteve o crescimento, com abrandamento: as dormidas subiram 2,0% e os proveitos 5,4%, apoiados no ADR (+2,7%), enquanto a ocupação-cama perdeu 0,3 p.p. O INE avisa que estes resultados preliminares podem sofrer revisões maiores do que é habitual.",
+    "en": "January kept growing, but more slowly: overnight stays rose 2.0% and revenue 5.4%, carried by ADR (+2.7%), while net bed occupancy lost 0.3 pp. Statistics Portugal warns that these preliminary results may be revised by more than usual."
   },
   "sections": [
     {
@@ -36,8 +36,8 @@
         "en": "MONTHLY BRIEF"
       },
       "strapline": {
-        "pt": "Portugal | Janeiro 2026",
-        "en": "Portugal | January 2026"
+        "pt": "Portugal, janeiro de 2026: dormidas +2,0% e proveitos totais +5,4% em termos homólogos.",
+        "en": "Portugal, January 2026: overnight stays +2.0% and total revenue +5.4% year on year."
       },
       "author": {
         "name": "Paulo Braga",
@@ -47,8 +47,8 @@
         }
       },
       "note": {
-        "pt": "Edição histórica v1.0 — dados revistos",
-        "en": "Historical edition v1.0 — revised data"
+        "pt": "Edição histórica v1.0 - dados revistos",
+        "en": "Historical edition v1.0 - revised data"
       }
     },
     {
@@ -58,8 +58,8 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Crescimento com valorização da receita",
-        "en": "Growth with stronger revenue performance"
+        "pt": "Janeiro cresceu menos e com a ocupação a descer",
+        "en": "January grew more slowly, with occupancy lower"
       },
       "callout": {
         "kind": "conclusion",
@@ -68,18 +68,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "Os proveitos totais cresceram 5.8%, face a 2.0% nas dormidas.",
-          "en": "Total revenue grew 5.8%, compared with 2.0% in overnight stays."
+          "pt": "O crescimento continuou, mais lento e assente no preço: o ADR subiu 2,7%, o RevPAR 1,6% e a ocupação-cama desceu 0,3 p.p.",
+          "en": "Growth continued, slower and resting on price: ADR gained 2.7%, RevPAR 1.6% and net bed occupancy was 0.3 pp lower."
         }
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 1.7 milhões de hóspedes e 3.7 milhões de dormidas.",
-          "Os proveitos totais atingiram 270.0 milhões de euros e os de aposento 195.0 milhões."
+          "O INE resumiu o mês como manutenção do crescimento, embora com abrandamento. O alojamento turístico registou 1,7 milhões de hóspedes (+3,7%) e 3,7 milhões de dormidas (+2,0%), com 276,8 milhões de euros de proveitos totais e 199,5 milhões de proveitos de aposento, ambos +5,4%.",
+          "O RevPAR fixou-se em 33,8 euros (+1,6%) e o ADR em 92,1 euros (+2,7%), enquanto a taxa líquida de ocupação-cama desceu para 28,6%, menos 0,3 p.p.",
+          "Há uma reserva a registar: o INE assinalou que os resultados preliminares de janeiro podem ser alvo de revisões de maior magnitude do que é habitual, pelo impacto dos fenómenos meteorológicos intensos e anómalos de janeiro e fevereiro nas taxas de resposta aos inquéritos."
         ],
         "en": [
-          "Tourist accommodation recorded 1.7 million guests and 3.7 million overnight stays.",
-          "Total revenue reached EUR 270.0 million and room revenue EUR 195.0 million."
+          "Statistics Portugal summed the month up as growth maintained, though slowing. Tourist accommodation recorded 1.7 million guests (+3.7%) and 3.7 million overnight stays (+2.0%), with EUR 276.8 million of total revenue and EUR 199.5 million of room revenue, both +5.4%.",
+          "RevPAR came in at EUR 33.8 (+1.6%) and ADR at EUR 92.1 (+2.7%), while net bed occupancy eased to 28.6%, 0.3 pp lower.",
+          "One caveat belongs on the record: the institute flagged that January's preliminary results may be revised by more than usual, given the effect of the intense and anomalous weather of January and February on survey response rates."
         ]
       }
     },
@@ -90,8 +92,8 @@
         "en": "KEY INDICATORS"
       },
       "headline": {
-        "pt": "Volume e valor em perspetiva",
-        "en": "Volume and value in perspective"
+        "pt": "Proveitos a 5,4%, dormidas a 2,0%",
+        "en": "Revenue at 5.4%, overnight stays at 2.0%"
       },
       "indicators": [
         {
@@ -106,9 +108,13 @@
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.0,
+            "value": 3.7,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -117,7 +123,7 @@
             "pt": "DORMIDAS",
             "en": "OVERNIGHT STAYS"
           },
-          "value": 3.7,
+          "value": 3.7448,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
@@ -134,15 +140,19 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 270.0,
+          "value": 276.8,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 5.8,
+            "value": 5.4,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -151,24 +161,70 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 195.0,
+          "value": 199.5,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 5.5,
+            "value": 5.4,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 33.8,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.6,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "netBedOccupancy",
+          "label": {
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
+            "en": "NET BED OCCUPANCY"
+          },
+          "value": 28.6,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -0.3,
+            "unit": "pp",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "reading": {
         "pt": [
-          "Leitura: hóspedes +2.0%, dormidas +2.0% e proveitos totais +5.8% em termos homólogos."
+          "Leitura: os proveitos aumentaram 5,4% com as dormidas a crescerem 2,0%, e o RevPAR subiu 1,6% apesar da ocupação-cama em 28,6%, menos 0,3 p.p. O preço explica a distância entre valor e volume."
         ],
         "en": [
-          "Reading: guests +2.0%, overnight stays +2.0% and total revenue +5.8% year on year."
+          "Reading: revenue increased 5.4% while overnight stays grew 2.0%, and RevPAR rose 1.6% even with net bed occupancy at 28.6%, 0.3 pp lower. Price explains the gap between value and volume."
         ]
       }
     },
@@ -179,151 +235,258 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "A procura manteve-se resiliente",
-        "en": "Demand remained resilient"
+        "pt": "O mercado interno abrandou, o externo quase parou",
+        "en": "Domestic demand slowed, foreign demand nearly stalled"
       },
       "indicators": [
         {
-          "key": "guests",
+          "key": "residentStays",
           "label": {
-            "pt": "HÓSPEDES",
-            "en": "GUESTS"
+            "pt": "DORMIDAS DE RESIDENTES",
+            "en": "RESIDENT OVERNIGHT STAYS"
           },
-          "value": 1.7,
+          "value": 1.3258,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.0,
+            "value": 4.2,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
-          "key": "overnightStays",
+          "key": "nonResidentStays",
           "label": {
-            "pt": "DORMIDAS",
-            "en": "OVERNIGHT STAYS"
+            "pt": "DORMIDAS DE NÃO RESIDENTES",
+            "en": "NON-RESIDENT STAYS"
           },
-          "value": 3.7,
+          "value": 2.419,
           "unit": "count",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 2.0,
+            "value": 0.8,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "body": {
         "pt": [
-          "A comparação entre hóspedes e dormidas permite avaliar simultaneamente a entrada de procura e a intensidade média das estadas."
+          "As dormidas de residentes atingiram 1,3 milhões, com um aumento revisto de 4,2% (a primeira estimativa era +4,7%, depois de +6,0% em dezembro). As de não residentes somaram 2,4 milhões, mais 0,8% (após +1,2% em dezembro). Nos mercados emissores, o Canadá cresceu 12,5% e o Brasil 8,2%, enquanto o Reino Unido recuou 3,6% e a França 8,3%."
         ],
         "en": [
-          "Comparing guests and overnight stays captures both demand inflow and average stay intensity."
+          "Resident overnight stays reached 1.3 million, a revised increase of 4.2% (the first estimate was +4.7%, after +6.0% in December). Non-resident stays came to 2.4 million, up 0.8% (after +1.2% in December). Across the source markets, Canada grew 12.5% and Brazil 8.2%, while the United Kingdom was 3.6% lower and France 8.3% lower."
         ]
       },
       "barList": {
         "title": {
-          "pt": "Evolução da procura",
-          "en": "Demand growth"
+          "pt": "Variação das dormidas por mercado emissor",
+          "en": "Change in overnight stays by source market"
         },
         "unit": "percent",
         "scale": "none",
         "decimals": 1,
         "period": {
-          "pt": "Janeiro 2026, variação homóloga",
+          "pt": "Janeiro de 2026, variação homóloga",
           "en": "January 2026, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Janeiro 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — January 2026"
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, janeiro de 2026.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, January 2026."
         },
         "items": [
           {
-            "key": "guests",
+            "key": "ca",
             "label": {
-              "pt": "Hóspedes",
-              "en": "Guests"
+              "pt": "Canadá",
+              "en": "Canada"
             },
-            "value": 2.0
+            "value": 12.5
           },
           {
-            "key": "overnightStays",
+            "key": "br",
             "label": {
-              "pt": "Dormidas",
-              "en": "Overnight stays"
+              "pt": "Brasil",
+              "en": "Brazil"
             },
-            "value": 2.0
+            "value": 8.2
+          },
+          {
+            "key": "es",
+            "label": {
+              "pt": "Espanha",
+              "en": "Spain"
+            },
+            "value": 3.3
+          },
+          {
+            "key": "de",
+            "label": {
+              "pt": "Alemanha",
+              "en": "Germany"
+            },
+            "value": 1.3
+          },
+          {
+            "key": "uk",
+            "label": {
+              "pt": "Reino Unido",
+              "en": "United Kingdom"
+            },
+            "value": -3.6
+          },
+          {
+            "key": "fr",
+            "label": {
+              "pt": "França",
+              "en": "France"
+            },
+            "value": -8.3
           }
         ],
-        "highlightKey": "overnightStays",
+        "highlightKey": "ca",
         "altText": {
-          "pt": "Variação homóloga: hóspedes +2.0% e dormidas +2.0%.",
-          "en": "Year-on-year change: guests +2.0% and overnight stays +2.0%."
+          "pt": "Variação homóloga das dormidas por mercado emissor, janeiro de 2026: Canadá +12,5%, Brasil +8,2%, Espanha +3,3%, Alemanha +1,3%, Reino Unido -3,6%, França -8,3%.",
+          "en": "Year-on-year change in overnight stays by source market, January 2026: Canada +12.5%, Brazil +8.2%, Spain +3.3%, Germany +1.3%, United Kingdom -3.6%, France -8.3%."
         }
       }
     },
     {
       "block": "regional",
       "sectionLabel": {
-        "pt": "LEITURA TERRITORIAL",
-        "en": "TERRITORIAL READING"
+        "pt": "REGIÕES",
+        "en": "REGIONS"
       },
       "headline": {
-        "pt": "O valor cresceu mais do que o volume",
-        "en": "Value grew faster than volume"
+        "pt": "Norte e Centro cresceram; o Algarve e as ilhas não",
+        "en": "The North and Centre grew; the Algarve and the islands did not"
       },
       "barList": {
         "title": {
-          "pt": "Referência nacional para leitura regional",
-          "en": "National benchmark for regional analysis"
+          "pt": "Variação das dormidas por região",
+          "en": "Change in overnight stays by region"
         },
         "unit": "percent",
         "scale": "none",
         "decimals": 1,
         "period": {
-          "pt": "Janeiro 2026, variação homóloga",
+          "pt": "Janeiro de 2026, variação homóloga",
           "en": "January 2026, year-on-year change"
         },
         "source": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Janeiro 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — January 2026"
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, janeiro de 2026.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, January 2026."
         },
         "items": [
           {
-            "key": "volume",
+            "key": "norte",
             "label": {
-              "pt": "Volume de dormidas",
-              "en": "Overnight-stay volume"
+              "pt": "Norte",
+              "en": "North"
             },
-            "value": 2.0
+            "value": 8.2
           },
           {
-            "key": "value",
+            "key": "centro",
             "label": {
-              "pt": "Proveitos totais",
-              "en": "Total revenue"
+              "pt": "Centro",
+              "en": "Centre"
             },
-            "value": 5.8
+            "value": 5.6
+          },
+          {
+            "key": "lisboa",
+            "label": {
+              "pt": "Grande Lisboa",
+              "en": "Greater Lisbon"
+            },
+            "value": 5.0
+          },
+          {
+            "key": "oeste",
+            "label": {
+              "pt": "Oeste e Vale do Tejo",
+              "en": "West and Tagus Valley"
+            },
+            "value": 2.7
+          },
+          {
+            "key": "alentejo",
+            "label": {
+              "pt": "Alentejo",
+              "en": "Alentejo"
+            },
+            "value": 0.3
+          },
+          {
+            "key": "setubal",
+            "label": {
+              "pt": "Península de Setúbal",
+              "en": "Setúbal Peninsula"
+            },
+            "value": -2.7
+          },
+          {
+            "key": "madeira",
+            "label": {
+              "pt": "RA Madeira",
+              "en": "Madeira"
+            },
+            "value": -3.0
+          },
+          {
+            "key": "algarve",
+            "label": {
+              "pt": "Algarve",
+              "en": "Algarve"
+            },
+            "value": -4.7
+          },
+          {
+            "key": "acores",
+            "label": {
+              "pt": "RA Açores",
+              "en": "Azores"
+            },
+            "value": -5.8
           }
         ],
-        "highlightKey": "value",
+        "highlightKey": "norte",
         "altText": {
-          "pt": "Referência nacional: dormidas +2.0% e proveitos totais +5.8%.",
-          "en": "National benchmark: overnight stays +2.0% and total revenue +5.8%."
+          "pt": "Variação homóloga das dormidas por região, janeiro de 2026: Norte +8,2%, Centro +5,6%, Grande Lisboa +5,0%, Oeste e Vale do Tejo +2,7%, Alentejo +0,3%, Península de Setúbal -2,7%, RA Madeira -3,0%, Algarve -4,7%, RA Açores -5,8%.",
+          "en": "Year-on-year change in overnight stays by region, January 2026: North +8.2%, Centre +5.6%, Greater Lisbon +5.0%, West and Tagus Valley +2.7%, Alentejo +0.3%, Setúbal Peninsula -2.7%, Madeira -3.0%, Algarve -4.7%, Azores -5.8%."
         }
       },
       "body": {
         "pt": [
-          "A referência nacional deve ser lida em conjunto com as diferenças de procura, sazonalidade e posicionamento entre regiões."
+          "O Norte (+8,2%) e o Centro (+5,6%) lideraram os aumentos das dormidas; a Grande Lisboa somou 5,0%. Em sentido inverso, a RA Açores (-5,8%), o Algarve (-4,7%) e a RA Madeira (-3,0%) tiveram os decréscimos mais acentuados, e a Península de Setúbal ficou em -2,7%. O contraste separou as regiões urbanas do Norte e do Centro das regiões de sol e mar e das ilhas."
         ],
         "en": [
-          "The national benchmark should be read alongside regional differences in demand, seasonality and positioning."
+          "The North (+8.2%) and the Centre (+5.6%) led overnight-stay growth; Greater Lisbon added 5.0%. The Azores (-5.8%), the Algarve (-4.7%) and Madeira (-3.0%) recorded the sharpest decreases, and the Setúbal Peninsula came in at -2.7%. The split set the urban regions of the North and Centre against the sun-and-sea regions and the islands."
         ]
+      },
+      "callout": {
+        "kind": "attention",
+        "title": {
+          "pt": "REGIÃO EM DESTAQUE",
+          "en": "REGION IN FOCUS"
+        },
+        "body": {
+          "pt": "O Algarve apresentou um decréscimo de 4,7% nas dormidas, com os não residentes em -6,3% e os residentes praticamente estáveis (+0,6%). A quebra está na procura externa.",
+          "en": "The Algarve posted a 4.7% decrease in overnight stays, with non-residents at -6.3% and residents almost flat (+0.6%). The shortfall sits in foreign demand."
+        }
       }
     },
     {
@@ -333,29 +496,117 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "Receita acima da evolução das dormidas",
-        "en": "Revenue ahead of overnight-stay growth"
+        "pt": "O ADR sustentou o RevPAR",
+        "en": "ADR carried RevPAR"
       },
       "scope": {
-        "pt": "Total do alojamento turístico, segundo o âmbito das fontes.",
-        "en": "Total tourist accommodation, according to source scope."
+        "pt": "Portugal, estabelecimentos de alojamento turístico.",
+        "en": "Portugal, tourist accommodation establishments."
       },
       "indicators": [
+        {
+          "key": "adr",
+          "label": {
+            "pt": "ADR",
+            "en": "ADR"
+          },
+          "value": 92.1,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 2.7,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "revpar",
+          "label": {
+            "pt": "REVPAR",
+            "en": "REVPAR"
+          },
+          "value": 33.8,
+          "unit": "eur",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": 1.6,
+            "unit": "percent",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "netBedOccupancy",
+          "label": {
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
+            "en": "NET BED OCCUPANCY"
+          },
+          "value": 28.6,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -0.3,
+            "unit": "pp",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
+        {
+          "key": "netRoomOccupancy",
+          "label": {
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-QUARTO",
+            "en": "NET ROOM OCCUPANCY"
+          },
+          "value": 36.6,
+          "unit": "percent",
+          "scale": "none",
+          "decimals": 1,
+          "valueBasis": "level",
+          "change": {
+            "value": -0.4,
+            "unit": "pp",
+            "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
+          }
+        },
         {
           "key": "totalRevenue",
           "label": {
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 270.0,
+          "value": 276.8,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 5.8,
+            "value": 5.4,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         },
         {
@@ -364,24 +615,28 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 195.0,
+          "value": 199.5,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
           "valueBasis": "level",
           "change": {
-            "value": 5.5,
+            "value": 5.4,
             "unit": "percent",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "variação revista",
+            "en": "revised change"
           }
         }
       ],
       "body": {
         "pt": [
-          "Os proveitos totais cresceram 5.8% e os proveitos de aposento 5.5% em termos homólogos."
+          "O ADR subiu 2,7%, para 92,1 euros, e o RevPAR 1,6%, para 33,8 euros. A taxa líquida de ocupação-cama ficou em 28,6%, menos 0,3 p.p., e a de ocupação-quarto em 36,6%, menos 0,4 p.p. Com os proveitos totais e de aposento a subirem 5,4%, a receita adicional é preço e capacidade; a utilização das camas continuou a ceder."
         ],
         "en": [
-          "Total revenue grew 5.8% and room revenue 5.5% year on year."
+          "ADR rose 2.7% to EUR 92.1 and RevPAR 1.6% to EUR 33.8. Net bed occupancy came in at 28.6%, 0.3 pp lower, and net room occupancy at 36.6%, 0.4 pp lower. With total and room revenue both up 5.4%, the extra income is price and capacity; use of the beds kept easing."
         ]
       }
     },
@@ -393,20 +648,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Crescimento de procura com reforço do rendimento",
-          "en": "Demand growth with stronger income"
+          "pt": "Crescimento mais lento e ainda por confirmar",
+          "en": "Slower growth, and not yet confirmed"
         },
         "fact": {
-          "pt": "Dormidas +2.0% e proveitos totais +5.8%.",
-          "en": "Overnight stays +2.0% and total revenue +5.8%."
+          "pt": "Dormidas +2,0%, proveitos totais +5,4%, ADR +2,7%, RevPAR +1,6% e ocupação-cama 28,6%, menos 0,3 p.p.",
+          "en": "Overnight stays +2.0%, total revenue +5.4%, ADR +2.7%, RevPAR +1.6% and net bed occupancy 28.6%, down 0.3 pp."
         },
         "interpretation": {
-          "pt": "O diferencial entre valor e volume sinaliza capacidade de monetização, embora com diferenças por localização e segmento.",
-          "en": "The gap between value and volume signals monetisation capacity, albeit with differences by location and segment."
+          "pt": "O RevPAR avança, mas apenas porque o ADR sobe mais do que a ocupação cede. É uma margem estreita, e o mês entra nas contas com uma reserva: o próprio INE admite revisões acima do normal por causa do tempo anómalo de janeiro e fevereiro.",
+          "en": "RevPAR is up only because ADR is rising faster than occupancy is giving way. That is a narrow margin, and the month enters the record with a caveat: the institute itself expects larger revisions than normal after the anomalous weather of January and February."
         },
         "implication": {
-          "pt": "Na análise de ativos, importa separar crescimento de procura, efeito preço e mix de mercado antes de projetar rendimentos.",
-          "en": "Asset analysis should separate demand growth, pricing effects and market mix before projecting income."
+          "pt": "Quem estiver a fechar uma avaliação com dados de janeiro deve tratá-los como provisórios e voltar a eles na divulgação seguinte. Nas regiões, a exposição ao Algarve e às ilhas exige um desconto explícito face à média nacional; nas cidades do Norte e do Centro, o aumento das dormidas ainda não é prova de rendimento.",
+          "en": "Anyone closing a valuation on January data should treat it as provisional and return to it at the next release. Exposure to the Algarve and the islands needs an explicit discount to the national average; in the northern and central cities, more overnight stays are not yet evidence of yield."
         }
       }
     },
@@ -418,21 +673,21 @@
       },
       "outlook": {
         "intro": {
-          "pt": "Três sinais a acompanhar",
-          "en": "Three signals to watch"
+          "pt": "Três sinais a acompanhar em fevereiro",
+          "en": "Three signals to watch in February"
         },
         "signals": [
           {
-            "pt": "Evolução da procura internacional e nacional.",
-            "en": "Performance of international and domestic demand."
+            "pt": "A dimensão da revisão de janeiro na divulgação seguinte.",
+            "en": "How large the revision to January turns out to be."
           },
           {
-            "pt": "Capacidade de sustentar preço e RevPAR.",
-            "en": "Ability to sustain pricing and RevPAR."
+            "pt": "Se o Algarve e as ilhas regressam ao crescimento.",
+            "en": "Whether the Algarve and the islands return to growth."
           },
           {
-            "pt": "Dispersão do desempenho entre regiões e segmentos.",
-            "en": "Performance dispersion across regions and segments."
+            "pt": "Até onde o ADR consegue compensar uma ocupação-cama em terreno negativo.",
+            "en": "How far ADR can keep offsetting negative bed occupancy."
           }
         ]
       }
@@ -445,23 +700,22 @@
       },
       "sources": {
         "primary": {
-          "pt": "Turismo de Portugal / TravelBI e INE, atividade turística — Janeiro 2026",
-          "en": "Turismo de Portugal / TravelBI and Statistics Portugal, tourism activity — January 2026"
+          "pt": "INE, Atividade Turística - Estatísticas Rápidas, janeiro de 2026, divulgadas em 27 de fevereiro de 2026.",
+          "en": "Statistics Portugal, Tourism Activity - Flash Estimates, January 2026, released 27 February 2026."
         },
         "complementary": [
           {
-            "pt": "Instituto Nacional de Estatística, séries mensais e agregados revistos.",
-            "en": "Statistics Portugal, revised monthly series and aggregates."
+            "pt": "INE, Atividade Turística - Estatísticas Rápidas, fevereiro de 2026, divulgadas em 31 de março de 2026. Variações homólogas revistas para o mês anterior.",
+            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, February 2026, released 31 March 2026. Year-on-year changes revised for the preceding month."
           }
         ],
-        "releaseDate": "2026-09-04",
+        "releaseDate": "2026-03-31",
         "status": "revised",
         "notes": {
-          "pt": "Edição histórica. Valores arredondados segundo as publicações de origem; todas as variações são homólogas.",
-          "en": "Historical edition. Values are rounded as in the source releases; all changes are year-on-year."
+          "pt": "Níveis da estatística rápida do INE de 27 de fevereiro de 2026; variações homólogas revistas na divulgação de 31 de março de 2026.",
+          "en": "Levels from the INE flash release of 27 February 2026; year-on-year changes revised in the release of 31 March 2026."
         }
       }
     }
-  ],
-  "signatureImage": "THB_LinkedIn_Signature_2026-01_January.jpg"
+  ]
 }
