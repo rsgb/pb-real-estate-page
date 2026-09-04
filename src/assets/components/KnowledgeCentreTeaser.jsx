@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router";
 import { useLang, toContentLang } from "./LangContext";
 import { getLatest } from "../../content/editions";
 import { contentUi } from "../../content/ui";
-import { formatDate, formatPeriod } from "../../lib/format";
+import { editionSlug, formatDate, formatPeriod } from "../../lib/format";
 import { pick } from "../../knowledge-centre/lang";
 
 /**
@@ -41,7 +41,7 @@ export default function KnowledgeCentreTeaser() {
     .filter(Boolean)
     .join(" · ");
 
-  const cardSrc = `/og/thb-${latest.id}-${contentLang}.png`;
+  const cardSrc = `/og/thb-${editionSlug(latest.id)}-${contentLang}.png`;
 
   const linkBase = (theme) => ({
     fontFamily: "'Montserrat', sans-serif",
@@ -186,7 +186,7 @@ export default function KnowledgeCentreTeaser() {
             >
               <Box
                 component={RouterLink}
-                to={`/${urlLang}/market-brief/${latest.id}/`}
+                to={`/${urlLang}/market-brief/${editionSlug(latest.id)}/`}
                 sx={[
                   linkBase,
                   {

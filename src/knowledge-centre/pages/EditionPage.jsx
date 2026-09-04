@@ -2,7 +2,7 @@ import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
 import { editionTitle } from "../../lib/format";
-import { getAdjacent, getEdition } from "../../content/editions";
+import { editionSlug, getAdjacent, getEdition } from "../../content/editions";
 import { pick, pickList, useThbLang } from "../lang";
 import {
   BarList,
@@ -56,8 +56,11 @@ export default function EditionPage() {
 
   const takeaway = pick(edition?.takeaway, contentLang);
   const title = edition ? editionTitle(edition, contentLang) : t.notFoundTitle;
+  // The URL segment is the id lower-cased: Netlify 301s any uppercase path, so
+  // a canonical or hreflang link carrying "2025-Q4" would point at a redirect.
+  const slug = edition ? editionSlug(edition.id) : null;
   const canonicalPath = edition
-    ? `/${contentLang}/market-brief/${edition.id}/`
+    ? `/${contentLang}/market-brief/${slug}/`
     : `/${contentLang}/market-brief/`;
   // Paulo-supplied card wins; otherwise the landscape card built at build time
   // by scripts/generate-og-images.mjs (the square LinkedIn signature is not
@@ -65,7 +68,7 @@ export default function EditionPage() {
   const ogImagePath = edition
     ? edition.ogImage
       ? `/briefs/${edition.ogImage}`
-      : `/og/thb-${edition.id}-${contentLang}.png`
+      : `/og/thb-${slug}-${contentLang}.png`
     : null;
 
   useHead({
@@ -75,8 +78,8 @@ export default function EditionPage() {
     canonical: `${SITE_ORIGIN}${canonicalPath}`,
     alternates: edition
       ? [
-          { lang: "pt", href: `${SITE_ORIGIN}/pt/market-brief/${edition.id}/` },
-          { lang: "en", href: `${SITE_ORIGIN}/en/market-brief/${edition.id}/` },
+          { lang: "pt", href: `${SITE_ORIGIN}/pt/market-brief/${slug}/` },
+          { lang: "en", href: `${SITE_ORIGIN}/en/market-brief/${slug}/` },
         ]
       : [],
     og: {

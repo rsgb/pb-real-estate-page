@@ -58,6 +58,18 @@ const routes = [
   ...PRIVATE_ROUTES,
 ].map(withSlash);
 
+// Every route is lower-case, and so is every folder written below. Netlify
+// answers a path with an uppercase letter with a 301 to the lower-cased one,
+// which would strand a pre-rendered `.../2025-Q4/` folder behind a redirect the
+// app then fails to resolve. Edition paths go through `editionSlug`; this is
+// the build-time guard that they still do.
+const uppercase = routes.filter((route) => route !== route.toLowerCase());
+if (uppercase.length) {
+  throw new Error(
+    `Routes must be lower-case (Netlify 301s the rest):\n  ${uppercase.join("\n  ")}`
+  );
+}
+
 function outputFileFor(route) {
   return path.join(DIST, route.replace(/^\/+/, ""), "index.html");
 }

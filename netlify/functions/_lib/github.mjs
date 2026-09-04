@@ -7,6 +7,7 @@
  * `fetch` is injected so the tests can drive every branch of the flow without
  * a network or a token.
  */
+import { editionSlug } from "../../../src/lib/format.js";
 import { HttpError } from "./http.mjs";
 
 export const API = "https://api.github.com";
@@ -22,12 +23,16 @@ export const AUTHOR = { name: "Paulo Braga", email: "paulo.braga@kwportugal.pt" 
 export const EDITIONS_PATH = "src/content/editions";
 export const BRIEFS_PATH = "public/briefs";
 
-/** Branch an edition is staged on. */
+/** Branch an edition is staged on. Branch names keep the id as written. */
 export const branchFor = (id) => `edition/${id}`;
 
-/** Deploy-preview URL of the edition page for a pull request number. */
+/**
+ * Deploy-preview URL of the edition page for a pull request number. The path
+ * carries the slug, not the id: Netlify 301s any uppercase path, and the
+ * pre-rendered folder is lower-case.
+ */
 export const previewUrlFor = (prNumber, id) =>
-  `https://deploy-preview-${prNumber}--${NETLIFY_SITE}.netlify.app/pt/market-brief/${id}/`;
+  `https://deploy-preview-${prNumber}--${NETLIFY_SITE}.netlify.app/pt/market-brief/${editionSlug(id)}/`;
 
 /**
  * @param {{token: string, owner?: string, repo?: string, fetch?: typeof globalThis.fetch}} options

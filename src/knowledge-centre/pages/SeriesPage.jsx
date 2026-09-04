@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Box, Button, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
-import { editionTitle, formatDate, formatPeriod } from "../../lib/format";
+import { editionSlug, editionTitle, formatDate, formatPeriod } from "../../lib/format";
 import { getEditions, getLatest, groupByYear } from "../../content/editions";
 import { pick, useThbLang } from "../lang";
 import { LangNotice, Rule, ThbMark } from "../components";
@@ -146,7 +146,7 @@ export default function SeriesPage() {
             {/* The edition's LinkedIn card, inside a beige hairline. */}
             <Box
               component="img"
-              src={`/og/thb-${latest.id}-${contentLang}.png`}
+              src={`/og/thb-${editionSlug(latest.id)}-${contentLang}.png`}
               alt={editionTitle(latest, contentLang)}
               width={1200}
               height={630}
@@ -202,7 +202,7 @@ export default function SeriesPage() {
               >
                 <Button
                   component={RouterLink}
-                  to={`${basePath}${latest.id}/`}
+                  to={`${basePath}${editionSlug(latest.id)}/`}
                   variant="contained"
                   sx={{
                     backgroundColor: "thb.petroleum",
@@ -321,7 +321,7 @@ export default function SeriesPage() {
 
                         <MuiLink
                           component={RouterLink}
-                          to={`${basePath}${edition.id}/`}
+                          to={`${basePath}${editionSlug(edition.id)}/`}
                           sx={{ color: "thb.petroleum", fontWeight: 600, fontSize: "1.0625rem" }}
                         >
                           {t.country} | {formatPeriod(edition, contentLang)}

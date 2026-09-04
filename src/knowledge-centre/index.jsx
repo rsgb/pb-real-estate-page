@@ -7,7 +7,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Route, Routes } from "react-router";
 import { URL_LANGS } from "../assets/components/LangContext";
-import { getEditions } from "../content/editions";
+import { editionSlug, getEditions } from "../content/editions";
 import EditionPage from "./pages/EditionPage";
 import MethodologyPage from "./pages/MethodologyPage";
 import SeriesPage from "./pages/SeriesPage";
@@ -32,9 +32,14 @@ export function KnowledgeCentreRoutes() {
 
 /**
  * Every Market Brief URL, for the static pre-render manifest.
+ *
+ * Entirely lower-case: the language segment and the edition slug both, so the
+ * pre-rendered folders match the URLs Netlify serves (it 301s any path with an
+ * uppercase letter to the lower-cased one).
+ *
  * @param {string[]} langs lower-case URL language codes
  * @returns {string[]} absolute site paths, trailing slash included,
- *   e.g. "/pt/market-brief/2026-07/"
+ *   e.g. "/pt/market-brief/2026-07/", "/pt/market-brief/2025-q4/"
  */
 export function knowledgeCentrePaths(langs = URL_LANGS) {
   const editions = getEditions();
@@ -43,7 +48,7 @@ export function knowledgeCentrePaths(langs = URL_LANGS) {
     return [
       base,
       `${base}methodology/`,
-      ...editions.map((edition) => `${base}${edition.id}/`),
+      ...editions.map((edition) => `${base}${editionSlug(edition.id)}/`),
     ];
   });
 }

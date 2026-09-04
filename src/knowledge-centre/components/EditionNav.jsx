@@ -1,6 +1,6 @@
 import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router";
-import { editionTitle, formatPeriod } from "../../lib/format";
+import { editionSlug, editionTitle, formatPeriod } from "../../lib/format";
 import { useThbLang } from "../lang";
 
 /**
@@ -23,7 +23,7 @@ export default function EditionNav({ prev, next, basePath, sx }) {
         </Typography>
         <MuiLink
           component={RouterLink}
-          to={`${basePath}${edition.id}/`}
+          to={`${basePath}${editionSlug(edition.id)}/`}
           aria-label={`${label}: ${editionTitle(edition, contentLang)}`}
           sx={{ color: "thb.petroleum", fontWeight: 600 }}
         >

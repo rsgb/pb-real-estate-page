@@ -46,8 +46,13 @@ const pt = {
   notes: "Notas",
   publishedOn: "Publicado a",
   historicalEdition: "Edição histórica",
+  // `{period}` is the in-sentence period form (formatPeriodInSentence), which
+  // for a quarter or a semester reads "1.º trimestre de 2025". "relativos a"
+  // would need the contracted article ("ao") there, so the sentence says
+  // "com dados do período {period}", which is grammatical for all four
+  // horizons: month, quarter, semester and year.
   historicalNotice:
-    "Edição histórica, publicada a {date} com dados relativos a {period}.",
+    "Edição histórica, publicada a {date}, com dados do período {period}.",
   dataStatusLabel: "Estado dos dados",
   language: "Idioma",
   country: "Portugal",
