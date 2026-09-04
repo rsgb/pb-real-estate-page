@@ -178,10 +178,10 @@
           }
         },
         {
-          "key": "netBedOccupancy",
+          "key": "netRoomOccupancy",
           "label": {
-            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
-            "en": "NET BED OCCUPANCY"
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-QUARTO",
+            "en": "NET ROOM OCCUPANCY"
           },
           "value": 67.3,
           "unit": "percent",
@@ -192,6 +192,10 @@
             "value": -0.9,
             "unit": "pp",
             "basis": "yoy"
+          },
+          "note": {
+            "pt": "Taxa líquida de ocupação-cama: 59,9%, -0,5 p.p.",
+            "en": "Net bed occupancy: 59.9%, -0.5 pp."
           }
         }
       ],
@@ -467,10 +471,10 @@
           }
         },
         {
-          "key": "netBedOccupancy",
+          "key": "netRoomOccupancy",
           "label": {
-            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-CAMA",
-            "en": "NET BED OCCUPANCY"
+            "pt": "TAXA LÍQUIDA DE OCUPAÇÃO-QUARTO",
+            "en": "NET ROOM OCCUPANCY"
           },
           "value": 74.1,
           "unit": "percent",
@@ -620,8 +624,8 @@
         "releaseDate": "2026-08-31",
         "status": "provisional",
         "notes": {
-          "pt": "Estimativas rápidas do INE, sujeitas a revisão. Todas as variações são homólogas, exceto quando indicado. A ocupação-cama é apresentada em valor líquido e a sua variação em pontos percentuais.",
-          "en": "Statistics Portugal flash estimates, subject to revision. All changes are year-on-year unless stated otherwise. Bed occupancy is reported on a net basis and its change in percentage points."
+          "pt": "Estimativas rápidas do INE, sujeitas a revisão. Todas as variações são homólogas, exceto quando indicado. A ocupação-quarto é apresentada em valor líquido e a sua variação em pontos percentuais.",
+          "en": "Statistics Portugal flash estimates, subject to revision. All changes are year-on-year unless stated otherwise. Room occupancy is reported on a net basis and its change in percentage points."
         }
       }
     }
