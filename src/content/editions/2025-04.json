@@ -62,10 +62,10 @@
         "en": "Easter returned both volume and price to April"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "O crescimento veio de volume e de preço ao mesmo tempo, mas assenta numa Páscoa que em 2024 pertenceu a março.",
@@ -74,13 +74,13 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 2,9 milhões de hóspedes (+8,4%) e 7,1 milhões de dormidas (+8,9%) em abril de 2025. O INE atribui o impulso à Páscoa, que este ano ocorreu em abril e no ano anterior se concentrou em março.",
-          "Os proveitos totais chegaram a 571,1 milhões de euros (+12,6%) e os de aposento a 436,0 milhões (+13,8%). O RevPAR subiu para 69,5 euros (+10,8%), o ADR para 115,9 euros (+6,3%) e a taxa líquida de ocupação-cama para 50,4%, mais 3,1 p.p.",
+          "Abril somou 7,1 milhões de dormidas (+8,9%) e 2,9 milhões de hóspedes (+8,4%). O INE atribui o impulso à Páscoa, que este ano ocorreu em abril e no ano anterior se concentrou em março.",
+          "A receita acompanhou: 571,1 milhões de euros de proveitos totais (+12,6%) e 436,0 milhões de proveitos de aposento (+13,8%). O RevPAR subiu para 69,5 euros (+10,8%), o ADR para 115,9 euros (+6,3%) e a taxa líquida de ocupação-cama para 50,4%, mais 3,1 p.p.",
           "O mês junta as duas alavancas: mais camas ocupadas e preço mais alto. A leitura útil é a de março e abril em conjunto, porque a base de comparação de cada mês está deslocada."
         ],
         "en": [
-          "Tourist accommodation recorded 2.9 million guests (+8.4%) and 7.1 million overnight stays (+8.9%) in April 2025. Statistics Portugal attributes the boost to Easter, which came in April this year after sitting in March a year earlier.",
-          "Total revenue reached EUR 571.1 million (+12.6%) and room revenue EUR 436.0 million (+13.8%). RevPAR rose to EUR 69.5 (+10.8%), ADR to EUR 115.9 (+6.3%) and net bed occupancy to 50.4%, up 3.1 pp.",
+          "April added 7.1 million overnight stays (+8.9%) and 2.9 million guests (+8.4%). Statistics Portugal attributes the boost to Easter, which came in April this year after sitting in March a year earlier.",
+          "Revenue followed: EUR 571.1 million in total revenue (+12.6%) and EUR 436.0 million in room revenue (+13.8%). RevPAR rose to EUR 69.5 (+10.8%), ADR to EUR 115.9 (+6.3%) and net bed occupancy to 50.4%, up 3.1 pp.",
           "The month brings both levers together: more beds filled and a higher price. The useful reading is March and April combined, because each month's comparison base has moved."
         ]
       }
@@ -273,11 +273,11 @@
       "body": {
         "pt": [
           "As dormidas de residentes chegaram a 2,0 milhões (+12,2%) e as de não residentes a 5,1 milhões (+7,7%). Depois de março, quando os mercados externos tinham perdido 4,9%, ambos voltaram a terreno positivo.",
-          "Os dez principais mercados emissores valeram 74,6% das dormidas de não residentes. Espanha, com 9,0% do total, teve o maior aumento (+43,0%), seguida da Irlanda (+12,1%), do Reino Unido (+7,1%), dos Estados Unidos (+6,0%) e da Alemanha (+5,8%). França registou a maior descida (-10,8%)."
+          "Os dez principais mercados emissores valeram 74,6% das dormidas de não residentes. Espanha, com 9,0% do total, teve o maior aumento (+43,0%), seguida da Irlanda (+12,1%), do Reino Unido (+7,1%), dos Estados Unidos (+6,0%) e da Alemanha (+5,8%). Nas descidas, destacou-se o mercado francês (-10,8%)."
         ],
         "en": [
-          "Resident overnight stays reached 2.0 million (+12.2%) and non-resident stays 5.1 million (+7.7%). After March, when foreign markets had lost 4.9%, both returned to positive territory.",
-          "The ten largest source markets accounted for 74.6% of non-resident stays. Spain, at 9.0% of the total, posted the biggest increase (+43.0%), ahead of Ireland (+12.1%), the United Kingdom (+7.1%), the United States (+6.0%) and Germany (+5.8%). France recorded the largest decrease (-10.8%)."
+          "Resident overnight stays reached 2.0 million (+12.2%) and non-resident stays 5.1 million (+7.7%). After March, when non-residents had lost 4.9%, both returned to positive territory.",
+          "The ten largest source markets accounted for 74.6% of non-resident stays. Spain, at 9.0% of the total, posted the biggest increase (+43.0%), ahead of Ireland (+12.1%), the United Kingdom (+7.1%), the United States (+6.0%) and Germany (+5.8%). France stood out on the downside (-10.8%)."
         ]
       },
       "barList": {
@@ -470,8 +470,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "A Grande Lisboa avançou 3,5% e o Oeste e Vale do Tejo 1,5%, muito abaixo dos 8,9% nacionais: o impulso da Páscoa não chegou a todas as regiões com a mesma força.",
@@ -626,12 +626,12 @@
           "en": "Overnight stays +8.9%, total revenue +12.6%, RevPAR +10.8%, ADR +6.3% and net bed occupancy 50.4%, up 3.1 pp."
         },
         "interpretation": {
-          "pt": "O RevPAR avançou 10,8% com o ADR a valorizar 6,3% e a ocupação a ganhar 3,1 p.p. As duas alavancas funcionaram em simultâneo, o que é o melhor sinal possível para o desempenho de um ativo, mas parte do ganho é a Páscoa que faltou em março.",
+          "pt": "O RevPAR avançou 10,8% com o ADR a valorizar 6,3% e a ocupação a ganhar 3,1 p.p. As duas alavancas funcionaram em simultâneo, o sinal mais forte que um ativo pode dar, mas parte do ganho é a Páscoa que faltou em março.",
           "en": "RevPAR advanced 10.8% with ADR up 6.3% and occupancy adding 3.1 pp. Both levers worked at once, which is the strongest signal an asset can give, but part of the gain is the Easter that March did not have."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, abril não deve entrar sozinho numa avaliação. Somando março e abril, o efeito de calendário anula-se e sobra a pergunta que interessa: quanto de um ADR de 115,9 euros sobrevive num mês sem feriado móvel.",
-          "en": "For owners and investors, April should not enter a valuation on its own. Adding March and April cancels the calendar effect and leaves the question that matters: how much of an ADR of EUR 115.9 survives in a month with no moving holiday."
+          "pt": "Abril não deve entrar sozinho numa avaliação. Somando março e abril, o efeito de calendário anula-se e sobra a pergunta que interessa: quanto de um ADR de 115,9 euros sobrevive num mês sem feriado móvel.",
+          "en": "April should not enter a valuation on its own. Adding March and April cancels the calendar effect and leaves the question that matters: how much of an ADR of EUR 115.9 survives in a month with no moving holiday."
         }
       }
     },
@@ -656,8 +656,8 @@
             "en": "Whether the Spanish market sustains its 43.0% advance."
           },
           {
-            "pt": "Se a Grande Lisboa e o Oeste e Vale do Tejo aceleram para a média nacional.",
-            "en": "Whether Greater Lisbon and the West and Tagus Valley close on the national average."
+            "pt": "A distância entre a Grande Lisboa (+3,5%), o Oeste e Vale do Tejo (+1,5%) e a média nacional.",
+            "en": "The gap between Greater Lisbon (+3.5%), the West and Tagus Valley (+1.5%) and the national average."
           }
         ]
       }

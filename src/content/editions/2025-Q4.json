@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 7,2 milhões de hóspedes (+2,9%) e 17,1 milhões de dormidas (+1,9%). Os mercados externos mantiveram-se dominantes, mas o seu peso desceu pelo quinto trimestre consecutivo, com 11,8 milhões de dormidas (+0,9%) contra 5,3 milhões de residentes (+4,2%).",
+          "O alojamento turístico registou 7,2 milhões de hóspedes (+2,9%) e 17,1 milhões de dormidas (+1,9%). Os mercados externos mantiveram-se dominantes, mas o INE assinala que este foi o quinto trimestre consecutivo com redução do seu peso: 11,8 milhões de dormidas (+0,9%) contra 5,3 milhões de residentes (+4,2%).",
           "Os proveitos totais chegaram a 1418,6 milhões de euros (+5,5%) e os de aposento a 1044,7 milhões (+4,5%), com o ADR a subir 2,0% e o RevPAR 1,0%. O trimestre não foi uniforme: outubro cresceu 2,2% em dormidas, novembro 0,7% e dezembro 3,0%.",
-          "Para o leitor, o fecho do ano mostra uma receita cada vez mais dependente da tarifa e do mercado interno."
+          "Para quem detém ou financia ativos, o fecho do ano mostra uma receita cada vez mais dependente da tarifa e do mercado interno."
         ],
         "en": [
-          "Tourist accommodation recorded 7.2 million guests (+2.9%) and 17.1 million overnight stays (+1.9%). External markets stayed dominant, but their share was lower for a fifth consecutive quarter, at 11.8 million overnight stays (+0.9%) against 5.3 million resident ones (+4.2%).",
-          "Total revenue reached EUR 1418.6 million (+5.5%) and room revenue EUR 1044.7 million (+4.5%), with ADR up 2.0% and RevPAR up 1.0%. The quarter was not even: October grew 2.2% in overnight stays, November 0.7% and December 3.0%.",
-          "For the reader, the close of the year shows revenue leaning ever more on rate and on the domestic market."
+          "Tourist accommodation recorded 7.2 million guests (+2.9%) and 17.1 million overnight stays (+1.9%). External markets stayed dominant, but Statistics Portugal notes this was the fifth consecutive quarter in which their share was smaller: 11.8 million overnight stays (+0.9%) against 5.3 million resident ones (+4.2%).",
+          "Total revenue reached EUR 1,418.6 million (+5.5%) and room revenue EUR 1,044.7 million (+4.5%), with ADR up 2.0% and RevPAR up 1.0%. The quarter was not even: October grew 2.2% in overnight stays, November 0.7% and December 3.0%.",
+          "For owners and lenders, the close of the year shows revenue leaning ever more on rate and on the domestic market."
         ]
       }
     },
@@ -260,10 +260,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes aumentaram 4,2%, para 5,3 milhões, e as de não residentes 0,9%, para 11,8 milhões. A dependência dos mercados externos continua concentrada nas mesmas regiões: 84,0% das dormidas na RA Madeira, 82,1% no Algarve e 79,0% na Grande Lisboa, contra 35,6% no Alentejo e 28,0% no Centro. Para este trimestre, o INE não publica taxas de variação por mercado emissor."
+          "As dormidas de residentes aumentaram 4,2%, para 5,3 milhões, e as de não residentes 0,9%, para 11,8 milhões. A dependência dos mercados externos continua concentrada nas mesmas regiões: 84,0% das dormidas na RA Madeira, 82,1% no Algarve e 79,0% na Grande Lisboa, contra 35,6% no Alentejo e 28,0% no Centro."
         ],
         "en": [
-          "Resident overnight stays increased 4.2% to 5.3 million and non-resident stays 0.9% to 11.8 million. Dependence on external markets remains concentrated in the same regions: 84.0% of overnight stays in Madeira, 82.1% in the Algarve and 79.0% in Greater Lisbon, against 35.6% in Alentejo and 28.0% in the Centre. For this quarter, INE publishes no year-on-year rates by source market."
+          "Resident overnight stays increased 4.2% to 5.3 million and non-resident stays 0.9% to 11.8 million. Dependence on external markets remains concentrated in the same regions: 84.0% of overnight stays in Madeira, 82.1% in the Algarve and 79.0% in Greater Lisbon, against 35.6% in the Alentejo and 28.0% in the Centre."
         ]
       },
       "barList": {
@@ -410,14 +410,14 @@
           "Nas regiões destacadas pelo INE, o Alentejo liderou com +7,0% e o Norte seguiu com +3,8%; o Algarve (+0,8%) e o Centro (+0,7%) ficaram quase parados. A RA Açores foi a única em terreno negativo, com -3,0%."
         ],
         "en": [
-          "Among the regions INE singles out, Alentejo led at +7.0% and the North followed at +3.8%; the Algarve (+0.8%) and the Centre (+0.7%) were close to flat. The Azores was the only one in negative territory, at -3.0%."
+          "Among the regions Statistics Portugal singles out, the Alentejo led at +7.0% and the North followed at +3.8%; the Algarve (+0.8%) and the Centre (+0.7%) were close to flat. The Azores was the only one in negative territory, at -3.0%."
         ]
       },
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "A RA Açores perdeu 3,0% das dormidas no trimestre, enquanto a RA Madeira registou o maior aumento do RevPAR (+12,0%) e do ADR (+11,9%).",
@@ -515,10 +515,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR do trimestre foi de 109,0 euros (+2,0%) e o RevPAR de 55,3 euros (+1,0%, variação revista). Com a tarifa a subir mais do que o RevPAR, a utilização da capacidade desceu. Os proveitos totais, 1418,6 milhões de euros (+5,5%), cresceram acima dos de aposento, 1044,7 milhões (+4,5%): o quarto foi a parte mais fraca da receita. Como o INE não divulga ocupação trimestral, a leitura da utilização é indireta."
+          "O ADR do trimestre foi de 109,0 euros (+2,0%) e o RevPAR de 55,3 euros (+1,0%). Com a tarifa a subir mais do que o RevPAR, a utilização da capacidade desceu. Os proveitos totais, 1418,6 milhões de euros (+5,5%), cresceram acima dos de aposento, 1044,7 milhões (+4,5%): o quarto foi a parte mais fraca da receita. Como o INE não divulga ocupação trimestral, a leitura da utilização é indireta."
         ],
         "en": [
-          "ADR for the quarter was EUR 109.0 (+2.0%) and RevPAR EUR 55.3 (+1.0%, revised change). With rate rising more than RevPAR, capacity use declined. Total revenue, EUR 1418.6 million (+5.5%), grew ahead of room revenue, EUR 1044.7 million (+4.5%): the room was the weaker part of the top line. Since INE releases no quarterly occupancy, the utilisation reading is indirect."
+          "ADR for the quarter was EUR 109.0 (+2.0%) and RevPAR EUR 55.3 (+1.0%). With rate rising more than RevPAR, capacity use declined. Total revenue, EUR 1,418.6 million (+5.5%), grew ahead of room revenue, EUR 1,044.7 million (+4.5%): the room was the weaker part of the top line. Since Statistics Portugal releases no quarterly occupancy, the utilisation reading is indirect."
         ]
       }
     },
@@ -530,8 +530,8 @@
       },
       "lens": {
         "headline": {
-          "pt": "Receita sem alavanca de ocupação",
-          "en": "Revenue without an occupancy lever"
+          "pt": "O quinto trimestre a depender mais do mercado interno",
+          "en": "A fifth quarter leaning further on the domestic market"
         },
         "fact": {
           "pt": "Dormidas +1,9%, proveitos totais +5,5%, ADR +2,0% e RevPAR +1,0%.",

@@ -59,7 +59,7 @@
       },
       "headline": {
         "pt": "Outubro trouxe os mercados externos de volta ao crescimento",
-        "en": "October brought foreign markets back to growth"
+        "en": "October brought non-residents back to growth"
       },
       "callout": {
         "kind": "conclusion",
@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico recebeu 3,1 milhões de hóspedes e 7,7 milhões de dormidas, mais 3,6% e 2,2% do que em outubro de 2024, e o INE assinalou o regresso dos não residentes ao crescimento após dois meses de decréscimo.",
-          "Os proveitos totais chegaram a 691,2 milhões de euros (+7,2%) e os de aposento a 521,5 milhões (+5,9%), com o ADR em 122,6 euros (+3,5%), o RevPAR em 77,5 euros (+2,9%) e a taxa líquida de ocupação-cama em 50,9%, menos 0,3 p.p.",
-          "Ao contrário dos dois meses anteriores, o aumento da receita teve volume por trás, ainda que o preço continue a fazer a maior parte do trabalho."
+          "O INE assinalou o regresso dos não residentes ao crescimento, depois de dois meses de decréscimo. Outubro fechou com 7,7 milhões de dormidas (+2,2%) e 3,1 milhões de hóspedes (+3,6%).",
+          "Do lado da receita, 691,2 milhões de euros de proveitos totais (+7,2%) e 521,5 milhões de proveitos de aposento (+5,9%), com o ADR em 122,6 euros (+3,5%), o RevPAR em 77,5 euros (+2,9%) e a taxa líquida de ocupação-cama em 50,9%, menos 0,3 p.p.",
+          "Ao contrário dos dois meses anteriores, o aumento da receita teve volume por trás, ainda que o preço tenha continuado a fazer a maior parte do trabalho."
         ],
         "en": [
-          "Tourist accommodation welcomed 3.1 million guests and 7.7 million overnight stays, 3.6% and 2.2% more than in October 2024, and Statistics Portugal flagged the return of non-residents to growth after two months of decline.",
-          "Total revenue came to EUR 691.2 million (+7.2%) and room revenue to EUR 521.5 million (+5.9%), with ADR at EUR 122.6 (+3.5%), RevPAR at EUR 77.5 (+2.9%) and net bed occupancy at 50.9%, down 0.3 pp.",
-          "Unlike the two preceding months, the revenue gain had volume behind it, even if price still does most of the work."
+          "Statistics Portugal flagged the return of non-residents to growth after two months of decline. October closed with 7.7 million overnight stays (+2.2%) and 3.1 million guests (+3.6%).",
+          "On the revenue side, EUR 691.2 million in total revenue (+7.2%) and EUR 521.5 million in room revenue (+5.9%), with ADR at EUR 122.6 (+3.5%), RevPAR at EUR 77.5 (+2.9%) and net bed occupancy at 50.9%, down 0.3 pp.",
+          "Unlike the two preceding months, the revenue gain had volume behind it, even if price still did most of the work."
         ]
       }
     },
@@ -217,10 +217,10 @@
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais (+7,2%) continuaram acima das dormidas (+2,2%), mas desta vez com a ocupação-cama quase intacta (-0,3 p.p.) e o ADR em +3,5%. Receita ganha por preço sem perder camas."
+          "Leitura: os proveitos totais (+7,2%) continuaram acima das dormidas (+2,2%), mas desta vez com a ocupação-cama quase intacta (-0,3 p.p.) e o ADR em +3,5%. A receita foi ganha no preço, sem perder camas."
         ],
         "en": [
-          "Reading: total revenue (+7.2%) again ran ahead of overnight stays (+2.2%), but this time with net bed occupancy almost intact (-0.3 pp) and ADR at +3.5%. Revenue won on price without giving up beds."
+          "Reading: total revenue (+7.2%) again ran ahead of overnight stays (+2.2%), but this time with net bed occupancy almost intact (-0.3 pp) and ADR at +3.5%. Revenue was won on price without giving up beds."
         ]
       }
     },
@@ -283,7 +283,7 @@
           "As dormidas de residentes subiram 5,8%, para 2,0 milhões, e as de não residentes 1,0%, para 5,8 milhões. Entre os dez maiores mercados emissores, que valeram 73,9% das dormidas externas, o Canadá (+4,7%) e a Espanha (+2,4%) lideraram, seguidos dos Estados Unidos (+1,9%) e da Alemanha (+1,2%). A França (-6,8%), os Países Baixos (-6,0%) e o Reino Unido (-3,3%) mantiveram-se em terreno negativo."
         ],
         "en": [
-          "Resident overnight stays rose 5.8% to 2.0 million and non-resident stays 1.0% to 5.8 million. Among the ten largest source markets, which supplied 73.9% of foreign stays, Canada (+4.7%) and Spain (+2.4%) led, followed by the United States (+1.9%) and Germany (+1.2%). France (-6.8%), the Netherlands (-6.0%) and the United Kingdom (-3.3%) stayed in negative territory."
+          "Resident overnight stays rose 5.8% to 2.0 million and non-resident stays 1.0% to 5.8 million. Among the ten largest source markets, which supplied 73.9% of non-resident stays, Canada (+4.7%) and Spain (+2.4%) led, followed by the United States (+1.9%) and Germany (+1.2%). France (-6.8%), the Netherlands (-6.0%) and the United Kingdom (-3.3%) stayed in negative territory."
         ]
       },
       "barList": {
@@ -484,8 +484,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "O Algarve ficou 0,7% abaixo de outubro de 2024: as dormidas de residentes subiram 11,6%, mas as de não residentes ficaram 2,5% abaixo, e a região manteve-se fora do movimento nacional.",
@@ -648,8 +648,8 @@
           "en": "RevPAR of EUR 77.5 rose 2.9% at almost no cost in occupancy, which is not the same as rising on price alone. The return of non-residents (+1.0%) widened the demand base outside the peak season and reduced reliance on a single type of customer."
         },
         "implication": {
-          "pt": "Para investidores e proprietários, outubro reforça o valor dos ativos que trabalham fora do verão: o Alentejo (+10,8%) e a RA Madeira (+6,1%) mostraram que a época intermédia pode crescer a dois dígitos, enquanto o Algarve (-0,7%) continua preso ao calendário. Importa verificar quanto do ano se faz nestes meses antes de fixar preço e capacidade.",
-          "en": "For investors and owners, October underlines the value of assets that work outside the summer: Alentejo (+10.8%) and Madeira (+6.1%) showed that the shoulder season can grow at double digits, while the Algarve (-0.7%) remains tied to the calendar. How much of the year is earned in these months is worth checking before setting price and capacity."
+          "pt": "Outubro reforça o valor dos ativos que trabalham fora do verão: o Alentejo (+10,8%) e a RA Madeira (+6,1%) mostraram que a época intermédia cresceu acima do resto do ano, enquanto o Algarve (-0,7%) continuou preso ao calendário. Importa verificar quanto do ano se faz nestes meses antes de fixar preço e capacidade.",
+          "en": "October underlines the value of assets that work outside the summer: Alentejo (+10.8%) and Madeira (+6.1%) showed that the shoulder season grew faster than the rest of the year, while the Algarve (-0.7%) remained tied to the calendar. How much of the year is earned in these months is worth checking before setting price and capacity."
         }
       }
     },
@@ -666,16 +666,16 @@
         },
         "signals": [
           {
-            "pt": "Se os não residentes consolidam o +1,0% de outubro ou voltam a ceder.",
-            "en": "Whether non-residents consolidate October at +1.0% or give way again."
+            "pt": "O +1,0% dos não residentes: consolidação ou novo recuo em novembro.",
+            "en": "The +1.0% from non-residents: consolidated or given back in November."
           },
           {
             "pt": "Se o Algarve sai do terreno negativo depois de -0,7%.",
             "en": "Whether the Algarve leaves negative territory after -0.7%."
           },
           {
-            "pt": "Se o ADR mantém o ritmo de +3,5% agora que a ocupação-cama quase não cede.",
-            "en": "Whether ADR keeps its +3.5% pace now that net bed occupancy is barely giving way."
+            "pt": "França (-6,8%) e Países Baixos (-6,0%), os dois mercados ainda em queda.",
+            "en": "France (-6.8%) and the Netherlands (-6.0%), the two markets still falling."
           }
         ]
       }

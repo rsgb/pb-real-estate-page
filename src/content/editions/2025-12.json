@@ -25,8 +25,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | December 2025"
   },
   "takeaway": {
-    "pt": "Em dezembro os hóspedes residentes superaram os não residentes pela primeira vez desde 2023. Os proveitos totais subiram 6,8% e as dormidas 3,0%; o ADR aumentou 2,2% enquanto a ocupação-cama perdeu 0,3 p.p.",
-    "en": "In December resident guests outnumbered non-residents for the first time since 2023. Total revenue rose 6.8% and overnight stays 3.0%; ADR gained 2.2% while net bed occupancy lost 0.3 pp."
+    "pt": "Em dezembro os hóspedes residentes superaram os não residentes pela primeira vez desde dezembro de 2023. Os proveitos totais subiram 6,8% e as dormidas 3,0%; o ADR aumentou 2,2% enquanto a ocupação-cama perdeu 0,3 p.p.",
+    "en": "In December resident guests outnumbered non-residents for the first time since December 2023. Total revenue rose 6.8% and overnight stays 3.0%; ADR gained 2.2% while net bed occupancy lost 0.3 pp."
   },
   "sections": [
     {
@@ -464,8 +464,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "As duas regiões autónomas foram as únicas em terreno negativo: RA Açores -4,5%, com os não residentes em -18,2%, e RA Madeira -2,1%.",
@@ -613,10 +613,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR atingiu 99,7 euros (+2,2%) e o RevPAR 38,9 euros (+1,5%). As taxas líquidas de ocupação-cama e de ocupação-quarto fixaram-se em 31,8% e 39,0%, ambas 0,3 p.p. abaixo do ano anterior. Com os proveitos totais a crescerem 6,8% e os de aposento 5,7%, a receita adicional veio do preço e de mais capacidade, não de camas mais cheias."
+          "O ADR atingiu 99,7 euros (+2,2%) e o RevPAR 38,9 euros (+1,5%). As taxas líquidas de ocupação-cama e de ocupação-quarto fixaram-se em 31,8% e 39,0%, ambas 0,3 p.p. abaixo do ano anterior. Com os proveitos totais a crescerem 6,8% e os de aposento 5,7%, a receita adicional veio sobretudo do preço: o ADR subiu 2,2% e o RevPAR apenas 1,5%."
         ],
         "en": [
-          "ADR reached EUR 99.7 (+2.2%) and RevPAR EUR 38.9 (+1.5%). Net bed occupancy and net room occupancy came in at 31.8% and 39.0%, both 0.3 pp below the previous year. With total revenue growing 6.8% and room revenue 5.7%, the additional income came from price and from more capacity, not from fuller beds."
+          "ADR reached EUR 99.7 (+2.2%) and RevPAR EUR 38.9 (+1.5%). Net bed occupancy and net room occupancy came in at 31.8% and 39.0%, both 0.3 pp below the previous year. With total revenue growing 6.8% and room revenue 5.7%, the additional income came mainly from price: ADR rose 2.2% and RevPAR only 1.5%."
         ]
       }
     },
@@ -637,11 +637,11 @@
         },
         "interpretation": {
           "pt": "O rendimento por quarto disponível avançou menos do que o preço, porque a ocupação não acompanhou. Com o mercado interno a dar o contributo maior do mês, a qualidade da receita passa a depender de um cliente com sazonalidade e capacidade de gasto diferentes das do mercado externo.",
-          "en": "Revenue per available room moved up less than price, because occupancy did not follow. With the domestic market providing the larger contribution of the month, revenue quality now rests on a customer whose seasonality and spending differ from the foreign market."
+          "en": "Revenue per available room moved up less than price, because occupancy did not follow. With the domestic market providing the larger contribution of the month, revenue quality now rests on a customer whose seasonality and spending differ from those of non-residents."
         },
         "implication": {
-          "pt": "Para quem compra ou financia, o teste de dezembro é a durabilidade do preço sem ocupação: convém rever o mix por origem, medir a dependência do mercado interno fora da época alta e avaliar os ativos nas regiões autónomas com desconto face à média nacional.",
-          "en": "For buyers and lenders, December tests how long price holds without occupancy: review the mix by origin, measure dependence on the domestic market outside peak season, and value assets in the autonomous regions at a discount to the national average."
+          "pt": "Para quem compra ou financia, o teste de dezembro é a durabilidade do preço sem ocupação: convém rever o mix por origem, medir a dependência do mercado interno fora da época alta e acompanhar as regiões autónomas, as únicas em terreno negativo no mês.",
+          "en": "For buyers and lenders, December tests how long price holds without occupancy: review the mix by origin, measure dependence on the domestic market outside peak season, and watch the autonomous regions, the only ones in negative territory in the month."
         }
       }
     },
@@ -658,16 +658,16 @@
         },
         "signals": [
           {
-            "pt": "Se o mercado interno mantém o ritmo de 6,0% depois do fecho do ano.",
-            "en": "Whether the domestic market holds its 6.0% pace after the year-end."
+            "pt": "O ritmo do mercado interno depois dos 6,0% de dezembro.",
+            "en": "The pace of the domestic market after 6.0% in December."
           },
           {
-            "pt": "A leitura definitiva de 2025 quando o INE consolidar os dados preliminares.",
-            "en": "The final reading of 2025 once the preliminary data are consolidated."
+            "pt": "Se o mercado francês trava a queda depois de -11,0% em dezembro.",
+            "en": "Whether the French market stops falling after -11.0% in December."
           },
           {
             "pt": "A recuperação, ou não, das duas regiões autónomas.",
-            "en": "Whether the two autonomous regions recover."
+            "en": "The recovery, or not, of the two autonomous regions."
           }
         ]
       }

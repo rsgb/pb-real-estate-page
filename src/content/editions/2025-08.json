@@ -59,7 +59,7 @@
       },
       "headline": {
         "pt": "Agosto cresceu com o mercado interno a compensar o externo",
-        "en": "August grew as domestic demand offset foreign markets"
+        "en": "August grew as resident demand offset non-residents"
       },
       "callout": {
         "kind": "conclusion",
@@ -69,19 +69,19 @@
         },
         "body": {
           "pt": "O total de dormidas só aumentou porque os residentes acrescentaram 4,5%; os mercados externos ficaram 0,4% abaixo de agosto de 2024.",
-          "en": "Total overnight stays rose only because residents added 4.5%; foreign markets ended 0.4% below August 2024."
+          "en": "Total overnight stays rose only because residents added 4.5%; non-residents ended 0.4% below August 2024."
         }
       },
       "body": {
         "pt": [
-          "O alojamento turístico recebeu 3,8 milhões de hóspedes e 10,7 milhões de dormidas, mais 1,2% e 1,3% do que um ano antes, e o INE atribuiu essa continuidade aos residentes.",
-          "Os proveitos totais chegaram a 1011,3 milhões de euros (+6,7%) e os de aposento a 809,6 milhões (+5,8%), com o ADR em 159,2 euros (+4,3%) e o RevPAR em 116,8 euros (+2,6%), enquanto a taxa líquida de ocupação-cama desceu para 66,8%, menos 1,1 p.p.",
+          "Agosto somou 10,7 milhões de dormidas (+1,3%) e 3,8 milhões de hóspedes (+1,2%), uma continuidade que o INE atribuiu aos residentes.",
+          "A receita subiu mais do que o volume: 1011,3 milhões de euros de proveitos totais (+6,7%) e 809,6 milhões de proveitos de aposento (+5,8%), com o ADR em 159,2 euros (+4,3%) e o RevPAR em 116,8 euros (+2,6%), enquanto a taxa líquida de ocupação-cama desceu para 66,8%, menos 1,1 p.p.",
           "Agosto entregou assim mais receita com menos utilização da capacidade: quem enche o mês com procura externa teve de substituir volume por preço."
         ],
         "en": [
-          "Tourist accommodation took in 3.8 million guests and 10.7 million overnight stays, 1.2% and 1.3% above a year earlier, and Statistics Portugal credited residents with that continuity.",
-          "Total revenue reached EUR 1,011.3 million (+6.7%) and room revenue EUR 809.6 million (+5.8%), with ADR at EUR 159.2 (+4.3%) and RevPAR at EUR 116.8 (+2.6%), while net bed occupancy slipped to 66.8%, down 1.1 pp.",
-          "August therefore delivered more revenue from less use of the capacity: owners who fill the month with foreign guests had to replace volume with price."
+          "August brought 10.7 million overnight stays (+1.3%) and 3.8 million guests (+1.2%), continuity that Statistics Portugal credited to residents.",
+          "Revenue rose faster than volume: EUR 1,011.3 million in total revenue (+6.7%) and EUR 809.6 million in room revenue (+5.8%), with ADR at EUR 159.2 (+4.3%) and RevPAR at EUR 116.8 (+2.6%), while net bed occupancy slipped to 66.8%, down 1.1 pp.",
+          "August therefore delivered more revenue from less use of the capacity: owners who fill the month with non-resident guests had to replace volume with price."
         ]
       }
     },
@@ -280,10 +280,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes subiram 4,5%, para 3,8 milhões, enquanto as de não residentes ficaram em 6,9 milhões, 0,4% abaixo do ano anterior. Os dez maiores mercados emissores valeram 78,9% das dormidas externas e os únicos aumentos claros foram norte-americanos: Estados Unidos +9,8% e Canadá +8,5%. Na Europa, só a Alemanha somou dormidas (+1,7%); Espanha (-9,1%), Itália (-6,9%), Países Baixos (-5,7%), França (-4,6%), Irlanda (-4,6%) e Reino Unido (-1,2%) ficaram todos abaixo de 2024."
+          "As dormidas de residentes subiram 4,5%, para 3,8 milhões, enquanto as de não residentes ficaram em 6,9 milhões, 0,4% abaixo do ano anterior. Os dez maiores mercados emissores valeram 78,9% das dormidas de não residentes e os maiores aumentos foram norte-americanos: Estados Unidos +9,8% e Canadá +8,5%. Entre os mercados europeus com dados publicados, só a Alemanha somou dormidas (+1,7%); Espanha (-9,1%), Itália (-6,9%), Países Baixos (-5,7%), França (-4,6%), Irlanda (-4,6%) e Reino Unido (-1,2%) ficaram todos abaixo de 2024."
         ],
         "en": [
-          "Resident overnight stays rose 4.5% to 3.8 million, while non-resident stays came in at 6.9 million, 0.4% below the previous year. The ten largest source markets supplied 78.9% of foreign stays and the clear gains were North American, with the United States up 9.8% and Canada up 8.5%. In Europe only Germany added volume (+1.7%): Spain (-9.1%), Italy (-6.9%), the Netherlands (-5.7%), France (-4.6%), Ireland (-4.6%) and the United Kingdom (-1.2%) all came in lower."
+          "Resident overnight stays rose 4.5% to 3.8 million, while non-resident stays came in at 6.9 million, 0.4% below the previous year. The ten largest source markets supplied 78.9% of non-resident stays and the largest gains were North American, with the United States up 9.8% and Canada up 8.5%. Among the European markets with published figures only Germany added volume (+1.7%): Spain (-9.1%), Italy (-6.9%), the Netherlands (-5.7%), France (-4.6%), Ireland (-4.6%) and the United Kingdom (-1.2%) all came in lower."
         ]
       },
       "barList": {
@@ -390,7 +390,7 @@
         "en": "REGIONS"
       },
       "headline": {
-        "pt": "Subidas pequenas em quase todo o país",
+        "pt": "Subidas pequenas em quase todo o país, uma região em queda",
         "en": "Small gains almost everywhere, one region lower"
       },
       "barList": {
@@ -498,7 +498,7 @@
         ]
       },
       "callout": {
-        "kind": "attention",
+        "kind": "conclusion",
         "title": {
           "pt": "REGIÃO EM DESTAQUE",
           "en": "REGION IN FOCUS"
@@ -640,7 +640,7 @@
           "O ADR de agosto foi de 159,2 euros, mais 4,3% do que um ano antes, e o RevPAR chegou a 116,8 euros (+2,6%). A taxa líquida de ocupação-cama ficou em 66,8%, menos 1,1 p.p., e a de ocupação-quarto em 73,4%, menos 1,2 p.p. Com proveitos totais de 1011,3 milhões de euros (+6,7%) e proveitos de aposento de 809,6 milhões (+5,8%), o aumento da receita é explicado pelo preço: a capacidade instalada foi utilizada de forma menos intensa do que em agosto de 2024."
         ],
         "en": [
-          "August ADR was EUR 159.2, 4.3% higher than a year earlier, and RevPAR reached EUR 116.8 (+2.6%). Net bed occupancy stood at 66.8%, down 1.1 pp, and net room occupancy at 73.4%, down 1.2 pp. With total revenue of EUR 1,011.3 million (+6.7%) and room revenue of EUR 809.6 million (+5.8%), the revenue gain is explained by price: the installed capacity was used less intensively than in August 2024."
+          "August ADR was EUR 159.2, 4.3% higher than a year earlier, and RevPAR reached EUR 116.8 (+2.6%). Net bed occupancy stood at 66.8%, down 1.1 pp, and net room occupancy at 73.4%, down 1.2 pp. With total revenue of EUR 1,011.3 million (+6.7%) and room revenue of EUR 809.6 million (+5.8%), the revenue gain is explained by price: capacity was used less intensively than in August 2024."
         ]
       }
     },
@@ -652,20 +652,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Mais valor por cama, sobre uma base mais estreita",
-          "en": "More value per bed, on a narrower base"
+          "pt": "Mais valor por quarto, sobre uma base mais estreita",
+          "en": "More value per room, on a narrower base"
         },
         "fact": {
           "pt": "Proveitos totais +6,7% e ADR +4,3%, contra dormidas +1,3% e ocupação-cama -1,1 p.p.",
           "en": "Total revenue +6.7% and ADR +4.3%, against overnight stays +1.3% and net bed occupancy -1.1 pp."
         },
         "interpretation": {
-          "pt": "O rendimento por cama subiu porque o preço subiu, não porque entraram mais hóspedes. O RevPAR avançou 2,6% e o ADR 4,3%: a ocupação travou a conversão do preço em receita por cama disponível.",
-          "en": "Yield per bed improved because price improved, not because more guests came in. RevPAR advanced 2.6% against ADR at 4.3%: occupancy held back the conversion of price into revenue per available bed."
+          "pt": "O rendimento por quarto subiu porque o preço subiu, não porque entraram mais hóspedes. O RevPAR avançou 2,6% e o ADR 4,3%: a ocupação travou a conversão do preço em receita por quarto disponível.",
+          "en": "Yield per room improved because price improved, not because more guests came in. RevPAR advanced 2.6% against ADR at 4.3%: occupancy held back the conversion of price into revenue per available room."
         },
         "implication": {
-          "pt": "Para quem detém o ativo, a questão de agosto é a durabilidade do preço. Importa testar quanto do ADR se aguenta sem os mercados externos, que ficaram em -0,4%, e que parte da receita assenta em residentes, responsáveis por todo o aumento das dormidas do mês.",
-          "en": "For an owner, the August question is how durable the price is. It is worth testing how much of the ADR holds without the foreign markets, which came in at -0.4%, and how much of the revenue rests on residents, who accounted for the whole increase in overnight stays."
+          "pt": "A questão de agosto é a durabilidade do preço. Importa testar quanto do ADR se aguenta sem os mercados externos, que ficaram em -0,4%, e que parte da receita assenta em residentes, responsáveis por todo o aumento das dormidas do mês.",
+          "en": "The August question is how durable the price is. It is worth testing how much of the ADR holds without non-residents, who came in at -0.4%, and how much of the revenue rests on residents, who accounted for the whole increase in overnight stays."
         }
       }
     },
@@ -683,11 +683,11 @@
         "signals": [
           {
             "pt": "Se os mercados externos regressam ao crescimento depois do -0,4% de agosto.",
-            "en": "Whether foreign markets return to growth after August at -0.4%."
+            "en": "Whether non-residents return to growth after August at -0.4%."
           },
           {
-            "pt": "Se a ocupação-cama estabiliza ou continua a ceder enquanto o ADR sobe.",
-            "en": "Whether net bed occupancy stabilises or keeps giving way while ADR rises."
+            "pt": "O Centro, única região abaixo do ano anterior, com -3,0%.",
+            "en": "The Centre, the only region below last year, at -3.0%."
           },
           {
             "pt": "O comportamento de Espanha (-9,1%) e Itália (-6,9%), os dois maiores recuos do mês.",

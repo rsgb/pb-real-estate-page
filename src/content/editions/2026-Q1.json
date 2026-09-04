@@ -58,8 +58,8 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Valor cresceu bem acima do volume no trimestre",
-        "en": "Value grew well ahead of volume in the quarter"
+        "pt": "A viragem: os mercados externos à frente dos residentes",
+        "en": "The turn: external markets back ahead of residents"
       },
       "callout": {
         "kind": "conclusion",
@@ -75,12 +75,12 @@
       "body": {
         "pt": [
           "O alojamento turístico registou 5,8 milhões de hóspedes e 13,6 milhões de dormidas no trimestre, mais 1,6% e 1,4% do que um ano antes. O INE assinala que os resultados podem ter sido influenciados pela estrutura móvel do calendário, ou seja, pelo efeito associado ao período da Páscoa.",
-          "Os proveitos totais chegaram a 1008,3 milhões de euros (+5,9%) e os de aposento a 734,5 milhões (+5,3%), com o ADR em 93,8 euros (+3,1%) e o RevPAR em 41,5 euros (+1,5%). O trimestre não foi uniforme: as dormidas subiram 2,0% em janeiro, 0,7% em fevereiro e 1,1% em março.",
+          "Os proveitos totais chegaram a 1008,3 milhões de euros (+5,9%) e os de aposento a 734,5 milhões (+5,3%), com o ADR em 93,8 euros (+3,1%) e o RevPAR em 41,5 euros (+1,5%). Os três meses não puxaram no mesmo sentido: as dormidas subiram 2,0% em janeiro, 0,7% em fevereiro e 1,1% em março.",
           "É o valor, e não o volume, que explica a receita adicional."
         ],
         "en": [
-          "Tourist accommodation recorded 5.8 million guests and 13.6 million overnight stays in the quarter, up 1.6% and 1.4% on a year earlier. INE notes that the results may have been influenced by the moving calendar, specifically the Easter period.",
-          "Total revenue reached EUR 1,008.3 million (+5.9%) and room revenue EUR 734.5 million (+5.3%), with ADR at EUR 93.8 (+3.1%) and RevPAR at EUR 41.5 (+1.5%). The three months were not alike: overnight stays rose 2.0% in January, 0.7% in February and 1.1% in March.",
+          "Tourist accommodation recorded 5.8 million guests and 13.6 million overnight stays in the quarter, up 1.6% and 1.4% on a year earlier. Statistics Portugal notes that the results may have been influenced by the moving calendar, specifically the Easter period.",
+          "Total revenue reached EUR 1,008.3 million (+5.9%) and room revenue EUR 734.5 million (+5.3%), with ADR at EUR 93.8 (+3.1%) and RevPAR at EUR 41.5 (+1.5%). The three months did not pull the same way: overnight stays rose 2.0% in January, 0.7% in February and 1.1% in March.",
           "It is value, not volume, that explains the extra revenue."
         ]
       }
@@ -231,8 +231,8 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "Mercados externos voltaram a crescer mais do que os residentes",
-        "en": "External markets grew faster than residents again"
+        "pt": "Canadá a acelerar, França a cair",
+        "en": "Canada accelerating, France falling"
       },
       "indicators": [
         {
@@ -280,10 +280,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de não residentes atingiram 9,2 milhões (+1,5%) e as de residentes 4,3 milhões (+1,3%). Os mercados externos representaram 68,0% do total. Entre os dez principais mercados emissores, o Canadá teve o maior aumento (+10,6%), em aceleração pelo segundo trimestre consecutivo, e a França o maior decréscimo (-10,4%), acentuando a trajetória de queda dos últimos trimestres. Estados Unidos (+5,1%) e Alemanha (+5,0%) somaram procura; o Reino Unido ficou 1,1% abaixo do ano anterior."
+          "As dormidas de não residentes atingiram 9,2 milhões (+1,5%) e as de residentes 4,3 milhões (+1,3%), com os mercados externos a representarem 68,0% do total. O INE assinala que a taxa de crescimento das dormidas dos não residentes superou a dos residentes, após 5 trimestres consecutivos em que a dos residentes foi superior, e que os mercados externos aceleram pelo segundo trimestre seguido. Entre os dez principais mercados emissores, o Canadá teve o maior aumento (+10,6%) e a França o maior decréscimo (-10,4%), acentuando a trajetória de queda dos últimos trimestres. Estados Unidos (+5,1%) e Alemanha (+5,0%) somaram procura; o Reino Unido ficou 1,1% abaixo do ano anterior."
         ],
         "en": [
-          "Non-resident overnight stays reached 9.2 million (+1.5%) and resident stays 4.3 million (+1.3%). External markets accounted for 68.0% of the total. Among the ten largest source markets Canada posted the biggest gain (+10.6%), accelerating for a second straight quarter, and France the biggest drop (-10.4%), extending the downward path of recent quarters. The United States (+5.1%) and Germany (+5.0%) added demand; the United Kingdom came in 1.1% below the year before."
+          "Non-resident overnight stays reached 9.2 million (+1.5%) and resident stays 4.3 million (+1.3%), with external markets accounting for 68.0% of the total. Statistics Portugal notes that non-resident overnight stays grew faster than resident ones after 5 consecutive quarters in which residents grew faster, and that external markets are accelerating for a second straight quarter. Among the ten largest source markets Canada posted the biggest gain (+10.6%) and France the biggest drop (-10.4%), extending the downward path of recent quarters. The United States (+5.1%) and Germany (+5.0%) added demand; the United Kingdom came in 1.1% below the year before."
         ]
       },
       "barList": {
@@ -428,8 +428,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "O Oeste e Vale do Tejo perdeu 6,6% das dormidas, o maior decréscimo entre as regiões, num trimestre em que o país cresceu 1,4%.",
@@ -444,8 +444,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "O preço fez o trabalho",
-        "en": "Rate did the work"
+        "pt": "Mais por quarto ocupado, não por quarto disponível",
+        "en": "More per occupied room, not per available room"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -531,10 +531,10 @@
       ],
       "body": {
         "pt": [
-          "O RevPAR fixou-se em 41,5 euros (+1,5%) e o ADR em 93,8 euros (+3,1%): o rendimento por quarto ocupado cresceu mais depressa do que o rendimento por quarto disponível. Os proveitos totais somaram 1008,3 milhões de euros (+5,9%) e os de aposento 734,5 milhões (+5,3%). O INE não publica taxas de ocupação trimestrais, mas a taxa líquida de ocupação-cama ficou abaixo do ano anterior em cada um dos três meses do trimestre. A receita adicional veio do preço e não de uma utilização mais intensa da capacidade instalada."
+          "O RevPAR fixou-se em 41,5 euros (+1,5%) e o ADR em 93,8 euros (+3,1%): o rendimento por quarto ocupado cresceu mais depressa do que o rendimento por quarto disponível. Os proveitos totais somaram 1008,3 milhões de euros (+5,9%) e os de aposento 734,5 milhões (+5,3%). O INE não publica taxas de ocupação trimestrais; nas divulgações mensais, a taxa líquida de ocupação-cama ficou abaixo do ano anterior em cada um dos três meses. O acréscimo de receita foi tarifa; a capacidade instalada não foi mais utilizada."
         ],
         "en": [
-          "RevPAR stood at EUR 41.5 (+1.5%) and ADR at EUR 93.8 (+3.1%): revenue per occupied room grew faster than revenue per available room. Total revenue came to EUR 1,008.3 million (+5.9%) and room revenue to EUR 734.5 million (+5.3%). INE publishes no quarterly occupancy rates, but net bed occupancy was below the year before in each of the quarter's three months. The extra revenue came from rate, not from fuller use of installed capacity."
+          "RevPAR stood at EUR 41.5 (+1.5%) and ADR at EUR 93.8 (+3.1%): revenue per occupied room grew faster than revenue per available room. Total revenue came to EUR 1,008.3 million (+5.9%) and room revenue to EUR 734.5 million (+5.3%). Statistics Portugal publishes no quarterly occupancy rates; in the monthly releases, net bed occupancy was below the year before in each of the three months. The extra revenue was rate; installed capacity was not used any harder."
         ]
       }
     },
@@ -554,12 +554,12 @@
           "en": "Overnight stays +1.4%, total revenue +5.9%, ADR +3.1% and RevPAR +1.5%."
         },
         "interpretation": {
-          "pt": "A distância entre o ADR e o RevPAR mede o que a ocupação retirou. O trimestre rendeu mais por quarto ocupado, mas não conseguiu encher mais quartos, e o alojamento local perdeu dormidas enquanto a hotelaria e o turismo no espaço rural as ganharam. Importa separar efeito preço e efeito ocupação antes de tratar o aumento dos proveitos como melhoria do desempenho do ativo.",
-          "en": "The distance between ADR and RevPAR measures what occupancy took away. The quarter earned more per occupied room but did not fill more rooms, and local accommodation lost overnight stays while hotels and rural tourism gained them. Price effect and occupancy effect must be separated before a revenue gain is read as better asset performance."
+          "pt": "A distância entre o ADR e o RevPAR mede o que a ocupação retirou. O trimestre rendeu mais por quarto ocupado, mas não conseguiu encher mais quartos, e por segmentos o alojamento local perdeu 2,8% das dormidas enquanto a hotelaria ganhou 2,0%. O aumento dos proveitos só conta como melhoria de desempenho depois de descontada a ocupação perdida.",
+          "en": "The distance between ADR and RevPAR measures what occupancy took away. The quarter earned more per occupied room but did not fill more rooms, and by segment local accommodation lost 2.8% of its overnight stays while hotels gained 2.0%. The revenue gain only counts as better performance once the lost occupancy has been deducted."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, o teste deste trimestre é a elasticidade do preço: até onde o ADR pode subir sem custo em noites vendidas. Vale rever a exposição ao alojamento local, aos ativos do Oeste e Vale do Tejo e aos que dependem do mercado francês, e comparar cada unidade com a média nacional antes de fixar tarifas para a época alta.",
-          "en": "For owners and investors, this quarter's test is price elasticity: how far ADR can move before it costs nights sold. Exposure to local accommodation, to assets in the West and Tagus Valley and to those relying on the French market is worth reviewing, and each unit should be compared with the national average before peak-season rates are set."
+          "pt": "O teste deste trimestre é a elasticidade do preço: até onde o ADR pode subir sem custo em noites vendidas. Vale rever a exposição ao alojamento local, aos ativos do Oeste e Vale do Tejo e aos que dependem do mercado francês, e comparar cada unidade com a média nacional antes de fixar tarifas para a época alta.",
+          "en": "This quarter's test is price elasticity: how far ADR can move before it costs nights sold. Exposure to local accommodation, to assets in the West and Tagus Valley and to those relying on the French market is worth reviewing, and each unit should be compared with the national average before peak-season rates are set."
         }
       }
     },

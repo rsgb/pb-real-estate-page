@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "Entre julho e dezembro, o alojamento turístico registou 17,6 milhões de hóspedes e 45,7 milhões de dormidas, mais 2,5% e 2,0% do que no semestre homólogo; o INE não publica variações homólogas semestrais, pelo que este crescimento é derivado dos acumulados do INE. Os proveitos totais somaram 4158,9 milhões de euros (+6,8%) e os de aposento 3215,7 milhões (+6,0%).",
+          "Entre julho e dezembro, o alojamento turístico registou 17,6 milhões de hóspedes e 45,7 milhões de dormidas, mais 2,5% e 2,0% do que no semestre homólogo. Os proveitos totais somaram 4158,9 milhões de euros (+6,8%) e os de aposento 3215,7 milhões (+6,0%). O INE não publica variações homólogas semestrais: todas as variações deste parágrafo são derivadas dos acumulados publicados.",
           "O semestre não teve uma trajetória única: julho foi o mês mais forte (+3,9%), setembro e novembro os mais fracos (+0,6% e +0,7%), e dezembro fechou com +3,0%.",
-          "Para quem detém ativos, a leitura é de receita a subir sem que a procura acompanhe."
+          "Contra o primeiro semestre, o segundo cresceu menos em volume e menos em valor. O ano fecha com a receita a subir sem que a procura acompanhe."
         ],
         "en": [
-          "Between July and December, tourist accommodation recorded 17.6 million guests and 45.7 million overnight stays, up 2.5% and 2.0% on the same half a year earlier; INE publishes no half-year year-on-year rates, so this growth is derived from INE's cumulative figures. Total revenue came to EUR 4158.9 million (+6.8%) and room revenue to EUR 3215.7 million (+6.0%).",
+          "Between July and December, tourist accommodation recorded 17.6 million guests and 45.7 million overnight stays, up 2.5% and 2.0% on the same period a year earlier. Total revenue came to EUR 4,158.9 million (+6.8%) and room revenue to EUR 3,215.7 million (+6.0%). Statistics Portugal publishes no half-year year-on-year rates: every change in this paragraph is derived from the published cumulative figures.",
           "The half had no single trajectory: July was the strongest month (+3.9%), September and November the weakest (+0.6% and +0.7%), and December closed at +3.0%.",
-          "For owners, the reading is revenue rising without demand keeping pace."
+          "Against the first half, the second grew less in volume and less in value. The year closes with revenue rising without demand keeping pace."
         ]
       }
     },
@@ -186,7 +186,7 @@
           "Leitura: 45,7 milhões de dormidas (+2,0%) geraram 4158,9 milhões de euros de proveitos totais (+6,8%). O semestre trouxe mais receita por dormida, não mais camas ocupadas."
         ],
         "en": [
-          "Reading: 45.7 million overnight stays (+2.0%) generated EUR 4158.9 million of total revenue (+6.8%). The half brought more revenue per overnight stay, not fuller beds."
+          "Reading: 45.7 million overnight stays (+2.0%) generated EUR 4,158.9 million of total revenue (+6.8%). The half brought more revenue per overnight stay, not fuller beds."
         ]
       }
     },
@@ -197,8 +197,8 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "O mercado interno fez o crescimento",
-        "en": "The domestic market made the growth"
+        "pt": "Seis meses feitos pelo mercado interno",
+        "en": "Six months made by the domestic market"
       },
       "indicators": [
         {
@@ -333,7 +333,7 @@
       },
       "headline": {
         "pt": "O Alentejo à frente, os Açores atrás",
-        "en": "Alentejo in front, the Azores behind"
+        "en": "The Alentejo in front, the Azores behind"
       },
       "barList": {
         "title": {
@@ -436,18 +436,18 @@
           "No conjunto do semestre, o Alentejo cresceu 6,7% em dormidas, seguido da RA Madeira (+3,4%), da Península de Setúbal (+3,3%) e do Norte (+3,2%). A Grande Lisboa ficou em +1,6%, o Algarve em +0,5% e o Centro em +0,1%. A RA Açores foi a única região com menos dormidas do que um ano antes (-0,3%)."
         ],
         "en": [
-          "Across the half, Alentejo grew 6.7% in overnight stays, ahead of Madeira (+3.4%), the Setúbal Peninsula (+3.3%) and the North (+3.2%). Greater Lisbon came in at +1.6%, the Algarve at +0.5% and the Centre at +0.1%. The Azores was the only region with fewer overnight stays than a year earlier (-0.3%)."
+          "Across the half, the Alentejo grew 6.7% in overnight stays, ahead of Madeira (+3.4%), the Setúbal Peninsula (+3.3%) and the North (+3.2%). Greater Lisbon came in at +1.6%, the Algarve at +0.5% and the Centre at +0.1%. The Azores was the only region with fewer overnight stays than a year earlier (-0.3%)."
         ]
       },
       "callout": {
-        "kind": "attention",
+        "kind": "conclusion",
         "title": {
           "pt": "REGIÃO EM DESTAQUE",
           "en": "REGION IN FOCUS"
         },
         "body": {
           "pt": "O semestre separou as regiões: o Alentejo cresceu 6,7% nas dormidas enquanto a RA Açores recuou 0,3%. O Algarve ficou em +0,5%, abaixo da média nacional.",
-          "en": "The half pulled the regions apart: Alentejo grew 6.7% in overnight stays while the Azores slipped 0.3%. The Algarve came in at +0.5%, below the national average."
+          "en": "The half pulled the regions apart: the Alentejo grew 6.7% in overnight stays while the Azores slipped 0.3%. The Algarve came in at +0.5%, below the national average."
         }
       }
     },
@@ -458,8 +458,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "Receita a subir com a ocupação a descer",
-        "en": "Revenue up while occupancy slipped"
+        "pt": "A ocupação desceu nos seis meses",
+        "en": "Occupancy fell in all six months"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -514,7 +514,7 @@
           "Os proveitos totais do semestre foram 4158,9 milhões de euros (+6,8%) e os de aposento 3215,7 milhões (+6,0%). O INE não publica RevPAR, ADR nem taxas de ocupação semestrais; nas divulgações mensais, a taxa líquida de ocupação-cama desceu em termos homólogos nos seis meses do semestre e, em novembro, o RevPAR e o ADR também desceram, a segunda vez em 2025 depois de março. A receita cresceu, portanto, sem ajuda da utilização da capacidade."
         ],
         "en": [
-          "Total revenue for the half was EUR 4158.9 million (+6.8%) and room revenue EUR 3215.7 million (+6.0%). INE publishes no half-year RevPAR, ADR or occupancy rates; in the monthly releases, net bed occupancy fell year on year in each of the six months and, in November, RevPAR and ADR fell as well, the second time in 2025 after March. Revenue therefore grew without help from capacity use."
+          "Total revenue for the half was EUR 4,158.9 million (+6.8%) and room revenue EUR 3,215.7 million (+6.0%). Statistics Portugal publishes no half-year RevPAR, ADR or occupancy rates; in the monthly releases, net bed occupancy fell year on year in each of the six months and, in November, RevPAR and ADR fell as well, the second time in 2025 after March. Revenue therefore grew without help from capacity use."
         ]
       }
     },
@@ -538,8 +538,8 @@
           "en": "The half confirmed a change of composition: growth moved to the domestic market, while external markets, worth 31.2 million overnight stays, held still. Revenue rose because each night sold earned more, not because more nights were sold."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, o exercício de 2026 é testar até onde a receita por noite pode subir sem ocupação a acompanhar, e que parte do plano de negócios assenta em mercados externos que cresceram 0,6% num semestre inteiro. A dispersão regional, do Alentejo à RA Açores, aconselha decisões ao nível do ativo e não da média do país.",
-          "en": "For owners and investors, the 2026 exercise is to test how far revenue per night can rise without occupancy following, and how much of a business plan rests on external markets that grew 0.6% over a whole half-year. Regional spread, from Alentejo to the Azores, argues for asset-level decisions rather than the national average."
+          "pt": "O exercício de 2026 é testar até onde a receita por noite pode subir sem ocupação a acompanhar, e que parte do plano de negócios assenta em mercados externos que cresceram 0,6% num semestre inteiro. A dispersão regional, do Alentejo à RA Açores, aconselha decisões ao nível do ativo e não da média do país.",
+          "en": "The 2026 exercise is to test how far revenue per night can rise without occupancy following, and how much of a business plan rests on external markets that grew 0.6% over a whole half-year. Regional spread, from the Alentejo to the Azores, argues for asset-level decisions rather than the national average."
         }
       }
     },
@@ -565,7 +565,7 @@
           },
           {
             "pt": "Se o Alentejo mantém a distância para o Algarve e para o Centro.",
-            "en": "Whether Alentejo keeps its distance from the Algarve and the Centre."
+            "en": "Whether the Alentejo keeps its distance from the Algarve and the Centre."
           }
         ]
       }

@@ -26,7 +26,7 @@
   },
   "takeaway": {
     "pt": "Março perdeu volume sem compensar no preço: dormidas -2,9%, proveitos totais praticamente estáveis (+0,1%) e RevPAR -2,1%. Os residentes cresceram 2,1% e os mercados externos caíram 4,9%, com o Carnaval e a Páscoa a mexer nas comparações.",
-    "en": "March lost volume without making it up on price: overnight stays -2.9%, total revenue broadly flat at +0.1% and RevPAR -2.1%. Residents grew 2.1% while foreign markets lost 4.9%, with Carnival and Easter reshaping the comparison."
+    "en": "March lost volume without making it up on price: overnight stays -2.9%, total revenue broadly flat at +0.1% and RevPAR -2.1%. Residents grew 2.1% while non-residents lost 4.9%, with Carnival and Easter reshaping the comparison."
   },
   "sections": [
     {
@@ -58,14 +58,14 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "O calendário achatou março em volume e em receita",
-        "en": "The calendar flattened March in volume and in revenue"
+        "pt": "O calendário travou março no volume e na receita",
+        "en": "The calendar held March back in volume and in revenue"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "Os residentes cresceram 2,1% e os não residentes recuaram 4,9%. Com o Carnaval e a Páscoa em meses diferentes de 2024, o mês diz menos sobre o mercado do que parece.",
@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 2,3 milhões de hóspedes e 5,6 milhões de dormidas em março de 2025, com variações de +0,1% e -2,9%. O INE atribui o resultado à estrutura móvel do calendário: o Carnaval passou de fevereiro para março e a Páscoa passou de março para abril.",
+          "As dormidas diminuíram 2,9% em março de 2025, para 5,6 milhões, com 2,3 milhões de hóspedes (+0,1%). O INE assinala a influência da estrutura móvel do calendário: o Carnaval passou de fevereiro para março e a Páscoa passou de março para abril.",
           "Os proveitos totais ficaram em 406,9 milhões de euros (+0,1%) e os de aposento em 302,1 milhões (-0,6%). O RevPAR desceu para 48,7 euros (-2,1%), o ADR para 96,5 euros (-0,1%) e a taxa líquida de ocupação-cama para 39,8%, menos 2,0 p.p.",
-          "Para quem lê ativos, março é um mês de comparação suja. A questão não é a descida em si, mas quanto dela regressa em abril com a Páscoa."
+          "Para quem lê ativos, março tem a base de comparação distorcida. A questão não é a descida em si, mas quanto dela regressa em abril com a Páscoa."
         ],
         "en": [
-          "Tourist accommodation recorded 2.3 million guests and 5.6 million overnight stays in March 2025, changes of +0.1% and -2.9%. Statistics Portugal attributes the outcome to the moving calendar: Carnival shifted from February to March and Easter from March to April.",
+          "Overnight stays fell 2.9% in March 2025, to 5.6 million, with 2.3 million guests (+0.1%). Statistics Portugal flags the influence of the moving calendar: Carnival shifted from February to March and Easter from March to April.",
           "Total revenue stood at EUR 406.9 million (+0.1%) and room revenue at EUR 302.1 million (-0.6%). RevPAR eased to EUR 48.7 (-2.1%), ADR to EUR 96.5 (-0.1%) and net bed occupancy to 39.8%, down 2.0 pp.",
-          "For anyone reading assets, March carries a dirty comparison. The question is not the decrease itself, but how much of it returns in April with Easter."
+          "For anyone reading assets, March has a distorted comparison base. The question is not the decrease itself, but how much of it returns in April with Easter."
         ]
       }
     },
@@ -232,7 +232,7 @@
       },
       "headline": {
         "pt": "Os residentes seguraram, os mercados externos não",
-        "en": "Residents held up, foreign markets did not"
+        "en": "Residents held up, non-residents did not"
       },
       "indicators": [
         {
@@ -281,11 +281,11 @@
       "body": {
         "pt": [
           "As dormidas de residentes subiram para 1,7 milhões (+2,1%) e as de não residentes desceram para 3,9 milhões (-4,9%). A divergência inverte o padrão de fevereiro, quando ambos os mercados tinham perdido terreno.",
-          "Os dez principais mercados emissores representaram 73,8% das dormidas de não residentes. A Polónia liderou os aumentos (+35,9%), seguida do Canadá (+11,4%) e dos Estados Unidos (+0,5%). Espanha registou a maior descida do grupo (-37,0%), à frente da Alemanha (-7,5%) e do Reino Unido (-4,6%)."
+          "Os dez principais mercados emissores representaram 73,8% das dormidas de não residentes. A Polónia liderou os aumentos (+35,9%), seguida do Canadá (+11,4%) e dos Estados Unidos (+0,5%). Espanha destacou-se nos decréscimos (-37,0%), à frente da Alemanha (-7,5%) e do Reino Unido (-4,6%)."
         ],
         "en": [
           "Resident overnight stays rose to 1.7 million (+2.1%) and non-resident stays eased to 3.9 million (-4.9%). That split reverses February, when both markets lost ground.",
-          "The ten largest source markets accounted for 73.8% of non-resident stays. Poland led the increases (+35.9%), followed by Canada (+11.4%) and the United States (+0.5%). Spain posted the group's steepest decrease (-37.0%), ahead of Germany (-7.5%) and the United Kingdom (-4.6%)."
+          "The ten largest source markets accounted for 73.8% of non-resident stays. Poland led the increases (+35.9%), followed by Canada (+11.4%) and the United States (+0.5%). Among the decreases, Spain stood out at -37.0%, ahead of Germany (-7.5%) and the United Kingdom (-4.6%)."
         ]
       },
       "barList": {
@@ -478,8 +478,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "O Algarve registou a maior quebra regional (-8,7%), com os residentes a recuar 16,0% e os não residentes 7,0%.",
@@ -642,8 +642,8 @@
           "en": "When ADR sits at -0.1% and occupancy loses 2.0 pp, there is no price effect holding the asset up. The 2.1% advance in residents funded the month, but revenue per available room kept sliding."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, o mês pede leitura trimestral e não mensal. Com o Carnaval e a Páscoa a trocar de mês, só fevereiro, março e abril em conjunto mostram a tendência real da procura e a capacidade de preço de cada ativo.",
-          "en": "For owners and investors, the month calls for a quarterly reading rather than a monthly one. With Carnival and Easter changing months, only February, March and April together show the underlying demand trend and each asset's ability to price."
+          "pt": "O mês pede leitura trimestral e não mensal. Com o Carnaval e a Páscoa a trocar de mês, só fevereiro, março e abril em conjunto mostram a tendência real da procura e a capacidade de preço de cada ativo.",
+          "en": "The month calls for a quarterly reading rather than a monthly one. With Carnival and Easter changing months, only February, March and April together show the underlying demand trend and each asset's ability to price."
         }
       }
     },
@@ -668,8 +668,8 @@
             "en": "Whether the Spanish market recovers after its 37.0% decrease."
           },
           {
-            "pt": "Se o Algarve retoma depois de -8,7% e devolve ocupação ao país.",
-            "en": "Whether the Algarve rebounds from -8.7% and gives occupancy back to the country."
+            "pt": "A recuperação do Algarve depois de -8,7% e o seu peso no total nacional.",
+            "en": "The Algarve's recovery after -8.7% and its weight in the national total."
           }
         ]
       }

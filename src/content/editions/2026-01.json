@@ -76,12 +76,12 @@
         "pt": [
           "O INE resumiu o mês como manutenção do crescimento, embora com abrandamento. O alojamento turístico registou 1,7 milhões de hóspedes (+3,7%) e 3,7 milhões de dormidas (+2,0%), com 276,8 milhões de euros de proveitos totais e 199,5 milhões de proveitos de aposento, ambos +5,4%.",
           "O RevPAR fixou-se em 33,8 euros (+1,6%) e o ADR em 92,1 euros (+2,7%), enquanto a taxa líquida de ocupação-cama desceu para 28,6%, menos 0,3 p.p.",
-          "Há uma reserva a registar: o INE assinalou que os resultados preliminares de janeiro podem ser alvo de revisões de maior magnitude do que é habitual, pelo impacto dos fenómenos meteorológicos intensos e anómalos de janeiro e fevereiro nas taxas de resposta aos inquéritos."
+          "Fica uma ressalva: o INE assinalou que os resultados preliminares de janeiro podem ser alvo de revisões de maior magnitude do que é habitual, pelo impacto dos fenómenos meteorológicos intensos e anómalos de janeiro e fevereiro nas taxas de resposta aos inquéritos."
         ],
         "en": [
-          "Statistics Portugal summed the month up as growth maintained, though slowing. Tourist accommodation recorded 1.7 million guests (+3.7%) and 3.7 million overnight stays (+2.0%), with EUR 276.8 million of total revenue and EUR 199.5 million of room revenue, both +5.4%.",
+          "Statistics Portugal described the month as continued growth, but slower. Tourist accommodation recorded 1.7 million guests (+3.7%) and 3.7 million overnight stays (+2.0%), with EUR 276.8 million of total revenue and EUR 199.5 million of room revenue, both +5.4%.",
           "RevPAR came in at EUR 33.8 (+1.6%) and ADR at EUR 92.1 (+2.7%), while net bed occupancy eased to 28.6%, 0.3 pp lower.",
-          "One caveat belongs on the record: the institute flagged that January's preliminary results may be revised by more than usual, given the effect of the intense and anomalous weather of January and February on survey response rates."
+          "One caveat: the institute flagged that January's preliminary results may be revised by more than usual, given the effect of the intense and anomalous weather of January and February on survey response rates."
         ]
       }
     },
@@ -633,10 +633,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR subiu 2,7%, para 92,1 euros, e o RevPAR 1,6%, para 33,8 euros. A taxa líquida de ocupação-cama ficou em 28,6%, menos 0,3 p.p., e a de ocupação-quarto em 36,6%, menos 0,4 p.p. Com os proveitos totais e de aposento a subirem 5,4%, a receita adicional é preço e capacidade; a utilização das camas continuou a ceder."
+          "O ADR subiu 2,7%, para 92,1 euros, e o RevPAR 1,6%, para 33,8 euros. A taxa líquida de ocupação-cama ficou em 28,6%, menos 0,3 p.p., e a de ocupação-quarto em 36,6%, menos 0,4 p.p. Com os proveitos totais e de aposento a subirem 5,4%, a receita adicional veio do preço; a utilização das camas continuou a ceder."
         ],
         "en": [
-          "ADR rose 2.7% to EUR 92.1 and RevPAR 1.6% to EUR 33.8. Net bed occupancy came in at 28.6%, 0.3 pp lower, and net room occupancy at 36.6%, 0.4 pp lower. With total and room revenue both up 5.4%, the extra income is price and capacity; use of the beds kept easing."
+          "ADR rose 2.7% to EUR 92.1 and RevPAR 1.6% to EUR 33.8. Net bed occupancy came in at 28.6%, 0.3 pp lower, and net room occupancy at 36.6%, 0.4 pp lower. With total and room revenue both up 5.4%, the extra income came from price; use of the beds kept easing."
         ]
       }
     },
@@ -656,8 +656,8 @@
           "en": "Overnight stays +2.0%, total revenue +5.4%, ADR +2.7%, RevPAR +1.6% and net bed occupancy 28.6%, down 0.3 pp."
         },
         "interpretation": {
-          "pt": "O RevPAR avança, mas apenas porque o ADR sobe mais do que a ocupação cede. É uma margem estreita, e o mês entra nas contas com uma reserva: o próprio INE admite revisões acima do normal por causa do tempo anómalo de janeiro e fevereiro.",
-          "en": "RevPAR is up only because ADR is rising faster than occupancy is giving way. That is a narrow margin, and the month enters the record with a caveat: the institute itself expects larger revisions than normal after the anomalous weather of January and February."
+          "pt": "O RevPAR avança, mas apenas porque o ADR sobe mais do que a ocupação cede. É uma margem estreita, e o mês entra nas contas com uma ressalva: o próprio INE avisa que as revisões podem ser maiores do que é habitual, por causa do tempo anómalo de janeiro e fevereiro.",
+          "en": "RevPAR is up only because ADR is rising faster than occupancy is giving way. That is a narrow margin, and the month enters the record with a caveat: the institute itself warns that revisions may be larger than usual after the anomalous weather of January and February."
         },
         "implication": {
           "pt": "Quem estiver a fechar uma avaliação com dados de janeiro deve tratá-los como provisórios e voltar a eles na divulgação seguinte. Nas regiões, a exposição ao Algarve e às ilhas exige um desconto explícito face à média nacional; nas cidades do Norte e do Centro, o aumento das dormidas ainda não é prova de rendimento.",
@@ -686,8 +686,8 @@
             "en": "Whether the Algarve and the islands return to growth."
           },
           {
-            "pt": "Até onde o ADR consegue compensar uma ocupação-cama em terreno negativo.",
-            "en": "How far ADR can keep offsetting negative bed occupancy."
+            "pt": "Até onde o ADR consegue compensar uma ocupação-cama em queda.",
+            "en": "How far ADR can keep offsetting a falling net bed occupancy."
           }
         ]
       }

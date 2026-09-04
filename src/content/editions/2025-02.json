@@ -62,10 +62,10 @@
         "en": "Fewer overnight stays, higher revenue, with the calendar weighing"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "Os proveitos totais avançaram 3,7% apesar do recuo de 2,5% nas dormidas, uma divergência em parte explicada pelo calendário.",
@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 1,8 milhões de hóspedes e 4,2 milhões de dormidas em fevereiro de 2025, com variações de +0,5% e -2,5%. O INE assinala dois efeitos de calendário: o período de férias do Carnaval passou para março e o mês teve menos um dia do que em 2024, ano bissexto.",
+          "Em fevereiro de 2025 os proveitos subiram e as dormidas caíram: 1,8 milhões de hóspedes (+0,5%) e 4,2 milhões de dormidas (-2,5%). O INE assinala dois efeitos de calendário: o período de férias do Carnaval passou para março e o mês teve menos um dia do que em 2024, ano bissexto.",
           "Os proveitos totais atingiram 287,7 milhões de euros e os de aposento 208,8 milhões, mais 3,7% e 3,3% do que um ano antes. O RevPAR subiu para 39,6 euros (+4,5%) e o ADR para 87,9 euros (+4,9%), enquanto a taxa líquida de ocupação-cama desceu para 35,4%, menos 0,6 p.p.",
-          "Para quem detém ativos, fevereiro mostra que o preço compensou a perda de volume, mas não a compensou em todo o país. A leitura do mês exige separar o efeito de calendário do que é tendência de mercado."
+          "Para quem detém ativos, fevereiro mostra que o preço compensou a perda de volume, embora não em todas as regiões. A leitura do mês exige separar o efeito de calendário do que é tendência de mercado."
         ],
         "en": [
-          "Tourist accommodation recorded 1.8 million guests and 4.2 million overnight stays in February 2025, changes of +0.5% and -2.5%. Statistics Portugal flags two calendar effects: the Carnival holiday period moved to March, and the month had one day fewer than in 2024, a leap year.",
+          "February 2025 gained revenue and lost volume: 1.8 million guests (+0.5%) and 4.2 million overnight stays (-2.5%). Statistics Portugal flags two calendar effects: the Carnival holiday period moved to March, and the month had one day fewer than in 2024, a leap year.",
           "Total revenue reached EUR 287.7 million and room revenue EUR 208.8 million, up 3.7% and 3.3% year on year. RevPAR rose to EUR 39.6 (+4.5%) and ADR to EUR 87.9 (+4.9%), while net bed occupancy slipped to 35.4%, down 0.6 pp.",
-          "For owners, February shows that price offset the loss of volume, but not everywhere. Reading the month means separating the calendar effect from the underlying market trend."
+          "For owners, February shows that price offset the loss of volume, though not in every region. Reading the month means separating the calendar effect from the underlying market trend."
         ]
       }
     },
@@ -277,11 +277,11 @@
       "body": {
         "pt": [
           "As dormidas de residentes fixaram-se em 1,4 milhões, menos 1,2% do que um ano antes, e as de não residentes em 2,8 milhões, menos 3,1%. Os dois mercados inverteram o sinal de janeiro, quando tinham crescido 11,0% e 3,9%.",
-          "Entre os dez principais mercados emissores, que valeram 72,1% das dormidas de não residentes, a Polónia foi o único com variação positiva (+23,2%). O Brasil registou a maior descida (-18,9%), à frente de Espanha (-8,4%), do Reino Unido (-7,5%) e da Alemanha (-5,1%)."
+          "Entre os dez principais mercados emissores, que valeram 72,1% das dormidas de não residentes, a Polónia foi o único com variação positiva (+23,2%). O Brasil destacou-se nos decréscimos (-18,9%), à frente de Espanha (-8,4%), do Reino Unido (-7,5%) e da Alemanha (-5,1%)."
         ],
         "en": [
           "Resident overnight stays came in at 1.4 million, down 1.2% from a year earlier, and non-resident stays at 2.8 million, down 3.1%. Both reversed their January direction, when they had grown 11.0% and 3.9%.",
-          "Among the ten largest source markets, 72.1% of non-resident stays, Poland was the only one with a positive reading (+23.2%). Brazil posted the sharpest decrease (-18.9%), ahead of Spain (-8.4%), the United Kingdom (-7.5%) and Germany (-5.1%)."
+          "Among the ten largest source markets, 72.1% of non-resident stays, Poland was the only one with a positive reading (+23.2%). Brazil stood out among the decreases (-18.9%), ahead of Spain (-8.4%), the United Kingdom (-7.5%) and Germany (-5.1%)."
         ]
       },
       "barList": {
@@ -460,11 +460,11 @@
           "A Península de Setúbal liderou (+7,8%), com a RA Açores (+5,1%), a RA Madeira (+1,4%) e o Norte (+0,9%) também em terreno positivo. Do lado oposto ficaram o Oeste e Vale do Tejo (-7,1%), a Grande Lisboa (-5,6%) e o Algarve (-5,1%). A quebra da Grande Lisboa pesa mais do que a percentagem sugere: com 1169,6 mil dormidas, é a maior região do país no mês."
         ],
         "en": [
-          "Setúbal Peninsula led (+7.8%), with the Azores (+5.1%), Madeira (+1.4%) and the North (+0.9%) also in positive territory. At the other end were the West and Tagus Valley (-7.1%), Greater Lisbon (-5.6%) and the Algarve (-5.1%). Greater Lisbon's decrease matters more than the percentage suggests: at 1169.6 thousand overnight stays it is the country's largest region in the month."
+          "Setúbal Peninsula led (+7.8%), with the Azores (+5.1%), Madeira (+1.4%) and the North (+0.9%) also in positive territory. At the other end were the West and Tagus Valley (-7.1%), Greater Lisbon (-5.6%) and the Algarve (-5.1%). Greater Lisbon's decrease matters more than the percentage suggests: at 1,169.6 thousand overnight stays it is the country's largest region in the month."
         ]
       },
       "callout": {
-        "kind": "attention",
+        "kind": "conclusion",
         "title": {
           "pt": "REGIÃO EM DESTAQUE",
           "en": "REGION IN FOCUS"
@@ -653,7 +653,7 @@
           },
           {
             "pt": "A recuperação, ou não, do mercado brasileiro depois da descida de 18,9%.",
-            "en": "Whether the Brazilian market recovers after its 18.9% decrease."
+            "en": "The Brazilian market's recovery, or not, after an 18.9% decrease."
           },
           {
             "pt": "Se o ADR mantém o ritmo com a ocupação-cama em terreno negativo.",

@@ -26,7 +26,7 @@
   },
   "takeaway": {
     "pt": "O trimestre cresceu 1,9% em dormidas e 7,4% em proveitos totais. O peso dos mercados externos caiu para 67,8%, o mais baixo desde o 3.º trimestre de 2022: o verão de 2025 foi sustentado pelos residentes e pelo preço, não pelo volume estrangeiro.",
-    "en": "Overnight stays rose 1.9% and total revenue 7.4%. The external markets' share fell to 67.8%, the lowest since the third quarter of 2022. Summer 2025 was carried by residents and by price, not by foreign volume."
+    "en": "Total revenue rose 7.4% on overnight stays up 1.9%. The external markets' share fell to 67.8%, the lowest since the third quarter of 2022. Summer 2025 was carried by residents and by rate, not by foreign volume."
   },
   "sections": [
     {
@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 10,5 milhões de hóspedes e 28,6 milhões de dormidas, mais 2,1% e 1,9% do que no verão anterior. Os mercados externos continuaram dominantes, com 67,8% do total, mas esse peso é o mais baixo desde o 3.º trimestre de 2022.",
+          "O alojamento turístico registou 10,5 milhões de hóspedes e 28,6 milhões de dormidas, mais 2,1% e 1,9% do que no verão anterior. Os mercados externos continuaram dominantes, com 67,8% do total, mas esse peso é o mais baixo desde o 3.º trimestre de 2022. É o trimestre maior do ano em dormidas, e foi o que menos cresceu até aqui.",
           "Os proveitos totais atingiram 2740,0 milhões de euros (+7,4%) e os de aposento 2171,9 milhões (+6,8%), com o ADR a subir 4,4% e o RevPAR 4,1%. O valor cresceu mais do que o volume, e a diferença é quase toda tarifa.",
-          "Para quem detém ativos, o trimestre mede menos a força da procura e mais a capacidade de a cobrar."
+          "O trimestre mede menos a força da procura e mais a capacidade de a cobrar."
         ],
         "en": [
-          "Tourist accommodation recorded 10.5 million guests and 28.6 million overnight stays, up 2.1% and 1.9% on the same quarter of 2024. External markets remained dominant at 67.8% of the total, the lowest share since the third quarter of 2022.",
-          "Total revenue reached EUR 2740.0 million (+7.4%) and room revenue EUR 2171.9 million (+6.8%), with ADR up 4.4% and RevPAR up 4.1%. Value grew faster than volume, and almost all of the gap is rate.",
-          "For owners, the quarter measures the ability to charge for demand more than the strength of demand itself."
+          "Tourist accommodation recorded 10.5 million guests and 28.6 million overnight stays, up 2.1% and 1.9% on the same quarter of 2024. External markets remained dominant at 67.8% of the total, the lowest share since the third quarter of 2022. It is the year's largest quarter by overnight stays, and the slowest-growing so far.",
+          "Total revenue reached EUR 2,740.0 million (+7.4%) and room revenue EUR 2,171.9 million (+6.8%), with ADR up 4.4% and RevPAR up 4.1%. Value grew faster than volume, and almost all of the gap is rate.",
+          "The quarter measures the ability to charge for demand more than the strength of demand itself."
         ]
       }
     },
@@ -93,7 +93,7 @@
       },
       "headline": {
         "pt": "O preço fez quase todo o crescimento",
-        "en": "Price did nearly all the work"
+        "en": "Rate did nearly all the work"
       },
       "indicators": [
         {
@@ -267,7 +267,7 @@
           "As dormidas de residentes aumentaram 5,5%, para 9,2 milhões; as de não residentes ficaram em 19,4 milhões, mais 0,3%. A dependência dos mercados externos é muito desigual: 83,2% das dormidas na Grande Lisboa, 79,5% na RA Madeira e 76,6% na RA Açores, contra 36,1% no Centro e 30,7% no Alentejo. O Reino Unido foi o principal mercado externo no Algarve, com 38,5% das dormidas de não residentes da região."
         ],
         "en": [
-          "Resident overnight stays rose 5.5% to 9.2 million; non-resident stays came in at 19.4 million, up 0.3%. Dependence on external markets is very uneven: 83.2% of overnight stays in Greater Lisbon, 79.5% in Madeira and 76.6% in the Azores, against 36.1% in the Centre and 30.7% in Alentejo. The United Kingdom was the leading external market in the Algarve, with 38.5% of the region's non-resident overnight stays."
+          "Resident overnight stays rose 5.5% to 9.2 million; non-resident stays came in at 19.4 million, up 0.3%. Dependence on external markets is very uneven: 83.2% of overnight stays in Greater Lisbon, 79.5% in Madeira and 76.6% in the Azores, against 36.1% in the Centre and 30.7% in the Alentejo. The United Kingdom was the leading external market in the Algarve, with 38.5% of the region's non-resident overnight stays."
         ]
       },
       "barList": {
@@ -414,18 +414,18 @@
           "Nas regiões que o INE destaca, o Alentejo cresceu 6,8% em dormidas, a Península de Setúbal e a RA Madeira 4,1% cada, e o Algarve ficou-se por 0,4%. O Centro foi a única região em terreno negativo, com -0,2%."
         ],
         "en": [
-          "Among the regions INE singles out, Alentejo grew 6.8% in overnight stays, the Setúbal Peninsula and Madeira 4.1% each, and the Algarve managed 0.4%. The Centre was the only region in negative territory, at -0.2%."
+          "Among the regions Statistics Portugal singles out, the Alentejo grew 6.8% in overnight stays, the Setúbal Peninsula and Madeira 4.1% each, and the Algarve managed 0.4%. The Centre was the only region in negative territory, at -0.2%."
         ]
       },
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
-          "pt": "O Centro perdeu dormidas (-0,2%) enquanto o país crescia 1,9%; a RA Madeira, no extremo oposto, registou o maior aumento do RevPAR do trimestre (+15,1%).",
-          "en": "The Centre lost overnight stays (-0.2%) while the country grew 1.9%; at the other end, Madeira posted the quarter's largest RevPAR increase (+15.1%)."
+          "pt": "O Centro perdeu dormidas (-0,2%) enquanto o país crescia 1,9%; no extremo oposto, a RA Madeira levou o RevPAR 15,1% acima do ano anterior.",
+          "en": "The Centre lost overnight stays (-0.2%) while the country grew 1.9%; at the other end, Madeira took RevPAR 15.1% above the year before."
         }
       }
     },
@@ -436,8 +436,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "A tarifa carregou a receita",
-        "en": "Rate carried revenue"
+        "pt": "A tarifa subiu mais do que o RevPAR",
+        "en": "ADR moved further than RevPAR"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -515,10 +515,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR do trimestre foi de 151,3 euros (+4,4%) e o RevPAR de 106,5 euros (+4,1%). O RevPAR cresceu menos do que o ADR, sinal de que a ocupação não acompanhou. Os proveitos totais somaram 2740,0 milhões de euros (+7,4%) e os de aposento 2171,9 milhões (+6,8%), ou seja, a receita fora do aposento cresceu mais depressa. O INE não publica taxas de ocupação trimestrais."
+          "No conjunto do trimestre, o ADR fixou-se em 151,3 euros (+4,4%) e o RevPAR em 106,5 euros (+4,1%). O RevPAR cresceu menos do que o ADR, sinal de que a ocupação não acompanhou. Os proveitos totais somaram 2740,0 milhões de euros (+7,4%) e os de aposento 2171,9 milhões (+6,8%): a diferença entre as duas taxas está fora do aposento. O INE não publica taxas de ocupação trimestrais."
         ],
         "en": [
-          "ADR for the quarter was EUR 151.3 (+4.4%) and RevPAR EUR 106.5 (+4.1%). RevPAR grew less than ADR, which means occupancy did not follow. Total revenue came to EUR 2740.0 million (+7.4%) and room revenue to EUR 2171.9 million (+6.8%), so revenue outside the room grew faster. INE publishes no quarterly occupancy rates."
+          "Across the quarter ADR settled at EUR 151.3 (+4.4%) and RevPAR at EUR 106.5 (+4.1%). RevPAR grew less than ADR, which means occupancy did not follow. Total revenue came to EUR 2,740.0 million (+7.4%) and room revenue to EUR 2,171.9 million (+6.8%): the difference between the two rates sits outside the room. Statistics Portugal publishes no quarterly occupancy rates."
         ]
       }
     },
@@ -530,8 +530,8 @@
       },
       "lens": {
         "headline": {
-          "pt": "Preço sim, utilização não",
-          "en": "Rate yes, utilisation no"
+          "pt": "O menor peso externo desde 2022",
+          "en": "The smallest external share since 2022"
         },
         "fact": {
           "pt": "Dormidas +1,9%, proveitos totais +7,4%, ADR +4,4% e RevPAR +4,1%.",
@@ -542,8 +542,8 @@
           "en": "Revenue per available room rose, but by less than rate: the gain came from charging more, not from filling more. With external markets close to a standstill (+0.3%), growth rested on residents (+5.5%), whose spread across the country differs from that of foreign demand."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, importa separar efeito preço e efeito ocupação antes de extrapolar o trimestre. Ativos muito expostos aos mercados externos, como na Grande Lisboa (83,2%) ou na RA Madeira (79,5%), dependem de um segmento que cresceu 0,3%; ativos com procura interna relevante entraram no trimestre com outra base.",
-          "en": "For owners and investors, price effect and occupancy effect should be separated before the quarter is extrapolated. Assets heavily exposed to external markets, as in Greater Lisbon (83.2%) or Madeira (79.5%), depend on a segment that grew 0.3%; assets with meaningful domestic demand entered the quarter on a different base."
+          "pt": "O que muda a decisão é a origem da procura de cada ativo: os muito expostos aos mercados externos, como na Grande Lisboa (83,2%) ou na RA Madeira (79,5%), dependem de um segmento que cresceu 0,3%; os que têm procura interna relevante entraram no trimestre com outra base. Antes de extrapolar, convém saber quanto do ganho é tarifa e quanto é ocupação.",
+          "en": "What changes the decision is where each asset's demand comes from: those heavily exposed to external markets, as in Greater Lisbon (83.2%) or Madeira (79.5%), depend on a segment that grew 0.3%; those with meaningful domestic demand entered the quarter on a different base. Before extrapolating, it is worth knowing how much of the gain is rate and how much is occupancy."
         }
       }
     },

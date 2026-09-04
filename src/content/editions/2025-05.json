@@ -25,8 +25,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | May 2025"
   },
   "takeaway": {
-    "pt": "O crescimento de maio veio apenas dos residentes. Os proveitos totais subiram 8,7% e o RevPAR 6,7%, mas a taxa líquida de ocupação-cama cedeu 0,5 p.p.: o valor adicional veio do preço, não de camas mais cheias.",
-    "en": "May's growth came from residents alone. Total revenue rose 8.7% and RevPAR 6.7%, but net bed occupancy gave up 0.5 pp: the extra value came from rate, not from fuller beds."
+    "pt": "O crescimento de maio veio apenas dos residentes. Os proveitos totais subiram 8,7% e o RevPAR 6,7%, acima do ADR (+5,8%): a ocupação-quarto ganhou 0,5 p.p. enquanto a ocupação-cama perdeu 0,5 p.p.",
+    "en": "May's growth came from residents alone. Total revenue rose 8.7% and RevPAR 6.7%, ahead of ADR at +5.8%: net room occupancy gained 0.5 pp while net bed occupancy lost 0.5 pp."
   },
   "sections": [
     {
@@ -74,14 +74,14 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 3,2 milhões de hóspedes e 7,8 milhões de dormidas, mais 2,8% e 1,3% do que um ano antes. Para esse acréscimo contribuíram apenas os residentes, com 2,0 milhões de dormidas (+5,6%), uma vez que os não residentes ficaram em 5,8 milhões (-0,1%), depois de +7,7% em abril.",
-          "O INE não assinalou qualquer efeito de calendário. Os proveitos totais chegaram a 717,0 milhões de euros (+8,7%) e os proveitos de aposento a 550,6 milhões (+8,8%), com o RevPAR em 83,4 euros (+6,7%) e o ADR em 128,9 euros (+5,8%), enquanto a taxa líquida de ocupação-cama ficou em 52,3%, menos 0,5 p.p.",
-          "Para quem opera ou financia um ativo, maio de 2025 é um mês a ler pelo preço: a receita subiu sem que a capacidade se enchesse mais, e a base externa deixou de acompanhar a interna."
+          "Só os residentes acrescentaram dormidas em maio: 2,0 milhões (+5,6%), contra 5,8 milhões de não residentes (-0,1%), depois de +7,7% em abril. No total foram 7,8 milhões de dormidas (+1,3%) e 3,2 milhões de hóspedes (+2,8%).",
+          "Os proveitos totais chegaram a 717,0 milhões de euros (+8,7%) e os proveitos de aposento a 550,6 milhões (+8,8%), com o RevPAR em 83,4 euros (+6,7%) e o ADR em 128,9 euros (+5,8%), enquanto a taxa líquida de ocupação-cama ficou em 52,3%, menos 0,5 p.p.",
+          "Para quem opera ou financia um ativo, maio de 2025 é um mês a ler pelo quarto vendido: a receita subiu com a ocupação-quarto a ganhar 0,5 p.p. e a ocupação-cama a perder 0,5 p.p., e a base externa deixou de acompanhar a interna."
         ],
         "en": [
-          "Tourist accommodation recorded 3.2 million guests and 7.8 million overnight stays, up 2.8% and 1.3% on a year earlier. Residents accounted for the whole of that gain, at 2.0 million stays (+5.6%), since non-residents stood at 5.8 million (-0.1%) after +7.7% in April.",
-          "Statistics Portugal flagged no calendar effect. Total revenue reached EUR 717.0 million (+8.7%) and room revenue EUR 550.6 million (+8.8%), with RevPAR at EUR 83.4 (+6.7%) and ADR at EUR 128.9 (+5.8%), while net bed occupancy came in at 52.3%, 0.5 pp lower.",
-          "For anyone operating or financing an asset, May 2025 is a month to read through rate: revenue rose without capacity being used more intensively, and the international base stopped keeping up with the domestic one."
+          "Only residents added overnight stays in May: 2.0 million (+5.6%), against 5.8 million non-resident stays (-0.1%) after +7.7% in April. The totals were 7.8 million overnight stays (+1.3%) and 3.2 million guests (+2.8%).",
+          "Total revenue reached EUR 717.0 million (+8.7%) and room revenue EUR 550.6 million (+8.8%), with RevPAR at EUR 83.4 (+6.7%) and ADR at EUR 128.9 (+5.8%), while net bed occupancy came in at 52.3%, 0.5 pp lower.",
+          "For anyone operating or financing an asset, May 2025 is a month to read through the room sold: revenue rose with net room occupancy up 0.5 pp and net bed occupancy down 0.5 pp, and the international base stopped keeping up with the domestic one."
         ]
       }
     },
@@ -209,10 +209,10 @@
       ],
       "reading": {
         "pt": [
-          "Leitura: os proveitos totais avançaram 8,7% contra 1,3% nas dormidas, e a taxa líquida de ocupação-cama cedeu 0,5 p.p.; a receita adicional veio do preço e do mix, não de mais camas ocupadas."
+          "Leitura: os proveitos totais avançaram 8,7% contra 1,3% nas dormidas, com o RevPAR (+6,7%) acima do ADR (+5,8%). A ocupação-quarto ganhou 0,5 p.p. e a ocupação-cama perdeu outro tanto: a receita adicional veio do preço e do quarto vendido."
         ],
         "en": [
-          "Reading: total revenue advanced 8.7% against 1.3% for overnight stays, and net bed occupancy gave up 0.5 pp; the additional euros came from rate and mix rather than from more beds sold."
+          "Reading: total revenue advanced 8.7% against 1.3% for overnight stays, with RevPAR (+6.7%) ahead of ADR (+5.8%). Net room occupancy added 0.5 pp and net bed occupancy lost the same: the additional revenue came from price and from the room sold."
         ]
       }
     },
@@ -272,10 +272,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes chegaram a 2,0 milhões (+5,6%) e as de não residentes ficaram em 5,8 milhões (-0,1%). Entre os dez principais mercados emissores, que valeram 75,8% das dormidas de não residentes, os Estados Unidos destacaram-se com +6,0%, seguidos da Itália (+5,6%) e do Canadá (+4,2%). O Brasil registou o maior decréscimo (-11,6%) e a Alemanha perdeu 7,7%, dois mercados cuja quebra pesa mais do que a sua quota em noites sugere."
+          "As dormidas de residentes chegaram a 2,0 milhões (+5,6%) e as de não residentes ficaram em 5,8 milhões (-0,1%). Entre os dez principais mercados emissores, que valeram 75,8% das dormidas de não residentes, os Estados Unidos destacaram-se com +6,0%, seguidos da Itália (+5,6%) e do Canadá (+4,2%). O Brasil registou o maior decréscimo (-11,6%) e a Alemanha perdeu 7,7%."
         ],
         "en": [
-          "Resident overnight stays reached 2.0 million (+5.6%) and non-resident stays stood at 5.8 million (-0.1%). The ten largest source markets supplied 75.8% of non-resident stays: the United States stood out at +6.0%, ahead of Italy (+5.6%) and Canada (+4.2%). Brazil posted the sharpest drop (-11.6%) and Germany lost 7.7%, two markets whose weakness weighs more than their share of nights suggests."
+          "Resident overnight stays reached 2.0 million (+5.6%) and non-resident stays stood at 5.8 million (-0.1%). The ten largest source markets supplied 75.8% of non-resident stays: the United States stood out at +6.0%, ahead of Italy (+5.6%) and Canada (+4.2%). Brazil posted the sharpest drop (-11.6%) and Germany lost 7.7%."
         ]
       },
       "barList": {
@@ -468,8 +468,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "O Algarve, a maior região em dormidas, foi a que mais perdeu: -3,1%, com residentes em -3,0% e não residentes em -3,1%.",
@@ -484,8 +484,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "O preço fez o trabalho, a ocupação não",
-        "en": "Rate did the work, occupancy did not"
+        "pt": "O quarto encheu-se mais, a cama menos",
+        "en": "Rooms filled better, beds did not"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -601,10 +601,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR situou-se em 128,9 euros (+5,8%) e o RevPAR em 83,4 euros (+6,7%). A taxa líquida de ocupação-cama desceu 0,5 p.p., para 52,3%, enquanto a taxa líquida de ocupação-quarto ganhou 0,5 p.p., para 64,7%. Os proveitos totais (717,0 milhões de euros, +8,7%) e os de aposento (550,6 milhões, +8,8%) assentam, portanto, na tarifa: sem ganho de ocupação-cama, é o ADR que explica o RevPAR."
+          "O ADR situou-se em 128,9 euros (+5,8%) e o RevPAR em 83,4 euros (+6,7%). A taxa líquida de ocupação-cama desceu 0,5 p.p., para 52,3%, enquanto a taxa líquida de ocupação-quarto ganhou 0,5 p.p., para 64,7%. Os proveitos totais (717,0 milhões de euros, +8,7%) e os de aposento (550,6 milhões, +8,8%) assentam, portanto, no preço e na ocupação-quarto: o RevPAR subiu 6,7%, acima dos 5,8% do ADR."
         ],
         "en": [
-          "ADR came in at EUR 128.9 (+5.8%) and RevPAR at EUR 83.4 (+6.7%). Net bed occupancy shed 0.5 pp to 52.3%, while net room occupancy added 0.5 pp to 64.7%. Total revenue of EUR 717.0 million (+8.7%) and room revenue of EUR 550.6 million (+8.8%) therefore rest on rate: with no gain in bed occupancy, ADR is what carries RevPAR."
+          "ADR came in at EUR 128.9 (+5.8%) and RevPAR at EUR 83.4 (+6.7%). Net bed occupancy shed 0.5 pp to 52.3%, while net room occupancy added 0.5 pp to 64.7%. Total revenue of EUR 717.0 million (+8.7%) and room revenue of EUR 550.6 million (+8.8%) therefore rest on price and on room occupancy: RevPAR rose 6.7%, ahead of ADR at 5.8%."
         ]
       }
     },
@@ -616,20 +616,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Receita de preço, sobre uma base de procura mais estreita",
-          "en": "Rate-driven revenue on a narrower demand base"
+          "pt": "Mais receita, sobre uma base de procura mais estreita",
+          "en": "More revenue on a narrower demand base"
         },
         "fact": {
           "pt": "Dormidas +1,3%, com residentes em +5,6% e não residentes em -0,1%; proveitos totais +8,7%, RevPAR +6,7%, ADR +5,8% e ocupação-cama -0,5 p.p.",
           "en": "Overnight stays +1.3%, with residents +5.6% and non-residents -0.1%; total revenue +8.7%, RevPAR +6.7%, ADR +5.8% and net bed occupancy -0.5 pp."
         },
         "interpretation": {
-          "pt": "Com a ocupação-cama a ceder, o ganho de RevPAR é quase todo ADR. O desempenho do ativo em maio dependeu da capacidade de fixar preço, e não de vender mais noites; ao mesmo tempo, o mercado externo deixou de compensar o interno.",
-          "en": "With bed occupancy giving way, the RevPAR gain is almost all ADR. Asset performance in May depended on the ability to hold rate rather than to sell more nights, and at the same time the international market stopped offsetting the domestic one."
+          "pt": "O RevPAR subiu mais do que o ADR, com a ocupação-quarto a somar 0,5 p.p. e a ocupação-cama a perder outros tantos. O desempenho do ativo em maio dependeu do preço e do quarto vendido, não da cama; ao mesmo tempo, o mercado externo deixou de compensar o interno.",
+          "en": "RevPAR rose faster than ADR, with net room occupancy adding 0.5 pp and net bed occupancy shedding the same. Asset performance in May rested on price and on the room sold rather than the bed, and at the same time the international market stopped offsetting the domestic one."
         },
         "implication": {
-          "pt": "Importa separar efeito preço e efeito volume antes de extrapolar o crescimento dos proveitos. Em ativos expostos ao Algarve, que ficou em -3,1%, ou ao mercado brasileiro, com -11,6%, a base estreitou-se e uma tarifa mais alta pode não se repetir se a ocupação continuar a ceder.",
-          "en": "Separate the price effect from the volume effect before extrapolating revenue growth. In assets exposed to the Algarve, at -3.1%, or to the Brazilian market at -11.6%, the base narrowed, and a higher rate may not repeat if occupancy keeps giving way."
+          "pt": "Importa separar efeito preço e efeito volume antes de extrapolar o crescimento dos proveitos. Em ativos expostos ao Algarve, que ficou em -3,1%, ou ao mercado brasileiro, com -11,6%, a base estreitou-se e um preço mais alto pode não se repetir se a ocupação continuar a ceder.",
+          "en": "Separate the price effect from the volume effect before extrapolating revenue growth. In assets exposed to the Algarve, at -3.1%, or to the Brazilian market at -11.6%, the base narrowed, and a higher price may not repeat if occupancy keeps giving way."
         }
       }
     },
@@ -646,16 +646,16 @@
         },
         "signals": [
           {
-            "pt": "Se as dormidas de não residentes voltam a crescer depois do -0,1% de maio.",
-            "en": "Whether non-resident overnight stays return to growth after May's -0.1%."
+            "pt": "O regresso dos não residentes ao crescimento, depois do -0,1% de maio.",
+            "en": "The return of non-residents to growth, after May's -0.1%."
           },
           {
             "pt": "Se o Algarve inverte os -3,1% à entrada da época alta.",
             "en": "Whether the Algarve reverses its -3.1% as the peak season starts."
           },
           {
-            "pt": "Se a ocupação-cama estabiliza ou se o RevPAR passa a depender só do ADR.",
-            "en": "Whether net bed occupancy stabilises, or RevPAR comes to rest on ADR alone."
+            "pt": "A ocupação-cama e a distância entre o RevPAR (+6,7%) e o ADR (+5,8%) em junho.",
+            "en": "Net bed occupancy and the gap between RevPAR (+6.7%) and ADR (+5.8%) in June."
           }
         ]
       }

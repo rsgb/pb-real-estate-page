@@ -25,7 +25,7 @@
     "en": "Tourism & Hospitality Brief | Portugal | March 2026"
   },
   "takeaway": {
-    "pt": "Março cresceu por fora: as dormidas de não residentes aumentaram 2,9%, para 4,0 milhões, e as de residentes diminuíram 3,1%. Com Carnaval e Páscoa no mesmo mês, os proveitos totais subiram 6,1% e o RevPAR 1,8%, com a ocupação-cama a perder 0,7 p.p.",
+    "pt": "Março cresceu com o mercado externo: as dormidas de não residentes aumentaram 2,9% e as de residentes diminuíram 3,1%. Com Carnaval e Páscoa no mesmo mês, os proveitos totais subiram 6,1% e o RevPAR 1,8%, com a ocupação-cama a perder 0,7 p.p.",
     "en": "March grew from abroad: non-resident overnight stays increased 2.9% to 4.0 million, while resident stays were 3.1% lower. With Carnival and Easter in the same month, total revenue rose 6.1% and RevPAR 1.8%, as net bed occupancy lost 0.7 pp."
   },
   "sections": [
@@ -62,10 +62,10 @@
         "en": "Non-residents carried March as residents pulled back"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "Todo o crescimento das dormidas veio do estrangeiro: não residentes +2,9%, residentes -3,1%, num mês com Carnaval e Páscoa.",
@@ -80,8 +80,8 @@
         ],
         "en": [
           "Statistics Portugal headlined the month on non-residents driving tourism activity. Overnight stays reached 5.6 million (+1.1%) and guests 2.3 million (+0.8%), in a month shaped by the moving calendar, with the Carnival and Easter periods.",
-          "Total revenue came to EUR 432.9 M (+6.1%) and room revenue to EUR 319.2 M (+5.6%), with ADR at EUR 98.6 (+2.7%), RevPAR at EUR 49.7 (+1.8%) and net bed occupancy at 39.5%, down 0.7 pp.",
-          "Operators sold their beds dearer and filled them less often."
+          "Total revenue came to EUR 432.9 million (+6.1%) and room revenue to EUR 319.2 million (+5.6%), with ADR at EUR 98.6 (+2.7%), RevPAR at EUR 49.7 (+1.8%) and net bed occupancy at 39.5%, down 0.7 pp.",
+          "Operators charged more per bed and filled fewer of them."
         ]
       }
     },
@@ -284,10 +284,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de não residentes aumentaram 2,9%, para 4,0 milhões, enquanto as de residentes ficaram em 1,6 milhões, menos 3,1%. Entre os mercados emissores, a Irlanda (+16,2%) e a Espanha (+14,0%) lideraram, à frente da Alemanha (+9,2%), dos Estados Unidos (+5,1%) e do Reino Unido (+2,2%); o Brasil foi o único a descer, 7,0%."
+          "As dormidas de não residentes aumentaram 2,9%, para 4,0 milhões, enquanto as de residentes ficaram em 1,6 milhões, menos 3,1%. Entre os mercados destacados, a Irlanda (+16,2%) e a Espanha (+14,0%) cresceram mais, à frente da Alemanha (+9,2%), dos Estados Unidos (+5,1%) e do Reino Unido (+2,2%); só o Brasil desceu, 7,0%."
         ],
         "en": [
-          "Non-resident overnight stays increased 2.9% to 4.0 million, while resident stays came to 1.6 million, 3.1% lower. Among source markets, Ireland (+16.2%) and Spain (+14.0%) led, ahead of Germany (+9.2%), the United States (+5.1%) and the United Kingdom (+2.2%); Brazil was the only one to give ground, by 7.0%."
+          "Non-resident overnight stays increased 2.9% to 4.0 million, while resident stays came to 1.6 million, 3.1% lower. Among the markets shown, Ireland (+16.2%) and Spain (+14.0%) grew most, ahead of Germany (+9.2%), the United States (+5.1%) and the United Kingdom (+2.2%); only Brazil fell, by 7.0%."
         ]
       },
       "barList": {
@@ -370,8 +370,8 @@
         "en": "REGIONS"
       },
       "headline": {
-        "pt": "Norte e Alentejo lideraram; o Oeste afundou",
-        "en": "The North and Alentejo led; the West sank"
+        "pt": "Norte e Alentejo lideraram; o Oeste e Vale do Tejo caiu 15,7%",
+        "en": "The North and Alentejo led; West and Tagus Valley fell 15.7%"
       },
       "barList": {
         "title": {
@@ -496,8 +496,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "Mais preço por noite, menos noites vendidas",
-        "en": "More price per night, fewer nights sold"
+        "pt": "A receita cresceu no preço e fora do quarto",
+        "en": "Revenue grew on price and outside the room"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -629,10 +629,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR chegou a 98,6 euros (+2,7%) e o RevPAR a 49,7 euros (+1,8%). A taxa líquida de ocupação-cama ficou em 39,5%, menos 0,7 p.p., e a taxa líquida de ocupação-quarto em 50,5%, menos 0,5 p.p. Os proveitos totais (432,9 milhões de euros, +6,1%) e os de aposento (319,2 milhões, +5,6%) cresceram acima do ADR, sinal de um mix de procura mais caro e de receita gerada fora do quarto."
+          "O ADR chegou a 98,6 euros (+2,7%) e o RevPAR a 49,7 euros (+1,8%). A taxa líquida de ocupação-cama ficou em 39,5%, menos 0,7 p.p., e a taxa líquida de ocupação-quarto em 50,5%, menos 0,5 p.p. Os proveitos totais (432,9 milhões de euros, +6,1%) cresceram acima dos de aposento (319,2 milhões, +5,6%): a receita fora do quarto pesou mais. Com as duas taxas de ocupação em queda, o acréscimo veio do preço e não de encher melhor as camas."
         ],
         "en": [
-          "ADR reached EUR 98.6 (+2.7%) and RevPAR EUR 49.7 (+1.8%). Net bed occupancy stood at 39.5%, down 0.7 pp, and net room occupancy at 50.5%, down 0.5 pp. Total revenue (EUR 432.9 M, +6.1%) and room revenue (EUR 319.2 M, +5.6%) grew faster than ADR, a sign of a dearer demand mix and of revenue earned outside the room."
+          "ADR reached EUR 98.6 (+2.7%) and RevPAR EUR 49.7 (+1.8%). Net bed occupancy stood at 39.5%, down 0.7 pp, and net room occupancy at 50.5%, down 0.5 pp. Total revenue (EUR 432.9 million, +6.1%) grew faster than room revenue (EUR 319.2 million, +5.6%): non-room revenue carried more weight. With both occupancy rates lower, the gain came from price and not from filling beds better."
         ]
       }
     },
@@ -652,12 +652,12 @@
           "en": "Non-residents +2.9%, residents -3.1%, total revenue +6.1%, ADR +2.7% and RevPAR +1.8%, with net bed occupancy down 0.7 pp."
         },
         "interpretation": {
-          "pt": "A receita por cama disponível ainda sobe, mas a base interna encolheu e o mês teve dois feriados móveis. O desempenho do ativo passou a depender de mercados emissores que mudam de destino de um ano para o outro.",
-          "en": "Revenue per available bed still rises, but the domestic base shrank and the month carried two moving holidays. Asset performance now leans on source markets that switch destination from one year to the next."
+          "pt": "A receita por quarto disponível ainda sobe, mas a base interna encolheu e o mês teve dois feriados móveis. O desempenho do ativo passou a depender de mercados emissores que mudam de destino de um ano para o outro.",
+          "en": "Revenue per available room still rises, but the domestic base shrank and the month carried two moving holidays. Asset performance now leans on source markets that switch destination from one year to the next."
         },
         "implication": {
           "pt": "Importa separar efeito calendário e efeito mercado antes de projetar o resto do ano. Em ativos que vivem do residente, convém rever a previsão de abril; em ativos com clientela irlandesa, espanhola e alemã, a pergunta é a que preço essa procura volta.",
-          "en": "Separate the calendar effect from the market effect before projecting the rest of the year. Where the resident is the core client, revise the April forecast; where Irish, Spanish and German custom is, the question is at what price that demand returns."
+          "en": "Separate the calendar effect from the market effect before projecting the rest of the year. Where the resident is the core client, revise the April forecast; where the guests are Irish, Spanish or German, the question is at what price that demand comes back."
         }
       }
     },
@@ -682,8 +682,8 @@
             "en": "How much of Easter falls in April and what is left of the March base."
           },
           {
-            "pt": "Se o ADR (+2,7%) continua a compensar a ocupação-cama, já com menos 0,7 p.p.",
-            "en": "Whether ADR (+2.7%) keeps offsetting net bed occupancy, already 0.7 pp lower."
+            "pt": "Se o Oeste e Vale do Tejo recupera de uma quebra de 15,7%.",
+            "en": "Whether West and Tagus Valley recovers from a 15.7% fall."
           }
         ]
       }

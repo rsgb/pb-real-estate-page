@@ -25,8 +25,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | May 2026"
   },
   "takeaway": {
-    "pt": "As dormidas de residentes voltaram a crescer em maio, +6,7%, depois da queda de abril. Os proveitos totais subiram 5,7%, acima das dormidas (+2,5%), mas a ocupação-cama cedeu 0,7 p.p.: o valor veio do preço, não da capacidade utilizada.",
-    "en": "Resident overnight stays returned to growth in May, up 6.7% after a negative April. Total revenue rose 5.7%, ahead of the 2.5% in overnight stays, while net bed occupancy lost 0.7 pp. The value came from price, not from capacity used."
+    "pt": "As dormidas de residentes voltaram a crescer em maio, +6,7%, depois da queda de abril. Os proveitos totais subiram 5,7%, acima das dormidas (+2,5%), mas a ocupação-cama cedeu 0,7 p.p.: o valor veio do preço, não da ocupação.",
+    "en": "Resident overnight stays returned to growth in May, up 6.7% after a negative April. Total revenue rose 5.7%, ahead of the 2.5% in overnight stays, while net bed occupancy lost 0.7 pp. The value came from price, not from higher occupancy."
   },
   "sections": [
     {
@@ -76,12 +76,12 @@
         "pt": [
           "O alojamento turístico registou 3,3 milhões de hóspedes e 8,0 milhões de dormidas, mais 3,7% e 2,5% do que em maio de 2025, com o INE a rever em baixa ambas as variações na divulgação do mês seguinte.",
           "Os proveitos totais atingiram 755,7 milhões de euros (+5,7%) e os proveitos de aposento 575,1 milhões (+4,9%), mas o RevPAR ficou em 84,0 euros, apenas mais 0,6%, porque a taxa líquida de ocupação-cama desceu 0,7 p.p., para 52,2%.",
-          "O valor cresceu mais depressa do que o volume, com o preço a compensar capacidade menos utilizada, e a média nacional esconde a quebra de 11,3% do mercado francês."
+          "A média nacional esconde a quebra de 11,3% do mercado francês. Para quem detém ativos, o mês distingue-se pela origem da procura, não pelo total."
         ],
         "en": [
           "Tourist accommodation recorded 3.3 million guests and 8.0 million overnight stays, up 3.7% and 2.5% on May 2025, with Statistics Portugal revising both changes down in the following release.",
           "Total revenue reached EUR 755.7 million, up 5.7%, and room revenue EUR 575.1 million, up 4.9%, yet RevPAR stood at EUR 84.0, only 0.6% higher, because net bed occupancy dropped 0.7 pp to 52.2%.",
-          "Value grew faster than volume, with price covering for capacity that was less used, and the national average hides an 11.3% drop in the French market."
+          "The national average hides an 11.3% drop in the French market. For owners, the month is defined by where demand comes from, not by the total."
         ]
       }
     },
@@ -228,7 +228,7 @@
           "Leitura: os proveitos totais cresceram 5,7% e as dormidas 2,5%; a taxa líquida de ocupação-cama perdeu 0,7 p.p. O ganho veio do preço médio, não de mais camas ocupadas."
         ],
         "en": [
-          "Reading: total revenue grew 5.7% against 2.5% for overnight stays, while net bed occupancy lost 0.7 pp. The gain came from average price, not from more beds sold."
+          "Reading: total revenue grew 5.7% against 2.5% for overnight stays, while net bed occupancy lost 0.7 pp. The gain came from average price, not from more bed nights occupied."
         ]
       }
     },
@@ -239,8 +239,8 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "O mercado interno voltou a puxar a procura",
-        "en": "The domestic market pulled demand again"
+        "pt": "Os residentes recuperaram; os não residentes ficaram em +1,1%",
+        "en": "Residents rebounded; non-residents held at +1.1%"
       },
       "indicators": [
         {
@@ -284,10 +284,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes aumentaram 6,7%, para 2,1 milhões, depois de terem descido 1,2% em abril; as de não residentes cresceram 1,1%, para 5,9 milhões. Entre os dez principais mercados emissores, o Brasil (+9,3%) e a Alemanha (+8,6%) lideraram, os Estados Unidos subiram 5,2% e o Reino Unido cedeu 1,1%. França registou a maior quebra do mês, -11,3%."
+          "As dormidas de residentes aumentaram 6,7%, para 2,1 milhões, depois de terem descido 1,2% em abril; as de não residentes cresceram 1,1%, para 5,9 milhões. Entre os mercados destacados, o Brasil (+9,3%) e a Alemanha (+8,6%) tiveram os maiores aumentos, os Estados Unidos subiram 5,2% e o Reino Unido cedeu 1,1%. A França foi a maior quebra desse conjunto, -11,3%."
         ],
         "en": [
-          "Resident overnight stays rose 6.7% to 2.1 million after a 1.2% drop in April, while non-resident stays added 1.1% to 5.9 million. Among the ten largest source markets, Brazil (+9.3%) and Germany (+8.6%) led, the United States gained 5.2% and the United Kingdom gave back 1.1%. France posted the sharpest drop of the month, -11.3%."
+          "Resident overnight stays rose 6.7% to 2.1 million after a 1.2% drop in April, while non-resident stays added 1.1% to 5.9 million. Among the markets shown, Brazil (+9.3%) and Germany (+8.6%) posted the largest increases, the United States gained 5.2% and the United Kingdom was 1.1% lower. France was the largest drop in that group, -11.3%."
         ]
       },
       "barList": {
@@ -362,8 +362,8 @@
         "en": "REGIONS"
       },
       "headline": {
-        "pt": "Alentejo à frente, Madeira e Oeste para trás",
-        "en": "Alentejo ahead, Madeira and the West behind"
+        "pt": "O Algarve pesou 26,3%; o Alentejo cresceu mais",
+        "en": "The Algarve held 26.3%; Alentejo grew fastest"
       },
       "barList": {
         "title": {
@@ -463,10 +463,10 @@
       },
       "body": {
         "pt": [
-          "O Algarve (26,3%), a Grande Lisboa (23,6%) e o Norte (19,1%) concentraram 69,0% do total de dormidas. O Alentejo (+10,0%) e o Norte (+6,7%) cresceram acima da média nacional; o Centro (-0,6%), o Oeste e Vale do Tejo (-1,5%) e a RA Madeira (-2,2%) ficaram em terreno negativo. Todas as regiões aumentaram proveitos."
+          "O Algarve (26,3%), a Grande Lisboa (23,6%) e o Norte (19,1%) concentraram 69,0% do total de dormidas. O Alentejo (+10,0%) e o Norte (+6,7%) cresceram acima da média nacional; o Centro (-0,6%), o Oeste e Vale do Tejo (-1,5%) e a RA Madeira (-2,2%) ficaram em terreno negativo. Todas as regiões aumentaram proveitos, com os maiores ganhos no Alentejo: +22,9% nos proveitos totais e +21,8% nos de aposento."
         ],
         "en": [
-          "The Algarve (26.3%), Greater Lisbon (23.6%) and the North (19.1%) together held 69.0% of all overnight stays. Alentejo (+10.0%) and the North (+6.7%) grew above the national average, while the Centre (-0.6%), the West and Tagus Valley (-1.5%) and Madeira (-2.2%) were negative. Every region increased revenue."
+          "The Algarve (26.3%), Greater Lisbon (23.6%) and the North (19.1%) together held 69.0% of all overnight stays. Alentejo (+10.0%) and the North (+6.7%) grew above the national average, while the Centre (-0.6%), the West and Tagus Valley (-1.5%) and Madeira (-2.2%) were negative. Every region increased revenue, with the largest gains in Alentejo: +22.9% in total revenue and +21.8% in room revenue."
         ]
       },
       "callout": {
@@ -476,8 +476,8 @@
           "en": "REGION IN FOCUS"
         },
         "body": {
-          "pt": "O Alentejo somou o maior aumento de dormidas (+10,0%) e os maiores ganhos de receita do país: +22,9% nos proveitos totais e +21,8% nos proveitos de aposento.",
-          "en": "Alentejo combined the largest gain in overnight stays (+10.0%) with the country's largest revenue increases: +22.9% in total revenue and +21.8% in room revenue."
+          "pt": "O Algarve concentrou 26,3% das dormidas do país e subiu 4,7%, à frente da Grande Lisboa (+1,0%). A RA Madeira foi a exceção, com -2,2%.",
+          "en": "The Algarve held 26.3% of the country's overnight stays and added 4.7%, ahead of Greater Lisbon (+1.0%). Madeira was the exception, at -2.2%."
         }
       }
     },
@@ -617,10 +617,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR chegou a 130,9 euros (+2,4%) e o RevPAR a 84,0 euros (+0,6%). A diferença está na ocupação: 52,2% na taxa líquida de ocupação-cama, menos 0,7 p.p., e 64,1% na de ocupação-quarto, menos 1,1 p.p. O crescimento de 5,7% dos proveitos totais reflete preço e mais oferta em operação, não uma utilização mais intensa da capacidade instalada."
+          "O ADR chegou a 130,9 euros (+2,4%) e o RevPAR a 84,0 euros (+0,6%). A diferença está na ocupação: 52,2% na taxa líquida de ocupação-cama, menos 0,7 p.p., e 64,1% na de ocupação-quarto, menos 1,1 p.p. O crescimento de 5,7% dos proveitos totais reflete o preço: com o RevPAR em +0,6%, o acréscimo não veio de uma utilização mais intensa das camas."
         ],
         "en": [
-          "ADR reached EUR 130.9, up 2.4%, and RevPAR EUR 84.0, up 0.6%. The gap sits in occupancy: net bed occupancy of 52.2%, down 0.7 pp, and net room occupancy of 64.1%, down 1.1 pp. Total revenue growth of 5.7% reflects price and more supply in operation, not heavier use of the capacity in place."
+          "ADR reached EUR 130.9, up 2.4%, and RevPAR EUR 84.0, up 0.6%. The gap sits in occupancy: net bed occupancy of 52.2%, down 0.7 pp, and net room occupancy of 64.1%, down 1.1 pp. Total revenue growth of 5.7% reflects price: with RevPAR at +0.6%, the gain did not come from heavier use of the beds."
         ]
       }
     },
@@ -632,16 +632,16 @@
       },
       "lens": {
         "headline": {
-          "pt": "O valor cresceu, a utilização não",
-          "en": "Value grew, utilisation did not"
+          "pt": "O total subiu; a receita por quarto disponível não",
+          "en": "The total rose; revenue per available room did not"
         },
         "fact": {
           "pt": "Dormidas +2,5%, proveitos totais +5,7%, RevPAR +0,6% e taxa líquida de ocupação-cama -0,7 p.p.",
           "en": "Overnight stays +2.5%, total revenue +5.7%, RevPAR +0.6% and net bed occupancy -0.7 pp."
         },
         "interpretation": {
-          "pt": "O aumento dos proveitos veio do preço e de mais oferta em operação, enquanto o RevPAR ficou praticamente parado. Não é poder de fixação de preços generalizado: cada quarto disponível rendeu quase o mesmo que um ano antes.",
-          "en": "The revenue increase came from price and from more supply in operation, while RevPAR barely moved. This is not broad pricing power: each available room earned almost what it earned a year earlier."
+          "pt": "O aumento dos proveitos veio do preço, enquanto o RevPAR ficou praticamente parado. Não é poder de fixação de preços generalizado: cada quarto disponível rendeu quase o mesmo que um ano antes.",
+          "en": "The revenue increase came from price, while RevPAR barely moved. This is not broad pricing power: each available room earned almost what it earned a year earlier."
         },
         "implication": {
           "pt": "Para quem detém ou financia ativos, a pergunta de maio é a produtividade por cama e por quarto, e não o total faturado. Ativos expostos ao mercado francês e ao britânico precisam de um plano de substituição de procura; o Alentejo e o Norte mostram onde volume e receita ainda crescem em conjunto.",

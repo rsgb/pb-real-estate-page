@@ -67,20 +67,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "O valor cresceu bem acima do volume: as dormidas aumentaram 2,1% e os proveitos totais 7,2%, num ano em que o mercado interno subiu 5,4% e o externo apenas 0,8%.",
-          "en": "Value grew well ahead of volume: overnight stays increased 2.1% and total revenue 7.2%, in a year when the domestic market rose 5.4% and foreign markets only 0.8%."
+          "pt": "O ano acrescentou 7,2% de proveitos totais sobre 2,1% de dormidas, com o mercado interno a subir 5,4% e o externo 0,8%.",
+          "en": "The year added 7.2% of total revenue on 2.1% of overnight stays, with the domestic market up 5.4% and the external market 0.8%."
         }
       },
       "body": {
         "pt": [
-          "O INE fechou o ano com a manchete de que a atividade turística continuou a abrandar: as chegadas de turistas não residentes atingiram 29,9 milhões, um acréscimo de 3,3% depois de 9,3% no ano anterior. Nos estabelecimentos de alojamento turístico, os resultados definitivos apontam para 32,5 milhões de hóspedes (+2,8%) e 82,0 milhões de dormidas (+2,1%), abaixo da primeira leitura de 82,1 milhões e +2,2%.",
-          "O calendário marcou o percurso: o Carnaval passou de fevereiro para março e a Páscoa de março para abril, o que tirou dormidas a fevereiro (-2,5%) e a março (-2,9%) e as devolveu em abril (+8,9%). Do lado do valor, os proveitos totais somaram 7154,4 milhões de euros (+7,2%) e os de aposento 5483,9 milhões (+6,8%), com o crescimento da receita a perder força ao longo do ano.",
-          "O INE não publica RevPAR, ADR nem taxa líquida de ocupação-cama anuais para esta série, pelo que o rendimento por quarto só é observável mês a mês. Para quem detém ou financia ativos, a leitura do ano é simples: o crescimento veio do valor de cada noite vendida e não de mais noites, e a distância entre regiões e mercados emissores foi maior do que a média nacional sugere."
+          "O INE fechou o ano com a manchete de que a atividade turística continuou a abrandar: as chegadas de turistas não residentes, medidas para o conjunto do país e não para esta série, atingiram 29,9 milhões, um acréscimo de 3,3% depois de 9,3% no ano anterior. Nos estabelecimentos de alojamento turístico, os resultados definitivos apontam para 32,5 milhões de hóspedes (+2,8%) e 82,0 milhões de dormidas (+2,1%), abaixo da primeira leitura de 82,1 milhões e +2,2%.",
+          "O calendário marcou o percurso: o Carnaval passou de fevereiro para março e a Páscoa de março para abril, o que tirou dormidas a fevereiro (-2,5%) e a março (-2,9%) e as devolveu em abril (+8,9%). O ano teve dois andamentos: um 1.º trimestre travado pelo calendário e um 2.º a devolver o volume, seguidos de um verão em desaceleração, de +3,9% em julho para +1,3% em agosto e +0,6% em setembro, e de um 4.º trimestre outra vez irregular, com +2,2% em outubro, +0,7% em novembro e +3,0% em dezembro. Do lado do valor, os proveitos totais somaram 7154,4 milhões de euros (+7,2%) e os de aposento 5483,9 milhões (+6,8%), com o crescimento da receita a perder força ao longo do ano.",
+          "O ano lê-se de forma simples para quem detém ou financia ativos: o crescimento veio do valor de cada noite vendida e não de mais noites, e a distância entre regiões e mercados emissores foi maior do que a média nacional sugere. 2026 começa de uma base em que o mercado interno já fez o trabalho e o externo quase não se moveu."
         ],
         "en": [
-          "Statistics Portugal closed the year with the headline that tourism activity continued to slow: arrivals of non-resident tourists reached 29.9 million, up 3.3% after 9.3% the year before. In tourist accommodation establishments, the definitive results give 32.5 million guests (+2.8%) and 82.0 million overnight stays (+2.1%), below the first reading of 82.1 million and +2.2%.",
-          "The calendar shaped the path: Carnival moved from February to March and Easter from March to April, taking overnight stays out of February (-2.5%) and March (-2.9%) and giving them back in April (+8.9%). On the value side, total revenue came to EUR 7,154.4 million (+7.2%) and room revenue to EUR 5,483.9 million (+6.8%), with revenue growth losing pace as the year went on.",
-          "Statistics Portugal publishes no annual RevPAR, ADR or net bed occupancy for this series, so room yield can only be read month by month. For owners and lenders the year reads simply: growth came from the value of each night sold rather than from more nights, and the distance between regions and source markets was wider than the national average suggests."
+          "Statistics Portugal closed the year with the headline that tourism activity continued to slow: arrivals of non-resident tourists, measured for the country as a whole and not for this series, reached 29.9 million, up 3.3% after 9.3% the year before. In tourist accommodation establishments, the definitive results give 32.5 million guests (+2.8%) and 82.0 million overnight stays (+2.1%), below the first reading of 82.1 million and +2.2%.",
+          "The calendar shaped the path: Carnival moved from February to March and Easter from March to April, taking overnight stays out of February (-2.5%) and March (-2.9%) and giving them back in April (+8.9%). The year had two movements: a first quarter held back by the calendar and a second that returned the volume, then a summer that decelerated, from +3.9% in July to +1.3% in August and +0.6% in September, and a fourth quarter uneven again, at +2.2% in October, +0.7% in November and +3.0% in December. On the value side, total revenue came to EUR 7,154.4 million (+7.2%) and room revenue to EUR 5,483.9 million (+6.8%), with revenue growth losing pace as the year went on.",
+          "The year reads simply for owners and lenders: growth came from the value of each night sold rather than from more nights, and the distance between regions and source markets was wider than the national average suggests. 2026 starts from a base in which the domestic market has already done the work and the external one barely moved."
         ]
       }
     },
@@ -91,8 +91,8 @@
         "en": "KEY INDICATORS"
       },
       "headline": {
-        "pt": "Os proveitos cresceram, o volume quase não se moveu",
-        "en": "Revenue grew; volume barely moved"
+        "pt": "O ano somou receita sem somar noites",
+        "en": "A year that added revenue without adding nights"
       },
       "indicators": [
         {
@@ -185,7 +185,7 @@
           "Leitura: os proveitos totais subiram 7,2% e os de aposento 6,8%, contra 2,1% nas dormidas e 2,8% nos hóspedes. O ano acrescentou receita sem acrescentar volume equivalente, e fê-lo com o mercado interno (+5,4%) muito à frente do externo (+0,8%)."
         ],
         "en": [
-          "Reading: total revenue rose 7.2% and room revenue 6.8%, against 2.1% for overnight stays and 2.8% for guests. The year added revenue without adding matching volume, and it did so with the domestic market (+5.4%) far ahead of foreign markets (+0.8%)."
+          "Reading: total revenue rose 7.2% and room revenue 6.8%, against 2.1% for overnight stays and 2.8% for guests. The year added revenue without adding matching volume, and it did so with the domestic market (+5.4%) far ahead of external markets (+0.8%)."
         ]
       }
     },
@@ -237,10 +237,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes chegaram a 25,1 milhões, mais 5,4%, enquanto as de não residentes ficaram em 57,0 milhões, mais 0,8%. O mercado externo continua a dominar o total, mas foi a procura interna que gerou o crescimento. O Reino Unido manteve-se como principal mercado emissor, com 17,7% das dormidas de não residentes, apesar de uma diminuição de 1,5%. Seguiram-se a Alemanha (11,3% do total), os Estados Unidos (9,6%), a Espanha (9,1%) e a França (7,4%). Os maiores aumentos vieram do Canadá (+5,8%) e dos Estados Unidos (+4,9%); as maiores quedas, de França (-7,0%) e Espanha (-5,2%). A publicação anual assinala ainda que a sazonalidade desceu para o valor mais baixo desde 2013."
+          "As dormidas de residentes chegaram a 25,1 milhões, mais 5,4%, enquanto as de não residentes ficaram em 57,0 milhões, mais 0,8%. O mercado externo continuou a dominar o total, mas foi a procura interna que gerou o crescimento. O Reino Unido manteve-se como principal mercado emissor, com 17,7% das dormidas de não residentes, apesar de uma diminuição de 1,5%. Seguiram-se a Alemanha (11,3% do total), os Estados Unidos (9,6%), a Espanha (9,1%) e a França (7,4%). Os maiores aumentos vieram do Canadá (+5,8%) e dos Estados Unidos (+4,9%); as maiores quedas, de França (-7,0%) e Espanha (-5,2%). A taxa de sazonalidade desceu para 36,4%, o valor mais baixo desde 2013, e foi mais elevada entre os residentes (40,4%) do que entre os não residentes (34,4%). Na generalidade dos meios de alojamento, as dormidas de não residentes representaram 67,1% do total, um dos anos com maior dependência dos mercados internacionais desde 2013."
         ],
         "en": [
-          "Resident overnight stays reached 25.1 million, up 5.4%, while non-resident stays came to 57.0 million, up 0.8%. Foreign markets still dominate the total, but domestic demand produced the growth. The United Kingdom remained the leading source market, with 17.7% of non-resident overnight stays, despite a decrease of 1.5%. Germany followed with 11.3% of the total, ahead of the United States (9.6%), Spain (9.1%) and France (7.4%). The largest gains came from Canada (+5.8%) and the United States (+4.9%); the largest losses from France (-7.0%) and Spain (-5.2%). The annual publication also notes that seasonality eased to its lowest level since 2013."
+          "Resident overnight stays reached 25.1 million, up 5.4%, while non-resident stays came to 57.0 million, up 0.8%. External markets still dominated the total, but domestic demand produced the growth. The United Kingdom remained the leading source market, with 17.7% of non-resident overnight stays, despite a decrease of 1.5%. Germany followed with 11.3% of the total, ahead of the United States (9.6%), Spain (9.1%) and France (7.4%). The largest gains came from Canada (+5.8%) and the United States (+4.9%); the largest losses from France (-7.0%) and Spain (-5.2%). The seasonality rate fell to 36.4%, its lowest since 2013, and was higher among residents (40.4%) than among non-residents (34.4%). Across all accommodation types, non-resident overnight stays accounted for 67.1% of the total, one of the years with the greatest dependence on international markets since 2013."
         ]
       },
       "barList": {
@@ -423,7 +423,7 @@
         ]
       },
       "callout": {
-        "kind": "attention",
+        "kind": "conclusion",
         "title": {
           "pt": "REGIÃO EM DESTAQUE",
           "en": "REGION IN FOCUS"
@@ -501,20 +501,20 @@
       },
       "lens": {
         "headline": {
-          "pt": "Um ano ganho no preço, não no volume",
-          "en": "A year won on price, not on volume"
+          "pt": "O ano de menor sazonalidade desde 2013",
+          "en": "The least seasonal year since 2013"
         },
         "fact": {
-          "pt": "Dormidas +2,1% e hóspedes +2,8%, contra proveitos totais +7,2% e proveitos de aposento +6,8%; residentes +5,4% e não residentes +0,8%.",
-          "en": "Overnight stays +2.1% and guests +2.8%, against total revenue +7.2% and room revenue +6.8%; residents +5.4% and non-residents +0.8%."
+          "pt": "Dormidas +2,1% e hóspedes +2,8%, contra proveitos totais +7,2% e proveitos de aposento +6,8%; residentes +5,4% e não residentes +0,8%; taxa de sazonalidade 36,4%.",
+          "en": "Overnight stays +2.1% and guests +2.8%, against total revenue +7.2% and room revenue +6.8%; residents +5.4% and non-residents +0.8%; seasonality rate 36.4%."
         },
         "interpretation": {
-          "pt": "A receita cresceu sem que o volume acompanhasse, o que coloca o desempenho do ativo no valor de cada noite e no mix de procura. Sem RevPAR, ADR e ocupação anuais publicados para esta série, o rendimento não pode ser afirmado ao nível do ano; o que se observa é receita a subir sobre uma base de noites quase estável, com dispersão regional de +6,3% no Alentejo a +0,4% no Algarve.",
-          "en": "Revenue grew without volume keeping pace, which places asset performance in the value of each night and in the demand mix. With no annual RevPAR, ADR or occupancy published for this series, yield cannot be asserted at year level; what can be seen is revenue rising on an almost flat base of nights, with regional dispersion from +6.3% in the Alentejo to +0.4% in the Algarve."
+          "pt": "A receita cresceu sem que o volume acompanhasse, o que coloca o desempenho do ativo no valor de cada noite e no mix de procura. O rendimento por quarto não se observa ao nível do ano; o que se observa é receita a subir sobre uma base de noites quase estável, com dispersão regional de +6,3% no Alentejo a +0,4% no Algarve. Uma sazonalidade de 36,4% distribui melhor o ano pelos meses e reduz o peso do pico no rendimento anual do ativo.",
+          "en": "Revenue grew without volume keeping pace, which places asset performance in the value of each night and in the demand mix. Room yield cannot be observed at year level; what can be seen is revenue rising on an almost flat base of nights, with regional dispersion from +6.3% in the Alentejo to +0.4% in the Algarve. Seasonality of 36.4% spreads the year more evenly across the months and lowers how much of an asset's annual yield depends on the peak."
         },
         "implication": {
-          "pt": "Importa separar efeito preço de efeito mix antes de projetar receita para o ano seguinte. A exposição ao mercado interno, que cresceu 5,4%, protegeu resultados; a exposição aos mercados britânico, espanhol e francês custou volume. Ativos no Algarve e na Grande Lisboa precisam de procura nova e não apenas de tarifa, e qualquer avaliação deve testar até onde o preço se sustenta com ocupação estável.",
-          "en": "Separate the price effect from the mix effect before projecting revenue into the next year. Exposure to the domestic market, up 5.4%, protected results; exposure to the British, Spanish and French markets cost volume. Assets in the Algarve and Greater Lisbon need new demand rather than only higher rates, and any valuation should test how far price holds with occupancy flat."
+          "pt": "Antes de projetar receita para o ano seguinte, é preciso saber quanto do ganho é preço e quanto é mix. A exposição ao mercado interno, que cresceu 5,4%, protegeu resultados; a exposição aos mercados britânico, espanhol e francês custou volume. Ativos no Algarve e na Grande Lisboa precisam de procura nova e não apenas de tarifa, e qualquer avaliação deve testar até onde o preço se sustenta com ocupação estável.",
+          "en": "Before projecting revenue into the next year, it is necessary to know how much of the gain is price and how much is mix. Exposure to the domestic market, up 5.4%, protected results; exposure to the British, Spanish and French markets cost volume. Assets in the Algarve and Greater Lisbon need new demand rather than only higher rates, and any valuation should test how far price holds with occupancy flat."
         }
       }
     },
@@ -539,8 +539,8 @@
             "en": "Whether the Algarve moves off 0.4% growth and Greater Lisbon accelerates beyond 0.9%, or whether growth keeps coming from the smaller regions."
           },
           {
-            "pt": "Se os proveitos voltam a crescer acima das dormidas quando o mercado interno abrandar, ou se o preço já esgotou a margem que teve em 2025.",
-            "en": "Whether revenue keeps growing faster than overnight stays once the domestic market slows, or whether pricing has already used up the room it had in 2025."
+            "pt": "Se os proveitos voltam a crescer acima das dormidas quando o mercado interno abrandar, ou se o RevPAR passa a crescer abaixo do ADR, sinal de que o preço esgotou a margem.",
+            "en": "Whether revenue keeps growing faster than overnight stays once the domestic market slows, or whether RevPAR starts growing below ADR, the sign that pricing has used up its room."
           }
         ]
       }

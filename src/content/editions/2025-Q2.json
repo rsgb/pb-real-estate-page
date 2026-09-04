@@ -68,19 +68,19 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "O trimestre recuperou volume e acelerou em valor: as dormidas cresceram 4,2% e os proveitos totais 9,4%, com a Páscoa a ocorrer em abril e não em março, como no ano anterior.",
-          "en": "The quarter recovered volume and accelerated in value: overnight stays grew 4.2% and total revenue 9.4%, with Easter falling in April rather than in March as a year earlier."
+          "pt": "O trimestre recuperou volume e acelerou em valor: as dormidas cresceram 4,2% e os proveitos totais 9,4%, com a Páscoa a ocorrer no 2.º trimestre, enquanto no ano anterior se concentrou essencialmente no 1.º.",
+          "en": "The quarter recovered volume and accelerated in value: overnight stays grew 4.2% and total revenue 9.4%, with Easter falling in the second quarter, against essentially the first quarter a year earlier."
         }
       },
       "body": {
         "pt": [
           "O setor do alojamento turístico registou 9,2 milhões de hóspedes (+4,3%) e 23,0 milhões de dormidas (+4,2%), com os resultados influenciados pela estrutura móvel do calendário: a Páscoa ocorreu no 2.º trimestre, enquanto no ano anterior se concentrou essencialmente no 1.º trimestre.",
-          "Os proveitos totais atingiram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), com o RevPAR em 80,9 euros (+7,3%) e o ADR em 127,5 euros (+5,3%).",
+          "Os proveitos totais atingiram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), com o RevPAR em 80,9 euros (+7,3%) e o ADR em 127,5 euros (+5,3%). A recuperação não foi uniforme: abril fez +8,9% nas dormidas e +12,6% nos proveitos, maio +1,3% e +8,7%, junho +3,1% e +7,6%.",
           "O INE voltou a ler o trimestre pela dependência dos mercados externos e, desta vez, a Grande Lisboa (82,9%) encabeçou a lista, à frente da RA Madeira (82,4%) e do Algarve (81,4%)."
         ],
         "en": [
           "Tourist accommodation recorded 9.2 million guests (+4.3%) and 23.0 million overnight stays (+4.2%), with the results shaped by the moving calendar: Easter landed in the second quarter this year and mainly in the first quarter a year earlier.",
-          "Total revenue reached EUR 2,039.5 million (+9.4%) and room revenue EUR 1,568.7 million (+9.8%), with RevPAR at EUR 80.9 (+7.3%) and ADR at EUR 127.5 (+5.3%).",
+          "Total revenue reached EUR 2,039.5 million (+9.4%) and room revenue EUR 1,568.7 million (+9.8%), with RevPAR at EUR 80.9 (+7.3%) and ADR at EUR 127.5 (+5.3%). The recovery was not even: April delivered +8.9% in overnight stays and +12.6% in revenue, May +1.3% and +8.7%, June +3.1% and +7.6%.",
           "Statistics Portugal again read the quarter through dependence on external markets and, this time, Greater Lisbon (82.9%) topped the list, ahead of Madeira (82.4%) and the Algarve (81.4%)."
         ]
       }
@@ -268,10 +268,10 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes chegaram a 6,4 milhões (+7,6%) e as de não residentes a 16,7 milhões (+2,9%); os mercados externos mantiveram-se dominantes, com 72,3% do total. A divulgação trimestral não lista os dez principais mercados emissores: mede a dependência de cada região dos mercados externos, e o contraste vai da Grande Lisboa (82,9%) ao Centro (34,6%) e ao Alentejo (36,0%). O Norte foi a região menos dependente do seu principal mercado externo (15,0%), a base de procura mais diversificada do trimestre."
+          "As dormidas de residentes chegaram a 6,4 milhões (+7,6%) e as de não residentes a 16,7 milhões (+2,9%); os mercados externos mantiveram-se dominantes, com 72,3% do total. O que o trimestre mede não são mercados, é dependência: o contraste vai da Grande Lisboa (82,9%) ao Centro (34,6%) e ao Alentejo (36,0%). O Norte foi a região menos dependente do seu principal mercado externo (15,0%), a base de procura mais diversificada do trimestre."
         ],
         "en": [
-          "Resident overnight stays reached 6.4 million (+7.6%) and non-resident stays 16.7 million (+2.9%); external markets stayed dominant at 72.3% of the total. The quarterly release lists no top-ten source markets: it measures each region's dependence on external markets, and the range runs from Greater Lisbon (82.9%) down to the Centre (34.6%) and the Alentejo (36.0%). The North was the region least dependent on its leading external market (15.0%), the most diversified demand base of the quarter."
+          "Resident overnight stays reached 6.4 million (+7.6%) and non-resident stays 16.7 million (+2.9%); external markets stayed dominant at 72.3% of the total. What the quarter measures is not markets but dependence: the range runs from Greater Lisbon (82.9%) to the Centre (34.6%) and the Alentejo (36.0%). The North was the region least dependent on its leading external market (15.0%), the most diversified demand base of the quarter."
         ]
       },
       "barList": {
@@ -406,7 +406,7 @@
         ]
       },
       "callout": {
-        "kind": "attention",
+        "kind": "conclusion",
         "title": {
           "pt": "REGIÃO EM DESTAQUE",
           "en": "REGION IN FOCUS"
@@ -424,8 +424,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "O RevPAR cresceu acima do preço",
-        "en": "RevPAR outpaced the rate card"
+        "pt": "O RevPAR cresceu acima do ADR",
+        "en": "RevPAR grew faster than ADR"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -511,10 +511,10 @@
       ],
       "body": {
         "pt": [
-          "Os proveitos totais somaram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), mais do dobro do ritmo do volume. O RevPAR atingiu 80,9 euros (+7,3%) e o ADR 127,5 euros (+5,3%): a diferença entre os dois indica que a receita por quarto disponível também beneficiou de maior ocupação, e não apenas de preço. O caminho mensal mostra de onde veio o trimestre: abril +8,9% e +12,6% nos proveitos, maio +1,3% e +8,7%, junho +3,1% e +7,6%."
+          "Os proveitos totais somaram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), mais do dobro do ritmo do volume. O RevPAR atingiu 80,9 euros (+7,3%) e o ADR 127,5 euros (+5,3%): a diferença entre os dois indica que a receita por quarto disponível também beneficiou de maior ocupação, e não apenas de preço. O essencial do ganho está em abril; maio e junho cresceram menos em dormidas e em receita."
         ],
         "en": [
-          "Total revenue came to EUR 2,039.5 million (+9.4%) and room revenue to EUR 1,568.7 million (+9.8%), more than twice the pace of volume. RevPAR reached EUR 80.9 (+7.3%) and ADR EUR 127.5 (+5.3%): the gap between them says revenue per available room also drew on higher occupancy, not on price alone. The monthly path shows where the quarter came from: April +8.9% and +12.6% in revenue, May +1.3% and +8.7%, June +3.1% and +7.6%."
+          "Total revenue came to EUR 2,039.5 million (+9.4%) and room revenue to EUR 1,568.7 million (+9.8%), more than twice the pace of volume. RevPAR reached EUR 80.9 (+7.3%) and ADR EUR 127.5 (+5.3%): the gap between them says revenue per available room also drew on higher occupancy, not on rate alone. Most of the gain sits in April; May and June grew less in overnight stays and in revenue."
         ]
       }
     },
@@ -534,12 +534,12 @@
           "en": "Overnight stays +4.2%, total revenue +9.4%, RevPAR +7.3% and ADR +5.3%."
         },
         "interpretation": {
-          "pt": "Quando o RevPAR sobe mais do que o ADR, o ganho não vem só da tabela de preços: o trimestre encheu mais quartos e vendeu-os mais caros. É a combinação que melhor sustenta avaliações, porque não depende de aumentar preço num mercado a esvaziar.",
-          "en": "When RevPAR moves up more than ADR, the gain does not come from the rate card alone: the quarter filled more rooms and sold them at higher prices. That is the combination which best supports valuations, because it does not rely on raising rates into emptier hotels."
+          "pt": "Quando o RevPAR sobe mais do que o ADR, o ganho não vem só da tarifa: o trimestre encheu mais quartos e vendeu-os mais caros. É a combinação que melhor sustenta avaliações, porque não depende de subir tarifas com a ocupação a descer.",
+          "en": "When RevPAR moves up more than ADR, the gain does not come from rate alone: the quarter filled more rooms and sold them at higher prices. That is the combination which best supports valuations, because it does not depend on raising rates while occupancy falls."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, convém descontar o efeito da Páscoa antes de projetar: abril fez +8,9% e maio apenas +1,3%. A pergunta útil é qual dos ativos manteve preço em maio, e não qual subiu mais em abril.",
-          "en": "For owners and investors, the Easter effect should be stripped out before projecting: April delivered +8.9% and May only +1.3%. The useful question is which assets held their rates in May, not which gained most in April."
+          "pt": "O efeito da Páscoa deve ser descontado antes de projetar: abril fez +8,9% e maio apenas +1,3%. A pergunta útil é qual dos ativos manteve preço em maio, e não qual subiu mais em abril.",
+          "en": "The Easter effect should be stripped out before projecting: April delivered +8.9% and May only +1.3%. The useful question is which assets held their rates in May, not which gained most in April."
         }
       }
     },

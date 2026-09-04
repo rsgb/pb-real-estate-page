@@ -25,8 +25,8 @@
     "en": "Tourism & Hospitality Brief | Portugal | February 2026"
   },
   "takeaway": {
-    "pt": "Fevereiro confirmou o abrandamento: hóspedes +0,2% e dormidas +0,7%, com o Carnaval e o mau tempo pelo meio. Os proveitos totais subiram 4,2%, mas o RevPAR ganhou 0,6% e a ocupação-cama perdeu 0,6 p.p. Foi um mês de preço, não de volume.",
-    "en": "February confirmed the slowdown: guests +0.2% and overnight stays +0.7%, with Carnival and bad weather in the way. Total revenue rose 4.2%, but RevPAR added 0.6% and net bed occupancy lost 0.6 pp. Price made the month, not volume."
+    "pt": "Fevereiro confirmou o abrandamento: hóspedes +0,2% e dormidas +0,7%, num mês marcado pelo Carnaval e pelos fenómenos meteorológicos de janeiro e fevereiro. Os proveitos totais subiram 4,2%, o RevPAR apenas 0,6% e a ocupação-cama perdeu 0,6 p.p. Foi preço, não volume.",
+    "en": "February confirmed the slowdown: guests +0.2% and overnight stays +0.7%, in a month shaped by Carnival and by the January and February weather events. Total revenue rose 4.2%, RevPAR only 0.6%, and net bed occupancy lost 0.6 pp. Price made the month, not volume."
   },
   "sections": [
     {
@@ -62,10 +62,10 @@
         "en": "February slowed, with volume close to flat"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "As dormidas cresceram 0,7% e os proveitos totais 4,2%: o mês fez-se no preço, com a ocupação-cama a perder 0,6 p.p.",
@@ -74,13 +74,13 @@
       },
       "body": {
         "pt": [
-          "O INE deu o mês como um abrandamento que continuou: 1,8 milhões de hóspedes (+0,2%) e 4,2 milhões de dormidas (+0,7%). O instituto liga o resultado à estrutura móvel do calendário, pelo período de férias do Carnaval, e ao impacto dos fenómenos meteorológicos intensos e anómalos de janeiro e fevereiro, que analisa em separado para o conjunto de municípios afetados.",
+          "O INE deu o mês como um abrandamento que continuou: 1,8 milhões de hóspedes (+0,2%) e 4,2 milhões de dormidas (+0,7%). O instituto liga o resultado à estrutura móvel do calendário, pelo período de férias do Carnaval, e ao impacto dos fenómenos meteorológicos intensos e anómalos ocorridos em janeiro e fevereiro.",
           "Os proveitos totais atingiram 299,4 milhões de euros (+4,2%) e os de aposento 216,7 milhões (+3,7%), com o ADR em 89,6 euros (+2,4%) e o RevPAR em 39,7 euros (+0,6%), enquanto a taxa líquida de ocupação-cama desceu para 34,9%, menos 0,6 p.p.",
           "Para quem detém ativos, fevereiro separa volume e valor: a receita ainda sobe, mas já quase só pelo preço."
         ],
         "en": [
-          "Statistics Portugal read the month as a slowdown that carried on: 1.8 million guests (+0.2%) and 4.2 million overnight stays (+0.7%). The institute ties the result to the moving calendar, through the Carnival holiday period, and to the intense and unusual weather events of January and February, which it analyses separately for the affected municipalities.",
-          "Total revenue reached EUR 299.4 M (+4.2%) and room revenue EUR 216.7 M (+3.7%), with ADR at EUR 89.6 (+2.4%) and RevPAR at EUR 39.7 (+0.6%), while net bed occupancy dropped to 34.9%, down 0.6 pp.",
+          "Statistics Portugal read the month as a slowdown that carried on: 1.8 million guests (+0.2%) and 4.2 million overnight stays (+0.7%). The institute ties the result to the moving calendar, through the Carnival holiday period, and to the intense and unusual weather events of January and February.",
+          "Total revenue reached EUR 299.4 million (+4.2%) and room revenue EUR 216.7 million (+3.7%), with ADR at EUR 89.6 (+2.4%) and RevPAR at EUR 39.7 (+0.6%), while net bed occupancy dropped to 34.9%, down 0.6 pp.",
           "For owners, February separates volume from value: revenue still rises, but almost only through price."
         ]
       }
@@ -284,7 +284,7 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes aumentaram 2,6%, para 1,4 milhões, enquanto as de não residentes ficaram em 2,8 milhões, menos 0,2% do que um ano antes. Entre os mercados emissores, o Brasil avançou 29,6% e o Canadá 13,4%; a Alemanha ficou-se por 1,4%, a França perdeu 16,7% e Espanha (-4,4%) e Reino Unido (-4,1%) também ficaram em baixa."
+          "As dormidas de residentes aumentaram 2,6%, para 1,4 milhões, enquanto as de não residentes ficaram em 2,8 milhões, menos 0,2% do que um ano antes. Entre os mercados emissores, o Brasil avançou 29,6% e o Canadá 13,4%; a Alemanha ficou-se por 1,4%, a França perdeu 16,7%, e a Espanha (-4,4%) e o Reino Unido (-4,1%) também recuaram."
         ],
         "en": [
           "Resident overnight stays increased 2.6% to 1.4 million, while non-resident stays stood at 2.8 million, 0.2% below a year earlier. Among source markets, Brazil advanced 29.6% and Canada 13.4%; Germany managed 1.4%, France lost 16.7%, and Spain (-4.4%) and the United Kingdom (-4.1%) were lower as well."
@@ -496,8 +496,8 @@
         "en": "OPERATING PERFORMANCE"
       },
       "headline": {
-        "pt": "A receita fez-se no preço, não na ocupação",
-        "en": "Revenue came from price, not from occupancy"
+        "pt": "O ADR subiu, o RevPAR quase não",
+        "en": "ADR rose, RevPAR barely did"
       },
       "scope": {
         "pt": "Portugal, estabelecimentos de alojamento turístico.",
@@ -629,10 +629,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR subiu para 89,6 euros (+2,4%), mas o RevPAR ficou-se por 39,7 euros (+0,6%). A taxa líquida de ocupação-cama desceu para 34,9%, menos 0,6 p.p., e a taxa líquida de ocupação-quarto para 44,3%, menos 0,8 p.p. Com proveitos totais de 299,4 milhões de euros (+4,2%) e proveitos de aposento de 216,7 milhões (+3,7%), o acréscimo de receita é preço aplicado a menos camas ocupadas."
+          "O ADR subiu para 89,6 euros (+2,4%), mas o RevPAR ficou-se por 39,7 euros (+0,6%). A taxa líquida de ocupação-cama desceu para 34,9%, menos 0,6 p.p., e a taxa líquida de ocupação-quarto para 44,3%, menos 0,8 p.p. Com proveitos totais de 299,4 milhões de euros (+4,2%) e proveitos de aposento de 216,7 milhões (+3,7%), o acréscimo de receita é preço e não ocupação: as dormidas aumentaram 0,7% e a taxa líquida de ocupação-cama perdeu 0,6 p.p."
         ],
         "en": [
-          "ADR rose to EUR 89.6 (+2.4%), but RevPAR stopped at EUR 39.7 (+0.6%). Net bed occupancy slipped to 34.9%, down 0.6 pp, and net room occupancy to 44.3%, down 0.8 pp. With total revenue of EUR 299.4 M (+4.2%) and room revenue of EUR 216.7 M (+3.7%), the revenue gain is price applied to fewer occupied beds."
+          "ADR rose to EUR 89.6 (+2.4%), but RevPAR stopped at EUR 39.7 (+0.6%). Net bed occupancy slipped to 34.9%, down 0.6 pp, and net room occupancy to 44.3%, down 0.8 pp. With total revenue of EUR 299.4 million (+4.2%) and room revenue of EUR 216.7 million (+3.7%), the revenue gain is price and not occupancy: overnight stays increased 0.7% while net bed occupancy was 0.6 pp lower."
         ]
       }
     },
@@ -652,12 +652,12 @@
           "en": "Overnight stays +0.7%, total revenue +4.2%, ADR +2.4%, RevPAR +0.6% and net bed occupancy at 34.9%, down 0.6 pp."
         },
         "interpretation": {
-          "pt": "O ganho de RevPAR é quase todo ADR: o preço subiu 2,4% e a receita por cama disponível apenas 0,6%, porque a ocupação cedeu 0,6 p.p. Não é poder de fixação de preços a alargar-se; é preço a compensar um mês travado pelo calendário e pelo tempo.",
-          "en": "The RevPAR gain is almost all ADR: price rose 2.4% and revenue per available bed only 0.6%, because occupancy gave up 0.6 pp. This is not pricing power widening; it is price offsetting a month held back by the calendar and the weather."
+          "pt": "O ganho de RevPAR é quase todo ADR: o preço subiu 2,4% e a receita por quarto disponível apenas 0,6%, porque a ocupação cedeu 0,6 p.p. Não é poder de fixação de preços a alargar-se; é preço a compensar um mês travado pelo calendário e pelo tempo.",
+          "en": "The RevPAR gain is almost all ADR: price rose 2.4% and revenue per available room only 0.6%, because occupancy gave up 0.6 pp. This is not pricing power widening; it is price offsetting a month held back by the calendar and the weather."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, o exercício é testar o orçamento com menos uma noite vendida e ver se o ADR aguenta. Ativos muito expostos a França e a Espanha entram em março com uma base mais frágil; ativos apoiados na procura interna e brasileira entram melhor.",
-          "en": "For owners and investors, the test is to rerun the budget with one night less sold and see whether ADR holds. Assets heavily exposed to France and Spain enter March on a weaker base; those leaning on domestic and Brazilian demand enter it better."
+          "pt": "Para proprietários e investidores, o exercício é testar o orçamento com a ocupação um patamar abaixo e ver se o ADR aguenta. Ativos muito expostos a França e a Espanha entram em março com uma base mais frágil; ativos apoiados na procura interna e brasileira entram melhor.",
+          "en": "For owners and investors, the test is to rerun the budget one notch lower on occupancy and see whether ADR holds. Assets heavily exposed to France and Spain enter March on a weaker base; those leaning on domestic and Brazilian demand enter it better."
         }
       }
     },
@@ -682,8 +682,8 @@
             "en": "Whether Brazil (+29.6%) keeps its pace and France recovers the 16.7% it lost."
           },
           {
-            "pt": "Se o ADR continua a compensar a perda de ocupação-cama.",
-            "en": "Whether ADR keeps offsetting the loss in net bed occupancy."
+            "pt": "Se as dormidas de não residentes, já em -0,2%, voltam a crescer em março.",
+            "en": "Whether non-resident overnight stays, already at -0.2%, return to growth in March."
           }
         ]
       }

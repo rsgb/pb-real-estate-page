@@ -68,20 +68,20 @@
           "en": "MAIN CONCLUSION"
         },
         "body": {
-          "pt": "O semestre é a leitura útil de 2025: a Páscoa em abril tirou dormidas ao 1.º trimestre e devolveu-as ao 2.º, e no conjunto ficaram +2,4% de volume e +7,8% de proveitos totais.",
-          "en": "The half-year is the useful reading of 2025: Easter in April took overnight stays out of the first quarter and gave them back in the second, leaving +2.4% of volume and +7.8% of total revenue for the six months."
+          "pt": "O semestre neutraliza o desvio da Páscoa: a Páscoa em abril tirou dormidas ao 1.º trimestre e devolveu-as ao 2.º, e no conjunto ficaram +2,4% de volume e +7,8% de proveitos totais.",
+          "en": "The half-year cancels the Easter shift: Easter in April took overnight stays out of the first quarter and gave them back in the second, leaving +2.4% of volume and +7.8% of total revenue for the six months."
         }
       },
       "body": {
         "pt": [
           "Os estabelecimentos de alojamento turístico registaram 14,9 milhões de hóspedes (+3,6%) e 36,4 milhões de dormidas (+2,4%) entre janeiro e junho, num semestre marcado por três desvios de calendário assinalados pelo INE: o Carnaval em março, um mês de fevereiro com menos um dia do que no ano bissexto anterior e a Páscoa em abril.",
           "Os proveitos totais atingiram 2995,5 milhões de euros (+7,8%) e os de aposento 2268,2 milhões (+8,0%), mais do triplo do ritmo do volume.",
-          "Para quem detém ativos, o semestre é a primeira leitura limpa do ano: o percurso mensal vai de +6,3% em janeiro a -2,9% em março e +8,9% em abril, e nenhum mês isolado descreve o período."
+          "Os três primeiros meses tiraram volume, com fevereiro a -2,5% e março a -2,9%, e os três seguintes devolveram-no, com abril a +8,9% e junho a +3,1%. O semestre é a soma dessas duas metades, não a média delas, e é a primeira base comparável do ano para quem detém ativos."
         ],
         "en": [
           "Tourist accommodation recorded 14.9 million guests (+3.6%) and 36.4 million overnight stays (+2.4%) between January and June, in a half-year marked by three calendar shifts flagged by Statistics Portugal: Carnival in March, a February one day shorter than in the previous leap year and Easter in April.",
           "Total revenue reached EUR 2,995.5 million (+7.8%) and room revenue EUR 2,268.2 million (+8.0%), more than three times the pace of volume.",
-          "For owners, the half-year is the first clean reading of the year: the monthly path runs from +6.3% in January to -2.9% in March and +8.9% in April, and no single month describes the period."
+          "The first three months took volume out, February at -2.5% and March at -2.9%, and the next three gave it back, April at +8.9% and June at +3.1%. The half-year is the sum of those two halves, not their average, and for owners it is the year's first comparable base."
         ]
       }
     },
@@ -418,8 +418,8 @@
       "callout": {
         "kind": "attention",
         "title": {
-          "pt": "REGIÃO EM DESTAQUE",
-          "en": "REGION IN FOCUS"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "A Grande Lisboa terminou o semestre com -0,2% nas dormidas, o pior resultado entre as nove regiões e o oposto do +2,4% do país.",
@@ -482,7 +482,7 @@
           "Os proveitos totais atingiram 2995,5 milhões de euros (+7,8%) e os de aposento 2268,2 milhões (+8,0%), com as dormidas em +2,4%: a maior parte do acréscimo de receita não veio de noites adicionais. O INE não publica RevPAR, ADR nem taxas de ocupação semestrais, pelo que a decomposição entre preço e ocupação tem de ser feita trimestre a trimestre. O caminho dos proveitos mensais, de +13,9% em janeiro a +0,1% em março e +12,6% em abril, mostra a mesma oscilação de calendário que atingiu o volume."
         ],
         "en": [
-          "Total revenue reached EUR 2,995.5 million (+7.8%) and room revenue EUR 2,268.2 million (+8.0%), against +2.4% in overnight stays: most of the additional revenue did not come from additional nights. Statistics Portugal publishes no half-year RevPAR, ADR or occupancy, so the split between price and occupancy has to be made quarter by quarter. The monthly revenue path, from +13.9% in January to +0.1% in March and +12.6% in April, shows the same calendar swing that hit volume."
+          "Total revenue reached EUR 2,995.5 million (+7.8%) and room revenue EUR 2,268.2 million (+8.0%), against +2.4% in overnight stays: most of the additional revenue did not come from additional nights. Statistics Portugal publishes no half-year RevPAR, ADR or occupancy, so the split between rate and occupancy has to be made quarter by quarter. The monthly revenue path, from +13.9% in January to +0.1% in March and +12.6% in April, shows the same calendar swing that hit volume."
         ]
       }
     },
@@ -502,12 +502,12 @@
           "en": "Guests +3.6%, overnight stays +2.4%, total revenue +7.8% and room revenue +8.0%."
         },
         "interpretation": {
-          "pt": "Hóspedes a subir mais do que dormidas significa estadias mais curtas; proveitos a subir bem acima de ambos significa preço médio mais alto. Foi um semestre de receita por noite e não de camas mais cheias, e essa qualidade de receita é mais sensível ao preço do que à procura.",
-          "en": "Guests moving up faster than overnight stays means shorter trips; revenue moving up well above both means a higher average rate. This was a half-year of revenue per night rather than of fuller beds, and that kind of revenue is more sensitive to price than to demand."
+          "pt": "Hóspedes a subir mais do que dormidas significa estadias mais curtas; proveitos a subir bem acima de ambos significa mais receita por noite vendida. Foi um semestre de receita por noite e não de camas mais cheias, e essa qualidade de receita é mais sensível ao preço do que à procura.",
+          "en": "Guests moving up faster than overnight stays means shorter trips; revenue moving up well above both means more revenue per night sold. This was a half-year of revenue per night rather than of fuller beds, and that kind of revenue is more sensitive to price than to demand."
         },
         "implication": {
-          "pt": "Para proprietários e investidores, o semestre desloca a pergunta do crescimento para a origem da receita: quanto do acréscimo é preço, quanto é mix de mercados e quanto desaparece se os mercados externos, que fizeram apenas +1,0%, não voltarem na segunda metade do ano. Ativos muito expostos à Grande Lisboa e ao Algarve entram nesse período com a base mais fraca.",
-          "en": "For owners and investors, the half-year moves the question from growth to the source of revenue: how much of the increase is price, how much is market mix, and how much disappears if external markets, up only 1.0%, do not return in the second half of the year. Assets heavily exposed to Greater Lisbon and the Algarve enter that period from the weakest base."
+          "pt": "O semestre desloca a pergunta do crescimento para a origem da receita: quanto do acréscimo é preço, quanto é mix de mercados e quanto desaparece se os mercados externos, que fizeram apenas +1,0%, não voltarem na segunda metade do ano. Ativos muito expostos à Grande Lisboa e ao Algarve entram nesse período com a base mais fraca.",
+          "en": "The half-year moves the question from growth to the source of revenue: how much of the increase is price, how much is market mix, and how much disappears if external markets, up only 1.0%, do not return in the second half of the year. Assets heavily exposed to Greater Lisbon and the Algarve enter that period from the weakest base."
         }
       }
     },

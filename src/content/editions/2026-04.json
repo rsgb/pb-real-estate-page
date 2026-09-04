@@ -58,30 +58,30 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Abril: mais hóspedes, estadas mais curtas, ocupação em baixa",
-        "en": "April: more guests, shorter stays, lower occupancy"
+        "pt": "Abril: mais hóspedes, mais preço, menos ocupação",
+        "en": "April: more guests, more price, less occupancy"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
-          "pt": "Os hóspedes aumentaram 2,2% e as dormidas apenas 0,4%: as estadas encurtaram e a ocupação-cama perdeu 1,3 p.p.",
-          "en": "Guests increased 2.2% while overnight stays added only 0.4%: stays shortened and net bed occupancy lost 1.3 pp."
+          "pt": "Os hóspedes aumentaram 2,2% e as dormidas apenas 0,4%: mais chegadas, quase as mesmas noites, com a ocupação-cama a perder 1,3 p.p.",
+          "en": "Guests increased 2.2% while overnight stays added only 0.4%: more arrivals, much the same nights, with net bed occupancy 1.3 pp lower."
         }
       },
       "body": {
         "pt": [
           "O INE pôs o facto no título: as dormidas de residentes continuaram a decrescer em abril, menos 1,2%, para 2,0 milhões, enquanto as de não residentes ficaram em 5,2 milhões, mais 1,0%. O instituto assinala a estrutura móvel do calendário, nomeadamente os efeitos do período da Páscoa, que assinala tanto em março como em abril.",
           "No total, 2,9 milhões de hóspedes (+2,2%) e 7,2 milhões de dormidas (+0,4%) geraram 600,7 milhões de euros de proveitos totais (+5,2%) e 453,1 milhões de proveitos de aposento (+4,1%), com o ADR em 118,0 euros (+2,1%), o RevPAR em 69,8 euros (+0,7%) e a taxa líquida de ocupação-cama em 49,3%, menos 1,3 p.p.",
-          "Para o proprietário, o mês trocou noites por preço e encurtou a estada média."
+          "Para o proprietário, o mês trocou noites por preço."
         ],
         "en": [
           "Statistics Portugal put the fact in the title: resident overnight stays kept decreasing in April, 1.2% lower at 2.0 million, while non-resident stays stood at 5.2 million, 1.0% higher. The institute points to the moving calendar, namely the effects of the Easter period, which it flags in March as well as in April.",
-          "In total, 2.9 million guests (+2.2%) and 7.2 million overnight stays (+0.4%) produced EUR 600.7 M of total revenue (+5.2%) and EUR 453.1 M of room revenue (+4.1%), with ADR at EUR 118.0 (+2.1%), RevPAR at EUR 69.8 (+0.7%) and net bed occupancy at 49.3%, down 1.3 pp.",
-          "For an owner, the month traded nights for price and shortened the average stay."
+          "In total, 2.9 million guests (+2.2%) and 7.2 million overnight stays (+0.4%) produced EUR 600.7 million of total revenue (+5.2%) and EUR 453.1 million of room revenue (+4.1%), with ADR at EUR 118.0 (+2.1%), RevPAR at EUR 69.8 (+0.7%) and net bed occupancy at 49.3%, down 1.3 pp.",
+          "For an owner, the month traded nights for price."
         ]
       }
     },
@@ -235,8 +235,8 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "O residente continuou a faltar",
-        "en": "The resident kept stepping back"
+        "pt": "Residentes em queda pelo segundo mês seguido",
+        "en": "Residents down for a second consecutive month"
       },
       "indicators": [
         {
@@ -287,7 +287,7 @@
           "As dormidas de residentes ficaram em 2,0 milhões, menos 1,2%, o segundo mês seguido em queda. As de não residentes chegaram a 5,2 milhões, mais 1,0%. Entre os mercados emissores, o Canadá (+12,0%) e os Países Baixos (+9,9%) lideraram, com os Estados Unidos (+6,5%) e a Alemanha (+4,5%) também em alta; o Reino Unido cedeu 0,5% e a Itália 9,7%."
         ],
         "en": [
-          "Resident overnight stays came to 2.0 million, 1.2% lower, a second consecutive monthly decrease. Non-resident stays reached 5.2 million, up 1.0%. Among source markets, Canada (+12.0%) and the Netherlands (+9.9%) led, with the United States (+6.5%) and Germany (+4.5%) also higher; the United Kingdom gave up 0.5% and Italy 9.7%."
+          "Resident overnight stays came to 2.0 million, 1.2% lower, a second consecutive monthly decrease. Non-resident stays reached 5.2 million, up 1.0%. Among source markets, Canada (+12.0%) and the Netherlands (+9.9%) led, with the United States (+6.5%) and Germany (+4.5%) also higher; the United Kingdom was 0.5% lower and Italy 9.7% lower."
         ]
       },
       "barList": {
@@ -370,8 +370,8 @@
         "en": "REGIONS"
       },
       "headline": {
-        "pt": "Alentejo e Norte outra vez à frente, Centro e Açores em queda",
-        "en": "Alentejo and the North again ahead, the Centre and Azores down"
+        "pt": "O Alentejo repetiu a liderança; o Centro caiu 8,7%",
+        "en": "Alentejo led again; the Centre fell 8.7%"
       },
       "barList": {
         "title": {
@@ -485,7 +485,7 @@
         },
         "body": {
           "pt": "Na RA Açores, as dormidas de residentes perderam 16,3% e o conjunto da região desceu 7,5%.",
-          "en": "In the Azores, resident overnight stays gave up 16.3% and the region as a whole was 7.5% lower."
+          "en": "In the Azores, resident overnight stays were 16.3% below a year earlier, and the region as a whole 7.5% lower."
         }
       }
     },
@@ -629,10 +629,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR subiu para 118,0 euros (+2,1%), mas o RevPAR avançou apenas 0,7%, para 69,8 euros. A taxa líquida de ocupação-cama desceu 1,3 p.p., para 49,3%, e a de ocupação-quarto 0,8 p.p., para 59,2%. Os proveitos totais atingiram 600,7 milhões de euros (+5,2%) e os de aposento 453,1 milhões (+4,1%): o acréscimo é preço e receita fora do quarto, não utilização da capacidade."
+          "O ADR subiu para 118,0 euros (+2,1%), mas o RevPAR avançou apenas 0,7%, para 69,8 euros. A taxa líquida de ocupação-cama desceu 1,3 p.p., para 49,3%, e a de ocupação-quarto 0,8 p.p., para 59,2%. Os proveitos totais atingiram 600,7 milhões de euros (+5,2%) e os de aposento 453,1 milhões (+4,1%): o total cresceu acima do aposento, sinal de receita fora do quarto, e a utilização da capacidade não ajudou."
         ],
         "en": [
-          "ADR rose to EUR 118.0 (+2.1%), but RevPAR advanced only 0.7%, to EUR 69.8. Net bed occupancy dropped 1.3 pp to 49.3% and net room occupancy 0.8 pp to 59.2%. Total revenue reached EUR 600.7 M (+5.2%) and room revenue EUR 453.1 M (+4.1%): the gain is price and non-room revenue, not fuller use of capacity."
+          "ADR rose to EUR 118.0 (+2.1%), but RevPAR advanced only 0.7%, to EUR 69.8. Net bed occupancy dropped 1.3 pp to 49.3% and net room occupancy 0.8 pp to 59.2%. Total revenue reached EUR 600.7 million (+5.2%) and room revenue EUR 453.1 million (+4.1%): the total grew faster than room revenue, a sign of non-room revenue, and capacity use did not help."
         ]
       }
     },
@@ -652,12 +652,12 @@
           "en": "Guests +2.2%, overnight stays +0.4%, total revenue +5.2%, ADR +2.1%, RevPAR +0.7% and net bed occupancy at 49.3%, down 1.3 pp."
         },
         "interpretation": {
-          "pt": "A perda de 1,3 p.p. de ocupação-cama não foi compensada em volume: o RevPAR ficou em +0,7% com o ADR em +2,1%. O valor por noite ainda sobe, mas o ativo trabalha com menos noites vendidas e com uma estada média mais curta.",
-          "en": "The 1.3 pp loss in net bed occupancy was not made up in volume: RevPAR ended at +0.7% with ADR at +2.1%. Value per night still rises, but the asset is working on fewer nights sold and a shorter average stay."
+          "pt": "A perda de 1,3 p.p. de ocupação-cama não foi compensada em volume: o RevPAR ficou em +0,7% com o ADR em +2,1%. O valor por noite ainda sobe, mas o ganho de RevPAR é residual.",
+          "en": "The 1.3 pp loss in net bed occupancy was not made up in volume: RevPAR ended at +0.7% with ADR at +2.1%. Value per night still rises, but the RevPAR gain is marginal."
         },
         "implication": {
-          "pt": "Para investidores e proprietários, o exercício é testar o orçamento contra uma estada média mais curta: mais chegadas não são mais noites. Vale a pena apurar quanto do resultado de abril é Páscoa e até onde o residente, em queda há dois meses, sustenta o verão.",
-          "en": "For investors and owners, the exercise is to test the budget against a shorter average stay: more arrivals are not more nights. It is worth establishing how much of April is Easter, and how far the resident, down for two months, will carry the summer."
+          "pt": "Para investidores e proprietários, importa refazer a conta das noites: mais chegadas não são mais noites. Vale a pena apurar quanto do resultado de abril é Páscoa e até onde os residentes, em queda há dois meses, sustentam o verão.",
+          "en": "For investors and owners, the night count has to be redone: more arrivals are not more nights. It is worth establishing how much of April is Easter, and how far residents, down for two months, will carry the summer."
         }
       }
     },

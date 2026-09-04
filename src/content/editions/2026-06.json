@@ -58,14 +58,14 @@
         "en": "EXECUTIVE SUMMARY"
       },
       "headline": {
-        "pt": "Junho ficou dependente apenas da procura interna",
-        "en": "June depended on the domestic market alone"
+        "pt": "Os não residentes inverteram oito meses de crescimento",
+        "en": "Non-residents reversed eight months of growth"
       },
       "callout": {
-        "kind": "conclusion",
+        "kind": "attention",
         "title": {
-          "pt": "CONCLUSÃO PRINCIPAL",
-          "en": "MAIN CONCLUSION"
+          "pt": "SINAL DE ATENÇÃO",
+          "en": "ATTENTION SIGNAL"
         },
         "body": {
           "pt": "As dormidas de não residentes diminuíram 0,5%, o primeiro decréscimo desde setembro de 2025. O crescimento foi sustentado exclusivamente pelo mercado interno e mesmo esse abrandou, de 6,7% em maio para 3,7%.",
@@ -74,12 +74,12 @@
       },
       "body": {
         "pt": [
-          "O alojamento turístico registou 3,1 milhões de hóspedes (+0,8%) e 8,1 milhões de dormidas (+0,7%), enquanto as dormidas de não residentes diminuíram 0,5%, para 5,7 milhões, o primeiro decréscimo desde setembro de 2025.",
+          "O alojamento turístico registou 3,1 milhões de hóspedes (+0,8%) e 8,1 milhões de dormidas (+0,7%), enquanto as dormidas de não residentes diminuíram 0,5%, para 5,7 milhões.",
           "Os proveitos totais chegaram a 786,6 milhões de euros (+4,9%) e os de aposento a 609,3 milhões (+4,8%); o ADR subiu 2,9%, para 140,8 euros, mas o RevPAR avançou apenas 1,2%, para 90,5 euros, com a taxa líquida de ocupação-cama em 53,6%, menos 1,4 p.p.",
           "A receita continuou a crescer, o volume praticamente parou e a base da procura estreitou-se: para quem detém ativos, a questão passa a ser de onde vem cada noite vendida."
         ],
         "en": [
-          "Tourist accommodation recorded 3.1 million guests, up 0.8%, and 8.1 million overnight stays, up 0.7%, while non-resident stays were 0.5% lower at 5.7 million, the first decrease since September 2025.",
+          "Tourist accommodation recorded 3.1 million guests, up 0.8%, and 8.1 million overnight stays, up 0.7%, while non-resident stays were 0.5% lower at 5.7 million.",
           "Total revenue reached EUR 786.6 million, up 4.9%, and room revenue EUR 609.3 million, up 4.8%; ADR rose 2.9% to EUR 140.8, but RevPAR advanced only 1.2% to EUR 90.5, with net bed occupancy at 53.6%, down 1.4 pp.",
           "Revenue kept growing, volume almost stopped and the demand base narrowed: for owners, the question becomes where each night sold comes from."
         ]
@@ -231,8 +231,8 @@
         "en": "DEMAND"
       },
       "headline": {
-        "pt": "O mercado interno segurou o mês sozinho",
-        "en": "The domestic market carried the month alone"
+        "pt": "Residentes a abrandar, não residentes a cair",
+        "en": "Residents slowing, non-residents falling"
       },
       "indicators": [
         {
@@ -280,7 +280,7 @@
       ],
       "body": {
         "pt": [
-          "As dormidas de residentes aumentaram 3,7%, para 2,5 milhões, abrandando face aos 6,7% de maio. As de não residentes diminuíram 0,5%, para 5,7 milhões. Entre os principais mercados emissores, o Canadá (+4,0%), os Estados Unidos (+2,8%) e o Reino Unido (+1,9%) avançaram, enquanto a Alemanha (-4,9%) e França (-7,9%) perderam terreno."
+          "As dormidas de residentes aumentaram 3,7%, para 2,5 milhões, abrandando face aos 6,7% de maio. As de não residentes diminuíram 0,5%, para 5,7 milhões. Entre os principais mercados emissores, o Canadá (+4,0%), os Estados Unidos (+2,8%) e o Reino Unido (+1,9%) avançaram, enquanto a Alemanha (-4,9%) e a França (-7,9%) recuaram."
         ],
         "en": [
           "Resident overnight stays rose 3.7% to 2.5 million, slower than the 6.7% of May. Non-resident stays were down 0.5% to 5.7 million. Among the main source markets, Canada (+4.0%), the United States (+2.8%) and the United Kingdom (+1.9%) advanced, while Germany (-4.9%) and France (-7.9%) lost ground."
@@ -358,7 +358,7 @@
         "en": "REGIONS"
       },
       "headline": {
-        "pt": "O Norte cresceu, o Algarve virou negativo",
+        "pt": "O Norte cresceu, o Algarve passou a terreno negativo",
         "en": "The North grew, the Algarve turned negative"
       },
       "barList": {
@@ -613,10 +613,10 @@
       ],
       "body": {
         "pt": [
-          "O ADR fixou-se em 140,8 euros (+2,9%) e o RevPAR em 90,5 euros (+1,2%). A taxa líquida de ocupação-cama desceu para 53,6%, menos 1,4 p.p., e a de ocupação-quarto para 64,3%, menos 1,1 p.p. Com os proveitos totais a crescerem 4,9% e o RevPAR quase parado, o aumento da receita explica-se por preço e por mais unidades em operação, não por camas mais ocupadas."
+          "O ADR fixou-se em 140,8 euros (+2,9%) e o RevPAR em 90,5 euros (+1,2%). A taxa líquida de ocupação-cama desceu para 53,6%, menos 1,4 p.p., e a de ocupação-quarto para 64,3%, menos 1,1 p.p. Com os proveitos totais a crescerem 4,9% e o RevPAR apenas 1,2%, o acréscimo de receita não veio de camas mais ocupadas."
         ],
         "en": [
-          "ADR stood at EUR 140.8, up 2.9%, and RevPAR at EUR 90.5, up 1.2%. Net bed occupancy slipped to 53.6%, down 1.4 pp, and net room occupancy to 64.3%, down 1.1 pp. With total revenue up 4.9% and RevPAR nearly flat, the revenue increase is explained by price and by more units in operation, not by fuller beds."
+          "ADR stood at EUR 140.8, up 2.9%, and RevPAR at EUR 90.5, up 1.2%. Net bed occupancy slipped to 53.6%, down 1.4 pp, and net room occupancy to 64.3%, down 1.1 pp. With total revenue up 4.9% and RevPAR only 1.2%, the revenue gain did not come from fuller beds."
         ]
       }
     },
@@ -636,12 +636,12 @@
           "en": "Overnight stays +0.7%, non-resident stays -0.5%, total revenue +4.9%, RevPAR +1.2% and net bed occupancy -1.4 pp."
         },
         "interpretation": {
-          "pt": "O crescimento passou a vir de uma só fonte. Com os não residentes em queda, o volume ficou dependente de um mercado interno que também abrandou, e o RevPAR quase parado mostra que o preço já não compensa por inteiro a ocupação perdida.",
-          "en": "Growth now comes from a single source. With non-residents falling, volume depends on a domestic market that also slowed, and RevPAR close to flat shows that price no longer fully offsets the occupancy lost."
+          "pt": "Com os não residentes em queda, o volume ficou dependente de um mercado interno que também abrandou. O RevPAR ainda subiu 1,2%: o ADR (+2,9%) cobriu os 1,4 p.p. de ocupação-cama perdidos, mas com pouca folga.",
+          "en": "With non-residents falling, volume rests on a domestic market that also slowed. RevPAR still rose 1.2%: ADR (+2.9%) covered the 1.4 pp of net bed occupancy lost, but with little to spare."
         },
         "implication": {
-          "pt": "Para investidores e proprietários, junho obriga a testar a exposição a mercados externos ativo a ativo: França e Alemanha retiraram procura, o Algarve e a RA Madeira ficaram negativos, e o Norte e a Grande Lisboa cresceram com residentes. Os pressupostos de ocupação dos planos de negócio devem ser revistos antes de serem traduzidos em valor.",
-          "en": "For investors and owners, June forces a test of foreign-market exposure asset by asset: France and Germany took demand out, the Algarve and Madeira turned negative, and the North and Greater Lisbon grew on residents. Occupancy assumptions in business plans should be revisited before they are turned into value."
+          "pt": "Para investidores e proprietários, junho obriga a testar a exposição a mercados externos ativo a ativo: França e Alemanha retiraram procura, o Algarve e a RA Madeira ficaram negativos, e o Norte e a Grande Lisboa cresceram com residentes. Os pressupostos de ocupação dos planos de negócio devem ser revistos em baixa.",
+          "en": "For investors and owners, June forces a test of foreign-market exposure asset by asset: France and Germany took demand out, the Algarve and Madeira turned negative, and the North and Greater Lisbon grew on residents. Occupancy assumptions in business plans should be revised down."
         }
       }
     },
@@ -666,8 +666,8 @@
             "en": "How the German and French markets behave entering peak season."
           },
           {
-            "pt": "Se o Algarve regressa a crescimento no mês de maior peso do ano.",
-            "en": "Whether the Algarve returns to growth in its heaviest month of the year."
+            "pt": "Se o Algarve, negativo em junho, regressa a crescimento em julho.",
+            "en": "Whether the Algarve, negative in June, returns to growth in July."
           }
         ]
       }
