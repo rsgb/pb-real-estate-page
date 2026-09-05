@@ -4,10 +4,13 @@
  * Body:    { id }
  * Returns: 200 { ok: true, prUrl, prNumber, previewUrl, reused }
  *
- * Last step: check that the branch really holds the three files and that the
- * JSON's `pdf.pt` / `pdf.en` are the PDFs that were uploaded, then open the
- * pull request Rui reviews. Calling it twice returns the same pull request
- * instead of opening a second one.
+ * Last step: check that the branch really holds the edition JSON and that it
+ * still validates, then open the pull request Rui reviews. Calling it twice
+ * returns the same pull request instead of opening a second one.
+ *
+ * Since D-34 the JSON is the whole branch: the build renders both PDFs from it
+ * (scripts/render-pdfs.mjs), so there is no "are the PDFs there?" check left to
+ * make. The deploy preview is what proves they came out right.
  */
 import { validateEdition } from "../../src/lib/edition-validation.mjs";
 import { editionSlug } from "../../src/lib/format.js";
@@ -61,24 +64,7 @@ export async function run(event, deps = {}) {
     throw new HttpError(422, "A edição no ramo não passou na validação.", { errors });
   }
 
-  // 2. Both PDFs must be on the branch, under the exact names the JSON declares.
-  const missing = [];
-  for (const lang of ["pt", "en"]) {
-    const name = derived.pdfNames[lang];
-    if (!name) {
-      missing.push(`pdf.${lang}`);
-      continue;
-    }
-    if (!(await github.getFile(briefPdfPath(name), branch))) missing.push(name);
-  }
-  if (missing.length) {
-    throw new HttpError(
-      409,
-      `Faltam ficheiros no ramo: ${missing.join(", ")}. Envie os PDFs antes de concluir.`
-    );
-  }
-
-  // 3. One pull request per edition branch.
+  // 2. One pull request per edition branch.
   const [existing] = await github.listPulls(branch, BASE_BRANCH);
   const pull =
     existing ??
@@ -120,14 +106,22 @@ function pullRequestBody({ id, derived }) {
     "",
     "**Ficheiros**",
     "",
-    `- \`${editionJsonPath(id)}\``,
+    `- \`${editionJsonPath(id)}\` — o único ficheiro deste ramo.`,
+    "",
+    "**PDFs**",
+    "",
+    "Gerados na compilação a partir deste JSON (`npm run prebuild` →",
+    "`scripts/render-pdfs.mjs`), não versionados:",
+    "",
     `- \`${briefPdfPath(derived.pdfNames.pt)}\``,
     `- \`${briefPdfPath(derived.pdfNames.en)}\``,
     "",
     "**Pré-visualização**",
     "",
     "A deploy preview desta PR serve a edição em",
-    `\`/pt/market-brief/${editionSlug(id)}/\` e \`/en/market-brief/${editionSlug(id)}/\`.`,
+    `\`/pt/market-brief/${editionSlug(id)}/\` e \`/en/market-brief/${editionSlug(id)}/\`,`,
+    "e serve os dois PDFs acima em `/briefs/`. Se a compilação passou, os PDFs",
+    "existem e correspondem a este JSON.",
     "",
     "A edição só fica pública quando esta PR for aprovada e integrada em `main`.",
   ].join("\n");

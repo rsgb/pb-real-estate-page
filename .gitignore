@@ -30,3 +30,9 @@ dist-ssr
 
 # Generated Open Graph cards (scripts/generate-og-images.mjs)
 public/og/
+
+# Generated edition PDFs (scripts/render-pdfs.mjs, decision D-34). The build
+# renders them from src/content/editions/*.json, so they are never committed —
+# not from a publish upload either. Everything else in public/briefs/, such as
+# the LinkedIn signature image, stays in git.
+public/briefs/THB_*_PDF_*.pdf

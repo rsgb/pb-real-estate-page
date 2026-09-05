@@ -2,21 +2,22 @@
  * Input validation and repo-path construction shared by the publish endpoints.
  *
  * No path handed to GitHub is ever built from raw user input: an id must match
- * EDITION_ID_PATTERN and a filename must match either `<id>.json` or the PDF
- * naming pattern, both of which exclude slashes, dots-dots and everything else
- * that could escape the two folders the flow is allowed to write to.
+ * EDITION_ID_PATTERN and a filename must be exactly `<id>.json`, which excludes
+ * slashes, dots-dots and everything else that could escape the one folder the
+ * flow is allowed to write to.
+ *
+ * Since D-34 that folder really is the only one: the edition PDFs are rendered
+ * by the build from the JSON (scripts/render-pdfs.mjs), so `kind` has a single
+ * value and nothing the upload flow accepts can ever land in public/briefs.
+ * The old `pdf-pt` / `pdf-en` kinds are gone rather than merely unused: a PDF
+ * committed to a branch would be a stale file the build might serve instead of
+ * the freshly rendered one.
  */
-import {
-  EDITION_ID_PATTERN,
-  PDF_NAME_PATTERN,
-} from "../../../src/lib/edition-validation.mjs";
+import { EDITION_ID_PATTERN } from "../../../src/lib/edition-validation.mjs";
 import { HttpError } from "./http.mjs";
 import { BRIEFS_PATH, EDITIONS_PATH } from "./github.mjs";
 
-export const KINDS = ["json", "pdf-pt", "pdf-en"];
-
-/** The language a `pdf-*` kind carries. */
-const KIND_LANG = { "pdf-pt": "PT", "pdf-en": "EN" };
+export const KINDS = ["json"];
 
 /** Throw unless `id` is an edition id; returns it unchanged. */
 export function assertEditionId(id) {
@@ -29,10 +30,10 @@ export function assertEditionId(id) {
   return id;
 }
 
-/** Throw unless `kind` is one of the three upload kinds. */
+/** Throw unless `kind` is an accepted upload kind. */
 export function assertKind(kind) {
   if (!KINDS.includes(kind)) {
-    throw new HttpError(400, "Tipo de ficheiro inválido; use \"json\", \"pdf-pt\" ou \"pdf-en\".");
+    throw new HttpError(400, "Tipo de ficheiro inválido; use \"json\".");
   }
   return kind;
 }
@@ -54,42 +55,20 @@ export function resolveUploadPath({ id, kind, filename }) {
     throw new HttpError(400, "O nome do ficheiro não pode conter caminhos.");
   }
 
-  if (kind === "json") {
-    if (filename !== `${id}.json`) {
-      throw new HttpError(400, `O ficheiro JSON tem de se chamar "${id}.json".`);
-    }
-    return { repoPath: `${EDITIONS_PATH}/${filename}`, filename };
+  if (filename !== `${id}.json`) {
+    throw new HttpError(400, `O ficheiro JSON tem de se chamar "${id}.json".`);
   }
-
-  const match = PDF_NAME_PATTERN.exec(filename);
-  if (!match) {
-    throw new HttpError(
-      400,
-      `"${filename}" não segue o padrão THB_[Horizonte]_[Periodo]_[Idioma]_PDF_vX.Y.pdf.`
-    );
-  }
-  const [, , periodToken, langToken] = match;
-  if (periodToken !== id) {
-    throw new HttpError(
-      400,
-      `O período "${periodToken}" no nome do ficheiro não corresponde à edição "${id}".`
-    );
-  }
-  if (langToken !== KIND_LANG[kind]) {
-    throw new HttpError(
-      400,
-      `O idioma "${langToken}" no nome do ficheiro não corresponde ao PDF em ${
-        kind === "pdf-pt" ? "português" : "inglês"
-      }.`
-    );
-  }
-  return { repoPath: `${BRIEFS_PATH}/${filename}`, filename };
+  return { repoPath: `${EDITIONS_PATH}/${filename}`, filename };
 }
 
 /** Repo path of an edition's JSON file. */
 export const editionJsonPath = (id) => `${EDITIONS_PATH}/${id}.json`;
 
-/** Repo path of one brief PDF. */
+/**
+ * Where the build writes one brief PDF. Nothing commits to this path any more;
+ * it exists so the pull-request body can name the files the deploy preview
+ * will serve.
+ */
 export const briefPdfPath = (filename) => `${BRIEFS_PATH}/${filename}`;
 
 /** Human period, for the pull-request body. */

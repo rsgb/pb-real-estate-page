@@ -11,7 +11,18 @@
  * match the edition id, and the PDF / signature images must exist in
  * public/briefs.
  *
- * Run: node scripts/validate-editions.mjs  (also wired as npm "prebuild").
+ * The PDFs are generated, not committed (D-34), so "prebuild" runs this twice:
+ *
+ *   node scripts/validate-editions.mjs --skip-pdf-presence   (before rendering)
+ *   node scripts/render-pdfs.mjs
+ *   node scripts/validate-editions.mjs                       (after rendering)
+ *
+ * The first pass catches a content problem before ~20 s of rendering is spent
+ * on it; the second proves the renderer really produced every file the
+ * editions declare. `--skip-pdf-presence` changes nothing else: the PDF
+ * naming rules are checked in both passes.
+ *
+ * Run: node scripts/validate-editions.mjs [--skip-pdf-presence]
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -21,6 +32,9 @@ import { validateEdition } from "../src/lib/edition-validation.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EDITIONS_DIR = path.join(ROOT, "src", "content", "editions");
 const BRIEFS_DIR = path.join(ROOT, "public", "briefs");
+
+/** `--skip-pdf-presence` — the PDFs have not been rendered yet. */
+const SKIP_PDF_PRESENCE = process.argv.slice(2).includes("--skip-pdf-presence");
 
 const errors = [];
 const warnings = [];
@@ -44,9 +58,14 @@ function main() {
     process.exit(1);
   }
 
-  const pdfNamesPresent = fs.existsSync(BRIEFS_DIR)
-    ? fs.readdirSync(BRIEFS_DIR).filter((name) => name.toLowerCase().endsWith(".pdf"))
-    : [];
+  // Omitted entirely (not an empty list) when the PDFs are still to be
+  // rendered: the shared validator skips the presence check when it is
+  // undefined, and reports every missing file when it is a list.
+  const pdfNamesPresent = SKIP_PDF_PRESENCE
+    ? undefined
+    : fs.existsSync(BRIEFS_DIR)
+      ? fs.readdirSync(BRIEFS_DIR).filter((name) => name.toLowerCase().endsWith(".pdf"))
+      : [];
 
   for (const name of files) {
     const file = rel(path.join(EDITIONS_DIR, name));
@@ -87,7 +106,9 @@ function main() {
 
   for (const warning of warnings) console.warn(`  ! ${warning}`);
   console.log(
-    `validate-editions: ${files.length} edition(s) OK — ${files.join(", ")}`
+    `validate-editions: ${files.length} edition(s) OK${
+      SKIP_PDF_PRESENCE ? " (PDFs not rendered yet)" : ""
+    } — ${files.join(", ")}`
   );
 }
 
