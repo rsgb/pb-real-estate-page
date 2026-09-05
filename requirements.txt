@@ -1,0 +1,6 @@
+# Python dependencies of the build, installed by Netlify from the base
+# directory before `npm run build` runs (see netlify.toml and
+# docs/publishing.md). The only Python in this repo is
+# scripts/pdf/render-pdf.py, which renders each edition's two PDFs from its
+# JSON during `prebuild`.
+reportlab>=4.0,<6
