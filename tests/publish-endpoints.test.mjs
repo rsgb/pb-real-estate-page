@@ -9,7 +9,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { COOKIE_NAME } from "../netlify/functions/_lib/auth.mjs";
-import { MAX_BODY_BYTES, MAX_PDF_BYTES, fitsInRequest } from "../netlify/functions/_lib/http.mjs";
+import { MAX_BODY_BYTES } from "../netlify/functions/_lib/http.mjs";
 import { run as login } from "../netlify/functions/publish-login.mjs";
 import { run as logout } from "../netlify/functions/publish-logout.mjs";
 import { run as validate } from "../netlify/functions/publish-validate.mjs";
@@ -30,8 +30,6 @@ const PDF_PT_PATH = `public/briefs/${JULY.pdf.pt}`;
 const PDF_EN_PATH = `public/briefs/${JULY.pdf.en}`;
 
 const b64 = (text) => Buffer.from(text, "utf8").toString("base64");
-/** A payload that is not a real PDF but is the right size and shape. */
-const fakePdf = (bytes = 2048) => Buffer.alloc(bytes, 0x25).toString("base64");
 
 /* ------------------------------------------------------------------ login */
 
@@ -260,33 +258,34 @@ test("re-uploading the same file replaces it using the sha it already has", asyn
   assert.equal(github.read(BRANCH, JSON_PATH), updated);
 });
 
-test("a PDF is written to public/briefs under its own name", async () => {
+test("a PDF upload is refused: the build renders the PDFs (D-34)", async () => {
   const github = fakeGitHub();
-  const result = await call(
-    upload,
-    postEvent({ id: ID, kind: "pdf-pt", filename: JULY.pdf.pt, contentBase64: fakePdf() }),
-    { env: ENV, fetch: github.fetchImpl }
-  );
-  assert.equal(result.statusCode, 200);
-  assert.equal(result.json.path, PDF_PT_PATH);
+  for (const kind of ["pdf-pt", "pdf-en"]) {
+    const result = await call(
+      upload,
+      postEvent({ id: ID, kind, filename: JULY.pdf.pt, contentBase64: b64("%PDF") }),
+      { env: ENV, fetch: github.fetchImpl }
+    );
+    assert.equal(result.statusCode, 400, kind);
+    assert.equal(result.json.error, 'Tipo de ficheiro inválido; use "json".');
+  }
+  assert.equal(github.calls.length, 0, "nothing may reach GitHub");
 });
 
 test("a filename that does not belong to the edition is refused", async () => {
   const github = fakeGitHub();
   const cases = [
-    ["json", "outra.json", /tem de se chamar/],
-    ["json", "../../etc/passwd", /não pode conter caminhos/],
-    ["pdf-pt", "THB_Monthly_2026-06_PT_PDF_v1.0.pdf", /não corresponde à edição/],
-    ["pdf-pt", JULY.pdf.en, /não corresponde ao PDF em português/],
-    ["pdf-en", "brief.pdf", /não segue o padrão/],
+    ["outra.json", /tem de se chamar/],
+    ["../../etc/passwd", /não pode conter caminhos/],
+    [JULY.pdf.pt, /tem de se chamar/],
   ];
-  for (const [kind, filename, expected] of cases) {
+  for (const [filename, expected] of cases) {
     const result = await call(
       upload,
-      postEvent({ id: ID, kind, filename, contentBase64: fakePdf(16) }),
+      postEvent({ id: ID, kind: "json", filename, contentBase64: b64("{}") }),
       { env: ENV, fetch: github.fetchImpl }
     );
-    assert.equal(result.statusCode, 400, `${kind} ${filename}`);
+    assert.equal(result.statusCode, 400, filename);
     assert.match(result.json.error, expected);
   }
   assert.equal(github.callsTo("PUT", "/contents/").length, 0, "nothing may be written");
@@ -304,29 +303,21 @@ test("an invalid id is refused before anything is created", async () => {
   assert.equal(github.calls.length, 0);
 });
 
-test("an oversized PDF is refused and never reaches GitHub", async () => {
+test("an oversized JSON is refused and never reaches GitHub", async () => {
   const github = fakeGitHub();
+  const padded = JSON.stringify({ ...JULY, filler: "x".repeat(1024 * 1024) });
   const result = await call(
     upload,
-    postEvent({
-      id: ID,
-      kind: "pdf-pt",
-      filename: JULY.pdf.pt,
-      contentBase64: Buffer.alloc(MAX_PDF_BYTES + 1).toString("base64"),
-    }),
+    postEvent({ id: ID, kind: "json", filename: `${ID}.json`, contentBase64: b64(padded) }),
     { env: ENV, fetch: github.fetchImpl }
   );
   assert.equal(result.statusCode, 413);
+  assert.match(result.json.error, /demasiado grande \(máximo 1 MB\)/);
   assert.equal(github.callsTo("PUT", "/contents/").length, 0);
 });
 
-test("base64 makes the request cap, not MAX_PDF_BYTES, the effective ceiling", () => {
-  // 4/3 inflation: a 5 MB PDF becomes ~6,7 MB of JSON, over the 5,5 MB cap.
-  // The page uses the same arithmetic to warn Paulo before he uploads.
-  assert.equal(fitsInRequest(MAX_PDF_BYTES), false);
-  assert.equal(fitsInRequest(4 * 1024 * 1024), true);
-  assert.equal(fitsInRequest(4.2 * 1024 * 1024), false);
-  assert.ok(MAX_BODY_BYTES < 6 * 1024 * 1024, "must stay under Netlify's own 6 MB limit");
+test("the request cap stays under Netlify's own 6 MB limit", () => {
+  assert.ok(MAX_BODY_BYTES < 6 * 1024 * 1024);
 });
 
 test("an edition that fails validation is never committed", async () => {
@@ -367,14 +358,11 @@ test("a JSON whose id contradicts the upload is refused", async () => {
 
 /* --------------------------------------------------------------- finish */
 
+/** The whole branch is the edition JSON: the build renders the PDFs (D-34). */
 function branchWithEverything(extra = {}) {
   return fakeGitHub({
     refs: { main: "sha-main", [BRANCH]: "sha-branch" },
-    files: {
-      [`${BRANCH}:${JSON_PATH}`]: JULY_TEXT,
-      [`${BRANCH}:${PDF_PT_PATH}`]: "%PDF-pt",
-      [`${BRANCH}:${PDF_EN_PATH}`]: "%PDF-en",
-    },
+    files: { [`${BRANCH}:${JSON_PATH}`]: JULY_TEXT },
     ...extra,
   });
 }
@@ -401,6 +389,25 @@ test("finish opens one pull request and returns its preview URL", async () => {
   for (const fragment of [JSON_PATH, PDF_PT_PATH, PDF_EN_PATH, "monthly", "07/2026"]) {
     assert.ok(created.body.body.includes(fragment), `PR body is missing ${fragment}`);
   }
+  // The PDFs are named as build output, not as files on the branch.
+  assert.match(created.body.body, /Gerados na compilação/);
+  assert.match(created.body.body, /scripts\/render-pdfs\.mjs/);
+});
+
+test("finish opens the pull request with the JSON alone on the branch", async () => {
+  // No PDF was ever uploaded and none is required: `prebuild` renders them.
+  const github = branchWithEverything({ nextPullNumber: 11 });
+  const result = await call(finish, postEvent({ id: ID }), {
+    env: ENV,
+    fetch: github.fetchImpl,
+  });
+
+  assert.equal(result.statusCode, 200);
+  assert.equal(result.json.prNumber, 11);
+  assert.equal(github.read(BRANCH, PDF_PT_PATH), undefined);
+  assert.equal(github.read(BRANCH, PDF_EN_PATH), undefined);
+  const pdfLookups = github.calls.filter((c) => c.path.includes(".pdf"));
+  assert.deepEqual(pdfLookups, [], "finish must not go looking for PDFs");
 });
 
 test("finish reuses the pull request when one is already open", async () => {
@@ -418,21 +425,14 @@ test("finish reuses the pull request when one is already open", async () => {
   assert.equal(github.callsTo("POST", "/pulls").length, 0, "a second PR must not be opened");
 });
 
-test("finish refuses to open a pull request when a PDF is missing", async () => {
-  const github = fakeGitHub({
-    refs: { main: "sha-main", [BRANCH]: "sha-branch" },
-    files: {
-      [`${BRANCH}:${JSON_PATH}`]: JULY_TEXT,
-      [`${BRANCH}:${PDF_PT_PATH}`]: "%PDF-pt",
-    },
-  });
+test("finish refuses to open a pull request when the JSON is missing", async () => {
+  const github = fakeGitHub({ refs: { main: "sha-main", [BRANCH]: "sha-branch" } });
   const result = await call(finish, postEvent({ id: ID }), {
     env: ENV,
     fetch: github.fetchImpl,
   });
   assert.equal(result.statusCode, 409);
-  assert.match(result.json.error, /Faltam ficheiros no ramo/);
-  assert.ok(result.json.error.includes(JULY.pdf.en));
+  assert.match(result.json.error, /ficheiro JSON da edição ainda não foi enviado/);
   assert.equal(github.callsTo("POST", "/pulls").length, 0);
 });
 
@@ -451,11 +451,7 @@ test("finish re-validates the JSON that is actually on the branch", async () => 
   broken.takeaway.pt = Array.from({ length: 50 }, (_, i) => `p${i}`).join(" ");
   const github = fakeGitHub({
     refs: { main: "sha-main", [BRANCH]: "sha-branch" },
-    files: {
-      [`${BRANCH}:${JSON_PATH}`]: JSON.stringify(broken),
-      [`${BRANCH}:${PDF_PT_PATH}`]: "%PDF-pt",
-      [`${BRANCH}:${PDF_EN_PATH}`]: "%PDF-en",
-    },
+    files: { [`${BRANCH}:${JSON_PATH}`]: JSON.stringify(broken) },
   });
   const result = await call(finish, postEvent({ id: ID }), {
     env: ENV,
@@ -467,19 +463,16 @@ test("finish re-validates the JSON that is actually on the branch", async () => 
 
 /* ---------------------------------------------------------- the full flow */
 
-test("three uploads and a finish leave one branch, three files and one PR", async () => {
+test("one upload and a finish leave one branch, one file and one PR", async () => {
   const github = fakeGitHub();
   const deps = { env: ENV, fetch: github.fetchImpl };
 
-  const steps = [
-    { kind: "json", filename: `${ID}.json`, contentBase64: b64(JULY_TEXT) },
-    { kind: "pdf-pt", filename: JULY.pdf.pt, contentBase64: fakePdf() },
-    { kind: "pdf-en", filename: JULY.pdf.en, contentBase64: fakePdf() },
-  ];
-  for (const step of steps) {
-    const result = await call(upload, postEvent({ id: ID, ...step }), deps);
-    assert.equal(result.statusCode, 200, JSON.stringify(result.json));
-  }
+  const sent = await call(
+    upload,
+    postEvent({ id: ID, kind: "json", filename: `${ID}.json`, contentBase64: b64(JULY_TEXT) }),
+    deps
+  );
+  assert.equal(sent.statusCode, 200, JSON.stringify(sent.json));
 
   const done = await call(finish, postEvent({ id: ID }), deps);
   assert.equal(done.statusCode, 200);
@@ -487,8 +480,11 @@ test("three uploads and a finish leave one branch, three files and one PR", asyn
 
   assert.equal(github.callsTo("POST", "/git/refs").length, 1, "the branch is created once");
   assert.equal(github.pulls.length, 1);
-  for (const filePath of [JSON_PATH, PDF_PT_PATH, PDF_EN_PATH]) {
-    assert.ok(github.read(BRANCH, filePath), `${filePath} is not on the branch`);
+  assert.ok(github.read(BRANCH, JSON_PATH), `${JSON_PATH} is not on the branch`);
+  // No PDF was uploaded and none was asked for: the build renders them.
+  assert.equal(github.callsTo("PUT", "/contents/").length, 1, "only the JSON is written");
+  for (const filePath of [PDF_PT_PATH, PDF_EN_PATH]) {
+    assert.equal(github.read(BRANCH, filePath), undefined, `${filePath} must not be committed`);
   }
   // Nothing was written to main.
   assert.equal(github.read("main", JSON_PATH), undefined);

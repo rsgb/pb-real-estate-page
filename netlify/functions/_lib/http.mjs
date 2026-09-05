@@ -18,23 +18,13 @@
  * Netlify's own request cap is 6 MB. Staying under it leaves room for the JSON
  * envelope around the base64 payload.
  *
- * Note the arithmetic Paulo runs into: base64 inflates a file by 4/3, so a
- * PDF larger than about 4 MB no longer fits even though MAX_PDF_BYTES allows
- * 5 MB. `fitsInRequest` below is what tells him that, in the browser, before
- * the upload starts.
+ * Since D-34 the only file that travels through these endpoints is the edition
+ * JSON, capped at 1 MB in publish-upload. The base64 arithmetic that used to
+ * make 4 MB the practical ceiling for a PDF (MAX_PDF_BYTES, `fitsInRequest`)
+ * went with the PDF uploads: an edition JSON is a few tens of kilobytes and
+ * comes nowhere near this cap.
  */
 export const MAX_BODY_BYTES = Math.round(5.5 * 1024 * 1024);
-
-/** Hard ceiling for one PDF, before base64. */
-export const MAX_PDF_BYTES = 5 * 1024 * 1024;
-
-/** Rough size of the JSON envelope around a base64 payload. */
-const ENVELOPE_BYTES = 512;
-
-/** True when a file of `byteLength` still fits in one request once encoded. */
-export function fitsInRequest(byteLength) {
-  return Math.ceil(byteLength / 3) * 4 + ENVELOPE_BYTES <= MAX_BODY_BYTES;
-}
 
 /** An error that is safe to show to the client, with the status to send. */
 export class HttpError extends Error {

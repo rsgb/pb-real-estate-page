@@ -1,20 +1,25 @@
 /**
  * POST /.netlify/functions/publish-upload   (session required)
  *
- * Body:    { id, kind: "json"|"pdf-pt"|"pdf-en", filename, contentBase64 }
+ * Body:    { id, kind: "json", filename, contentBase64 }
  * Returns: 200 { ok: true, path, commitSha, branch, created }
  *
  * Writes one file to the edition's branch, creating `edition/<id>` from `main`
  * the first time. Idempotent: uploading the same file again replaces it using
  * the sha it already has on the branch, which is what makes «Tentar de novo»
  * safe after a half-finished upload.
+ *
+ * Since D-34 the edition JSON is the only file there is to upload: the build
+ * renders both PDFs from it (scripts/render-pdfs.mjs), so the `pdf-pt` and
+ * `pdf-en` kinds were removed rather than left accepting files nothing would
+ * use. `kind` stays in the body because the page still sends it and because
+ * the INE release PDF (D-36) is the next thing that will need one.
  */
 import { validateEdition } from "../../src/lib/edition-validation.mjs";
 import { requireSession } from "./_lib/auth.mjs";
 import { BASE_BRANCH, branchFor, createGitHubClient } from "./_lib/github.mjs";
 import {
   HttpError,
-  MAX_PDF_BYTES,
   decodeBase64,
   handle,
   json,
@@ -35,16 +40,12 @@ export async function run(event, deps = {}) {
   const kind = assertKind(body.kind);
   const { repoPath, filename } = resolveUploadPath({ id, kind, filename: body.filename });
 
-  const buffer = decodeBase64(body.contentBase64, kind === "json" ? "ficheiro JSON" : "PDF");
+  const buffer = decodeBase64(body.contentBase64, "ficheiro JSON");
 
-  if (kind === "json") {
-    if (buffer.length > MAX_JSON_BYTES) {
-      throw new HttpError(413, "O ficheiro JSON é demasiado grande (máximo 1 MB).");
-    }
-    assertValidEdition(buffer, id);
-  } else if (buffer.length > MAX_PDF_BYTES) {
-    throw new HttpError(413, "O PDF é demasiado grande (máximo 5 MB).");
+  if (buffer.length > MAX_JSON_BYTES) {
+    throw new HttpError(413, "O ficheiro JSON é demasiado grande (máximo 1 MB).");
   }
+  assertValidEdition(buffer, id);
 
   const github = createGitHubClient({
     token: requireEnv("GITHUB_TOKEN_PUBLISH", env),

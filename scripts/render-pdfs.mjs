@@ -18,12 +18,15 @@
  *
  * A language is re-rendered unless its PDF already exists and is newer than
  * both the edition JSON and the renderer, which keeps a local rebuild quick.
- * A Netlify build starts from a clean checkout with no PDFs at all, so there
- * every edition is rendered.
+ * That shortcut is switched off with `--force`, and on Netlify or any CI: a
+ * checkout gives every file the same mtime, so an unexpected PDF in the tree
+ * would look "newer than the JSON" and be served untouched. On CI the only
+ * acceptable PDF is one this script has just written.
  *
  * Any renderer failure fails the build, with the renderer's own stderr.
  *
- * Run: node scripts/render-pdfs.mjs  (wired into npm "prebuild").
+ * Run: node scripts/render-pdfs.mjs [--force]  (wired into npm "prebuild",
+ * and available as npm run render:pdfs).
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -36,6 +39,12 @@ const BRIEFS_DIR = path.join(ROOT, "public", "briefs");
 const RENDERER = path.join(ROOT, "scripts", "pdf", "render-pdf.py");
 const PYTHON = process.env.PDF_PYTHON || "python3";
 const LANGS = ["pt", "en"];
+
+/** Re-render everything, ignoring what is already on disk. */
+const FORCE =
+  process.argv.slice(2).includes("--force") ||
+  Boolean(process.env.NETLIFY) ||
+  Boolean(process.env.CI);
 
 const rel = (p) => path.relative(ROOT, p);
 
@@ -128,7 +137,7 @@ function main() {
       const out = path.join(BRIEFS_DIR, filename);
       const outTime = mtime(out);
 
-      if (outTime && outTime >= jsonTime && outTime >= rendererTime) {
+      if (!FORCE && outTime && outTime >= jsonTime && outTime >= rendererTime) {
         skipped += 1;
         continue;
       }
@@ -155,7 +164,7 @@ function main() {
   const seconds = ((Date.now() - started) / 1000).toFixed(1);
   console.log(
     `render-pdfs: ${files.length} edition(s), ${rendered} PDF(s) rendered, ` +
-      `${skipped} already up to date, ${seconds}s (${PYTHON})`
+      `${skipped} already up to date, ${seconds}s (${PYTHON}${FORCE ? ", forced" : ""})`
   );
 }
 

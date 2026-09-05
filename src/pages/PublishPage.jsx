@@ -9,7 +9,7 @@ import { READING_WIDTH } from "../knowledge-centre/theme";
  * «Publicar edição» — Paulo's private upload page for the Tourism & Hospitality
  * Brief. Portuguese only, noindex, absent from the sitemap and from the menu.
  *
- * Three panels, one at a time: sign in, choose and check the files, send them.
+ * Three panels, one at a time: sign in, choose and check the file, send it.
  * Everything that can be checked before an upload is checked in the browser by
  * the same module the build and the functions use
  * (`src/lib/edition-validation.mjs`), so the page can be specific about what is
@@ -17,21 +17,15 @@ import { READING_WIDTH } from "../knowledge-centre/theme";
  * handler, which keeps Ajv out of the bundle every other visitor downloads and
  * out of the pre-render.
  *
+ * Since D-34 the edition JSON is the only file Paulo sends: the build renders
+ * both PDFs from it, so the page shows the two filenames the JSON declares but
+ * never asks for the files themselves.
+ *
  * Nothing here reaches the live site: the upload ends in a pull request that
  * Rui reviews and merges.
  */
 
 const FUNCTIONS = "/.netlify/functions";
-
-/** Mirrors netlify/functions/_lib/http.mjs — keep the two in step. */
-const MAX_PDF_BYTES = 5 * 1024 * 1024;
-const MAX_REQUEST_BYTES = Math.round(5.5 * 1024 * 1024);
-/**
- * Files travel as base64 inside a JSON body, which inflates them by 4/3, so a
- * PDF stops fitting in one request at about 4 MB — well before MAX_PDF_BYTES.
- * Saying so here is much kinder than a 413 halfway through the upload.
- */
-const fitsInRequest = (bytes) => Math.ceil(bytes / 3) * 4 + 512 <= MAX_REQUEST_BYTES;
 
 const HORIZON_LABELS = {
   monthly: "Mensal",
@@ -209,7 +203,7 @@ function SummaryRow({ label, children }) {
 }
 
 /** A file input with its label, the chosen file and any problem with it. */
-function FileField({ id, label, accept, hint, file, problems, onChange, action }) {
+function FileField({ id, label, accept, hint, file, problems, onChange }) {
   return (
     <Box sx={{ display: "grid", gap: 1 }}>
       <Typography component="label" htmlFor={id} sx={{ fontSize: "0.9375rem", fontWeight: 600 }}>
@@ -259,7 +253,6 @@ function FileField({ id, label, accept, hint, file, problems, onChange, action }
           {problem}
         </Typography>
       ))}
-      {action}
     </Box>
   );
 }
@@ -270,8 +263,6 @@ function FileField({ id, label, accept, hint, file, problems, onChange, action }
 
 const UPLOAD_STEPS = [
   { key: "json", label: "Ficheiro JSON da edição" },
-  { key: "pdfPt", label: "PDF em português" },
-  { key: "pdfEn", label: "PDF em inglês" },
   { key: "pr", label: "Pedido de publicação" },
 ];
 
@@ -300,10 +291,6 @@ export default function PublishPage() {
   const [jsonFile, setJsonFile] = useState(null);
   const [jsonError, setJsonError] = useState("");
   const [local, setLocal] = useState(null); // { errors, warnings, derived }
-  const [pdfPt, setPdfPt] = useState(null);
-  const [pdfEn, setPdfEn] = useState(null);
-  const [renamePt, setRenamePt] = useState(false);
-  const [renameEn, setRenameEn] = useState(false);
   const [server, setServer] = useState(null); // publish-validate response
   const [serverError, setServerError] = useState("");
   const [checking, setChecking] = useState(false);
@@ -324,38 +311,10 @@ export default function PublishPage() {
     [derived]
   );
 
-  /** Everything wrong with one chosen PDF, in the order Paulo should fix it. */
-  const pdfProblems = useCallback(
-    (file, expectedName, renamed) => {
-      if (!file) return [];
-      const problems = [];
-      if (file.size > MAX_PDF_BYTES) {
-        problems.push(`O ficheiro tem ${megabytes(file.size)}; o máximo é 5 MB.`);
-      } else if (!fitsInRequest(file.size)) {
-        problems.push(
-          `O ficheiro tem ${megabytes(file.size)} e não cabe num envio (o limite prático ` +
-            `é cerca de 4 MB). Comprima o PDF e escolha-o outra vez.`
-        );
-      }
-      if (expectedName && file.name !== expectedName && !renamed) {
-        problems.push(`O nome devia ser "${expectedName}".`);
-      }
-      return problems;
-    },
-    []
-  );
-
-  const ptProblems = pdfProblems(pdfPt, expected.pt, renamePt);
-  const enProblems = pdfProblems(pdfEn, expected.en, renameEn);
-
   const readyToSend =
     Boolean(id) &&
     Boolean(jsonFile) &&
-    Boolean(pdfPt) &&
-    Boolean(pdfEn) &&
     local?.errors?.length === 0 &&
-    ptProblems.length === 0 &&
-    enProblems.length === 0 &&
     Boolean(server) &&
     server.errors.length === 0;
 
@@ -386,8 +345,6 @@ export default function PublishPage() {
     setJsonFile(null);
     setLocal(null);
     setServer(null);
-    setPdfPt(null);
-    setPdfEn(null);
     setResult(null);
     setStatuses({});
   }
@@ -415,20 +372,6 @@ export default function PublishPage() {
     const { validateEdition } = await import("../lib/edition-validation.mjs");
     editionRef.current = parsed;
     setLocal(validateEdition(parsed));
-  }
-
-  function handlePdfChange(lang) {
-    return (event) => {
-      const file = event.target.files?.[0] ?? null;
-      if (lang === "pt") {
-        setPdfPt(file);
-        setRenamePt(false);
-      } else {
-        setPdfEn(file);
-        setRenameEn(false);
-      }
-      setServer(null);
-    };
   }
 
   async function handleServerCheck() {
@@ -461,24 +404,6 @@ export default function PublishPage() {
             contentBase64: content,
           });
         },
-        pdfPt: async () => {
-          const content = toBase64(await pdfPt.arrayBuffer());
-          return callFunction("publish-upload", {
-            id,
-            kind: "pdf-pt",
-            filename: expected.pt ?? pdfPt.name,
-            contentBase64: content,
-          });
-        },
-        pdfEn: async () => {
-          const content = toBase64(await pdfEn.arrayBuffer());
-          return callFunction("publish-upload", {
-            id,
-            kind: "pdf-en",
-            filename: expected.en ?? pdfEn.name,
-            contentBase64: content,
-          });
-        },
         pr: async () => {
           const done = await callFunction("publish-finish", { id });
           setResult(done);
@@ -501,7 +426,7 @@ export default function PublishPage() {
       }
       setSending(false);
     },
-    [id, jsonFile, pdfPt, pdfEn, expected]
+    [id, jsonFile]
   );
 
   function handleSend() {
@@ -546,9 +471,9 @@ export default function PublishPage() {
               maxWidth: READING_WIDTH,
             }}
           >
-            Envie o ficheiro JSON da edição e os dois PDFs. Os ficheiros são verificados
-            antes do envio e ficam num pedido de publicação — a edição só fica pública
-            depois de o Rui o aprovar.
+            Envie o ficheiro JSON da edição. Os dois PDFs são gerados a partir dele, não
+            precisa de os enviar. O ficheiro é verificado antes do envio e fica num pedido
+            de publicação — a edição só fica pública depois de o Rui o aprovar.
           </Typography>
         </Box>
 
@@ -640,6 +565,15 @@ export default function PublishPage() {
                     <SummaryRow label="PDF em inglês">{expected.en ?? "—"}</SummaryRow>
                   </Box>
 
+                  <Typography
+                    variant="caption"
+                    component="p"
+                    sx={{ mt: 1.5, color: "thb.greyGreen" }}
+                  >
+                    Os dois PDFs são gerados automaticamente na publicação, a partir deste
+                    ficheiro JSON, e ficam disponíveis na pré-visualização.
+                  </Typography>
+
                   <MessageList title="Erros a corrigir" messages={local.errors} />
                   <MessageList title="Avisos" messages={local.warnings} tone="warning" />
 
@@ -653,52 +587,6 @@ export default function PublishPage() {
                   ) : null}
                 </Box>
               ) : null}
-
-              <FileField
-                id="publicar-pdf-pt"
-                label="PDF em português"
-                accept="application/pdf,.pdf"
-                hint={expected.pt ? `Nome esperado: ${expected.pt}` : "Escolha primeiro o ficheiro JSON."}
-                file={pdfPt}
-                problems={ptProblems}
-                onChange={handlePdfChange("pt")}
-                action={
-                  pdfPt && expected.pt && pdfPt.name !== expected.pt && !renamePt ? (
-                    <Box>
-                      <QuietButton onClick={() => setRenamePt(true)}>
-                        Renomear automaticamente
-                      </QuietButton>
-                    </Box>
-                  ) : renamePt ? (
-                    <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen" }}>
-                      Vai ser enviado como {expected.pt}.
-                    </Typography>
-                  ) : null
-                }
-              />
-
-              <FileField
-                id="publicar-pdf-en"
-                label="PDF em inglês"
-                accept="application/pdf,.pdf"
-                hint={expected.en ? `Nome esperado: ${expected.en}` : "Escolha primeiro o ficheiro JSON."}
-                file={pdfEn}
-                problems={enProblems}
-                onChange={handlePdfChange("en")}
-                action={
-                  pdfEn && expected.en && pdfEn.name !== expected.en && !renameEn ? (
-                    <Box>
-                      <QuietButton onClick={() => setRenameEn(true)}>
-                        Renomear automaticamente
-                      </QuietButton>
-                    </Box>
-                  ) : renameEn ? (
-                    <Typography variant="caption" component="p" sx={{ color: "thb.greyGreen" }}>
-                      Vai ser enviado como {expected.en}.
-                    </Typography>
-                  ) : null
-                }
-              />
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "center" }}>
                 <QuietButton
