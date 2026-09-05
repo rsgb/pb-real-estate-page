@@ -19,12 +19,16 @@ Each edition of the Tourism & Hospitality Brief is one JSON file in
 `src/content/editions/`, validated against `edition.schema.json` by
 `scripts/validate-editions.mjs` (run automatically before every build).
 
+That JSON is the whole edition: the two PDFs are rendered from it during
+`prebuild` by `scripts/render-pdfs.mjs` (Python plus `reportlab`, see
+`requirements.txt`) and are never committed.
+
 Paulo publishes an edition himself from the private `/publicar/` page: he signs
-in with a passphrase, uploads the JSON and the two PDFs, and the files are
-committed to an `edition/<id>` branch and offered as a pull request. Nothing
-reaches the live site until that pull request is merged. The flow, the
-endpoints, the environment variables and how to review an incoming pull request
-are in [`docs/publishing.md`](docs/publishing.md).
+in with a passphrase, uploads the JSON, and it is committed to an
+`edition/<id>` branch and offered as a pull request. Nothing reaches the live
+site until that pull request is merged. The flow, the endpoints, the
+environment variables and how to review an incoming pull request are in
+[`docs/publishing.md`](docs/publishing.md).
 
 Set the optional `historical: true` on an edition that is published after its
 period has closed, as part of the backfill: the site then labels it "Edição
