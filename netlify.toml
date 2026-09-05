@@ -6,15 +6,18 @@
 # Python in the build
 # -------------------
 # `npm run prebuild` renders every edition's two PDFs from its JSON with
-# scripts/pdf/render-pdf.py (decision D-34: no PDF is ever committed). Two
-# files at the repo root, which Netlify's build image reads from the base
-# directory before the build command runs, make that possible:
+# scripts/pdf/render-pdf.py (decision D-34: no PDF is ever committed). One
+# file at the repo root, which Netlify's build image reads from the base
+# directory before the build command runs, makes that possible:
 #
-#   runtime.txt       the Python version to use. 3.8 is the build image's own
-#                     default, so naming it costs no interpreter download.
 #   requirements.txt  `pip install -r` runs automatically when this file
 #                     exists; it holds reportlab, the renderer's only
 #                     non-standard-library dependency.
+#
+# No Python version is pinned on purpose: the renderer runs on any Python
+# from 3.8 up, and naming a version the image does not ship (its default is
+# 3.13 on the Noble image) would make Netlify download an interpreter on
+# every build. If a version ever has to be forced, use runtime.txt.
 #
 # Neither file has anything to do with the Netlify Functions, which are Node.
 # If the build ever fails on Python, docs/publishing.md says what to check.

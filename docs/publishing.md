@@ -85,22 +85,22 @@ directory before the build command runs:
 
 | File | What it does |
 | --- | --- |
-| `runtime.txt` | `3.8` — the build image's own default Python, so no interpreter is downloaded |
 | `requirements.txt` | `reportlab>=4.0,<6`; the image runs `pip install -r requirements.txt` because this file exists |
 
-Neither has anything to do with the Netlify Functions, which are Node.
+No Python version is pinned: the renderer runs on any Python from 3.8 up (checked on 3.9 and 3.14), and pinning a version the image does not ship would make Netlify download an interpreter on every build (the Noble image's default is 3.13). It has nothing to do with the Netlify Functions, which are Node.
 
 **If a build fails on Python**, read the build log from the top; the Python
 setup happens before `npm install`.
 
-- *No `python3` on PATH* — `render-pdfs` says so by name. Check that
-  `runtime.txt` is still at the repo root and holds nothing but a version.
+- *No `python3` on PATH* — `render-pdfs` says so by name. The build image
+  always ships one; if it is ever missing, set `PYTHON_VERSION` in Netlify or
+  add a `runtime.txt` with the image's own default.
 - *`ModuleNotFoundError: reportlab`* — pip did not run, or ran for a different
   interpreter. Confirm `requirements.txt` is at the repo root and that the log
   shows an "Installing pip dependencies" step.
-- *An interpreter version the image has to download* — put the image's default
-  back in `runtime.txt` rather than pinning a version it must fetch. The
-  renderer is written to run on 3.8, and is checked on 3.9 and 3.14.
+- *An interpreter version the image has to download* — someone added a
+  `runtime.txt` or `PYTHON_VERSION`; remove it. The renderer is written to run
+  on 3.8, and is checked on 3.9 and 3.14.
 - *Nothing works and an edition must go out today* — render locally with
   `npm run render:pdfs`, commit the two PDFs with
   `git add -f public/briefs/<name>`, and open an issue. That is a deliberate
