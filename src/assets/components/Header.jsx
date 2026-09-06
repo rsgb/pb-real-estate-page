@@ -56,12 +56,13 @@ export default function Header() {
           display: "block",
         }}
       />
-      {/* Flat navy veil — no gradient */}
+      {/* Flat navy veil — no gradient. 0.7 rather than 0.55: the aerial is busy
+          with white roofs, and the title needs a calmer ground. */}
       <Box
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(18, 26, 38, 0.55)",
+          backgroundColor: "rgba(18, 26, 38, 0.7)",
         }}
       />
       <Box
@@ -105,7 +106,6 @@ export default function Header() {
             fontSize: { xs: "16px", md: "17px" },
             lineHeight: 1.75,
             color: "custom.warmWhite",
-            opacity: 0.9,
             maxWidth: 620,
           }}
         >
