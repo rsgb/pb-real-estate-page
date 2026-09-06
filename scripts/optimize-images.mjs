@@ -4,7 +4,9 @@
  *   node scripts/optimize-images.mjs [--dry]
  *
  * Walks src/assets/images and public, and for every JPEG/PNG:
- *   - downscales to at most MAX_WIDTH px wide (MAX_LOGO_WIDTH for brand logos);
+ *   - downscales to at most MAX_WIDTH px wide (MAX_LOGO_WIDTH for brand logos,
+ *     MAX_HERO_WIDTH for the full-bleed hero, which is stretched across retina
+ *     viewports);
  *   - re-encodes in the SAME format under the SAME filename, so every import
  *     and <img src> keeps working:
  *       jpeg -> quality 80, progressive, mozjpeg
@@ -26,10 +28,13 @@ const SKIP_DIRS = new Set(["briefs", "node_modules", ".git"]);
 
 const MAX_WIDTH = 1600;
 const MAX_LOGO_WIDTH = 800;
+const MAX_HERO_WIDTH = 2560;
 const JPEG_QUALITY = 80;
 const EXTS = new Set([".jpg", ".jpeg", ".png"]);
 /** Brand/partner marks - these only ever render small. */
 const LOGO_RE = /(logo|pbre|kwsol|\bkw\b|chambers|host)/i;
+/** Full-bleed hero photograph. */
+const HERO_RE = /^hero-/i;
 
 const DRY = process.argv.includes("--dry");
 
@@ -99,7 +104,8 @@ for (const dir of TARGET_DIRS) {
     const before = (await fs.stat(file)).size;
     const ext = path.extname(file).toLowerCase();
     const isLogo = LOGO_RE.test(path.basename(file));
-    const maxWidth = isLogo ? MAX_LOGO_WIDTH : MAX_WIDTH;
+    const isHero = HERO_RE.test(path.basename(file));
+    const maxWidth = isLogo ? MAX_LOGO_WIDTH : isHero ? MAX_HERO_WIDTH : MAX_WIDTH;
 
     const input = await fs.readFile(file);
     const image = sharp(input, { failOn: "none" });

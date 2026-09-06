@@ -120,7 +120,10 @@ export default function ResponsiveAppBar() {
               alt="Paulo Braga Real Estate"
               sx={{
                 display: "block",
-                width: { xs: 118, md: 150 },
+                // The PNG is 559x349, so the wordmark stands 62 / 77 px tall
+                // inside the 90 / 104 px bar: about 14 px of air above and
+                // below (at 150 wide it touched both edges).
+                width: { xs: 100, md: 124 },
                 height: "auto",
               }}
             />

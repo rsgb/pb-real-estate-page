@@ -1,7 +1,9 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useLang } from "./LangContext";
-import hero from "../images/hotels.jpg";
+// 2026-09-06: hotel room in blue damask with two lit lamps (Pexels, Katrine
+// Skrebele), chosen by Paulo: it says hotel without saying which kind of hotel.
+import hero from "../images/hero-hotel-room.jpg";
 
 export default function Header() {
   const { lang } = useLang();
@@ -27,13 +29,22 @@ export default function Header() {
       "Des opportunités sélectionnées dans les secteurs les plus recherchés du Portugal, adaptées aux clients nationaux et internationaux.";
   }
 
+  const cue = { EN: "Explore", ES: "Explorar", FR: "Explorer" }[lang] ?? "Explorar";
+
   return (
     <Box
       component="section"
       sx={{
         position: "relative",
         width: "100%",
-        height: { xs: 420, md: 520 },
+        // The hero owns the first screen: viewport minus the 90 / 104 px bar,
+        // never shorter than the old fixed band, never taller than 640 / 760
+        // so a large monitor does not get a wall of photo. `svh` is the small
+        // viewport, so phone browser chrome does not make the band jump; a
+        // browser without it keeps the min-height.
+        minHeight: { xs: 420, md: 520 },
+        height: { xs: "calc(100svh - 90px)", md: "calc(100svh - 104px)" },
+        maxHeight: { xs: 720, md: 760 },
         overflow: "hidden",
         bgcolor: "custom.navy",
       }}
@@ -50,16 +61,18 @@ export default function Header() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          objectPosition: "center 58%",
+          objectPosition: "center 50%",
           display: "block",
         }}
       />
-      {/* Flat navy veil — no gradient */}
+      {/* Flat navy veil — no gradient. 0.7 rather than 0.55: the aerial is busy
+          with white roofs, and the title needs a calmer ground. */}
       <Box
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(18, 26, 38, 0.55)",
+          // Light enough to keep the room's colour (Paulo found 0.7 lifeless).
+          backgroundColor: "rgba(18, 26, 38, 0.4)",
         }}
       />
       <Box
@@ -103,12 +116,50 @@ export default function Header() {
             fontSize: { xs: "16px", md: "17px" },
             lineHeight: 1.75,
             color: "custom.warmWhite",
-            opacity: 0.9,
             maxWidth: 620,
           }}
         >
           {subtitle}
         </Typography>
+      </Box>
+
+      {/* Scroll cue: label over a short champagne hairline, bottom centre.
+          Echoes the rule under the title; the slow bob is switched off under
+          prefers-reduced-motion (src/index.css). */}
+      <Box
+        component="a"
+        href="#opportunities"
+        className="hero-cue"
+        sx={{
+          position: "absolute",
+          left: "50%",
+          bottom: { xs: 18, md: 26 },
+          transform: "translateX(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "10px",
+          textDecoration: "none",
+          color: "custom.warmWhite",
+          fontFamily: "'Montserrat', sans-serif",
+          fontWeight: 600,
+          fontSize: "11px",
+          letterSpacing: "0.16em",
+          textTransform: "uppercase",
+          lineHeight: 1,
+          "&:focus-visible": {
+            outline: "2px solid",
+            outlineColor: "custom.champagne",
+            outlineOffset: 6,
+          },
+        }}
+      >
+        {cue}
+        <Box
+          component="span"
+          aria-hidden="true"
+          sx={{ display: "block", width: "1px", height: { xs: 28, md: 40 }, bgcolor: "custom.champagne" }}
+        />
       </Box>
     </Box>
   );

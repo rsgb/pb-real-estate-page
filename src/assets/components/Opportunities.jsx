@@ -2,7 +2,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import { useLang } from "./LangContext";
 import hotelsCard from "../images/hotels-card.jpg";
 import leisure from "../images/leisure.jpg";
-import seniorliving from "../images/seniorliving.jpg";
+import seniorGolf from "../images/senior-golf.jpg";
 
 /** Photo, and how it should be framed in the card window. */
 const CARDS = [
@@ -10,7 +10,10 @@ const CARDS = [
   { img: hotelsCard, objectPosition: "center 40%" },
   // D-17: the leisure card uses the concert photograph.
   { img: leisure, objectPosition: "center 45%" },
-  { img: seniorliving, objectPosition: "center 60%" },
+  // 2026-09-06: an older man in white golf kit addressing the ball (Pexels,
+  // Safari Consoler), chosen by Paulo: the upper-class active-retirement register
+  // his senior-living investors use. Cropped from a portrait frame.
+  { img: seniorGolf, objectPosition: "center 35%" },
 ];
 
 const COPY = {
@@ -72,15 +75,54 @@ const COPY = {
   ],
 };
 
+/** Section title, the one word the hero's scroll cue leads to. */
+const HEADING = { PT: "Oportunidades", EN: "Opportunities", ES: "Oportunidades", FR: "Opportunités" };
+
 export default function ThreeCards() {
   const { lang } = useLang();
   const copy = COPY[lang] ?? COPY.PT;
+  const heading = HEADING[lang] ?? HEADING.PT;
 
   return (
     <Box
       component="section"
+      aria-labelledby="opportunities-title"
       sx={{ bgcolor: "background.default", py: { xs: 6, md: 11 } }}
     >
+      {/* Heading + rule, as in Services: a quiet band between the hero and
+          the three photos, so the images start further down the page. */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          px: 3,
+          mb: { xs: "34px", md: "54px" },
+        }}
+      >
+        <Typography
+          id="opportunities-title"
+          variant="h2"
+          component="h2"
+          sx={{
+            fontSize: { xs: "28px", md: "34px" },
+            lineHeight: 1.2,
+            color: "custom.navy",
+            textAlign: "center",
+          }}
+        >
+          {heading}
+        </Typography>
+        <Box
+          sx={{
+            width: 48,
+            height: 2,
+            bgcolor: "custom.champagne",
+            mt: { xs: "18px", md: "20px" },
+          }}
+        />
+      </Box>
+
       <Box
         sx={{
           width: "100%",

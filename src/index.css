@@ -9,6 +9,7 @@ html {
 
 /* Scroll offset for the in-page sections: header height (90 / 104) + 16. */
 #home,
+#opportunities,
 #services,
 #about,
 #partners,
@@ -18,10 +19,32 @@ html {
 
 @media (min-width: 900px) {
   #home,
+  #opportunities,
   #services,
   #about,
   #partners,
   #contact {
     scroll-margin-top: 120px;
+  }
+}
+
+/* Hero scroll cue: a slow bob, off for people who prefer reduced motion. */
+@keyframes hero-cue-bob {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 6px);
+  }
+}
+
+.hero-cue {
+  animation: hero-cue-bob 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cue {
+    animation: none;
   }
 }
