@@ -29,13 +29,22 @@ export default function Header() {
       "Des opportunités sélectionnées dans les secteurs les plus recherchés du Portugal, adaptées aux clients nationaux et internationaux.";
   }
 
+  const cue = { EN: "Explore", ES: "Explorar", FR: "Explorer" }[lang] ?? "Explorar";
+
   return (
     <Box
       component="section"
       sx={{
         position: "relative",
         width: "100%",
-        height: { xs: 420, md: 520 },
+        // The hero owns the first screen: viewport minus the 90 / 104 px bar,
+        // never shorter than the old fixed band, never taller than 640 / 760
+        // so a large monitor does not get a wall of photo. `svh` is the small
+        // viewport, so phone browser chrome does not make the band jump; a
+        // browser without it keeps the min-height.
+        minHeight: { xs: 420, md: 520 },
+        height: { xs: "calc(100svh - 90px)", md: "calc(100svh - 104px)" },
+        maxHeight: { xs: 720, md: 760 },
         overflow: "hidden",
         bgcolor: "custom.navy",
       }}
@@ -111,6 +120,45 @@ export default function Header() {
         >
           {subtitle}
         </Typography>
+      </Box>
+
+      {/* Scroll cue: label over a short champagne hairline, bottom centre.
+          Echoes the rule under the title; the slow bob is switched off under
+          prefers-reduced-motion (src/index.css). */}
+      <Box
+        component="a"
+        href="#opportunities"
+        className="hero-cue"
+        sx={{
+          position: "absolute",
+          left: "50%",
+          bottom: { xs: 18, md: 26 },
+          transform: "translateX(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "10px",
+          textDecoration: "none",
+          color: "custom.warmWhite",
+          fontFamily: "'Montserrat', sans-serif",
+          fontWeight: 600,
+          fontSize: "11px",
+          letterSpacing: "0.16em",
+          textTransform: "uppercase",
+          lineHeight: 1,
+          "&:focus-visible": {
+            outline: "2px solid",
+            outlineColor: "custom.champagne",
+            outlineOffset: 6,
+          },
+        }}
+      >
+        {cue}
+        <Box
+          component="span"
+          aria-hidden="true"
+          sx={{ display: "block", width: "1px", height: { xs: 28, md: 40 }, bgcolor: "custom.champagne" }}
+        />
       </Box>
     </Box>
   );

@@ -57,7 +57,7 @@ export default function Home() {
       <Box id="home" sx={{ scrollMarginTop }}>
         <Header />
       </Box>
-      <Box>
+      <Box id="opportunities" sx={{ scrollMarginTop }}>
         <Opportunities />
       </Box>
       <Box id="services" sx={{ scrollMarginTop }}>
