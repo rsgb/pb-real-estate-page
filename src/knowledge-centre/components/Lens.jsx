@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import Rule from "./Rule";
-import ThbMark from "./ThbMark";
 
 /**
  * Tourism & Hospitality Real Estate Lens (Componentes Visuais v0.9 s.4).
@@ -35,17 +34,14 @@ export default function Lens({ lens, labels, sx }) {
     >
       <Rule />
 
-      <Box sx={{ mt: 2, display: "flex", alignItems: "center", gap: 2 }}>
-        <ThbMark size={28} />
-        <Typography
-          id="thb-lens-title"
-          variant="overline"
-          component="h2"
-          sx={{ color: "thb.petroleum", m: 0 }}
-        >
-          {labels.title}
-        </Typography>
-      </Box>
+      <Typography
+        id="thb-lens-title"
+        variant="overline"
+        component="h2"
+        sx={{ mt: 2, color: "thb.petroleum", mb: 0 }}
+      >
+        {labels.title}
+      </Typography>
 
       {lens.headline ? (
         <Typography variant="h2" component="p" sx={{ mt: 3, color: "thb.petroleum" }}>

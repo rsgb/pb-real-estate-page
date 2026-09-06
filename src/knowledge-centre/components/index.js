@@ -14,4 +14,3 @@ export { default as RichText } from "./RichText";
 export { default as Rule } from "./Rule";
 export { default as Sources } from "./Sources";
 export { default as Takeaway } from "./Takeaway";
-export { default as ThbMark } from "./ThbMark";
