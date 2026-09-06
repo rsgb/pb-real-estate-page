@@ -2,7 +2,7 @@ import { Box, Link as MuiLink, Typography } from "@mui/material";
 import { Link as RouterLink, useParams } from "react-router";
 import { SITE_ORIGIN, useHead } from "../../lib/head";
 import { useThbLang } from "../lang";
-import { LangNotice, RichText, ThbMark } from "../components";
+import { LangNotice, RichText } from "../components";
 import { READING_WIDTH } from "../theme";
 
 export default function MethodologyPage() {
@@ -47,19 +47,9 @@ export default function MethodologyPage() {
             {t.knowledgeCentre}
           </Typography>
 
-          <Box
-            sx={{
-              mt: { xs: 2, md: 2.5 },
-              display: "flex",
-              alignItems: "center",
-              gap: { xs: 2, md: 2.5 },
-            }}
-          >
-            <ThbMark size={44} />
-            <Typography variant="h1" component="h1">
-              {t.methodology}
-            </Typography>
-          </Box>
+          <Typography variant="h1" component="h1" sx={{ mt: { xs: 2, md: 2.5 } }}>
+            {t.methodology}
+          </Typography>
 
           <Box sx={{ mt: { xs: 2.5, md: 3 }, height: "1px", backgroundColor: "thb.terracotta" }} />
         </Box>

@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { formatDate, formatPeriod, formatPeriodInSentence } from "../../lib/format";
 import { fillTemplate, pick, useThbLang } from "../lang";
 import Rule from "./Rule";
-import ThbMark from "./ThbMark";
 import { READING_WIDTH } from "../theme";
 
 /**
@@ -116,19 +115,9 @@ export default function EditionHeader({ edition, section, sx }) {
         {overline}
       </Typography>
 
-      <Box
-        sx={{
-          mt: { xs: 2, md: 2.5 },
-          display: "flex",
-          alignItems: "center",
-          gap: { xs: 1.75, md: 2.25 },
-        }}
-      >
-        <ThbMark size={36} />
-        <Typography variant="h2" component="p" sx={{ minWidth: 0 }}>
-          {t.seriesName}
-        </Typography>
-      </Box>
+      <Typography variant="h2" component="p" sx={{ mt: { xs: 2, md: 2.5 }, minWidth: 0 }}>
+        {t.seriesName}
+      </Typography>
 
       <Typography variant="h1" component="h1" sx={{ mt: { xs: 1.5, md: 2 } }}>
         {t.country} | {formatPeriod(edition, contentLang)}

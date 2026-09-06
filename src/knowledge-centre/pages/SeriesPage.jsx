@@ -5,7 +5,7 @@ import { SITE_ORIGIN, useHead } from "../../lib/head";
 import { editionSlug, editionTitle, formatDate, formatPeriod } from "../../lib/format";
 import { getEditions, getLatest, groupByYear } from "../../content/editions";
 import { pick, useThbLang } from "../lang";
-import { LangNotice, Rule, ThbMark } from "../components";
+import { LangNotice, Rule } from "../components";
 import { READING_WIDTH } from "../theme";
 
 /** Filter value standing for "no horizon filter". */
@@ -91,19 +91,9 @@ export default function SeriesPage() {
             {t.knowledgeCentre}
           </Typography>
 
-          <Box
-            sx={{
-              mt: { xs: 2, md: 2.5 },
-              display: "flex",
-              alignItems: "center",
-              gap: { xs: 2, md: 2.5 },
-            }}
-          >
-            <ThbMark size={44} />
-            <Typography variant="h1" component="h1">
-              {t.seriesName}
-            </Typography>
-          </Box>
+          <Typography variant="h1" component="h1" sx={{ mt: { xs: 2, md: 2.5 } }}>
+            {t.seriesName}
+          </Typography>
 
           <Box sx={{ mt: { xs: 2.5, md: 3 }, height: "1px", backgroundColor: "thb.terracotta" }} />
 
