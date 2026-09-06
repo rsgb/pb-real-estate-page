@@ -2,7 +2,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import { useLang } from "./LangContext";
 import hotelsCard from "../images/hotels-card.jpg";
 import leisure from "../images/leisure.jpg";
-import seniorCard from "../images/senior-card.jpg";
+import seniorGolf from "../images/senior-golf.jpg";
 
 /** Photo, and how it should be framed in the card window. */
 const CARDS = [
@@ -10,9 +10,10 @@ const CARDS = [
   { img: hotelsCard, objectPosition: "center 40%" },
   // D-17: the leisure card uses the concert photograph.
   { img: leisure, objectPosition: "center 45%" },
-  // 2026-09-06: Portuguese villa with a flowering pergola (Pexels, Jose Cruz),
-  // replacing the Dutch almshouses; cropped to the pergola, door and planters.
-  { img: seniorCard, objectPosition: "center 45%" },
+  // 2026-09-06: an older man in white golf kit addressing the ball (Pexels,
+  // Safari Consoler), chosen by Paulo: the upper-class active-retirement register
+  // his senior-living investors use. Cropped from a portrait frame.
+  { img: seniorGolf, objectPosition: "center 35%" },
 ];
 
 const COPY = {

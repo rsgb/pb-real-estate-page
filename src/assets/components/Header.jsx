@@ -1,9 +1,9 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useLang } from "./LangContext";
-// 2026-09-06: Albufeira resort from the air (Pexels, Bert Christiaens), chosen by
-// Rui to replace the hotel-room photo: a building in Portugal seen from outside.
-import hero from "../images/hero-algarve.jpg";
+// 2026-09-06: hotel room in blue damask with two lit lamps (Pexels, Katrine
+// Skrebele), chosen by Paulo: it says hotel without saying which kind of hotel.
+import hero from "../images/hero-hotel-room.jpg";
 
 export default function Header() {
   const { lang } = useLang();
@@ -61,7 +61,7 @@ export default function Header() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          objectPosition: "center 45%",
+          objectPosition: "center 50%",
           display: "block",
         }}
       />
@@ -71,7 +71,8 @@ export default function Header() {
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundColor: "rgba(18, 26, 38, 0.7)",
+          // Light enough to keep the room's colour (Paulo found 0.7 lifeless).
+          backgroundColor: "rgba(18, 26, 38, 0.4)",
         }}
       />
       <Box
