@@ -2,7 +2,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import { useLang } from "./LangContext";
 import hotelsCard from "../images/hotels-card.jpg";
 import leisure from "../images/leisure.jpg";
-import seniorliving from "../images/seniorliving.jpg";
+import seniorCard from "../images/senior-card.jpg";
 
 /** Photo, and how it should be framed in the card window. */
 const CARDS = [
@@ -10,7 +10,9 @@ const CARDS = [
   { img: hotelsCard, objectPosition: "center 40%" },
   // D-17: the leisure card uses the concert photograph.
   { img: leisure, objectPosition: "center 45%" },
-  { img: seniorliving, objectPosition: "center 60%" },
+  // 2026-09-06: Portuguese villa with a flowering pergola (Pexels, Jose Cruz),
+  // replacing the Dutch almshouses; cropped to the pergola, door and planters.
+  { img: seniorCard, objectPosition: "center 45%" },
 ];
 
 const COPY = {
