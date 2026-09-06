@@ -1,7 +1,9 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useLang } from "./LangContext";
-import hero from "../images/hotels.jpg";
+// 2026-09-06: Albufeira resort from the air (Pexels, Bert Christiaens), chosen by
+// Rui to replace the hotel-room photo: a building in Portugal seen from outside.
+import hero from "../images/hero-algarve.jpg";
 
 export default function Header() {
   const { lang } = useLang();
@@ -50,7 +52,7 @@ export default function Header() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          objectPosition: "center 58%",
+          objectPosition: "center 45%",
           display: "block",
         }}
       />
