@@ -73,10 +73,19 @@ test("logout clears the cookie without needing a session", async () => {
 
 /* --------------------------------------------------------- request guards */
 
-test("only POST is accepted", async () => {
-  const result = await call(validate, postEvent({ edition: JULY }, { method: "GET" }), { env: ENV });
-  assert.equal(result.statusCode, 405);
-  assert.match(result.json.error, /Método não permitido/);
+test("GET probes log only the actual runtime and remain refused by every endpoint", async (t) => {
+  const log = t.mock.method(console, "info", () => {});
+  for (const run of [login, logout, validate, upload, finish]) {
+    const result = await call(run, postEvent({ edition: JULY }, { method: "GET" }), { env: ENV });
+    assert.equal(result.statusCode, 405);
+    assert.deepEqual(result.json, { error: "Método não permitido; use POST." });
+  }
+  assert.equal(log.mock.callCount(), 5);
+  for (const entry of log.mock.calls) {
+    assert.deepEqual(entry.arguments, [`publish:runtime node=${process.version}`]);
+  }
+  await call(logout, postEvent({}, { cookie: null }), { env: ENV });
+  assert.equal(log.mock.callCount(), 5, "normal POST requests do not emit runtime probes");
 });
 
 test("a non-JSON content type is refused", async () => {

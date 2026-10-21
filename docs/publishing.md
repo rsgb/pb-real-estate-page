@@ -125,7 +125,11 @@ For an authorized deployment:
    build's supported major. Set this through Netlify's UI/API/CLI, **not**
    `netlify.toml`, then redeploy.
 2. Confirm the Netlify build log uses Node 22.23.4 or a later patched 22.x.
-3. Verify the running functions' patch version through provider/runtime
+3. Send a GET request to each of the five publish function URLs and read its
+   fresh `publish:runtime node=v...` entry in Netlify's production function
+   logs. The value is `process.version` from that invocation; GET still returns
+   405 and logs no request data. Normal POST requests do not emit this probe.
+   Verify the running functions' patch version through this runtime
    evidence: Node 22 must be at least 22.23.4. Selecting `nodejs22.x` alone
    does not prove that Netlify/AWS has rolled out today's patch. If the
    provider cannot confirm the fixed runtime, keep that security item open.

@@ -125,6 +125,11 @@ export function readJsonBody(event) {
  */
 export function handle(fn) {
   return async (event, context) => {
+    // Read-only operational probes keep their 405 response and reveal the
+    // actual managed runtime in private function logs, without request data.
+    if ((event?.httpMethod ?? "").toUpperCase() === "GET") {
+      console.info(`publish:runtime node=${process.version}`);
+    }
     try {
       return await fn(event, context);
     } catch (error) {
