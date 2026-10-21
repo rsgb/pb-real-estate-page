@@ -111,6 +111,31 @@ setup happens before `npm install`.
 - The documented port if the build image ever stops carrying Python: rewrite
   the renderer in Node with `pdfkit`, two to three days.
 
+## Node.js runtime deployment checks
+
+The repository's `.nvmrc` pins Node **22.23.4** for builds and local work;
+GitHub Actions reads the same file. This includes the
+[2026-10-21 Node security fixes](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
+Netlify [supports `.nvmrc` for build selection](https://docs.netlify.com/build/configure-builds/manage-dependencies/).
+
+For an authorized deployment:
+
+1. Check `AWS_LAMBDA_JS_RUNTIME` in Netlify's environment settings. If an
+   override exists, use `nodejs22.x` or remove the override to follow the
+   build's supported major. Set this through Netlify's UI/API/CLI, **not**
+   `netlify.toml`, then redeploy.
+2. Confirm the Netlify build log uses Node 22.23.4 or a later patched 22.x.
+3. Verify the running functions' patch version through provider/runtime
+   evidence: Node 22 must be at least 22.23.4. Selecting `nodejs22.x` alone
+   does not prove that Netlify/AWS has rolled out today's patch. If the
+   provider cannot confirm the fixed runtime, keep that security item open.
+4. Check the public pages and publishing endpoints without creating a real
+   edition or pull request as a test.
+
+Netlify's [function runtime configuration](https://docs.netlify.com/build/functions/configuration/#nodejs-version-for-runtime)
+selects a major version independently of the exact build patch. A local
+upgrade or a successful static build is not proof of a patched live function.
+
 ## Endpoints
 
 All are `POST`, `application/json`, same-origin, at

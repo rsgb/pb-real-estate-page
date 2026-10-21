@@ -4,6 +4,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.23.4 <23"
+  },
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/validate-editions.mjs --skip-pdf-presence && node scripts/render-pdfs.mjs && node scripts/validate-editions.mjs && node scripts/generate-og-images.mjs",
