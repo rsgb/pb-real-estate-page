@@ -13,6 +13,25 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Paulo-Braga-Real-Estate
 
+## Node.js runtime
+
+Use the patched Node.js version in `.nvmrc` for local development, CI and
+Netlify builds. With nvm installed:
+
+```sh
+nvm install
+nvm use
+npm ci
+```
+
+Node 22.23.4 includes the [October 21, 2026 security fixes](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
+`engines` and `.npmrc` reject installs on older Node releases. Keep the
+`.nvmrc` pin and the minimum in `package.json` / `package-lock.json` current
+when later security updates arrive. This application does not use PHP.
+
+Netlify Functions use a separately managed runtime; see the
+[runtime deployment checks](docs/publishing.md#nodejs-runtime-deployment-checks).
+
 ## Market Brief editions
 
 Each edition of the Tourism & Hospitality Brief is one JSON file in
