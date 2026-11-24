@@ -11,18 +11,18 @@
   "publishedAt": "2026-09-04",
   "historical": true,
   "dataStatus": "revised",
-  "version": "1.0",
+  "version": "1.1",
   "pdf": {
-    "pt": "THB_Quarterly_2025-Q2_PT_PDF_v1.0.pdf",
-    "en": "THB_Quarterly_2025-Q2_EN_PDF_v1.0.pdf"
+    "pt": "THB_Quarterly_2025-Q2_PT_PDF_v1.1.pdf",
+    "en": "THB_Quarterly_2025-Q2_EN_PDF_v1.1.pdf"
   },
   "title": {
     "pt": "Tourism & Hospitality Brief | Portugal | 2.º trimestre de 2025",
     "en": "Tourism & Hospitality Brief | Portugal | Q2 2025"
   },
   "takeaway": {
-    "pt": "A Páscoa devolveu o trimestre: dormidas +4,2%, com residentes a +7,6% e mercados externos a +2,9%, e proveitos totais de 2039,5 milhões de euros (+9,4%). O RevPAR subiu 7,3%, acima do ADR (+5,3%).",
-    "en": "Easter gave the quarter back: overnight stays +4.2%, residents +7.6% and external markets +2.9%, with total revenue of EUR 2,039.5 million (+9.4%). RevPAR rose 7.3%, ahead of ADR at +5.3%."
+    "pt": "A Páscoa devolveu o trimestre: dormidas +4,2%, com residentes a +7,6% e mercados externos a +2,9%, e proveitos totais de 2040,2 milhões de euros (+9,4%). O RevPAR subiu 7,3%, acima do ADR (+5,3%).",
+    "en": "Easter gave the quarter back: overnight stays +4.2%, residents +7.6% and external markets +2.9%, with total revenue of EUR 2,040.2 million (+9.4%). RevPAR rose 7.3%, ahead of ADR at +5.3%."
   },
   "sections": [
     {
@@ -43,8 +43,8 @@
         }
       },
       "note": {
-        "pt": "Edição histórica v1.0 - dados revistos",
-        "en": "Historical edition v1.0 - revised data"
+        "pt": "Edição histórica v1.1 - dados revistos",
+        "en": "Historical edition v1.1 - revised data"
       }
     },
     {
@@ -71,12 +71,12 @@
       "body": {
         "pt": [
           "O setor do alojamento turístico registou 9,2 milhões de hóspedes (+4,3%) e 23,0 milhões de dormidas (+4,2%), com os resultados influenciados pela estrutura móvel do calendário: a Páscoa ocorreu no 2.º trimestre, enquanto no ano anterior se concentrou essencialmente no 1.º trimestre.",
-          "Os proveitos totais atingiram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), com o RevPAR em 80,9 euros (+7,3%) e o ADR em 127,5 euros (+5,3%). A recuperação não foi uniforme: abril fez +8,9% nas dormidas e +12,6% nos proveitos, maio +1,3% e +8,7%, junho +3,1% e +7,6%.",
+          "Os proveitos totais atingiram 2040,2 milhões de euros (+9,4%) e os de aposento 1569,4 milhões (+9,8%), com o RevPAR em 80,9 euros (+7,3%) e o ADR em 127,5 euros (+5,3%). A recuperação não foi uniforme: abril fez +8,9% nas dormidas e +12,6% nos proveitos, maio +1,3% e +8,7%, junho +3,1% e +7,6%.",
           "O INE voltou a ler o trimestre pela dependência dos mercados externos e, desta vez, a Grande Lisboa (82,9%) encabeçou a lista, à frente da RA Madeira (82,4%) e do Algarve (81,4%)."
         ],
         "en": [
           "Tourist accommodation recorded 9.2 million guests (+4.3%) and 23.0 million overnight stays (+4.2%), with the results shaped by the moving calendar: Easter landed in the second quarter this year and mainly in the first quarter a year earlier.",
-          "Total revenue reached EUR 2,039.5 million (+9.4%) and room revenue EUR 1,568.7 million (+9.8%), with RevPAR at EUR 80.9 (+7.3%) and ADR at EUR 127.5 (+5.3%). The recovery was not even: April delivered +8.9% in overnight stays and +12.6% in revenue, May +1.3% and +8.7%, June +3.1% and +7.6%.",
+          "Total revenue reached EUR 2,040.2 million (+9.4%) and room revenue EUR 1,569.4 million (+9.8%), with RevPAR at EUR 80.9 (+7.3%) and ADR at EUR 127.5 (+5.3%). The recovery was not even: April delivered +8.9% in overnight stays and +12.6% in revenue, May +1.3% and +8.7%, June +3.1% and +7.6%.",
           "Statistics Portugal again read the quarter through dependence on external markets and, this time, Greater Lisbon (82.9%) topped the list, ahead of Madeira (82.4%) and the Algarve (81.4%)."
         ]
       }
@@ -136,7 +136,7 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2039.5,
+          "value": 2040.2,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -147,8 +147,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -157,7 +157,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1568.7,
+          "value": 1569.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -168,8 +168,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -468,7 +468,7 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2039.5,
+          "value": 2040.2,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -479,8 +479,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -489,7 +489,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1568.7,
+          "value": 1569.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -500,17 +500,17 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         }
       ],
       "body": {
         "pt": [
-          "Os proveitos totais somaram 2039,5 milhões de euros (+9,4%) e os de aposento 1568,7 milhões (+9,8%), mais do dobro do ritmo do volume. O RevPAR atingiu 80,9 euros (+7,3%) e o ADR 127,5 euros (+5,3%): a diferença entre os dois indica que a receita por quarto disponível também beneficiou de maior ocupação, e não apenas de preço. O essencial do ganho está em abril; maio e junho cresceram menos em dormidas e em receita."
+          "Os proveitos totais somaram 2040,2 milhões de euros (+9,4%) e os de aposento 1569,4 milhões (+9,8%), mais do dobro do ritmo do volume. O RevPAR atingiu 80,9 euros (+7,3%) e o ADR 127,5 euros (+5,3%): a diferença entre os dois indica que a receita por quarto disponível também beneficiou de maior ocupação, e não apenas de preço. O essencial do ganho está em abril; maio e junho cresceram menos em dormidas e em receita."
         ],
         "en": [
-          "Total revenue came to EUR 2,039.5 million (+9.4%) and room revenue to EUR 1,568.7 million (+9.8%), more than twice the pace of volume. RevPAR reached EUR 80.9 (+7.3%) and ADR EUR 127.5 (+5.3%): the gap between them says revenue per available room also drew on higher occupancy, not on rate alone. Most of the gain sits in April; May and June grew less in overnight stays and in revenue."
+          "Total revenue came to EUR 2,040.2 million (+9.4%) and room revenue to EUR 1,569.4 million (+9.8%), more than twice the pace of volume. RevPAR reached EUR 80.9 (+7.3%) and ADR EUR 127.5 (+5.3%): the gap between them says revenue per available room also drew on higher occupancy, not on rate alone. Most of the gain sits in April; May and June grew less in overnight stays and in revenue."
         ]
       }
     },
@@ -581,17 +581,13 @@
           {
             "pt": "INE, Atividade Turística, 3.º trimestre de 2025, divulgada em 17 de novembro de 2025. Variações homólogas revistas para o trimestre anterior.",
             "en": "Statistics Portugal, Tourism Activity, Q3 2025, released 17 November 2025. Year-on-year changes revised for the preceding quarter."
-          },
-          {
-            "pt": "INE, Atividade Turística - Estatísticas Rápidas, junho de 2025, divulgadas em 31 de julho de 2025. Utilizada para os proveitos do trimestre.",
-            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, June 2025, released 31 July 2025. Used for the quarter's revenue."
           }
         ],
         "releaseDate": "2025-11-17",
         "status": "revised",
         "notes": {
-          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 14 de agosto de 2025; variações homólogas revistas na divulgação de 17 de novembro de 2025. Os proveitos totais do trimestre foram obtidos por diferença entre o acumulado janeiro-junho publicado pelo INE em 31 de julho de 2025 e o valor do 1.º trimestre publicado pelo INE em 15 de maio de 2025, uma vez que a divulgação trimestral de 14 de agosto de 2025 imprime apenas um valor arredondado em mil milhões de euros. Os proveitos de aposento do trimestre foram obtidos por diferença entre o acumulado janeiro-junho publicado pelo INE em 31 de julho de 2025 e o valor do 1.º trimestre publicado pelo INE em 15 de maio de 2025, uma vez que a divulgação trimestral de 14 de agosto de 2025 imprime apenas um valor arredondado em mil milhões de euros. O INE não publica taxas de ocupação trimestrais.",
-          "en": "Levels and year-on-year changes from the INE quarterly release of 14 August 2025; year-on-year changes revised in the release of 17 November 2025. Total revenue for the quarter was obtained as the difference between the January-June cumulative INE published on 31 July 2025 and the Q1 figure INE published on 15 May 2025, since the quarterly release of 14 August 2025 prints only a figure rounded to thousand millions of euros. Room revenue for the quarter was obtained as the difference between the January-June cumulative INE published on 31 July 2025 and the Q1 figure INE published on 15 May 2025, since the quarterly release of 14 August 2025 prints only a figure rounded to thousand millions of euros. INE publishes no quarterly occupancy rates."
+          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 14 de agosto de 2025; variações homólogas revistas na divulgação de 17 de novembro de 2025. Proveitos totais e de aposento do trimestre: 2040,2 e 1569,4 milhões de euros, valores da Figura 1 da divulgação trimestral de 14 de agosto de 2025. Versão 1.1 (24 de novembro de 2026): proveitos corrigidos para estes valores; a versão 1.0 tinha usado a diferença entre acumulados de divulgações diferentes. O INE não publica taxas de ocupação trimestrais.",
+          "en": "Levels and year-on-year changes from the INE quarterly release of 14 August 2025; year-on-year changes revised in the release of 17 November 2025. Total and room revenue for the quarter: EUR 2,040.2 and 1,569.4 million, from Figure 1 of the quarterly release of 14 August 2025. Version 1.1 (24 November 2026): revenue corrected to these figures; version 1.0 had used the difference between cumulative figures from different releases. INE publishes no quarterly occupancy rates."
         }
       }
     }
