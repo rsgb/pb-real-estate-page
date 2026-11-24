@@ -11,10 +11,10 @@
   "publishedAt": "2026-09-04",
   "historical": true,
   "dataStatus": "provisional",
-  "version": "1.0",
+  "version": "1.1",
   "pdf": {
-    "pt": "THB_Quarterly_2026-Q2_PT_PDF_v1.0.pdf",
-    "en": "THB_Quarterly_2026-Q2_EN_PDF_v1.0.pdf"
+    "pt": "THB_Quarterly_2026-Q2_PT_PDF_v1.1.pdf",
+    "en": "THB_Quarterly_2026-Q2_EN_PDF_v1.1.pdf"
   },
   "title": {
     "pt": "Tourism & Hospitality Brief | Portugal | 2.º trimestre de 2026",
@@ -43,8 +43,8 @@
         }
       },
       "note": {
-        "pt": "Edição histórica v1.0 - dados provisórios",
-        "en": "Historical edition v1.0 - provisional data"
+        "pt": "Edição histórica v1.1 - dados provisórios",
+        "en": "Historical edition v1.1 - provisional data"
       }
     },
     {
@@ -71,12 +71,12 @@
       "body": {
         "pt": [
           "O alojamento turístico registou 9,4 milhões de hóspedes (+2,3%) e 23,3 milhões de dormidas (+1,2%) no trimestre. O INE ressalva que a estrutura móvel do calendário, com o período da Páscoa, pode ter influenciado os resultados.",
-          "Os proveitos totais atingiram 2140,0 milhões de euros (+5,2%) e os de aposento 1636,6 milhões (+4,5%), com o ADR em 130,2 euros (+2,4%) e o RevPAR em 81,6 euros (+0,8%). Dentro do trimestre, as dormidas subiram 0,4% em abril, 2,5% em maio e 0,7% em junho: só maio teve algum fôlego.",
+          "Os proveitos totais atingiram 2142,0 milhões de euros (+5,2%) e os de aposento 1637,4 milhões (+4,5%), com o ADR em 130,2 euros (+2,4%) e o RevPAR em 81,6 euros (+0,8%). Dentro do trimestre, as dormidas subiram 0,4% em abril, 2,5% em maio e 0,7% em junho: só maio teve algum fôlego.",
           "Tudo continuou a crescer, mas todos os indicadores perderam ritmo face ao início do ano."
         ],
         "en": [
           "Tourist accommodation recorded 9.4 million guests (+2.3%) and 23.3 million overnight stays (+1.2%) in the quarter. Statistics Portugal cautions that the moving calendar, and the Easter period with it, may have influenced the results.",
-          "Total revenue reached EUR 2,140.0 million (+5.2%) and room revenue EUR 1,636.6 million (+4.5%), with ADR at EUR 130.2 (+2.4%) and RevPAR at EUR 81.6 (+0.8%). Within the quarter, overnight stays rose 0.4% in April, 2.5% in May and 0.7% in June: only May had any lift.",
+          "Total revenue reached EUR 2,142.0 million (+5.2%) and room revenue EUR 1,637.4 million (+4.5%), with ADR at EUR 130.2 (+2.4%) and RevPAR at EUR 81.6 (+0.8%). Within the quarter, overnight stays rose 0.4% in April, 2.5% in May and 0.7% in June: only May had any lift.",
           "Everything kept moving up, but every indicator lost pace against the start of the year."
         ]
       }
@@ -132,7 +132,7 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2140.0,
+          "value": 2142.0,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -143,8 +143,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -153,7 +153,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1636.6,
+          "value": 1637.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -164,8 +164,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -472,7 +472,7 @@
             "pt": "PROVEITOS TOTAIS",
             "en": "TOTAL REVENUE"
           },
-          "value": 2140.0,
+          "value": 2142.0,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -483,8 +483,8 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         },
         {
@@ -493,7 +493,7 @@
             "pt": "PROVEITOS DE APOSENTO",
             "en": "ROOM REVENUE"
           },
-          "value": 1636.6,
+          "value": 1637.4,
           "unit": "eur",
           "scale": "million",
           "decimals": 1,
@@ -504,17 +504,17 @@
             "basis": "yoy"
           },
           "note": {
-            "pt": "valor derivado dos acumulados do INE",
-            "en": "value derived from INE's cumulative figures"
+            "pt": "valor da Figura 1 do INE",
+            "en": "value from INE's Figure 1"
           }
         }
       ],
       "body": {
         "pt": [
-          "O ADR atingiu 130,2 euros (+2,4%) e o RevPAR 81,6 euros (+0,8%). Os proveitos totais somaram 2140,0 milhões de euros (+5,2%) e os de aposento 1636,6 milhões (+4,5%), abaixo do ritmo do início do ano. O INE não publica taxas de ocupação trimestrais; nas divulgações mensais, a taxa líquida de ocupação-cama esteve abaixo do ano anterior nos três meses do trimestre. A receita cresceu por preço, não por volume nem por mais camas ocupadas."
+          "O ADR atingiu 130,2 euros (+2,4%) e o RevPAR 81,6 euros (+0,8%). Os proveitos totais somaram 2142,0 milhões de euros (+5,2%) e os de aposento 1637,4 milhões (+4,5%), abaixo do ritmo do início do ano. O INE não publica taxas de ocupação trimestrais; nas divulgações mensais, a taxa líquida de ocupação-cama esteve abaixo do ano anterior nos três meses do trimestre. A receita cresceu por preço, não por volume nem por mais camas ocupadas."
         ],
         "en": [
-          "ADR reached EUR 130.2 (+2.4%) and RevPAR EUR 81.6 (+0.8%). Total revenue came to EUR 2,140.0 million (+5.2%) and room revenue to EUR 1,636.6 million (+4.5%), slower than at the start of the year. Statistics Portugal publishes no quarterly occupancy rates; in the monthly releases, net bed occupancy sat below the year before in each of the quarter's three months. Revenue grew on rate, not on volume and not on more beds filled."
+          "ADR reached EUR 130.2 (+2.4%) and RevPAR EUR 81.6 (+0.8%). Total revenue came to EUR 2,142.0 million (+5.2%) and room revenue to EUR 1,637.4 million (+4.5%), slower than at the start of the year. Statistics Portugal publishes no quarterly occupancy rates; in the monthly releases, net bed occupancy sat below the year before in each of the quarter's three months. Revenue grew on rate, not on volume and not on more beds filled."
         ]
       }
     },
@@ -581,21 +581,12 @@
           "pt": "INE, Atividade Turística, 2.º trimestre de 2026, divulgada em 14 de agosto de 2026.",
           "en": "Statistics Portugal, Tourism Activity, Q2 2026, released 14 August 2026."
         },
-        "complementary": [
-          {
-            "pt": "INE, Atividade Turística - Estatísticas Rápidas, junho de 2026, divulgadas em 31 de julho de 2026. Utilizada para os proveitos do trimestre.",
-            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, June 2026, released 31 July 2026. Used for the quarter's revenue."
-          },
-          {
-            "pt": "INE, Atividade Turística - Estatísticas Rápidas, março de 2026, divulgadas em 30 de abril de 2026. Utilizada para os proveitos do trimestre.",
-            "en": "Statistics Portugal, Tourism Activity - Flash Estimates, March 2026, released 30 April 2026. Used for the quarter's revenue."
-          }
-        ],
+        "complementary": [],
         "releaseDate": "2026-08-14",
         "status": "provisional",
         "notes": {
-          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 14 de agosto de 2026. Os proveitos totais do trimestre foram obtidos por diferença entre os acumulados publicados pelo INE em 31 de julho de 2026 e em 30 de abril de 2026, uma vez que a divulgação trimestral de 14 de agosto de 2026 imprime apenas um valor arredondado em mil milhões de euros. Os proveitos de aposento do trimestre foram obtidos por diferença entre os acumulados publicados pelo INE em 31 de julho de 2026 e em 30 de abril de 2026, uma vez que a divulgação trimestral de 14 de agosto de 2026 imprime apenas um valor arredondado em mil milhões de euros. O INE não publica taxas de ocupação trimestrais.",
-          "en": "Levels and year-on-year changes from the INE quarterly release of 14 August 2026. Total revenue for the quarter was obtained as the difference between the cumulative figures INE published on 31 July 2026 and 30 April 2026, since the quarterly release of 14 August 2026 prints only a figure rounded to thousand millions of euros. Room revenue for the quarter was obtained as the difference between the cumulative figures INE published on 31 July 2026 and 30 April 2026, since the quarterly release of 14 August 2026 prints only a figure rounded to thousand millions of euros. INE publishes no quarterly occupancy rates."
+          "pt": "Níveis e variações homólogas da divulgação trimestral do INE de 14 de agosto de 2026. Proveitos totais e de aposento do trimestre: 2142,0 e 1637,4 milhões de euros, valores da Figura 1 da divulgação trimestral de 14 de agosto de 2026. Versão 1.1 (24 de novembro de 2026): proveitos corrigidos para estes valores; a versão 1.0 tinha usado a diferença entre acumulados de divulgações diferentes. O INE não publica taxas de ocupação trimestrais.",
+          "en": "Levels and year-on-year changes from the INE quarterly release of 14 August 2026. Total and room revenue for the quarter: EUR 2,142.0 and 1,637.4 million, from Figure 1 of the quarterly release of 14 August 2026. Version 1.1 (24 November 2026): revenue corrected to these figures; version 1.0 had used the difference between cumulative figures from different releases. INE publishes no quarterly occupancy rates."
         }
       }
     }
